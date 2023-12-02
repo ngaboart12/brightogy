@@ -1,0 +1,32 @@
+.links ul{
+    position: relative;
+    z-index: 20;
+}
+.links ul ul{
+    display: none;
+    background: whitesmoke;
+    position: absolute;
+    width: 100% ;
+    height: 50vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 4px;
+  
+    
+}
+.links ul ul li{
+    padding-top: 14px;
+
+}
+.links ul li:hover ul{
+    display: block;
+    position: absolute;
+}
+.icon{
+    transition: 0.4s ease-in-out;
+}
+.links ul li:hover .icon{
+    transform: rotate(-180deg);
+   
+}
