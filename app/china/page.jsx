@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import LinkComponent from "@/components/LinkComponet";
 import Navbar from "@/components/Navbar";
 import React from "react";
+import Image from "next/image";
 
 const StudyInChina = () => {
   return (
@@ -403,7 +404,9 @@ const StudyInChina = () => {
           <div class="flex-col justify-start items-start gap-3.5 inline-flex">
             <div class="p-6 bg-white flex-col justify-start items-start gap-2.5 flex">
               <div class="justify-start items-center gap-2 inline-flex">
-                <img
+                <Image
+                  width={200}
+                  height={0}
                   class="w-[49.84px] h-10"
                   src="https://via.placeholder.com/50x40"
                 />
@@ -414,7 +417,9 @@ const StudyInChina = () => {
             </div>
             <div class="px-4 py-6 bg-white flex-col justify-start items-start gap-2.5 flex">
               <div class="justify-start items-center gap-2 inline-flex">
-                <img
+                <Image
+                  width={200}
+                  height={0}
                   class="w-[52.22px] h-10"
                   src="https://via.placeholder.com/52x40"
                 />
@@ -425,7 +430,9 @@ const StudyInChina = () => {
             </div>
             <div class="px-4 py-6 bg-white flex-col justify-start items-start gap-2.5 flex">
               <div class="justify-start items-center gap-[13px] inline-flex">
-                <img
+                <Image
+                  width={200}
+                  height={0}
                   class="w-[52.22px] h-10"
                   src="https://via.placeholder.com/52x40"
                 />
@@ -438,7 +445,9 @@ const StudyInChina = () => {
           <div class="flex-col justify-start items-start gap-4 inline-flex">
             <div class="px-4 py-6 bg-white flex-col justify-start items-start gap-2.5 flex">
               <div class="justify-start items-center gap-[19px] inline-flex">
-                <img
+                <Image
+                  width={200}
+                  height={0}
                   class="w-[52.22px] h-10"
                   src="https://via.placeholder.com/52x40"
                 />
@@ -451,7 +460,9 @@ const StudyInChina = () => {
             </div>
             <div class="px-4 py-6 bg-white flex-col justify-start items-start gap-2.5 flex">
               <div class="justify-start items-center gap-[13px] inline-flex">
-                <img
+                <Image
+                  width={200}
+                  height={0}
                   class="w-[52.22px] h-10"
                   src="https://via.placeholder.com/52x40"
                 />

@@ -4,7 +4,7 @@ import LinkComponent from "@/components/LinkComponet";
 import Navbar from "@/components/Navbar";
 import React, { useState } from "react";
 
-const faqpage = () => {
+const FaqPage = () => {
   const [whichOpen, setWhichOpen] = useState();
   const questions = [
     {
@@ -122,6 +122,7 @@ const faqpage = () => {
             {questions.map((item, index) => {
               return (
                 <div
+                  key={index}
                   className="flex flex-col gap-2"
                   onClick={() => setWhichOpen(index)}
                 >
@@ -165,4 +166,4 @@ const faqpage = () => {
   );
 };
 
-export default faqpage;
+export default FaqPage;
