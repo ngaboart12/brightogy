@@ -4,7 +4,7 @@ import LinkComponent from "@/components/LinkComponet";
 import Navbar from "@/components/Navbar";
 import React, { useState } from "react";
 
-const FaqPage = () => {
+const Page = () => {
   const [whichOpen, setWhichOpen] = useState();
   const questions = [
     {
@@ -166,4 +166,4 @@ const FaqPage = () => {
   );
 };
 
-export default FaqPage;
+export default Page;

@@ -130,11 +130,11 @@ const StudyInCanada = () => {
       <div class="max-w-7xl w-full py-20 md:px-40 px-[20px] flex-col justify-start items-start gap-6 inline-flex">
         <div class="flex-col justify-start items-start gap-6 flex">
           <div class="max-w-[585px] text-sky-950 text-[32px] font-bold ">
-            Canadim's International Student Program
+            Canadims International Student Program
           </div>
           <div class="max-w-[989px] ">
             <span className="text-neutral-700 text-lg font-[300]  underline">
-              Canadim’s International Student Program
+              Canadims International Student Program
             </span>
             <span className="text-neutral-700 text-lg font-[300] ">
               {" "}
@@ -1133,7 +1133,7 @@ const StudyInCanada = () => {
                 you have already heard of! International students choose UofT
                 for its academic excellence and vibrant campus life. 20,000 of
                 them, to be exact. It is also located in the downtown core of
-                the world's most diverse city.
+                the worlds most diverse city.
               </div>
             </div>
           </div>
@@ -1162,7 +1162,7 @@ const StudyInCanada = () => {
                 McGill University
               </div>
               <div class="max-w-[398px]  text-black text-lg font-normal ">
-                McGill has an international reputation for excellence. It's no
+                McGill has an international reputation for excellence. It s no
                 wonder it has a population of more than 12,000 international
                 students. Although it is in the French province of Quebec,
                 McGill is an English university. The city of Montreal is known
