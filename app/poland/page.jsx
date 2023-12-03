@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import LinkComponent from "@/components/LinkComponet";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import LinkComponent from "../../components/LinkComponet";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const StudyInPoland = () => {
   return (
@@ -65,12 +65,12 @@ const StudyInPoland = () => {
 
       {/* benefit of studying in poland */}
       <div className="w-full py-20 items-center max-w-7xl">
-        <div class="w-full px-[20px]  md:px-[89px]  pt-[58px] py-[59px] bg-sky-950 flex-col justify-center items-center gap-[51px] inline-flex">
-          <div class="max-w-[567px] text-amber-500 text-[32px] font-bold ">
+        <div className="w-full px-[20px]  md:px-[89px]  pt-[58px] py-[59px] bg-sky-950 flex-col justify-center items-center gap-[51px] inline-flex">
+          <div className="max-w-[567px] text-amber-500 text-[32px] font-bold ">
             Benefits of Studying in Poland
           </div>
 
-          <div class="max-w-[799px] text-center md:text-start text-white text-lg font-[300] ">
+          <div className="max-w-[799px] text-center md:text-start text-white text-lg font-[300] ">
             International students opt to study in Poland for a variety of
             reasons. Some of the world’s oldest, best higher education
             institutions are located in Poland. The following perks are
@@ -78,34 +78,34 @@ const StudyInPoland = () => {
             various programmes at one of the Polish universities.
           </div>
 
-          <div class="self-stretch justify-start items-start gap-[83px] flex flex-col md:flex-row">
-            <div class="flex-col flex justify-start items-start gap-6">
-              <div class=" text-center md:text-start text-white text-lg font-[300] ">
-                Most students from salaried class families would benefit from
-                low tuition fees and living expenses.
+          <div className="self-stretch justify-start items-start gap-[83px] flex flex-col md:flex-row">
+            <div className="flex-col flex justify-start items-start gap-6">
+              <div className=" text-center md:text-start text-white text-lg font-[300] ">
+                Most students from salaried className families would benefit
+                from low tuition fees and living expenses.
               </div>
-              <div class=" text-center md:text-start text-white text-lg font-[300] ">
+              <div className=" text-center md:text-start text-white text-lg font-[300] ">
                 Simple & straightforward visa application processes.
               </div>
-              <div class=" text-center md:text-start text-white text-lg font-[300] ">
+              <div className=" text-center md:text-start text-white text-lg font-[300] ">
                 Other European nations like Germany, Denmark etc., are easily
                 accessible because Poland belongs to the Schengen group of
                 countries within the European Union.
               </div>
             </div>
-            <div class="flex-col justify-start  gap-[34px] inline-flex">
-              <div class=" text-white text-center md:text-start text-lg font-[300] ">
+            <div className="flex-col justify-start  gap-[34px] inline-flex">
+              <div className=" text-white text-center md:text-start text-lg font-[300] ">
                 Opportunities for internships and transfers to other European
                 universities without additional cost through the Erasmus+
                 programme.
               </div>
-              <div class=" text-white text-center md:text-start text-lg font-[300] ">
+              <div className=" text-white text-center md:text-start text-lg font-[300] ">
                 Low Crime Rate Worldwide.
               </div>
-              <div class=" text-white text-center md:text-start text-lg font-[300] ">
+              <div className=" text-white text-center md:text-start text-lg font-[300] ">
                 Every significant city in Poland has a university.
               </div>
-              <div class="max-w-[526px] text-white text-center md:text-start text-lg font-[300] ">
+              <div className="max-w-[526px] text-white text-center md:text-start text-lg font-[300] ">
                 Scholarships options for non-EU students!
               </div>
             </div>
@@ -114,12 +114,12 @@ const StudyInPoland = () => {
       </div>
 
       {/* education syatem in poland */}
-      <div class="max-w-7xl px-[10px] md:px-20 w-full  flex-col justify-start items-center gap-[42px] inline-flex">
-        <div class=" text-center text-sky-950 text-[32px] font-bold ">
+      <div className="max-w-7xl px-[10px] md:px-20 w-full  flex-col justify-start items-center gap-[42px] inline-flex">
+        <div className=" text-center text-sky-950 text-[32px] font-bold ">
           Education System in Poland
         </div>
-        <div class="justify-start items-start gap-[60px] inline-block md:inline-flex">
-          <div class="w-full md:w-1/2  text-zinc-600 text-lg font-normal text-center md:text-start ">
+        <div className="justify-start items-start gap-[60px] inline-block md:inline-flex">
+          <div className="w-full md:w-1/2  text-zinc-600 text-lg font-normal text-center md:text-start ">
             Most of Poland’s tertiary-level programs are formed of two cycles: a
             three-year bachelor’s degree and a two-year master’s degree. All
             universities follow the Bologna model, which makes the
@@ -127,12 +127,12 @@ const StudyInPoland = () => {
             the same time, Polish institutions offer doctoral programs that can
             be completed in generally three years.
           </div>
-          <div class="w-full md:w-1/2 flex-col justify-start items-start gap-[25px] inline-flex t">
-            <div class="  text-zinc-600 text-lg font-normal text-center md:text-start mt-4 md:mt-0">
+          <div className="w-full md:w-1/2 flex-col justify-start items-start gap-[25px] inline-flex t">
+            <div className="  text-zinc-600 text-lg font-normal text-center md:text-start mt-4 md:mt-0">
               Many Polish universities provide two- to three-year diploma and
               vocational programs in addition to these courses.
             </div>
-            <div class="  text-zinc-600 text-lg font-normal text-center md:text-start ">
+            <div className="  text-zinc-600 text-lg font-normal text-center md:text-start ">
               The major Polish institutions overseeing quality assurance in
               higher education periodically monitor and assess the quality of
               education at the higher education institutions in Poland. Poland’s
@@ -145,13 +145,13 @@ const StudyInPoland = () => {
       </div>
 
       {/* life style in poland */}
-      <div class="max-w-7xl w-full px-[10px] md:px-20    py-[113px] justify-start items-center inline-flex">
-        <div class="self-stretch justify-start items-center gap-[58px] inline-block lg:inline-flex">
-          <div class="flex-col gap-6 inline-flex px-2">
-            <div class=" text-sky-950 text-[32px] font-bold  lg:text-start text-center">
+      <div className="max-w-7xl w-full px-[10px] md:px-20    py-[113px] justify-start items-center inline-flex">
+        <div className="self-stretch justify-start items-center gap-[58px] inline-block lg:inline-flex">
+          <div className="flex-col gap-6 inline-flex px-2">
+            <div className=" text-sky-950 text-[32px] font-bold  lg:text-start text-center">
               Lifestyle in Poland
             </div>
-            <div class=" text-neutral-600 text-center lg:text-start text-lg font-normal ">
+            <div className=" text-neutral-600 text-center lg:text-start text-lg font-normal ">
               Poland is one of the nations in Europe with the lowest crime
               rates. While visiting Poland, you can observe the civilizations
               where the East and West converge. Because of its location, it is a
@@ -162,18 +162,18 @@ const StudyInPoland = () => {
               is less expensive in Poland.
             </div>
           </div>
-          <div class="justify-center lg:justify-start items-center lg:items-start gap-4 flex flex-col sm:flex-row mt-10">
-            <div class="flex-col justify-start items-start gap-4 inline-flex">
+          <div className="justify-center lg:justify-start items-center lg:items-start gap-4 flex flex-col sm:flex-row mt-10">
+            <div className="flex-col justify-start items-start gap-4 inline-flex">
               <Image
                 width={200}
                 height={100}
-                class="sm:max-w-[320px] h-[20vh] max-w-[250px] "
+                className="sm:max-w-[320px] h-[20vh] max-w-[250px] "
                 src={`/image/lifep1.png`}
               />
               <Image
                 width={200}
                 height={0}
-                class="sm:max-w-[320px]  h-[20vh] max-w-[250px]"
+                className="sm:max-w-[320px]  h-[20vh] max-w-[250px]"
                 src={`/image/lifep2.png`}
               />
             </div>
@@ -181,7 +181,7 @@ const StudyInPoland = () => {
               <Image
                 width={200}
                 height={0}
-                class="w-full h-[43vh] object-cover"
+                className="w-full h-[43vh] object-cover"
                 src={`/image/lifep3.png`}
               />
             </div>
@@ -190,73 +190,73 @@ const StudyInPoland = () => {
       </div>
 
       {/* poland top universities */}
-      <div class="max-w-7xl w-full px-[10px] md:px-20  justify-start items-center gap-[82px] flex flex-col-reverse lg:flex-row">
-        <div class="w-[498px] h-[481px] relative ">
-          <div class="w-[421.97px] h-[349px] left-0 top-[72px] absolute">
-            <div class="w-[421.97px] h-[349px] left-0 top-0 absolute">
-              <div class="w-[421.97px] h-[349px] left-0 top-0 absolute "></div>
+      <div className="max-w-7xl w-full px-[10px] md:px-20  justify-start items-center gap-[82px] flex flex-col-reverse lg:flex-row">
+        <div className="w-[498px] h-[481px] relative ">
+          <div className="w-[421.97px] h-[349px] left-0 top-[72px] absolute">
+            <div className="w-[421.97px] h-[349px] left-0 top-0 absolute">
+              <div className="w-[421.97px] h-[349px] left-0 top-0 absolute "></div>
               <Image
                 width={200}
                 height={0}
-                class="w-[510.17px] h-[343.77px] left-[-47.56px] top-0 absolute"
+                className="w-[510.17px] h-[343.77px] left-[-47.56px] top-0 absolute"
                 src={`/image/topumain.png`}
               />
             </div>
-            <div class="w-52 h-[50px] left-[35px] top-[276px] absolute justify-start items-center gap-2 inline-flex">
-              <div class="w-[50px] h-[50px] relative">
-                <div class="w-[50px] h-[50px] left-0 top-0 absolute bg-amber-500 bg-opacity-30 rounded-full"></div>
-                <div class="w-10 h-10 left-[5px] top-[5px] absolute bg-amber-500 bg-opacity-40 rounded-full"></div>
-                <div class="w-[31.14px] h-[31.14px] left-[9px] top-[9px] absolute">
-                  <div class="w-[31.14px] h-[31.14px] left-0 top-0 absolute bg-amber-500 rounded-full"></div>
-                  <div class="w-[17.79px] h-[17.79px] left-[7.41px] top-[7.41px] absolute"></div>
+            <div className="w-52 h-[50px] left-[35px] top-[276px] absolute justify-start items-center gap-2 inline-flex">
+              <div className="w-[50px] h-[50px] relative">
+                <div className="w-[50px] h-[50px] left-0 top-0 absolute bg-amber-500 bg-opacity-30 rounded-full"></div>
+                <div className="w-10 h-10 left-[5px] top-[5px] absolute bg-amber-500 bg-opacity-40 rounded-full"></div>
+                <div className="w-[31.14px] h-[31.14px] left-[9px] top-[9px] absolute">
+                  <div className="w-[31.14px] h-[31.14px] left-0 top-0 absolute bg-amber-500 rounded-full"></div>
+                  <div className="w-[17.79px] h-[17.79px] left-[7.41px] top-[7.41px] absolute"></div>
                 </div>
               </div>
-              <div class="text-white text-lg font-semibold ">
+              <div className="text-white text-lg font-semibold ">
                 Warsaw university
               </div>
             </div>
           </div>
-          <div class="w-[287px] h-[156px] left-0 top-0 absolute">
-            <div class="w-[287px] h-[156px] left-0 top-0 absolute"></div>
+          <div className="w-[287px] h-[156px] left-0 top-0 absolute">
+            <div className="w-[287px] h-[156px] left-0 top-0 absolute"></div>
             <Image
               width={200}
               height={0}
-              class="w-[420px] h-[165px] left-[-47px] top-0 absolute"
+              className="w-[420px] h-[165px] left-[-47px] top-0 absolute"
               src={`/image/topu1.png`}
             />
           </div>
-          <div class="w-[193px] h-[250px] left-[305px] top-[231px] absolute">
-            <div class="w-[193px] h-[250px] left-0 top-0 absolute">
-              <div class="w-[193px] h-[250px] left-0 top-0 absolute "></div>
+          <div className="w-[193px] h-[250px] left-[305px] top-[231px] absolute">
+            <div className="w-[193px] h-[250px] left-0 top-0 absolute">
+              <div className="w-[193px] h-[250px] left-0 top-0 absolute "></div>
               <Image
                 width={200}
                 height={0}
-                class="w-[273px] h-[286px] left-[-32px] top-0 absolute"
+                className="w-[273px] h-[286px] left-[-32px] top-0 absolute"
                 src={`/image/topu2.png`}
               />
             </div>
-            <div class="w-[105px] h-[104px] left-[44px] top-[86px] absolute flex-col justify-start items-center gap-2 inline-flex">
-              <div class="w-[50px] h-[50px] relative">
-                <div class="w-[50px] h-[50px] left-0 top-0 absolute bg-amber-500 bg-opacity-30 rounded-full"></div>
-                <div class="w-10 h-10 left-[5px] top-[5px] absolute bg-amber-500 bg-opacity-40 rounded-full"></div>
-                <div class="w-[31.14px] h-[31.14px] left-[9px] top-[9px] absolute">
-                  <div class="w-[31.14px] h-[31.14px] left-0 top-0 absolute bg-amber-500 rounded-full"></div>
-                  <div class="w-[17.79px] h-[17.79px] left-[7.41px] top-[7.41px] absolute"></div>
+            <div className="w-[105px] h-[104px] left-[44px] top-[86px] absolute flex-col justify-start items-center gap-2 inline-flex">
+              <div className="w-[50px] h-[50px] relative">
+                <div className="w-[50px] h-[50px] left-0 top-0 absolute bg-amber-500 bg-opacity-30 rounded-full"></div>
+                <div className="w-10 h-10 left-[5px] top-[5px] absolute bg-amber-500 bg-opacity-40 rounded-full"></div>
+                <div className="w-[31.14px] h-[31.14px] left-[9px] top-[9px] absolute">
+                  <div className="w-[31.14px] h-[31.14px] left-0 top-0 absolute bg-amber-500 rounded-full"></div>
+                  <div className="w-[17.79px] h-[17.79px] left-[7.41px] top-[7.41px] absolute"></div>
                 </div>
               </div>
-              <div class="text-center text-white text-lg font-bold ">
+              <div className="text-center text-white text-lg font-bold ">
                 Jagiellonian <br />
                 University
               </div>
             </div>
           </div>
         </div>
-        <div class="flex-col justify-start items-start gap-8 inline-flex">
-          <div class=" flex-col justify-start items-start gap-2 flex">
-            <div class="text-sky-950 text-4xl font-bold  text-center lg:text-start">
+        <div className="flex-col justify-start items-start gap-8 inline-flex">
+          <div className=" flex-col justify-start items-start gap-2 flex">
+            <div className="text-sky-950 text-4xl font-bold  text-center lg:text-start">
               Poland’s Top Universities
             </div>
-            <div class="max-w-[658px] text-stone-500 text-lg font-normal  text-center md:text-start">
+            <div className="max-w-[658px] text-stone-500 text-lg font-normal  text-center md:text-start">
               Polish universities always extend a warm welcome to students from
               other countries. The country is always proud of its former
               students, who include Nicolaus Copernicus, a renowned astronomer,
@@ -265,43 +265,43 @@ const StudyInPoland = () => {
               Europe’s oldest universities, is located.
             </div>
           </div>
-          <div class="justify-start items-start gap-2 inline-flex">
-            <div class="flex-col justify-start items-start gap-2 inline-flex">
-              <div class="flex-col justify-start items-start gap-[25px] flex">
-                <div class="text-stone-500 text-lg font-[300]  ">
+          <div className="justify-start items-start gap-2 inline-flex">
+            <div className="flex-col justify-start items-start gap-2 inline-flex">
+              <div className="flex-col justify-start items-start gap-[25px] flex">
+                <div className="text-stone-500 text-lg font-[300]  ">
                   University of Warsaw
                 </div>
               </div>
-              <div class="text-stone-500 text-lg font-[300] ">
+              <div className="text-stone-500 text-lg font-[300] ">
                 Jagiellonian University
               </div>
-              <div class="text-stone-500 text-lg font-[300]  ">
+              <div className="text-stone-500 text-lg font-[300]  ">
                 Warsaw University of Technology
               </div>
-              <div class="text-stone-500 text-lg font-[300]  ">
+              <div className="text-stone-500 text-lg font-[300]  ">
                 Wroclaw University of science and technology
               </div>
-              <div class="text-stone-500 text-lg font-[300]  ">
+              <div className="text-stone-500 text-lg font-[300]  ">
                 Collegium Medicum Jagiellonian University
               </div>
-              <div class="text-stone-500 text-lg font-[300]  ">
+              <div className="text-stone-500 text-lg font-[300]  ">
                 Medical University of Lodz
               </div>
             </div>
-            <div class="flex-col justify-start items-start gap-4 inline-flex">
-              <div class="text-stone-500 text-lg font-[300]  ">
+            <div className="flex-col justify-start items-start gap-4 inline-flex">
+              <div className="text-stone-500 text-lg font-[300]  ">
                 Medical University of Lublin
               </div>
-              <div class="text-stone-500 text-lg font-[300]  ">
+              <div className="text-stone-500 text-lg font-[300]  ">
                 Medical University of Wroclaw
               </div>
-              <div class="text-stone-500 text-lg font-[300]  ">
+              <div className="text-stone-500 text-lg font-[300]  ">
                 Medical University of Gdansk
               </div>
-              <div class="text-stone-500 text-lg font-[300]  ">
+              <div className="text-stone-500 text-lg font-[300]  ">
                 University of Warmia and Mazury
               </div>
-              <div class="text-stone-500 text-lg font-[300]  ">
+              <div className="text-stone-500 text-lg font-[300]  ">
                 Medical University of Warsaw
               </div>
             </div>
@@ -311,13 +311,13 @@ const StudyInPoland = () => {
 
       {/* education syatem in poland */}
 
-      <div class="max-w-7xl w-full mt-20 px-[26px] py-[87px] bg-sky-950 justify-center items-center inline-flex">
-        <div class="self-stretch flex-col justify-start items-center gap-8 inline-flex">
-          <div class="max-w-[585px] text-center text-amber-500 text-[32px] font-bold ">
+      <div className="max-w-7xl w-full mt-20 px-[26px] py-[87px] bg-sky-950 justify-center items-center inline-flex">
+        <div className="self-stretch flex-col justify-start items-center gap-8 inline-flex">
+          <div className="max-w-[585px] text-center text-amber-500 text-[32px] font-bold ">
             Education System in Poland
           </div>
-          <div class="justify-start items-start gap-20 flex flex-col md:flex-row">
-            <div class="max-w-[614px] text-white text-lg font-[300] ">
+          <div className="justify-start items-start gap-20 flex flex-col md:flex-row">
+            <div className="max-w-[614px] text-white text-lg font-[300] ">
               No entrance exams like the GRE or GMAT must be taken to be
               admitted to any higher education programme in Poland. After
               completing their upper secondary school studies, one will qualify
@@ -329,7 +329,7 @@ const StudyInPoland = () => {
               minimal language competency set by the individual Polish
               university.
             </div>
-            <div class="max-w-[566px]  text-white text-lg font-[300] ">
+            <div className="max-w-[566px]  text-white text-lg font-[300] ">
               To meet the language skills requirement, a minimum score of 6.5
               and 6.0 is a must to attend a Master’s or Bachelor’s degree
               course, respectively, at a Polish university. The Cambridge
@@ -344,12 +344,12 @@ const StudyInPoland = () => {
       </div>
 
       {/* poland univeristy fees */}
-      <div class="max-w-7xl w-full px-[10px] md:px-20  flex-col justify-start items-center gap-[75px] inline-flex py-20">
-        <div class="flex-col justify-start items-center gap-[25px] flex">
-          <div class="max-w-[358px] text-sky-950 text-[32px] font-bold ">
+      <div className="max-w-7xl w-full px-[10px] md:px-20  flex-col justify-start items-center gap-[75px] inline-flex py-20">
+        <div className="flex-col justify-start items-center gap-[25px] flex">
+          <div className="max-w-[358px] text-sky-950 text-[32px] font-bold ">
             Poland University Fees:
           </div>
-          <div class="max-w-[1107px] text-center text-neutral-600 text-lg font-[350] ">
+          <div className="max-w-[1107px] text-center text-neutral-600 text-lg font-[350] ">
             No entrance exams like the GRE or GMAT must be taken to be admitted
             to any higher education programme in Poland. After completing their
             upper secondary school studies, one will qualify to apply to higher
@@ -361,38 +361,38 @@ const StudyInPoland = () => {
             by the individual Polish university.
           </div>
         </div>
-        <div class="justify-center items-start gap-[45px] flex flex-col md:flex-row">
-          <div class="max-w-[257px] text-sky-950 text-lg font-bold ">
+        <div className="justify-center items-start gap-[45px] flex flex-col md:flex-row">
+          <div className="max-w-[257px] text-sky-950 text-lg font-bold ">
             Courses <br />
             Tuition Fees in Poland
           </div>
-          <div class="justify-start items-start gap-4 flex flex-col md:flex-row">
-            <div class="flex-col justify-start items-start gap-4 inline-flex">
-              <div class="ma-w-[358px] text-neutral-600 text-lg font-[300] ">
+          <div className="justify-start items-start gap-4 flex flex-col md:flex-row">
+            <div className="flex-col justify-start items-start gap-4 inline-flex">
+              <div className="ma-w-[358px] text-neutral-600 text-lg font-[300] ">
                 Bachelor and Masters 2000 – 4000 Euro / Year
               </div>
-              <div class="text-neutral-600 text-lg font-[300] ">
+              <div className="text-neutral-600 text-lg font-[300] ">
                 PhD 3000 Euro / Year
               </div>
-              <div class="text-neutral-600 text-lg font-[300] ">
+              <div className="text-neutral-600 text-lg font-[300] ">
                 Medicine and MBA 8000 – 12000 Euro / Year
               </div>
             </div>
-            <div class="flex-col justify-start items-start gap-4 inline-flex">
-              <div class="text-neutral-600 text-lg font-[300] ">
+            <div className="flex-col justify-start items-start gap-4 inline-flex">
+              <div className="text-neutral-600 text-lg font-[300] ">
                 Vocational Studies 3000 Euro / Year
               </div>
-              <div class="text-neutral-600 text-lg font-[300] ">
+              <div className="text-neutral-600 text-lg font-[300] ">
                 Language and Foundation Courses 2000 Euro / Year
               </div>
             </div>
           </div>
         </div>
-        <div class="w-full  justify-start items-start gap-8 flex flex-col md:flex-row">
-          <div class="max-w-[500px] text-sky-950 text-[32px] font-bold  text-center md:text-start">
+        <div className="w-full  justify-start items-start gap-8 flex flex-col md:flex-row">
+          <div className="max-w-[500px] text-sky-950 text-[32px] font-bold  text-center md:text-start">
             Living Costs for International Students to Study in Poland
           </div>
-          <div class="max-w-[553px] text-neutral-600 text-lg font-normal  text-center md:text-start">
+          <div className="max-w-[553px] text-neutral-600 text-lg font-normal  text-center md:text-start">
             Living costs in Poland largely depend on where you study and live.
             You will always pay more to live in a city like Warsaw than in a
             rural location. International students’ living costs in Poland range
@@ -404,7 +404,7 @@ const StudyInPoland = () => {
       </div>
 
       {/* accomododation */}
-      <div class="max-w-7xl w-full py-10 px-[10px] md:px-20  justify-start items-center gap-[75px] flex flex-col md:flex-row">
+      <div className="max-w-7xl w-full py-10 px-[10px] md:px-20  justify-start items-center gap-[75px] flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 flex flex-col items-center">
           <div className="relative w-[full] md:w-[60%] mr-10">
             <Image
@@ -423,24 +423,24 @@ const StudyInPoland = () => {
             />
           </div>
         </div>
-        <div class="w-full md:w-1/2 flex-col justify-start items-start gap-6 inline-flex">
-          <div class="max-w-[329px] text-sky-950 text-[32px] font-bold  text-center md:text-start">
+        <div className="w-full md:w-1/2 flex-col justify-start items-start gap-6 inline-flex">
+          <div className="max-w-[329px] text-sky-950 text-[32px] font-bold  text-center md:text-start">
             Accommodation
           </div>
-          <div class=" text-neutral-600 text-lg font-normal ">
+          <div className=" text-neutral-600 text-lg font-normal ">
             In Poland, there are two kinds of lodging—those at the university
             and those for private students. There are few university dormitories
             in Poland, although they are less expensive and naturally closer to
             the universities. The requirements and rents are higher in private
             renting units.
           </div>
-          <div class=" text-neutral-600 text-lg font-normal ">
+          <div className=" text-neutral-600 text-lg font-normal ">
             Private Rental Apartments for Students 350 to 400 EUR / Month
           </div>
-          <div class="] text-neutral-600 text-lg font-normal ">
+          <div className="] text-neutral-600 text-lg font-normal ">
             Campus Accommodation 170 to 200 EUR / Month
           </div>
-          <div class=" text-neutral-600 text-lg font-normal ">
+          <div className=" text-neutral-600 text-lg font-normal ">
             In locations like Warsaw, the cost of living for international
             students is higher in Poland. One-bedroom apartments typically cost
             between 360 and 500 euros per month to rent.
@@ -450,10 +450,10 @@ const StudyInPoland = () => {
 
       {/*   food express and transportation */}
 
-      <div class="max--7xl w-full justify-start px-[10px] md:px-20 items-start gap-[46px]  flex flex-col md:flex-row">
-        <div class="px-[20px] pt-14 w-full md:w-1/2 pb-[146px] bg-sky-50 justify-start items-center flex">
-          <div class="self-stretch flex-col justify-start items-start gap-8 inline-flex">
-            <div class="w-12 h-12 relative">
+      <div className="max--7xl w-full justify-start px-[10px] md:px-20 items-start gap-[46px]  flex flex-col md:flex-row">
+        <div className="px-[20px] pt-14 w-full md:w-1/2 pb-[146px] bg-sky-50 justify-start items-center flex">
+          <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex">
+            <div className="w-12 h-12 relative">
               <svg
                 width="48"
                 height="48"
@@ -469,10 +469,10 @@ const StudyInPoland = () => {
                 />
               </svg>
             </div>
-            <div class="max-w-[509px] text-sky-950 text-2xl font-bold ">
+            <div className="max-w-[509px] text-sky-950 text-2xl font-bold ">
               Food Expenses
             </div>
-            <div class="md:max-w-[509px] max-w-[600px] h-[168px] text-zinc-600 text-lg font-normal ">
+            <div className="md:max-w-[509px] max-w-[600px] h-[168px] text-zinc-600 text-lg font-normal ">
               The average monthly cost of meals for an international student in
               Poland is between 100 and 150 euros. Several affordable grocery
               options for international students can help you lower the cost of
@@ -482,9 +482,9 @@ const StudyInPoland = () => {
             </div>
           </div>
         </div>
-        <div class=" px-[20px] md:pt-14 w-full pb-[7px] md:w-1/2 bg-sky-50 justify-start items-center flex">
-          <div class="self-stretch flex-col justify-start items-start gap-6 inline-flex">
-            <div class="w-10 h-10 relative">
+        <div className=" px-[20px] md:pt-14 w-full pb-[7px] md:w-1/2 bg-sky-50 justify-start items-center flex">
+          <div className="self-stretch flex-col justify-start items-start gap-6 inline-flex">
+            <div className="w-10 h-10 relative">
               <svg
                 width="40"
                 height="40"
@@ -501,15 +501,17 @@ const StudyInPoland = () => {
                 />
               </svg>
             </div>
-            <div class="text-sky-950 text-2xl font-bold ">Transportation</div>
-            <div class="md:max-w-[509px] max-w-[600px] text-zinc-600 text-lg font-normal ">
+            <div className="text-sky-950 text-2xl font-bold ">
+              Transportation
+            </div>
+            <div className="md:max-w-[509px] max-w-[600px] text-zinc-600 text-lg font-normal ">
               The prices of gasoline keep changing. However, the average is 1
               euro a litre. If the place students are staying is nearby the
               University, Poland is a very Pedestrian friendly country. A
               semester pass from the Universities costs around 50 euros for
               students in Polish Universities.
             </div>
-            <div class="md:max-w-[409px] max-w-[600px] text-zinc-600 text-lg font-normal ">
+            <div className="md:max-w-[409px] max-w-[600px] text-zinc-600 text-lg font-normal ">
               These are some of the regular living costs in Poland for
               international students. There are some miscellaneous costs of
               stationary, internet and other expenses that will be added, and
@@ -521,22 +523,22 @@ const StudyInPoland = () => {
       </div>
 
       {/* types of visa in poland */}
-      <div class="w-full px-[20px] max-w-7xl py-14  flex-col justify-start items-center gap-12 inline-flex">
-        <div class="flex-col justify-start items-center gap-[27px] flex">
-          <div class="max-w-[638px] text-center text-sky-950 text-[32px] font-bold ">
+      <div className="w-full px-[20px] max-w-7xl py-14  flex-col justify-start items-center gap-12 inline-flex">
+        <div className="flex-col justify-start items-center gap-[27px] flex">
+          <div className="max-w-[638px] text-center text-sky-950 text-[32px] font-bold ">
             Types of Visa in Poland
           </div>
-          <div class="max-w-[723px]  text-center text-zinc-800 text-lg font-normal ">
+          <div className="max-w-[723px]  text-center text-zinc-800 text-lg font-normal ">
             The Republic of Poland’s Consulate General in Poland offers two
             different types of visas. The long-stay National Visa in Poland is
             known as Type D Visa, and the short-stay Schengen visa is known as a
             Type C visa.
           </div>
         </div>
-        <div class="justify-start items-start gap-[37px] flex flex-col md:flex-row">
-          <div class="px-8 py-6 bg-sky-50 flex-col justify-start items-start gap-2.5 inline-flex">
-            <div class="justify-start items-start sm:items-center gap-[23px] flex flex-col sm:flex-row">
-              <div class="w-[69px] h-[69px] relative">
+        <div className="justify-start items-start gap-[37px] flex flex-col md:flex-row">
+          <div className="px-8 py-6 bg-sky-50 flex-col justify-start items-start gap-2.5 inline-flex">
+            <div className="justify-start items-start sm:items-center gap-[23px] flex flex-col sm:flex-row">
+              <div className="w-[69px] h-[69px] relative">
                 <svg
                   width="69"
                   height="69"
@@ -552,11 +554,11 @@ const StudyInPoland = () => {
                   />
                 </svg>
               </div>
-              <div class="flex-col justify-start items-start gap-4 inline-flex">
-                <div class="text-sky-950 text-2xl font-semibold ">
+              <div className="flex-col justify-start items-start gap-4 inline-flex">
+                <div className="text-sky-950 text-2xl font-semibold ">
                   Type C Visa
                 </div>
-                <div class="max-w-[454px] text-zinc-800 text-lg font-normal ">
+                <div className="max-w-[454px] text-zinc-800 text-lg font-normal ">
                   The Schengen Type C visa is for travellers intent to stay in
                   Poland for up to 90 days. The visa permits multiple entrances
                   and a stay of 90 days in Poland within 180 days. Most students
@@ -566,9 +568,9 @@ const StudyInPoland = () => {
               </div>
             </div>
           </div>
-          <div class="px-8 py-6 bg-sky-50 flex-col justify-start items-start gap-2.5 inline-flex">
-            <div class="jjustify-start items-start sm:items-center gap-[23px] flex flex-col sm:flex-row">
-              <div class="w-[69px] h-[69px] relative">
+          <div className="px-8 py-6 bg-sky-50 flex-col justify-start items-start gap-2.5 inline-flex">
+            <div className="jjustify-start items-start sm:items-center gap-[23px] flex flex-col sm:flex-row">
+              <div className="w-[69px] h-[69px] relative">
                 <svg
                   width="69"
                   height="69"
@@ -584,11 +586,11 @@ const StudyInPoland = () => {
                   />
                 </svg>
               </div>
-              <div class="flex-col justify-start items-start gap-4 inline-flex">
-                <div class="text-sky-950 text-2xl font-semibold ">
+              <div className="flex-col justify-start items-start gap-4 inline-flex">
+                <div className="text-sky-950 text-2xl font-semibold ">
                   Type D Visa
                 </div>
-                <div class="max-w-[456px]  text-zinc-800 text-lg font-normal ">
+                <div className="max-w-[456px]  text-zinc-800 text-lg font-normal ">
                   A long-stay visa exists for students planning to stay in
                   Poland for over 90 days. We will go through specific
                   prerequisites for the Poland National Visa in more detail. The
@@ -603,7 +605,7 @@ const StudyInPoland = () => {
       </div>
 
       {/* document required form student */}
-      <div class="w-full max-w-7xl px-[20px] md:px-[122px] ] py-[54px] mt-10  bg-sky-950 justify-center items-center flex flex-col gap-10">
+      <div className="w-full max-w-7xl px-[20px] md:px-[122px] ] py-[54px] mt-10  bg-sky-950 justify-center items-center flex flex-col gap-10">
         <h1 className="text-[#FFA800] text-center text-[32px] font-bold max-w-[562px]">
           Documents Required for Student Visa to Study in Poland
         </h1>
@@ -926,12 +928,12 @@ const StudyInPoland = () => {
 
       {/* owrk while you earn */}
 
-      <div class="max-w-7xl w-full py-20  justify-center items-start gap-9 flex flex-col px-[20px] md:px-10 md:flex-row">
-        <div class="w-[473px] text-sky-950 text-[32px] font-bold ">
+      <div className="max-w-7xl w-full py-20  justify-center items-start gap-9 flex flex-col px-[20px] md:px-10 md:flex-row">
+        <div className="w-[473px] text-sky-950 text-[32px] font-bold ">
           Work while you Earn
         </div>
-        <div class="flex-col justify-start items-center gap-9 inline-flex">
-          <div class="max-w-[593px] text-neutral-700 text-lg font-normal ">
+        <div className="flex-col justify-start items-center gap-9 inline-flex">
+          <div className="max-w-[593px] text-neutral-700 text-lg font-normal ">
             In Polish Cities, getting part-time work is extremely simple. There
             are a ton of options for international students to work part-time.
             Hence, students might work part-time jobs during their free time to
@@ -940,7 +942,7 @@ const StudyInPoland = () => {
             However, the working hours in Poland vary depending on where you are
             from.
           </div>
-          <div class="max-w-[593px] text-neutral-700 text-lg font-normal ">
+          <div className="max-w-[593px] text-neutral-700 text-lg font-normal ">
             Polish universities also provide grants and scholarships to help
             students with tuition costs. Students can therefore study in Poland
             without any concerns owing to all these amenities.
@@ -949,19 +951,19 @@ const StudyInPoland = () => {
       </div>
 
       {/* process of application */}
-      <div class="max-w-7xl w-full md:px-20 px-[20px]  flex-col justify-start items-center gap-12 inline-flex">
-        <div class="flex-col justify-start items-center gap-6 flex">
-          <div class="text-sky-900 text-3xl md:text-4xl font-bold  text-center">
+      <div className="max-w-7xl w-full md:px-20 px-[20px]  flex-col justify-start items-center gap-12 inline-flex">
+        <div className="flex-col justify-start items-center gap-6 flex">
+          <div className="text-sky-900 text-3xl md:text-4xl font-bold  text-center">
             Process of Application
           </div>
-          <div class="text-neutral-500 text-lg font-normal  text-center">
+          <div className="text-neutral-500 text-lg font-normal  text-center">
             The process of application is a set of steps that need to be
             followed.
           </div>
         </div>
-        <div class="justify-start items-start gap-12 flex flex-col md:flex-row">
-          <div class="justify-start items-center gap-6 flex">
-            <div class="w-10 h-10 relative">
+        <div className="justify-start items-start gap-12 flex flex-col md:flex-row">
+          <div className="justify-start items-center gap-6 flex">
+            <div className="w-10 h-10 relative">
               <svg
                 width="40"
                 height="41"
@@ -975,11 +977,11 @@ const StudyInPoland = () => {
                 />
               </svg>
             </div>
-            <div class="flex-col justify-start items-start gap-[23px] inline-flex">
-              <div class="text-sky-950 text-xl font-bold ">
+            <div className="flex-col justify-start items-start gap-[23px] inline-flex">
+              <div className="text-sky-950 text-xl font-bold ">
                 Find a Study Programme:
               </div>
-              <div class="max-w-[530px]  text-black text-base font-normal ">
+              <div className="max-w-[530px]  text-black text-base font-normal ">
                 One of the most important things that need to decide is the
                 right programme that you are willing to apply for. Finding the
                 details of the programme is important. It is important to
@@ -990,8 +992,8 @@ const StudyInPoland = () => {
               </div>
             </div>
           </div>
-          <div class="justify-start items-center gap-6 flex">
-            <div class="w-10 h-10 relative">
+          <div className="justify-start items-center gap-6 flex">
+            <div className="w-10 h-10 relative">
               <svg
                 width="40"
                 height="40"
@@ -1014,11 +1016,11 @@ const StudyInPoland = () => {
                 </defs>
               </svg>
             </div>
-            <div class="flex-col justify-start items-start gap-[23px] inline-flex">
-              <div class="text-sky-950 text-xl font-bold ">
+            <div className="flex-col justify-start items-start gap-[23px] inline-flex">
+              <div className="text-sky-950 text-xl font-bold ">
                 Meet All Requirements
               </div>
-              <div class="max-w-[530px]  text-black text-base font-normal ">
+              <div className="max-w-[530px]  text-black text-base font-normal ">
                 There are certain requirements for application in the course.
                 One of the most important requirements for studying in Poland is
                 that a student needs to complete a secondary level of education
@@ -1032,9 +1034,9 @@ const StudyInPoland = () => {
             </div>
           </div>
         </div>
-        <div class="justify-start items-start gap-12 flex flex-col md:flex-row">
-          <div class="justify-start items-center gap-6 flex">
-            <div class="w-10 h-10 relative">
+        <div className="justify-start items-start gap-12 flex flex-col md:flex-row">
+          <div className="justify-start items-center gap-6 flex">
+            <div className="w-10 h-10 relative">
               <svg
                 width="40"
                 height="40"
@@ -1048,11 +1050,11 @@ const StudyInPoland = () => {
                 />
               </svg>
             </div>
-            <div class="flex-col justify-start items-start gap-[23px] inline-flex">
-              <div class="text-sky-950 text-xl font-bold ">
+            <div className="flex-col justify-start items-start gap-[23px] inline-flex">
+              <div className="text-sky-950 text-xl font-bold ">
                 Learn The Country Language
               </div>
-              <div class="max-w-[530px] text-black text-base font-normal ">
+              <div className="max-w-[530px] text-black text-base font-normal ">
                 Learning the local language of the country helps communicate in
                 the country. The basic idea of the language would allow a smooth
                 way to navigate through the country. It is also essential that
@@ -1062,8 +1064,8 @@ const StudyInPoland = () => {
               </div>
             </div>
           </div>
-          <div class="justify-start items-center gap-6 flex">
-            <div class="w-10 h-10 relative">
+          <div className="justify-start items-center gap-6 flex">
+            <div className="w-10 h-10 relative">
               <svg
                 width="40"
                 height="41"
@@ -1079,11 +1081,11 @@ const StudyInPoland = () => {
                 />
               </svg>
             </div>
-            <div class="flex-col justify-start items-start gap-[23px] inline-flex">
-              <div class="text-sky-950 text-xl font-bold ">
+            <div className="flex-col justify-start items-start gap-[23px] inline-flex">
+              <div className="text-sky-950 text-xl font-bold ">
                 Find Financial Resources
               </div>
-              <div class="max-w-[530px]  text-black text-base font-normal ">
+              <div className="max-w-[530px]  text-black text-base font-normal ">
                 Students belonging to the low-income households can avail
                 benefits associated with a free meal, leaving and various other
                 social benefits. Disabled students are also eligible for the
@@ -1094,9 +1096,9 @@ const StudyInPoland = () => {
             </div>
           </div>
         </div>
-        <div class="justify-start items-start gap-12 flex flex-col md:flex-row">
-          <div class="justify-start items-center gap-6 flex">
-            <div class="w-10 h-10 relative">
+        <div className="justify-start items-start gap-12 flex flex-col md:flex-row">
+          <div className="justify-start items-center gap-6 flex">
+            <div className="w-10 h-10 relative">
               <svg
                 width="40"
                 height="41"
@@ -1116,11 +1118,11 @@ const StudyInPoland = () => {
                 />
               </svg>
             </div>
-            <div class="flex-col justify-start items-start gap-[23px] inline-flex">
-              <div class="text-sky-950 text-xl font-bold ">
+            <div className="flex-col justify-start items-start gap-[23px] inline-flex">
+              <div className="text-sky-950 text-xl font-bold ">
                 Apply For Admission
               </div>
-              <div class="max-w-[530px]  text-black text-base font-normal ">
+              <div className="max-w-[530px]  text-black text-base font-normal ">
                 Once the student decides to go for a specific course then the
                 process of application for the course needs to be initiated. The
                 application for the course can be done online. The documents
@@ -1132,8 +1134,8 @@ const StudyInPoland = () => {
               </div>
             </div>
           </div>
-          <div class="justify-start items-center gap-6 flex">
-            <div class="w-10 h-10 relative">
+          <div className="justify-start items-center gap-6 flex">
+            <div className="w-10 h-10 relative">
               <svg
                 width="40"
                 height="41"
@@ -1153,11 +1155,11 @@ const StudyInPoland = () => {
                 />
               </svg>
             </div>
-            <div class="flex-col justify-start items-start gap-[23px] inline-flex">
-              <div class="max-w-[329px] text-sky-950 text-xl font-bold ">
+            <div className="flex-col justify-start items-start gap-[23px] inline-flex">
+              <div className="max-w-[329px] text-sky-950 text-xl font-bold ">
                 Get Your Country Student Visa
               </div>
-              <div class="max-w-[530px]  text-black text-base font-normal ">
+              <div className="max-w-[530px]  text-black text-base font-normal ">
                 Once the process of application is being initiated the student
                 must apply for the Visa. It takes some time so it is better to
                 apply early.
@@ -1168,36 +1170,36 @@ const StudyInPoland = () => {
       </div>
 
       {/* some questions */}
-      <div class="w-full px-[20px] md:px-[146px]  py-[57px] mt-20  bg-sky-950  items-center flex justify-center">
-        <div class="self-stretch justify-start items-start gap-[60px] flex flex-col md:flex-row">
-          <div class="flex-col md:w-1/2 justify-center md:justify-start items-center md:items-start  w-full gap-6 inline-flex">
-            <div class="p-4 w-full bg-sky-900 rounded-lg flex-col justify-start items-start gap-2.5 flex">
-              <div class="justify-start items-center gap-4 inline-flex">
-                <div class="max-w-[408px]  text-white text-lg font-normal ">
+      <div className="w-full px-[20px] md:px-[146px]  py-[57px] mt-20  bg-sky-950  items-center flex justify-center">
+        <div className="self-stretch justify-start items-start gap-[60px] flex flex-col md:flex-row">
+          <div className="flex-col md:w-1/2 justify-center md:justify-start items-center md:items-start  w-full gap-6 inline-flex">
+            <div className="p-4 w-full bg-sky-900 rounded-lg flex-col justify-start items-start gap-2.5 flex">
+              <div className="justify-start items-center gap-4 inline-flex">
+                <div className="max-w-[408px]  text-white text-lg font-normal ">
                   Can international students work part-time in Poland while they
                   are in their studies?
                 </div>
-                <div class="w-6 h-6 relative origin-top-left -rotate-90"></div>
+                <div className="w-6 h-6 relative origin-top-left -rotate-90"></div>
               </div>
             </div>
-            <div class="p-4  w-full bg-sky-900 rounded-lg flex-col justify-start items-start gap-2.5 flex">
-              <div class="justify-start items-end gap-4 inline-flex">
-                <div class="max-w-[408px]  text-white text-lg font-normal ">
+            <div className="p-4  w-full bg-sky-900 rounded-lg flex-col justify-start items-start gap-2.5 flex">
+              <div className="justify-start items-end gap-4 inline-flex">
+                <div className="max-w-[408px]  text-white text-lg font-normal ">
                   Do I have to speak Polish?
                 </div>
-                <div class="w-6 h-6 relative"></div>
+                <div className="w-6 h-6 relative"></div>
               </div>
             </div>
-            <div class="p-4 w-full bg-sky-900 rounded-lg flex-col justify-start items-start gap-2.5 flex">
-              <div class="justify-start items-center gap-4 inline-flex">
-                <div class="max--w-[408px]  text-white text-lg font-normal ">
+            <div className="p-4 w-full bg-sky-900 rounded-lg flex-col justify-start items-start gap-2.5 flex">
+              <div className="justify-start items-center gap-4 inline-flex">
+                <div className="max--w-[408px]  text-white text-lg font-normal ">
                   How can you explore a Polish city?
                 </div>
-                <div class="w-6 h-6 relative"></div>
+                <div className="w-6 h-6 relative"></div>
               </div>
             </div>
           </div>
-          <div class="max-w-[730px] w-full md:w-1/2  text-white text-lg font-normal ">
+          <div className="max-w-[730px] w-full md:w-1/2  text-white text-lg font-normal ">
             Yes, international students can work in Poland while attending their
             college studies. Non-EU students can work 20 hours maximum in a
             week. Once your study program is completed at a Polish university,

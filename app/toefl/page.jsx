@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import LinkComponent from "@/components/LinkComponet";
-import Navbar from "@/components/Navbar";
-import Parteners from "@/components/Parteners";
-import Footer from "@/components/Footer";
+import LinkComponent from "../../components/LinkComponet";
+import Navbar from "../../components/Navbar";
+import Parteners from "../../components/Parteners";
+import Footer from "../../components/Footer";
 
 const Toefl = () => {
   return (
