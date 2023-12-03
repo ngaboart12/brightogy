@@ -1,13 +1,11 @@
 import React from 'react';
 import Footer from '../../components/Footer';
 import LinkComponent from '../../components/LinkComponet';
-
 import Navbar from '../../components/Navbar';
-
 
 const StudyInCanada = () => {
   return (
-    <div className="flex flex-col items-center  w-full">
+    <div className="flex flex-col items-center w-full">
       <LinkComponent />
       <Navbar />
 
