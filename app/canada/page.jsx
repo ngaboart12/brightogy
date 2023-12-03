@@ -3,8 +3,8 @@ import Footer from '../../components/Footer';
 import LinkComponent from '../../components/LinkComponet';
 import Navbar from '../../components/Navbar';
 
-const StudyInCanada = () => {
-  return (
+const StudyInCanada = () => (
+
     <div className="flex flex-col items-center w-full">
       <LinkComponent />
       <Navbar />
@@ -1627,6 +1627,6 @@ const StudyInCanada = () => {
       <Footer />
     </div>
   );
-};
+
 
 export default StudyInCanada;
