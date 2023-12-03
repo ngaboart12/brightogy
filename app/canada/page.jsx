@@ -1,7 +1,7 @@
-import Footer from "@/components/Footer";
-import LinkComponent from "@/components/LinkComponet";
+import Footer from "../../components/Footer";
+import LinkComponent from "../../components/LinkComponet";
 
-import Navbar from "@/components/Navbar";
+import Navbar from "../../components/Navbar";
 import React from "react";
 
 const StudyInCanada = () => {
