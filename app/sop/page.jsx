@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import LinkComponent from "../../components/LinkComponet";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import LinkComponent from "@/components/LinkComponet";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const Sop = () => {
   return (

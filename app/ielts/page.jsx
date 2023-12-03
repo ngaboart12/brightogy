@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import LinkComponent2 from "../../components/LinkComponet2";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import LinkComponent2 from "@/components/LinkComponet2";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const Ielts = () => {
   return (
