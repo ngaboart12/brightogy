@@ -10,8 +10,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 
-import Hero from '../../components/home/Hero';
-import ContactUS from '../../components/home/ContactUS';
+import Hero from '@/components/home/Hero';
+import ContactUS from '@/components/home/ContactUS';
 
 export default function Home() {
   const countries = [
