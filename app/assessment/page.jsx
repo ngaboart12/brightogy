@@ -30,7 +30,7 @@ const Assessment = () => {
     },
     educationProgram: {
       programs: [],
-    },
+    }, 
     cannadian: {
       firstOfficialLanguage: "",
       firstReadProficiency: "",
