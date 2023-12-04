@@ -114,7 +114,7 @@ const Navbar2 = () => {
             </ul>
           </li>
           <li>
-            <a href="/notfound">EVENTS</a>
+            <a href="/events">EVENTS</a>
           </li>
           <li>
             <a href="/faqpage">FAQ</a>

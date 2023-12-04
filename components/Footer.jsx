@@ -157,10 +157,10 @@ const Footer = () => {
             <a href="/gallery" className="text-white text-[14px] font-[300]">
               Gallery
             </a>
-            <a href="/app" className="text-white text-[14px] font-[300]">
+            <a href="/application" className="text-white text-[14px] font-[300]">
               Aplly now
             </a>
-            <a href="/ass" className="text-white text-[14px] font-[300]">
+            <a href="/assessment" className="text-white text-[14px] font-[300]">
               Assessment
             </a>
           </div>
