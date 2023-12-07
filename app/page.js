@@ -1,7 +1,7 @@
 "use client"
 import Footer from '../components/Footer'
 import Image from 'next/image'
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,12 +12,18 @@ import "swiper/css";
 
 import Hero from '../components/home/Hero';
 import ContactUS from '../components/home/ContactUS';
+import StartAssessment from '../components/home/StartAssessment';
 
 export default function Home() {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
   const countries = [
-    { name: "USA", imageSrc: '/image/up1.png' },
-    { name: "CANADA", imageSrc: '/image/up2.png' },
-    { name: "CHINA", imageSrc:  '/image/up3.png'},
+    { name: "USA", imageSrc: '/image/usa.png' },
+    { name: "CANADA", imageSrc: '/image/canada.png' },
+    { name: "UK", imageSrc:  '/image/uk.png'},
+    { name: "POLAND", imageSrc: '/image/up1.png' },
     { name: "POLAND", imageSrc: '/image/up1.png' },
     // Add more countries as needed
   
@@ -46,11 +52,11 @@ export default function Home() {
         spaceBetween: 20,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 30,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 40,
       },
 
@@ -270,12 +276,13 @@ export default function Home() {
             <p className="text-white max-w-[350px] text-center md:text-start font-extralight">
               Admissions are opened for January, February and March Intake 2024
             </p>
-            <a
-              href="/"
-              className="py-[12px] px-[24px] bg-[#FFA800] hover:bg-[#FFA800]/80 w-[150px]  flex justify-center text-black font-light rounded-full"
+            <p
+          
+              onClick={openModal}
+              className="py-[12px] px-[24px] bg-[#FFA800] hover:scale-110  flex justify-center text-black font-[500] rounded-full"
             >
-              Apply now
-            </a>
+              Start Assesssment
+            </p>
           </div>
           <div className="flex flex-col gap-2 items-center md:items-start">
             <h1 className="text-[#FFA800] text-[24px] font-normal text-center md:text-start">
@@ -286,12 +293,13 @@ export default function Home() {
             </p>
             <a
               href="/"
-              className="py-[12px] px-[24px] bg-[#FFA800] hover:bg-[#FFA800]/80 w-[150px]  flex justify-center text-black font-light rounded-full"
+              className="py-[12px] px-[24px] bg-[#FFA800] hover:scale-110 flex justify-center text-black font-[500] rounded-full"
             >
               Book Now
             </a>
           </div>
         </div>
+        {isModalOpen && <StartAssessment onClose={closeModal} />}
       </div>
 
       {/* abou us  */}
@@ -331,54 +339,42 @@ export default function Home() {
 
       {/* why choose us */}
 
-      <div className="relative flex py-6 w-full h-full ">
-        <div className=" absolute w-full h-full -z-10">
-          <Image src={`/image/chooseus.svg`} alt="" width={300} height={0} className="w-full h-full object-cover" />
-        </div>
-        <div className="w-full ml-auto pt-20 px-10 gap-14 flex flex-col md:w-1/2 ">
-          <h1 className="text-[32px] font-bold text-white">Why choose us</h1>
-          <div className="flex gap-4">
-            <Image src={`/image/contract.svg`} width={300} height={0} alt="" className='w-20 h-20' />
-            <div className="flex flex-col gap-2">
-              <h1 className="text-[24px] text-[#FFA800] font-bold">
-                Success rate
-              </h1>
-              <p className="text-[18px] leading-4 text-white font-light max-w-[370px]">
-                Our Team works to meet client requirement and make sure success
-                of application process
-              </p>
+      <div className="max-w-7xl relative flex flex-col py-6 w-full h-full items-center gap-6 px-[20px] sm:px-20 ">
+        <h1 className='text-[32px] font-bold text-[#FFA800]'>Why choose us</h1>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10'>
+          <div className='flex flex-row gap-4'>
+            <Image src={`/image/contract.svg`} width={200} height={100} alt='' className='w-20 h-20' />
+            <div className='flex flex-col gap-2'>
+              <span className='text-[24px] text-[#07294D]'>Success rate</span>
+              <span>Our Team works to meet client requirement and make sure success of application process</span>
             </div>
           </div>
-          <div className="flex gap-4">
-            <Image src={`/image/answer.svg`} width={200} height={0} alt="" className='w-20 h-20'/>
-            <div className="flex flex-col gap-2">
-              <h1 className="text-[24px] text-[#FFA800] font-bold">
-                Free Assistance
-              </h1>
-              <p className="text-[18px] leading-4 text-white font-light max-w-[370px]">
-                Get full free guidance for your study preference with Our team
-              </p>
+          <div className='flex flex-row gap-4'>
+            <Image src={`/image/answer.svg`} width={200} height={100} alt='' className='w-20 h-20' />
+            <div className='flex flex-col gap-2'>
+              <span className='text-[24px] text-[#07294D]'>Free Assistance</span>
+              <span>Get full free guidance for your study preference with Our team</span>
             </div>
           </div>
-          <div className="flex gap-4">
-            <Image src={`/image/book.svg`} width={200} height={0} alt="" className='w-20 h-20' />
-            <div className="flex flex-col gap-2">
-              <h1 className="text-[24px] text-[#FFA800] font-bold">
-                Experience
-              </h1>
-              <p className="text-[18px] leading-4 text-white font-light max-w-[370px]">
-                Our experience will help you step stones to success in overseas
-                Education.
-              </p>
+          <div className='flex flex-row gap-4'>
+            <Image src={`/image/book.svg`} width={200} height={100} alt='' className='w-20 h-20' />
+            <div className='flex flex-col gap-2'>
+              <span className='text-[24px] text-[#07294D]'>Free Assistance</span>
+              <span>Get full free guidance for your study preference with Our team</span>
             </div>
           </div>
         </div>
+          <div className='flex justify-center pt-20'>
+          <iframe className='rounded-[20px] w-[300px] sm:w-[400px] md:w-[500px]'  width="560" height="315" src="https://www.youtube.com/embed/FfSllGGvqC4?si=z5c_EZv8kc66rcFP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+          </div>
+       
       </div>
 
       {/* up comming events */}
       <div className="flex flex-col w-full max-w-7xl p-4 md:px-20 pt-20 gap-10 text-center sm:text-start">
         <h1 className="text-[#08305A] text-[40px] leading-[45px] font-bold text-center">
-          Upcoming Events
+          Our blog
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-[32px] gap-y-10 w-full mt-10">
           <div className="flex flex-col gap-8 items-center sm:items-start">
@@ -388,7 +384,7 @@ export default function Home() {
                 width={200}
                 height={0}
                 alt=""
-                className="object-cover w-full min-w-[200px]"
+                className="object-cover w-full min-w-[200px] h-[200px] rounded-t-[20px]"
               />
             </div>
             <div className="flex flex-col gap-2 px-8">
@@ -478,12 +474,13 @@ export default function Home() {
                   22 DEC 22
                 </span>
               </p>
-              <h1 className="text-[24px] text-[#123E6C] font-medium sm:font-bold leading-8">
+              <h1 className="text-[20px] text-[#123E6C] font-medium sm:font-[800] leading-6">
                 Applying for a student visa: Top 10 tips
               </h1>
-              <p className="text-[18px] leading-[20px] font-light">
+              <p className="text-[18px] text-black leading-[20px] font-light">
                 Don’t feel prepared to apply for your student visa? Our
               </p>
+              <button className='w-full md:w-1/2 hover:scale-110 transition-all bg-[#FFA800] rounded-md py-2 px-4'>Read more</button>
             </div>
           </div>
           <div className="flex flex-col gap-8 items-center sm:items-start">
@@ -493,7 +490,7 @@ export default function Home() {
                 width={200}
                 height={0}
                 alt=""
-                className="object-cover w-full min-w-[200px]"
+                className="object-cover w-full min-w-[200px] h-[200px] rounded-t-[20px]"
               />
             </div>
             <div className="flex flex-col gap-2 px-8">
@@ -583,10 +580,10 @@ export default function Home() {
                   22 DEC 22
                 </span>
               </p>
-              <h1 className="text-[24px] text-[#123E6C] font-medium sm:font-bold leading-8">
+              <h1 className="text-[20px] text-[#123E6C] font-medium sm:font-[800] leading-6">
                 Applying for a student visa: Top 10 tips
               </h1>
-              <p className="text-[18px] leading-[20px] font-light">
+              <p className="text-[18px] text-black leading-[20px] font-light">
                 Don’t feel prepared to apply for your student visa? Our
               </p>
             </div>
@@ -598,7 +595,7 @@ export default function Home() {
                 width={300}
                 height={0}
                 alt=""
-                className="object-cover w-full min-w-[200px]"
+                className="object-cover w-full min-w-[200px] h-[200px] rounded-t-[20px]"
               />
             </div>
             <div className="flex flex-col gap-2 px-8">
@@ -702,7 +699,7 @@ export default function Home() {
       {/*top destination  */}
 
       <div className="max-w-7xl flex flex-col md:flex-row gap-4 w-full items-center py-40 px-[10px] md:px-20">
-        <div className="flex flex-col gap-4  items-center">
+        <div className="flex flex-col gap-4  ">
           <h1 className="text-[32px] text-[#123E6C] font-[700] text-center md:text-start leading-8 ">
             OUR TOP DESTINATIONS
           </h1>
@@ -720,13 +717,13 @@ export default function Home() {
           <Swiper ref={swiperRef} {...swiperOptions}>
             {countries.map((country, index) => (
               <SwiperSlide key={index} className="w-[300px] h-[300px] py-4">
-                <div className="flex flex-col items-center  w-[300px] h-[250px]">
+                <div className="flex flex-col items-center  w-[300px] h-[350px]">
                   <Image
                     src={country.imageSrc}
                     width={400}
                     height={0}
                     alt={`Flag of ${country.name}`}
-                    className="w-full h-full object-cover rounded-md"
+                    className="w-[250px] h-full object-cover rounded-md"
                   />
                   <p className="mt-2 text-lg font-semibold">{country.name}</p>
                 </div>
@@ -909,7 +906,7 @@ export default function Home() {
           </div>
           <div>
             <a
-              href="#"
+              href="/special"
               className=" py-[10px] w-[150px] text-white font-[300] md:py-[10px] md:px-[31px] text-[14px] bg-[#FFA800] rounded-lg md:w-[160px] flex justify-center items-center"
             >
               Discover more

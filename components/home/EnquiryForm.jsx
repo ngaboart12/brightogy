@@ -98,7 +98,7 @@ const EnquiryForm = ({ onClose }) => {
     <div className="absolute  w-full h-full bg-black/60 flex flex-col justify-center items-center">
       <div
         ref={modalRef}
-        className="w-[70%]  bg-white  rounded-md flex flex-col gapy-4 p-10 "
+        className="w-[90%] md:w-[70%]  bg-white  rounded-md flex flex-col gapy-4 p-10 "
       >
         <h1 className="text-[30px] font-[600]">Enquiry form</h1>
         <form action="" onSubmit={handelSubmit}>

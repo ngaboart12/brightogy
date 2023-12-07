@@ -109,14 +109,24 @@ const Navbar = () => {
                 </svg>
               </span>
             </p>
-            <ul className="text-[black] font-[300] gap-4 text-[16px] bg-black">
+            <ul className="text-[black] font-[300] gap-4 text-[14px] bg-black">
               <li>
-                <a href="/careerCounseling" className="hover:text-black/70">
-                  CAREER COUNSELING
+                <a href="/careercounseling" className="hover:text-black/70">
+                  Career Counseling
                 </a>
               </li>
               <li>
-                <a href="/careerCounseling2"> CAREER COUNSELING 2</a>
+                <a href="/visaguidance" className="hover:text-black/70">
+                  Visa guidance
+                </a>
+              </li>
+              <li>
+                <a href="/predeparture">Pre-departure  Services</a>
+              </li>
+              <li>
+                <a href="/univeristydocument">
+                  University selection  and
+                  Documentation</a>
               </li>
             </ul>
           </li>
