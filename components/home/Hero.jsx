@@ -67,19 +67,21 @@ const Hero = () => {
       <div className="w-[70%]  px-[38px] py-[10px] bg-black bg-opacity-25 rounded-xl backdrop-blur-[5px] justify-center items-center inline-flex">
         <div className="self-stretch justify-start items-start gap-[46px] flex flex-col md:flex-row">
           <div className="justify-start items-center gap-4 flex">
+            <div>
+
             <Image
-              className="w-[86px] rounded-[14px]"
+              className="w-[120px] rounded-[14px]"
               width={200}
               height={0}
               src={`/image/specialhero1.png`}
-            />
-            <div className="flex-col justify-start items-start gap-2 inline-flex">
+              />
+              </div>
+            <div className="flex-col justify-start items-start inline-flex">
               <div className="text-center text-amber-500 text-2xl font-normal '">
                 Special Offers
               </div>
               <div className="  text-white text-[16px] font-[200]  line-clamp-2 leading-5">
-                Personal burnt tomato bbq mouth garlic spinach lasagna beef.
-                Pizza olives banana rib bacon.
+              Student Exclusive Deals Unlock Your Academic Journey with Special Offers!
               </div>
             </div>
             <div className="w-10 h-10 relative">
@@ -100,19 +102,21 @@ const Hero = () => {
             </div>
           </div>
           <div className="justify-start items-center gap-4 flex">
+            <div>
+
             <Image
-              className="w-[86px] rounded-[14px]"
+              className="w-[120px] rounded-[14px]"
               width={200}
               height={200}
               src={`/image/specialhero1.png`}
-            />
-            <div className="flex-col justify-start items-start gap-2 inline-flex">
+              />
+              </div>
+            <div className="flex-col justify-start items-start  inline-flex">
               <div className="text-center text-amber-500 text-2xl font-normal ">
                 Special Offers
               </div>
               <div className="font-[200] text-white text-[16px] line-clamp-2  leading-5">
-                Personal burnt tomato bbq mouth garlic spinach lasagna beef.
-                Pizza olives banana rib bacon.
+              Student-only discounts Take Advantage of Special Offers to Advance Your Academic Career!
               </div>
             </div>
             <div className="w-10 h-10 relative">

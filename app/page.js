@@ -860,9 +860,10 @@ export default function Home() {
               Our special offers
             </h1>
             <p className="text-[16px] leading-4 text-center text-[#3C3B3B] font-[300] max-w-[500px]">
-              Lorem ipsum dolor sit amet consectetur. Convallis nisi quam nam
-              diam mattis nec. Quis nisl condimentum purus quam et. Tortor vitae
-              amet quis eleifend tellus in. Velit morbi nec massa eget{" "}
+            Our educational consultant has led us on a journey of academic achievement, and working
+             with them has been a life-changing experience. Their proficiency,
+             commitment, and customized strategy have genuinely distinguished them. This is 
+             a taste of the successful collaboration we have hadt{" "}
             </p>
           </div>
 
@@ -875,12 +876,11 @@ export default function Home() {
                 Study in poland
               </h1>
               <p className="text-[#707070] text-[14px] text-center md:text-start font-[300] leading-4 mt-2 max-w-[375px]">
-                Loopring EOS waves chiliz hive tether digibyte. Decentraland
-                avalanche avalanche nexo uniswap fa
+              Student Exclusive Deals Unlock Your Academic Journey with Special Offers!
               </p>
               <a
                 href="#"
-                className="bg-[#123E6C] px-[30px] py-[8px] rounded-lg mt-4 text-white text-[14px] font-[300]"
+                className="hover:scale-110 transition-all bg-[#123E6C] px-[30px] py-[8px] rounded-lg mt-4 text-white text-[14px] font-[300]"
               >
                 Learn more
               </a>
@@ -890,15 +890,14 @@ export default function Home() {
                 14 jan 2023
               </span>
               <h1 className="text-[#123E6C] font-[600] text-[20px]">
-                Study in poland
+                Study in usa
               </h1>
               <p className="text-[#707070] text-[14px] text-center md:text-start font-[300] leading-4 mt-2 max-w-[375px]">
-                Loopring EOS waves chiliz hive tether digibyte. Decentraland
-                avalanche avalanche nexo uniswap fa
+              .Student-only discounts Take Advantage of Special Offers to Advance Your Academic Career!
               </p>
               <a
                 href="#"
-                className="bg-[#123E6C] px-[30px] py-[8px] rounded-lg mt-4 text-white text-[14px] font-[300]"
+                className="hover:scale-110 transition-all bg-[#123E6C] px-[30px] py-[8px] rounded-lg mt-4 text-white text-[14px] font-[300]"
               >
                 Learn more
               </a>
@@ -907,7 +906,7 @@ export default function Home() {
           <div>
             <a
               href="/special"
-              className=" py-[10px] w-[150px] text-white font-[300] md:py-[10px] md:px-[31px] text-[14px] bg-[#FFA800] rounded-lg md:w-[160px] flex justify-center items-center"
+              className=" hover:scale-110 transition-all py-[10px] w-[150px] text-white font-[300] md:py-[10px] md:px-[31px] text-[14px] bg-[#FFA800] rounded-lg md:w-[160px] flex justify-center items-center"
             >
               Discover more
             </a>
