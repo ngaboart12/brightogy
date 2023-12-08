@@ -34,7 +34,7 @@ const Navbar2 = () => {
                 </svg>
               </span>
             </p>
-            <ul className="text-[black] font-[300] gap-4 text-[16px] bg-black">
+            <ul className="text-[black] font-[300] gap-4 text-[14px] bg-black">
               <li>
                 <a href="/toefl" className="hover:text-black/70">
                   TOEFL
@@ -47,7 +47,7 @@ const Navbar2 = () => {
               </li>
               <li>
                 <a href="/duolingo" className="hover:text-black/70">
-                  DUOLINGO
+                  Duolingo
                 </a>
               </li>
             </ul>
