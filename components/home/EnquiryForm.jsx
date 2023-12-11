@@ -100,7 +100,7 @@ const EnquiryForm = ({ onClose }) => {
         ref={modalRef}
         className="w-[90%] md:w-[70%]  bg-white  rounded-md flex flex-col gapy-4 p-10 "
       >
-        <h1 className="text-[30px] font-[600]">Enquiry form</h1>
+        <h1 className="text-[30px] font-[600]">Enquiry Form</h1>
         <form action="" onSubmit={handelSubmit}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="flex flex-col gap-2">
@@ -178,7 +178,7 @@ const EnquiryForm = ({ onClose }) => {
                   visible={true}
                 />
               ) : (
-                "submit now"
+                "Submit Now"
               )}
             </button>
           </div>
