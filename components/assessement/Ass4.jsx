@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Input from "../Input";
 
@@ -35,7 +35,7 @@ const Ass4 = ({ formData, handleInputChange }) => {
                   }
                   className="border border-white w-4"
                 />
-                <span className="text-[white]">Yes</span>
+                <span className="text-[white]">No</span>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ const Ass4 = ({ formData, handleInputChange }) => {
                   }
                   className="border border-white w-4"
                 />
-                <span className="text-[white]">Yes</span>
+                <span className="text-[white]">No</span>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ const Ass4 = ({ formData, handleInputChange }) => {
         <div className="grid gap-2 md:grid-cols-2  ">
           <Input
             placeholder="select language"
-            label="first official language"
+            label="First Official Language"
             value={formData.other.FirstofficialLanguage}
             onChange={(e) =>
               handleInputChange(
@@ -93,8 +93,8 @@ const Ass4 = ({ formData, handleInputChange }) => {
             }
           />
           <Input
-            placeholder="message here"
-            label="message"
+            placeholder="Message Here"
+            label="Message"
             value={formData.other.Message}
             onChange={(e) =>
               handleInputChange("other", "Message", e.target.value)
@@ -122,8 +122,8 @@ const Ass4 = ({ formData, handleInputChange }) => {
             </svg>
           </div>
           <span className="text-white text-center md:text-start">
-            by submitting this assessment you agree to receive important
-            immigration news and updates from Canadim
+            By Submitting this assessment you agree to receive important
+            immigration news updates from BrightForth
           </span>
         </div>
       </div>

@@ -2,42 +2,42 @@ import React from "react";
 import LinkComponent from "../../components/LinkComponet";
 import Navbar from "../../components/Navbar";
 
-import Image from 'next/image'
+import Image from "next/image";
 import Footer from "components/Footer";
 
 const Duolingo = () => {
-    const data = [
-        {
-            name: "Score Validity: 2 years"
-        },
-        {
-            name: "Score Reporting: Unlimited free reporting"
-        },
-        {
-            name: "Registration Mode: Online"
-        },
-        {
-            name: "Official Website: www.englishtest.duolingo.com"
-        },
-        {
-            name: "Mode of payment: Debit Card/ Credit Card"
-        },
-        {
-            name: "Test Administration Frequency: Anytime"
-        },
-        {
-            name: "Test Fee: $ 57 USD"
-        },
-        {
-            name: "Test Repetition Policy:Anytime"
-        },
-        {
-            name: "Nature of Test: Computer Based Test"
-        },
-        {
-            name: "Extra Score Reporting Fee: No fee"
-        },
-    ]
+  const data = [
+    {
+      name: "Score Validity: 2 years",
+    },
+    {
+      name: "Score Reporting: Unlimited free reporting",
+    },
+    {
+      name: "Registration Mode: Online",
+    },
+    {
+      name: "Official Website: www.englishtest.duolingo.com",
+    },
+    {
+      name: "Mode of payment: Debit Card/ Credit Card",
+    },
+    {
+      name: "Test Administration Frequency: Anytime",
+    },
+    {
+      name: "Test Fee: $ 57 USD",
+    },
+    {
+      name: "Test Repetition Policy:Anytime",
+    },
+    {
+      name: "Nature of Test: Computer Based Test",
+    },
+    {
+      name: "Extra Score Reporting Fee: No fee",
+    },
+  ];
 
   return (
     <div className="flex flex-col items-center justify-center  w-full">
@@ -47,7 +47,13 @@ const Duolingo = () => {
       {/* hero */}
       <div className="flex px-[20px] md:px-20 lg:px-40 gap-10 flex-col md:flex-row w-full max-w-7xl py-10">
         <div className="w-full md:w-1/2 p-2">
-          <Image src={`/image/duolingo.png`} width={600} height={0} alt="" className="w-full object-cover" />
+          <Image
+            src={`/image/duolingo.png`}
+            width={600}
+            height={0}
+            alt=""
+            className="w-full object-cover"
+          />
         </div>
         <div className="w-full md:w-1/2 flex flex-col gap-4">
           <div className="flex flex-col gap-4">
@@ -80,9 +86,7 @@ const Duolingo = () => {
 
       {/* sections */}
       <div className="w:full px-[20px] md:px-[179px] max-w-7xl  pt-[45px] pb-[67px] bg-[#07294D] flex-col justify-start items-center gap-[35px] inline-flex mt-10">
-        <div className="text-amber-500 text-[32px] font-bold ">
-          Sections
-        </div>
+        <div className="text-amber-500 text-[32px] font-bold ">Sections</div>
         <div className="self-stretch flex-col justify-start items-center gap-6 inline-flex">
           <div className="justify-start items-start gap-[27px] flex flex-col lg:flex-row">
             <div className="  pl-[38px] pr-[27px] pt-8 pb-[39px] bg-[#0A335E] justify-end items-center flex">
@@ -156,20 +160,16 @@ const Duolingo = () => {
 
       {/* miscellaneous */}
       <div className="flex flex-col gap-10 w-full items-center justify-center px-[20px] md:px-20">
-        <div className="text-sky-950 text-[32px] font-bold ">
-          Miscellaneous
-        </div>
+        <div className="text-sky-950 text-[32px] font-bold ">Miscellaneous</div>
         <div className="grid grid-cols-2 gap-y-10 gap-x-60">
-            {data.map((item,index)=>{
-                return(
-                    <div key={index}>
-                        <span className="text-[14px] font-[#07294D]">{item.name}</span>
-                    </div>
-                )
-            })}
-
+          {data.map((item, index) => {
+            return (
+              <div key={index}>
+                <span className="text-[14px] font-[#07294D]">{item.name}</span>
+              </div>
+            );
+          })}
         </div>
-     
       </div>
       <div className="py-40 w-full items-center">
         <div className="flex flex-col gap-6 w-full bg-[#07294D] py-10 px-[20px] md:px-20 lg:px-40 items-center">
@@ -298,7 +298,7 @@ const Duolingo = () => {
       </div>
 
       {/* footer */}
-      <Footer/>
+      <Footer />
     </div>
   );
 };

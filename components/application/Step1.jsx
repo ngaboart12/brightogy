@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import Input from "../Input";
 
@@ -236,8 +236,8 @@ const Step1 = ({ formData, handleInputChange }) => {
       <div className="flex flex-col w-full">
         <div className="grid gap-4 gap-y-10  sm:grid-cols-2 lg:grid-cols-4 w-full">
           <Input
-            placeholder="Enter First name"
-            label="First name"
+            placeholder="Enter First Name"
+            label="First Name"
             type="text"
             value={formData.stage1.firstName}
             onChange={(e) =>
@@ -245,8 +245,8 @@ const Step1 = ({ formData, handleInputChange }) => {
             }
           />
           <Input
-            placeholder="Enter Middel name"
-            label="Middel name"
+            placeholder="Enter Middel Name"
+            label="Middel Name"
             type="text"
             value={formData.stage1.middelName}
             onChange={(e) =>
@@ -254,8 +254,8 @@ const Step1 = ({ formData, handleInputChange }) => {
             }
           />
           <Input
-            placeholder="Enter Last name"
-            label="Last name"
+            placeholder="Enter Last Name"
+            label="Last Name"
             type="text"
             value={formData.stage1.lastName}
             onChange={(e) =>
@@ -263,7 +263,7 @@ const Step1 = ({ formData, handleInputChange }) => {
             }
           />
           <Input
-            placeholder="Date of Birth"
+            placeholder="Date Of Birth"
             label="Date of birth"
             type="date"
             value={formData.stage1.dateOfBirth}

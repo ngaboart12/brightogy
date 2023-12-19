@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Ass1 from "../../components/assessement/Ass1";
 import Ass2 from "../../components/assessement/Ass2";
@@ -30,7 +30,7 @@ const Assessment = () => {
     },
     educationProgram: {
       programs: [],
-    }, 
+    },
     cannadian: {
       firstOfficialLanguage: "",
       firstReadProficiency: "",
@@ -151,14 +151,14 @@ const Assessment = () => {
   };
 
   return (
-    <div>
+    <div className="w-full max-w-7xl flex flex-col items-center justify-center">
       <LinkComponent />
       <Navbar />
-      <div className="px-[20px] md:px-[100px] flex flex-col  blg:px-[20vh]">
+      <div className="px-[20px] md:px-[100px] flex flex-col  lg:px-[30vh] w-full py-2">
         <form
           action=""
           onSubmit={handleFormSubmit}
-          className="flex flex-col gap-2"
+          className="flex flex-col gap-2 w-full"
         >
           {step === 1 && (
             <Ass1 formData={formData} handleInputChange={handleInputChange} />

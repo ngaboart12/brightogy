@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import { css } from "@emotion/react";
 import { ClipLoader } from "react-spinners";
@@ -366,7 +366,7 @@ const Apllication = () => {
                 onClick={handleNext}
                 className="py-2 px-10 bg-[#FFCD21] rounded-md"
               >
-                next
+                Next
               </div>
             )}
             {step == 5 && (
@@ -374,7 +374,7 @@ const Apllication = () => {
                 className="py-2 px-10 bg-[#FFCD21] rounded-md"
                 type="submit"
               >
-                submit
+                Submit
               </button>
             )}
           </div>

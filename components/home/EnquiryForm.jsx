@@ -104,12 +104,12 @@ const EnquiryForm = ({ onClose }) => {
         <form action="" onSubmit={handelSubmit}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="flex flex-col gap-2">
-              <h1>Full name</h1>
+              <h1>Full Name</h1>
               <input
                 value={fullname}
                 onChange={(e) => setFullname(e.target.value)}
                 type="text"
-                placeholder="Enter your name"
+                placeholder="Enter Your Name"
                 className="border border-gray-300 p-3 rounded-lg"
               />
             </div>
@@ -144,12 +144,12 @@ const EnquiryForm = ({ onClose }) => {
               />
             </div>
             <div className="flex flex-col gap-2">
-              <h1>Phone number</h1>
+              <h1>Phone Number</h1>
               <input
                 value={phonenumber}
                 onChange={(e) => setPhonenumber(e.target.value)}
                 type="text"
-                placeholder="Enter PHone number"
+                placeholder="Enter Phone Number"
                 className="border border-gray-300 p-3 rounded-lg"
               />
             </div>

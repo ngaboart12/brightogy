@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Input from "../Input";
 
@@ -10,12 +10,13 @@ const Ass3 = ({ formData, handleInputChange }) => {
     { name: "ADVANCED" },
     { name: "EXPERT" },
   ];
+
   return (
-    <div className="flex flex-col gap-4">
+    <div className="w-full  flex flex-col gap-10">
       <h1 className="text-[22px] md:text-[32px] leading-6 text-[#07294D] font-bold">
         Canadian Language Proficiency
       </h1>
-      <div className="flex flex-col gap-2">
+      <div className="w-full flex flex-col gap-2">
         <div className="w-[300px]">
           <div className="flex flex-col  gap-1 text-black">
             <span>First Official Language</span>
@@ -38,7 +39,7 @@ const Ass3 = ({ formData, handleInputChange }) => {
             </select>
           </div>
         </div>
-        <div className="grid  sm:grid-cols-2 blg:grid-cols-4 gap-2">
+        <div className="grid  sm:grid-cols-2 lg:grid-cols-4 gap-2">
           <div className="flex flex-col  gap-1 text-black">
             <span>Read Proficiency</span>
             <select
@@ -159,7 +160,7 @@ const Ass3 = ({ formData, handleInputChange }) => {
             </select>
           </div>
         </div>
-        <div className="grid  sm:grid-cols-2 blg:grid-cols-4 gap-2">
+        <div className="grid  sm:grid-cols-2 lg:grid-cols-4 gap-2">
           <div className="flex flex-col  gap-1 text-black">
             <span>Read Proficiency</span>
             <select

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import Input from "../Input";
 
@@ -34,19 +34,19 @@ const Ass1 = ({ formData, handleInputChange }) => {
     { name: "Doctor Level univeristy" },
   ];
   return (
-    <div className="container mx-auto p-4 sm:p-6 md:p-8 lg:p-10">
-      <h1 className="text-[#07294D] text-center text-xl leading-4 md:text-4xl lg:text-5xl font-bold  md:leading-8">
-        Free International Student <br /> Visa Assessment Form{" "}
+    <div className="container gap-10 flex flex-col mx-auto p-4 sm:p-6 md:p-8 lg:p-10">
+      <h1 className="text-[#07294D] text-center text-xl leading-4 md:text-4xl lg:text-4xl font-bold  md:leading-8">
+        BrightForth Career <br /> Consulting Assessment
       </h1>
-      <div className="flex flex-col gap-4 justify-center items-center py-4">
-        <h1 className="font-semibold text-xl sm:text-2xl text-[#07294D] pb-2">
+      <div className="flex flex-col gap-4 justify-center  py-4">
+        <h1 className="font-semibold  text-xl sm:text-2xl text-[#07294D] pb-2">
           Personal Information
         </h1>
 
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full">
           <Input
-            placeholder="Enter First name"
-            label="First name"
+            placeholder="Enter First Name"
+            label="First Name"
             type="text"
             value={formData.personInfo.firstName}
             onChange={(e) =>
@@ -143,8 +143,8 @@ const Ass1 = ({ formData, handleInputChange }) => {
             </select>
           </div>
           <Input
-            placeholder="Enter Faculity"
-            label="faculity"
+            placeholder="Enter Faculty"
+            label="Faculty"
             type="text"
             value={formData.personInfo.faculty}
             onChange={(e) =>
@@ -153,7 +153,7 @@ const Ass1 = ({ formData, handleInputChange }) => {
           />
           <Input
             placeholder="Enter Phone number"
-            label="Phone number"
+            label="Phone Number"
             type="number"
             value={formData.personInfo.phoneNumber}
             onChange={(e) =>
@@ -280,8 +280,8 @@ const Ass1 = ({ formData, handleInputChange }) => {
           </div>
           <div className="flex flex-col  gap-2 text-black items-center ">
             <span className="text-white text-[14px] text-center md:text-start leading-4">
-              Do you already have a letter of admission/acceptance to a Canadian
-              educational institution?
+              Do you already have a letter of admission/Acceptance to an
+              Overseas Educational Institution
             </span>
             <div className="flex flex-col md:flex-row w-[150px]   gap-2 md:w-full justify-center md:justify-start ">
               <div className="flex gap-4  px-6 py-3 rounded-md bg-[#072F5A]">
