@@ -154,10 +154,13 @@ const Footer = () => {
             <a href="#" className="text-white text-[14px] font-[300]">
               Contact us
             </a>
-            <a href="/gallery" className="text-white text-[14px] font-[300]">
+            <a href="/events" className="text-white text-[14px] font-[300]">
               Gallery
             </a>
-            <a href="/application" className="text-white text-[14px] font-[300]">
+            <a
+              href="/application"
+              className="text-white text-[14px] font-[300]"
+            >
               Aplly now
             </a>
             <a href="/assessment" className="text-white text-[14px] font-[300]">

@@ -587,6 +587,7 @@ export default function Home() {
               <p className="text-[18px] text-black leading-[20px] font-light">
                 Don’t feel prepared to apply for your student visa? Our
               </p>
+              <button className='w-full md:w-1/2 hover:scale-110 transition-all bg-[#FFA800] rounded-md py-2 px-4'>Read more</button>
             </div>
           </div>
           <div className="flex flex-col gap-8 items-center sm:items-start">
@@ -692,6 +693,7 @@ export default function Home() {
               <p className="text-[18px] leading-[20px] font-light">
                 Don’t feel prepared to apply for your student visa? Our
               </p>
+              <button className='w-full md:w-1/2 hover:scale-110 transition-all bg-[#FFA800] rounded-md py-2 px-4'>Read more</button>
             </div>
           </div>
         </div>
