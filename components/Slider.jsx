@@ -1,6 +1,12 @@
 "use client";
 import React from "react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -11,7 +17,10 @@ import "swiper/css/scrollbar";
 function Slider() {
   return (
     <div className="w-full relative bg-[#07294D] items-center flex  justify-center mb-10  ">
-      <div className=" max-w-7xl flex flex-col gap-4 md:gap-10 relative w-full justify-center items-center   py-[20px] px-[20px] md:py-[100px] md:px-[104px]">
+      <div
+        data-aos="zoom-in"
+        className=" max-w-7xl flex flex-col gap-4 md:gap-10 relative w-full justify-center items-center   py-[20px] px-[20px] md:py-[100px] md:px-[104px]"
+      >
         <h1 className="text-[24px] text-[#FFA800] text-center  font-bold">
           What you say about us
         </h1>
@@ -55,8 +64,7 @@ function Slider() {
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}
-            navigation
-            pagination={{ clickable: true }}
+            autoplay={{ delay: 2000, disableOnInteraction: false }}
             breakpoints={{
               640: {
                 slidesPerView: 1,

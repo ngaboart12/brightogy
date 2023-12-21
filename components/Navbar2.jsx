@@ -114,12 +114,12 @@ const Navbar2 = () => {
                 </a>
               </li>
               <li>
-                <a href="/predeparture">Pre-departure  Services</a>
+                <a href="/predeparture">Pre-departure Services</a>
               </li>
               <li>
                 <a href="/univeristydocument">
-                  University selection  and
-                  Documentation</a>
+                  University selection and Documentation
+                </a>
               </li>
             </ul>
           </li>

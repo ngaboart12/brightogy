@@ -24,7 +24,10 @@ const Hero = () => {
           className="w-full object-cover h-full "
         />
       </div>
-      <div className="flex flex-col gap-4 w-full px-[20px]  py-[10vh]  justify-center items-center ">
+      <div
+        data-aos="zoom-in-up"
+        className="flex flex-col gap-4 w-full px-[20px]  py-[10vh]  justify-center items-center "
+      >
         <h1 className="text-white text-[40px]  leading-[40px] text-center max-w-[551px] md:leading-[40px] ">
           Welcome To BrightForth Your Career Partner
         </h1>
@@ -64,24 +67,27 @@ const Hero = () => {
           </svg>
         </a>
       </div>
-      <div className="w-[70%]  px-[38px] py-[10px] bg-black bg-opacity-25 rounded-xl backdrop-blur-[5px] justify-center items-center inline-flex">
+      <div
+        data-aos="zoom-in-up"
+        className="w-[70%]  px-[38px] py-[10px] bg-black bg-opacity-25 rounded-xl backdrop-blur-[5px] justify-center items-center inline-flex"
+      >
         <div className="self-stretch justify-start items-start gap-[46px] flex flex-col md:flex-row">
           <div className="justify-start items-center gap-4 flex">
             <div>
-
-            <Image
-              className="w-[120px] rounded-[14px]"
-              width={200}
-              height={0}
-              src={`/image/specialhero1.png`}
+              <Image
+                className="w-[120px] rounded-[14px]"
+                width={200}
+                height={0}
+                src={`/image/specialhero1.png`}
               />
-              </div>
+            </div>
             <div className="flex-col justify-start items-start inline-flex">
               <div className="text-center text-amber-500 text-2xl font-normal '">
                 Special Offers
               </div>
               <div className="  text-white text-[16px] font-[200]  line-clamp-2 leading-5">
-              Student Exclusive Deals Unlock Your Academic Journey with Special Offers!
+                Student Exclusive Deals Unlock Your Academic Journey with
+                Special Offers!
               </div>
             </div>
             <div className="w-10 h-10 relative">
@@ -103,20 +109,20 @@ const Hero = () => {
           </div>
           <div className="justify-start items-center gap-4 flex">
             <div>
-
-            <Image
-              className="w-[120px] rounded-[14px]"
-              width={200}
-              height={200}
-              src={`/image/specialhero1.png`}
+              <Image
+                className="w-[120px] rounded-[14px]"
+                width={200}
+                height={200}
+                src={`/image/specialhero1.png`}
               />
-              </div>
+            </div>
             <div className="flex-col justify-start items-start  inline-flex">
               <div className="text-center text-amber-500 text-2xl font-normal ">
                 Special Offers
               </div>
               <div className="font-[200] text-white text-[16px] line-clamp-2  leading-5">
-              Student-only discounts Take Advantage of Special Offers to Advance Your Academic Career!
+                Student-only discounts Take Advantage of Special Offers to
+                Advance Your Academic Career!
               </div>
             </div>
             <div className="w-10 h-10 relative">

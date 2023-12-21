@@ -57,7 +57,11 @@ const ContactUS = () => {
     }
   }
   return (
-    <div className=" w-full items-center flex flex-col gap-6 max-w-7xl py-20">
+    <div
+      data-aos="zoom-out-right"
+      className=" w-full items-center flex flex-col gap-6 max-w-7xl py-20"
+      id="contactus"
+    >
       <h1 className="text-[32px] text-[#07294D] font-bold text-center">
         React Out To Us
       </h1>

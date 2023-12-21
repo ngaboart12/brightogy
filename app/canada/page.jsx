@@ -1,7 +1,7 @@
-import React from 'react';
-import Footer from '../../components/Footer';
-import LinkComponent from '../../components/LinkComponet';
-import Navbar from '../../components/Navbar';
+import React from "react";
+import Footer from "../../components/Footer";
+import LinkComponent from "../../components/LinkComponet";
+import Navbar from "../../components/Navbar";
 
 const StudyInCanada = () => {
   return (
@@ -17,7 +17,6 @@ const StudyInCanada = () => {
           </div>
         </div>
         <div className="max-w-[394px] text-center text-sky-950 text-[26px] md:text-[32px] font-bold ">
-          
           {" "}
           A Guide for International Students
         </div>
@@ -25,73 +24,64 @@ const StudyInCanada = () => {
           Want to study in Canada? We answer all your top questions, including
           how much it costs to study in Canada, which courses are available and
           how you can use your Canadian study permit as a pathway to obtain
-          canadian permanent residence
-          {" "}
+          canadian permanent residence{" "}
         </div>
       </div>
 
       {/* why canada */}
-      <div className="max-w-7xl w-full py-20  flex-col justify-center items-center gap-4 inline-flex">
-        <div className="justify-start items-start gap-[18px] flex flex-col md:flex-row">
-          <div className="px-6 py-4 bg-slate-50 justify-center items-center gap-2.5 flex">
-            <div className="max-w-[441px] text-black text-lg font-[300] ">
-              What are my chances of becoming an international student in
-              canada?
-            </div>
-          </div>
-          <div className="px-6 py-4 bg-slate-50 justify-center items-center gap-2.5 flex">
-            <div className="max-w-[441px] text-black text-lg font-[300] ">
-              What are my chances of becoming an international student in
-              canada?
-            </div>
-          </div>
-        </div>
-        <div className="justify-start items-start gap-[18px] flex flex-col md:flex-row">
-          <div className="px-6 py-4 bg-slate-50 justify-center items-center gap-2.5 flex">
-            <div className="max-w-[441px] text-black text-lg font-[300] ">
-              What are my chances of becoming an international student in
-              canada?
-            </div>
-          </div>
-          <div className="px-6 py-4 bg-slate-50 justify-center items-center gap-2.5 flex">
-            <div className="max-w-[441px] text-black text-lg font-[300] ">
-              What are my chances of becoming an international student in
-              canada?
-            </div>
-          </div>
-        </div>
-        <div className="justify-start items-start gap-[18px] flex flex-col md:flex-row">
-          <div className="px-6 py-4 bg-slate-50 justify-center items-center gap-2.5 flex">
-            <div className="max-w-[441px] text-black text-lg font-[300] ">
-              What are my chances of becoming an international student in
-              canada?
-            </div>
-          </div>
-          <div className="px-6 py-4 bg-slate-50 justify-center items-center gap-2.5 flex">
-            <div className="max-w-[441px] text-black text-lg font-[300] ">
-              What are my chances of becoming an international student in
-              canada?
-            </div>
-          </div>
-        </div>
-        <div className="justify-start items-start gap-[18px] flex flex-col md:flex-row">
-          <div className="px-6 py-4 bg-slate-50 justify-center items-center gap-2.5 flex">
-            <div className="max-w-[441px] text-black text-lg font-[300] ">
-              What are my chances of becoming an international student in
-              canada?
-            </div>
-          </div>
-          <div className="px-6 py-4 bg-slate-50 justify-center items-center gap-2.5 flex">
-            <div className="max-w-[441px] text-black text-lg font-[300] ">
-              What are my chances of becoming an international student in
-              canada?
-            </div>
-          </div>
+      <div className="max-w-7xl w-full py-20 px-40  flex-col justify-center items-center gap-4 inline-flex">
+        <div className=" justify-start items-start gap-[18px] grid grid-cols-1 md:grid-cols-2">
+          <a
+            href="#chances"
+            className="max-w-[441px] text-black text-lg font-[300] "
+          >
+            What are my chances of becoming an international student in canada?
+          </a>
+
+          <a
+            href="#canadims"
+            className="max-w-[441px] text-black text-lg font-[300] "
+          >
+            Canadims International Student Program
+          </a>
+
+          <a
+            href="#checklist"
+            className="max-w-[441px] text-black text-lg font-[300] "
+          >
+            International Student Document Checklist
+          </a>
+
+          <a
+            href="#cost"
+            className="max-w-[441px] text-black text-lg font-[300] "
+          >
+            How Much Does it Cost to Study in Canada?
+          </a>
+
+          <a href="#" className="max-w-[441px] text-black text-lg font-[300] ">
+            What are my chances of becoming an international student in canada?
+          </a>
+
+          <a href="#" className="max-w-[441px] text-black text-lg font-[300] ">
+            What are my chances of becoming an international student in canada?
+          </a>
+
+          <a href="" className="max-w-[441px] text-black text-lg font-[300] ">
+            What are my chances of becoming an international student in canada?
+          </a>
+
+          <a href="" className="max-w-[441px] text-black text-lg font-[300] ">
+            What are my chances of becoming an international student in canada?
+          </a>
         </div>
       </div>
 
       {/* changes to become canada student */}
-      <div className="max-w-7xl w-full px-[20px] md:px-40 flex-col justify-start items-start gap-6 inline-flex">
+      <div
+        id="chances"
+        className="max-w-7xl w-full px-[20px] md:px-40 flex-col justify-start items-start gap-6 inline-flex"
+      >
         <div className="max-w-[585px] text-sky-950 md:text-[32px] text-[22px] font-bold  text-center md:text-start">
           What Are My Chances of Becoming an International Student in Canada?
         </div>
@@ -110,8 +100,7 @@ const StudyInCanada = () => {
             Vietnam.
             <br />
             Diversity of international students is a priority for the Canadian
-            government. In 2019, it launched
-            {" "}
+            government. In 2019, it launched{" "}
           </span>
           <span className="text-neutral-700 text-lg font-[300]  underline">
             Building on Success
@@ -129,7 +118,10 @@ const StudyInCanada = () => {
       </div>
 
       {/* canadamins student program */}
-      <div className="max-w-7xl w-full py-20 md:px-40 px-[20px] flex-col justify-start items-start gap-6 inline-flex">
+      <div
+        id="canadims"
+        className="max-w-7xl w-full py-20 md:px-40 px-[20px] flex-col justify-start items-start gap-6 inline-flex"
+      >
         <div className="flex-col justify-start items-start gap-6 flex">
           <div className="max-w-[585px] text-sky-950 text-[32px] font-bold ">
             Canadims International Student Program
@@ -139,27 +131,23 @@ const StudyInCanada = () => {
               Canadims International Student Program
             </span>
             <span className="text-neutral-700 text-lg font-[300] ">
-              
               {" "}
               can help to guide you through the process. From getting your study
               permit to permanent residency, we’ll be there every step of the
               way. With our help, you can transform a Canadian education into
             </span>
             <span className="text-neutral-700 text-lg font-[300]  underline">
-              
               {" "}
               Canadian permanent residence
             </span>
             <span className="text-neutral-700 text-lg font-[300] ">
               .<br />
-              Every one of our
-              {" "}
+              Every one of our{" "}
             </span>
             <span className="text-neutral-700 text-lg font-[300]  underline">
               International Student Program
             </span>
             <span className="text-neutral-700 text-lg font-[300] ">
-              
               {" "}
               clients is paired with an Educational Counsellor who has been
               trained in the landscape of Canadian higher education and
@@ -179,10 +167,8 @@ const StudyInCanada = () => {
                   <div className="text-amber-500 text-lg font-bold ">1</div>
                 </div>
                 <div className="text-amber-500 text-2xl font-semibold ">
-                  
                   {" "}
-                  Choose a Program:
-                  {" "}
+                  Choose a Program:{" "}
                 </div>
                 <div className="max-w-80 text-zinc-800 text-lg font-[300] ">
                   Your program choice is one of the most important factors of
@@ -209,12 +195,10 @@ const StudyInCanada = () => {
                     acceptance from a Canadian-designated
                   </span>
                   <span className="text-zinc-800 text-lg font-[300]  underline">
-                    
                     {" "}
                     learning institution
                   </span>
                   <span className="text-zinc-800 text-lg font-[300] ">
-                    
                     {" "}
                     (DLI) before you can apply for a study permit.
                   </span>
@@ -238,7 +222,6 @@ const StudyInCanada = () => {
                   for your
                 </span>
                 <span className="text-zinc-800 text-lg font-[300]  underline">
-                  
                   {" "}
                   study permit
                 </span>
@@ -277,7 +260,10 @@ const StudyInCanada = () => {
       </div>
 
       {/* interation student checklist */}
-      <div className="max-w-7xl w-full md:px-40 px-[20px]  flex-col     gap-8 inline-flex">
+      <div
+        id="checklist"
+        className="max-w-7xl w-full md:px-40 px-[20px]  flex-col     gap-8 inline-flex"
+      >
         <div className="max-w-[585px] text-sky-950 text-[32px] md:text-start font-bold ">
           International Student Document Checklist
         </div>
@@ -296,9 +282,7 @@ const StudyInCanada = () => {
             Vietnam.
             <br />
             Diversity of international students is a priority for the Canadian
-            government. In 2019, it launched
-            
-            {" "}
+            government. In 2019, it launched{" "}
           </span>
           <span className="text-neutral-700 text-lg font-[300]  underline">
             Building on Success
@@ -355,7 +339,10 @@ const StudyInCanada = () => {
 
       {/* canadian study permit */}
 
-      <div className="w-full px-[20px] md:px-40 py-20  max-w-7xl flex-col justify-start items-start gap-4 inline-flex">
+      <div
+        id="permit"
+        className="w-full px-[20px] md:px-40 py-20  max-w-7xl flex-col justify-start items-start gap-4 inline-flex"
+      >
         <div className="text-sky-950 text-[32px] font-bold  text-center md:text-start">
           What is a Canadian Study Permit?
         </div>
@@ -365,12 +352,10 @@ const StudyInCanada = () => {
             Canadian study permit
           </span>
           <span className="text-neutral-600 text-lg font-[300] ">
-            
             {" "}
             is the document that allows you to study at a school in Canada.
             <br />
-            Once you have been accepted to study at a
-            {" "}
+            Once you have been accepted to study at a{" "}
           </span>
           <span className="text-neutral-600 text-lg font-[300]  underline">
             Designated Learning Institution (DLI)
@@ -392,12 +377,10 @@ const StudyInCanada = () => {
             Canadian study permit
           </span>
           <span className="text-neutral-600 text-lg font-[300] ">
-            
             {" "}
             is the document that allows you to study at a school in Canada.
             <br />
-            Once you have been accepted to study at a
-            {" "}
+            Once you have been accepted to study at a{" "}
           </span>
           <span className="text-neutral-600 text-lg font-[300]  underline">
             Designated Learning Institution (DLI)
@@ -455,12 +438,10 @@ const StudyInCanada = () => {
                   may reject your application. It is a good idea to have a
                 </span>
                 <span className="text-zinc-800 text-lg font-[300]  underline">
-                  
                   {" "}
                   qualified immigration representative
                 </span>
                 <span className="text-zinc-800 text-lg font-[300] ">
-                  
                   {" "}
                   review your application before you submit it.
                 </span>
@@ -490,7 +471,6 @@ const StudyInCanada = () => {
                   Canada (IRCC) website.
                 </span>
                 <span className="text-zinc-800 text-lg font-[300] ">
-                  
                   {" "}
                   You can submit an application electronically using scanned or
                   electronic copies of documents.
@@ -498,14 +478,12 @@ const StudyInCanada = () => {
               </div>
               <div className="max-w-[379px]">
                 <span className="text-sky-950 text-xl font-[300] ">
-                  Submit a paper-based application:
-                  {" "}
+                  Submit a paper-based application:{" "}
                 </span>
                 <span className="text-neutral-600 text-xl font-[300] ">
                   Gather hard copies of your documents and mail them to the
                 </span>
                 <span className="text-neutral-600 text-xl font-[300]  underline">
-                  
                   {" "}
                   Visa Application Centre (VAC) assigned to your country
                 </span>
@@ -531,12 +509,10 @@ const StudyInCanada = () => {
                 reject your application. It is a good idea to have a
               </span>
               <span className="text-zinc-800 text-lg font-[300]  underline">
-                
                 {" "}
                 qualified immigration representative
               </span>
               <span className="text-zinc-800 text-lg font-[300] ">
-                
                 {" "}
                 review your application before you submit it.
               </span>
@@ -561,14 +537,12 @@ const StudyInCanada = () => {
           </div>
           <div className="max-w-[475px]">
             <span className="text-sky-950 text-xl font-[300] ">
-              Submit a paper-based application:
-              {" "}
+              Submit a paper-based application:{" "}
             </span>
             <span className="text-neutral-600 text-xl font-[300] ">
               Gather hard copies of your documents and mail them to the
             </span>
             <span className="text-neutral-600 text-xl font-[300]  underline">
-              
               {" "}
               Visa Application Centre (VAC) assigned to your country
             </span>
@@ -612,14 +586,12 @@ const StudyInCanada = () => {
                 study permit.
               </span>
               <span className="text-white text-lg font-[300] ">
-                
                 {" "}
                 In doing so, you will get the most out of your study abroad
                 experience in Canada. Students who respect the terms of their
                 study permits also have a better chance of being granted a
               </span>
               <span className="text-white text-lg font-[300]  underline">
-                
                 {" "}
                 post-graduate work permit
               </span>
@@ -629,7 +601,7 @@ const StudyInCanada = () => {
         </div>
       </div>
       {/* cost how much */}
-      <div className="max-w-7xl w-full py-20 px-[20px] md:px-40  ">
+      <div id="cost" className="max-w-7xl w-full py-20 px-[20px] md:px-40  ">
         <div className=" flex-col justify-start items-center gap-4 inline-flex">
           <div className="px-8 py-2 bg-orange-100 justify-center items-center gap-2.5 inline-flex">
             <div className="w-[87px] h-6 text-center text-amber-500 text-lg font-bold ">
@@ -684,22 +656,19 @@ const StudyInCanada = () => {
         </div>
         <div className="max-w-[1010px] ">
           <span className="text-zinc-800 text-lg font-[300] ">
-            The University of Toronto, which serves nearly
-            {" "}
+            The University of Toronto, which serves nearly{" "}
           </span>
           <span className="text-zinc-800 text-lg font-[300]  underline">
             20,000 international students
           </span>
           <span className="text-zinc-800 text-lg font-[300] ">
             , estimates the monthly cost of housing for a student to sit
-            somewhere between
-            {" "}
+            somewhere between{" "}
           </span>
           <span className="text-zinc-800 text-lg font-[300]  underline">
             $1,080 to $2,982 CAD
           </span>
           <span className="text-zinc-800 text-lg font-[300] ">
-            
             {" "}
             in downtown Toronto.
           </span>
@@ -708,22 +677,19 @@ const StudyInCanada = () => {
           <span className="text-zinc-800 text-lg font-[300] ">
             In Montreal, the cost of living is low compared to other major North
             American cities. The University of Montreal estimates a monthly
-            student housing cost of
-            {" "}
+            student housing cost of{" "}
           </span>
           <span className="text-zinc-800 text-lg font-[300]  underline">
             $550 CAD
           </span>
           <span className="text-zinc-800 text-lg font-[300] ">
             . The city of Montreal remains a very popular study destination for
-            international students, and recently ranked
-            {" "}
+            international students, and recently ranked{" "}
           </span>
           <span className="text-zinc-800 text-lg font-[300]  underline">
             fifth in the world
           </span>
           <span className="text-zinc-800 text-lg font-[300] ">
-            
             {" "}
             for best study destination.
           </span>
@@ -731,16 +697,14 @@ const StudyInCanada = () => {
         <div className="max-w-[1010px] ">
           <span className="text-zinc-800 text-lg font-[300] ">
             In Saint John’s, Newfoundland, one of Canada’s smallest cities, the
-            cost of living is
-            {" "}
+            cost of living is{" "}
           </span>
           <span className="text-zinc-800 text-lg font-[300]  underline">
             10-30% lower than other Canadian cities
           </span>
           <span className="text-zinc-800 text-lg font-[300] ">
             . The average monthly cost of a two-bedroom rental is just $710 CDN,
-            or
-            {" "}
+            or{" "}
           </span>
           <span className="text-zinc-800 text-lg font-[300]  underline">
             $350 per room
@@ -790,7 +754,6 @@ const StudyInCanada = () => {
                     Basic lunchtime menu
                   </span>
                   <span className="text-black text-lg font-[300] ">
-                    
                     {" "}
                     in the business district: $31.00
                   </span>
@@ -800,7 +763,6 @@ const StudyInCanada = () => {
                     Suggested
                   </span>
                   <span className="text-black text-lg font-[300] ">
-                    
                     {" "}
                     monthly grocery budget: $300.00 to $600.00
                   </span>
@@ -826,7 +788,6 @@ const StudyInCanada = () => {
                   Basic lunchtime menu
                 </span>
                 <span className="text-black text-lg font-[300] ">
-                  
                   {" "}
                   in the business district: $25.00
                 </span>
@@ -836,7 +797,6 @@ const StudyInCanada = () => {
                   Suggested
                 </span>
                 <span className="text-black text-lg font-[300] ">
-                  
                   {" "}
                   monthly grocery budget: $300.00 to $550
                 </span>
@@ -861,7 +821,6 @@ const StudyInCanada = () => {
                   Basic lunchtime menu
                 </span>
                 <span className="text-black text-lg font-[300] ">
-                  
                   {" "}
                   in the business district: $23.00
                 </span>
@@ -871,7 +830,6 @@ const StudyInCanada = () => {
                   Suggested
                 </span>
                 <span className="text-black text-lg font-[300] ">
-                  
                   {" "}
                   monthly grocery budget: $487.00
                   <br />
@@ -893,14 +851,12 @@ const StudyInCanada = () => {
               All international students in Canada must have healthcare
               coverage. Certain provinces automatically give international
               students access to Canada’s public healthcare system, but others
-              do not. Students in
-              {" "}
+              do not. Students in{" "}
             </span>
             <span className="text-white text-lg font-[300]  underline">
               provinces that do not offer health coverage
             </span>
             <span className="text-white text-lg font-[300] ">
-              
               {" "}
               to international students must purchase private health insurance.
               Schools in these provinces generally offer health insurance plans
@@ -932,8 +888,7 @@ const StudyInCanada = () => {
               study or research and your country of origin.
               <br />
               You can find more information about scholarships that may be
-              available to you by using
-              {" "}
+              available to you by using{" "}
             </span>
             <span className="text-zinc-800 text-lg font-[300]  underline">
               this database
@@ -957,7 +912,6 @@ const StudyInCanada = () => {
                   A designated learning institution (DLI)
                 </span>
                 <span className="text-zinc-800 text-lg font-[300] ">
-                  
                   {" "}
                   is any school that is allowed to admit international students.
                 </span>
@@ -970,7 +924,6 @@ const StudyInCanada = () => {
                 All primary and secondary schools in Canada are DLIs
               </span>
               <span className="text-black text-lg font-[300] ">
-                
                 {" "}
                 and can admit students from foreign countries.
               </span>
@@ -980,12 +933,10 @@ const StudyInCanada = () => {
                 Not all post-secondary schools are DLIs,
               </span>
               <span className="text-black text-lg font-[300] ">
-                
                 {" "}
                 so you must
               </span>
               <span className="text-black text-lg font-[300]  underline">
-                
                 {" "}
                 check the Canadian government’s list of DLIs before applying
               </span>
@@ -1005,7 +956,6 @@ const StudyInCanada = () => {
                 education for
               </span>
               <span className="text-zinc-800 text-lg font-[300]  underline">
-                
                 {" "}
                 international students
               </span>
@@ -1014,7 +964,6 @@ const StudyInCanada = () => {
                 understand
               </span>
               <span className="text-zinc-800 text-lg font-[300]  underline">
-                
                 {" "}
                 Canada’s levels of study
               </span>
@@ -1052,17 +1001,14 @@ const StudyInCanada = () => {
               <div className="max-w-[888px] text-center">
                 <span className="text-white text-lg font-[300] ">Canadian</span>
                 <span className="text-white text-lg font-[300]  underline">
-                  
                   {" "}
                   post-secondary schools
                 </span>
                 <span className="text-white text-lg font-[300] ">
-                  
                   {" "}
                   set their own conditions for language skills of
                 </span>
                 <span className="text-white text-lg font-[300]  underline">
-                  
                   {" "}
                   international students
                 </span>
@@ -1079,12 +1025,10 @@ const StudyInCanada = () => {
               <div className="max-w-[888px] text-center">
                 <span className="text-white text-lg font-[300] ">Some</span>
                 <span className="text-white text-lg font-[300]  underline">
-                  
                   {" "}
                   international students
                 </span>
                 <span className="text-white text-lg font-[300] ">
-                  
                   {" "}
                   do not need to provide proof of their language skills. If you
                   are from an English-speaking country or have studied in
@@ -1119,12 +1063,10 @@ const StudyInCanada = () => {
               government that you will respect the
             </span>
             <span className="text-zinc-800 text-lg font-[300]  underline">
-              
               {" "}
               conditions of your permit.
             </span>
             <span className="text-zinc-800 text-lg font-[300] ">
-              
               {" "}
               You must agree to leave the country once your permit has expired.
             </span>
@@ -1132,10 +1074,8 @@ const StudyInCanada = () => {
           <div className="max-w-[1010px]">
             <span className="text-zinc-800 text-lg font-[300] ">Our</span>
             <span className="text-zinc-800 text-lg font-[300]  underline">
-              
               {" "}
-              international student program
-              {" "}
+              international student program{" "}
             </span>
             <span className="text-zinc-800 text-lg font-[300] ">
               offers guidance on writing your best letter of intent!
@@ -1282,8 +1222,7 @@ const StudyInCanada = () => {
         </div>
         <div className="max-w-[584px] text-center">
           <span className="text-sky-950 text-lg font-medium ">
-            Here are the exact steps you need to follow to
-            {" "}
+            Here are the exact steps you need to follow to{" "}
           </span>
           <span className="text-sky-950 text-lg font-medium  underline">
             change your school or program through the online portal
@@ -1475,8 +1414,7 @@ const StudyInCanada = () => {
             <div className="max-w-[398px] ">
               <span className="text-black text-lg font-normal ">
                 If your family does accompany you, your spouse will be eligible
-                for an
-                {" "}
+                for an{" "}
               </span>
               <span className="text-black text-lg font-normal  underline">
                 open work permit
@@ -1512,8 +1450,7 @@ const StudyInCanada = () => {
           <div className="justify-start w-full  items-start gap-[43px] flex flex-col md:flex-row">
             <div className="max-w-[393px] ">
               <span className="text-neutral-700 text-lg font-normal ">
-                In order to study in Quebec, you will need a
-                {" "}
+                In order to study in Quebec, you will need a{" "}
               </span>
               <span className="text-neutral-700 text-lg font-normal  underline">
                 Quebec Acceptance Certificate (CAQ)
@@ -1522,7 +1459,6 @@ const StudyInCanada = () => {
                 . This document is issued by the
               </span>
               <span className="text-neutral-700 text-lg font-normal  underline">
-                
                 {" "}
                 Ministry of Immigration, Francisation and Integration (MIFI)
               </span>
@@ -1640,12 +1576,10 @@ const StudyInCanada = () => {
             public healthcare system. Students in
           </span>
           <span className="text-neutral-700 text-lg font-normal  underline">
-            
             {" "}
             provinces that do not offer health coverage
           </span>
           <span className="text-neutral-700 text-lg font-normal ">
-            
             {" "}
             must buy private health insurance. All Canadian schools offer health
             insurance plans for international students.
@@ -1667,12 +1601,10 @@ const StudyInCanada = () => {
           <div className="max-w-[1010px] text-center">
             <span className="text-zinc-800 text-lg font-normal ">The</span>
             <span className="text-zinc-800 text-lg font-normal  underline">
-              
               {" "}
               Post-Graduate Work Permit
             </span>
             <span className="text-zinc-800 text-lg font-normal ">
-              
               {" "}
               allows international students to stay in Canada and work for up to
               three years after graduating. After working in Canada for one

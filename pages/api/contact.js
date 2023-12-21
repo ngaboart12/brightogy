@@ -1,4 +1,4 @@
-import  nodemailer from "nodemailer"
+import nodemailer from "nodemailer";
 
 export default async function (req,res){
     const { username,email,message } = req.body
@@ -15,6 +15,10 @@ export default async function (req,res){
         auth:{
             user:user,
             pass:'zpfx qisa azei pnki'
+        },
+        tls: {
+            // Add the following line to trust self-signed certificates
+            rejectUnauthorized: false
         }
     });
     try {
@@ -38,7 +42,7 @@ export default async function (req,res){
         return res.status(200).json({message: "success"})
         
     } catch (error) {
-        console.log(error);
+        console.log(error.message);
         res.status(500).json({
             message: "coul not send the email. your  message was not sent"
         })

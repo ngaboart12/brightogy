@@ -1,10 +1,12 @@
 "use client"
 import Footer from '../components/Footer'
 import Image from 'next/image'
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 // Import Swiper styles
@@ -14,9 +16,14 @@ import Hero from '../components/home/Hero';
 import ContactUS from '../components/home/ContactUS';
 import StartAssessment from '../components/home/StartAssessment';
 import Slider from 'components/Slider';
+import OurlBlog from 'components/home/OurlBlog';
 
 export default function Home() {
+
   const [isModalOpen, setModalOpen] = useState(false);
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
 
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
@@ -249,7 +256,7 @@ export default function Home() {
       <Hero />
 
       {/* services offer */}
-      <div className="flex flex-col gap-5 pt-[83px] items-center">
+      <div data-aos="fade-down" className="flex flex-col gap-5 pt-[83px] items-center">
         <h1 className="max-w-[377px] text-[#07294D] font-extrabold text-[32px] text-center leading-[30px]">
           Our Services We Offer toThe Students
         </h1>
@@ -268,7 +275,7 @@ export default function Home() {
       </div>
 
       {/* apply and make apo */}
-      <div className=" flex  justify-center items-center py-20 w-full px-2 md:px-20">
+      <div data-aos="fade-down" className=" flex  justify-center items-center py-20 w-full px-2 md:px-20">
         <div className="flex max-w-7xl w-full flex-col md:flex-row md:justify-between gap-10 bg-[#07294D] rounded-[24px] py-12 px-3 md:p-20">
           <div className="flex flex-col gap-2 items-center md:items-start">
             <h1 className="text-[#FFA800] text-[24px] font-normal text-center md:text-start leading-6">
@@ -293,7 +300,7 @@ export default function Home() {
               Make Appointment Our Team will back to you soon
             </p>
             <a
-              href="/"
+              href="#contactus"
               className="py-[12px] px-[24px] bg-[#FFA800] hover:scale-110 flex justify-center text-black font-[500] rounded-full"
             >
               Book Now
@@ -305,7 +312,7 @@ export default function Home() {
 
       {/* abou us  */}
 
-      <div className="max-w-7xl flex flex-col gap-10 md:flex-row md:justify-between py-14  w-full">
+      <div data-aos="fade-right" className="max-w-7xl flex flex-col gap-10 md:flex-row md:justify-between py-14  w-full">
         <div className="w-full md:w-1/2">
           <Image
             src={`/image/aboutus.svg`}
@@ -340,7 +347,7 @@ export default function Home() {
 
       {/* why choose us */}
 
-      <div className="max-w-7xl relative flex flex-col py-6 w-full h-full items-center gap-6 px-[20px] sm:px-20 ">
+      <div data-aos="fade-left" className="max-w-7xl relative flex flex-col py-6 w-full h-full items-center gap-6 px-[20px] sm:px-20 ">
         <h1 className='text-[32px] font-bold text-[#FFA800]'>Why choose us</h1>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10'>
           <div className='flex flex-row gap-4'>
@@ -373,335 +380,11 @@ export default function Home() {
       </div>
 
       {/* up comming events */}
-      <div className="flex flex-col w-full max-w-7xl p-4 md:px-20 pt-20 gap-10 text-center sm:text-start">
-        <h1 className="text-[#08305A] text-[40px] leading-[45px] font-bold text-center">
-          Our blog
-        </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-[32px] gap-y-10 w-full mt-10">
-          <div className="flex flex-col gap-8 items-center sm:items-start">
-            <div className="w-full">
-              <Image
-                src={`/image/up1.png`}
-                width={200}
-                height={0}
-                alt=""
-                className="object-cover w-full min-w-[200px] h-[200px] rounded-t-[20px]"
-              />
-            </div>
-            <div className="flex flex-col gap-2 px-8">
-              <p className="flex items-center gap-2">
-                <svg
-                  width="20"
-                  height="21"
-                  viewBox="0 0 20 21"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2.57715 8.33691H17.4304"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M13.7017 11.5916H13.7094"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.0039 11.5916H10.0116"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M6.29834 11.5916H6.30606"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M13.7017 14.8303H13.7094"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.0039 14.8303H10.0116"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M6.29834 14.8303H6.30606"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M13.3696 2.16675V4.90906"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M6.6377 2.16675V4.90906"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M13.5319 3.48267H6.4758C4.02856 3.48267 2.5 4.84594 2.5 7.35185V14.8932C2.5 17.4385 4.02856 18.8333 6.4758 18.8333H13.5242C15.9791 18.8333 17.5 17.4622 17.5 14.9563V7.35185C17.5077 4.84594 15.9868 3.48267 13.5319 3.48267Z"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-
-                <span className="text-[#A5A5A5] text-[18px] font-light">
-                  22 DEC 22
-                </span>
-              </p>
-              <h1 className="text-[20px] text-[#123E6C] font-medium sm:font-[800] leading-6">
-                Applying for a student visa: Top 10 tips
-              </h1>
-              <p className="text-[18px] text-black leading-[20px] font-light">
-                Don’t feel prepared to apply for your student visa? Our
-              </p>
-              <button className='w-full md:w-1/2 hover:scale-110 transition-all bg-[#FFA800] rounded-md py-2 px-4'>Read more</button>
-            </div>
-          </div>
-          <div className="flex flex-col gap-8 items-center sm:items-start">
-            <div className="w-full">
-              <Image
-                src={`/image/up2.png`}
-                width={200}
-                height={0}
-                alt=""
-                className="object-cover w-full min-w-[200px] h-[200px] rounded-t-[20px]"
-              />
-            </div>
-            <div className="flex flex-col gap-2 px-8">
-              <p className="flex items-center gap-2">
-                <svg
-                  width="20"
-                  height="21"
-                  viewBox="0 0 20 21"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2.57715 8.33691H17.4304"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M13.7017 11.5916H13.7094"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.0039 11.5916H10.0116"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M6.29834 11.5916H6.30606"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M13.7017 14.8303H13.7094"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.0039 14.8303H10.0116"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M6.29834 14.8303H6.30606"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M13.3696 2.16675V4.90906"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M6.6377 2.16675V4.90906"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M13.5319 3.48267H6.4758C4.02856 3.48267 2.5 4.84594 2.5 7.35185V14.8932C2.5 17.4385 4.02856 18.8333 6.4758 18.8333H13.5242C15.9791 18.8333 17.5 17.4622 17.5 14.9563V7.35185C17.5077 4.84594 15.9868 3.48267 13.5319 3.48267Z"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-
-                <span className="text-[#A5A5A5] text-[18px] font-light">
-                  22 DEC 22
-                </span>
-              </p>
-              <h1 className="text-[20px] text-[#123E6C] font-medium sm:font-[800] leading-6">
-                Applying for a student visa: Top 10 tips
-              </h1>
-              <p className="text-[18px] text-black leading-[20px] font-light">
-                Don’t feel prepared to apply for your student visa? Our
-              </p>
-              <button className='w-full md:w-1/2 hover:scale-110 transition-all bg-[#FFA800] rounded-md py-2 px-4'>Read more</button>
-            </div>
-          </div>
-          <div className="flex flex-col gap-8 items-center sm:items-start">
-            <div className="w-full">
-              <Image
-                src={`/image/up3.png`}
-                width={300}
-                height={0}
-                alt=""
-                className="object-cover w-full min-w-[200px] h-[200px] rounded-t-[20px]"
-              />
-            </div>
-            <div className="flex flex-col gap-2 px-8">
-              <p className="flex items-center gap-2">
-                <svg
-                  width="20"
-                  height="21"
-                  viewBox="0 0 20 21"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2.57715 8.33691H17.4304"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M13.7017 11.5916H13.7094"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.0039 11.5916H10.0116"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M6.29834 11.5916H6.30606"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M13.7017 14.8303H13.7094"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.0039 14.8303H10.0116"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M6.29834 14.8303H6.30606"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M13.3696 2.16675V4.90906"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M6.6377 2.16675V4.90906"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M13.5319 3.48267H6.4758C4.02856 3.48267 2.5 4.84594 2.5 7.35185V14.8932C2.5 17.4385 4.02856 18.8333 6.4758 18.8333H13.5242C15.9791 18.8333 17.5 17.4622 17.5 14.9563V7.35185C17.5077 4.84594 15.9868 3.48267 13.5319 3.48267Z"
-                    stroke="#A5A5A5"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-
-                <span className="text-[#A5A5A5] text-[18px] font-light">
-                  22 DEC 22
-                </span>
-              </p>
-              <h1 className="text-[24px] text-[#123E6C] font-medium sm:font-bold leading-8">
-                Applying for a student visa: Top 10 tips
-              </h1>
-              <p className="text-[18px] leading-[20px] font-light">
-                Don’t feel prepared to apply for your student visa? Our
-              </p>
-              <button className='w-full md:w-1/2 hover:scale-110 transition-all bg-[#FFA800] rounded-md py-2 px-4'>Read more</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    
+       <OurlBlog/>
       {/*top destination  */}
 
-      <div className="max-w-7xl flex flex-col md:flex-row gap-4 w-full items-center py-40 px-[10px] md:px-20">
+      <div data-aos="zoom-in" className="max-w-7xl flex flex-col md:flex-row gap-4 w-full items-center py-40 px-[10px] md:px-20">
         <div className="flex flex-col gap-4  ">
           <h1 className="text-[32px] text-[#123E6C] font-[700] text-center md:text-start leading-8 ">
             OUR TOP DESTINATIONS
@@ -742,8 +425,8 @@ export default function Home() {
       {/* our special offers */}
 
       <div className="   bg-blue-100/60 w-full justify-center  flex">
-        <div className="flex flex-col py-[81px] px-[10px]  items-center w-full max-w-7xl">
-          <div className="flex flex-col gap-4">
+        <div  className="flex flex-col py-[81px] px-[10px]  items-center w-full max-w-7xl">
+          <div data-aos="fade-right" className="flex flex-col gap-4">
             <h1 className="text-3xl text-center text-[#FFA800] font-[700]">
               Our special offers
             </h1>
@@ -755,7 +438,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-4 py-10">
+          <div data-aos="fade-left" className="flex flex-col md:flex-row gap-4 py-10">
             <div className="flex flex-col bg-white rounded-md  items-center md:items-start py-6 px-2 md:px-6 ">
               <span className="text-[#123E6C] text-[14px] font-[300]">
                 14 jan 2023
@@ -791,8 +474,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div>
-            <a
+          <div >
+            <a 
               href="/special"
               className=" hover:scale-110 transition-all py-[10px] w-[150px] text-white font-[300] md:py-[10px] md:px-[31px] text-[14px] bg-[#FFA800] rounded-lg md:w-[160px] flex justify-center items-center"
             >
