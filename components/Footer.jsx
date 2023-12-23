@@ -90,7 +90,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-3 items-center sm:items-start mt-5">
-            <h1 className="text-[#FFA800] text-[18px]">Contact us</h1>
+            <h1 className="text-[#FFA800] text-[18px]">Contact Us</h1>
             <span className="text-white text-[14px] font-[300]">
               Kigali, Rwanda
             </span>
@@ -98,7 +98,7 @@ const Footer = () => {
               +250791858282
             </span>
             <span className="text-white text-[14px] font-[300]">
-              info@Brighforth.rw
+              info@brighforth.rw
             </span>
             <span className="text-white text-[14px] font-[300]">
               www.brightforth.rw
@@ -119,6 +119,9 @@ const Footer = () => {
             Poland
           </a>
           <a href="#" className="text-white text-[14px] font-[300]">
+            France
+          </a>
+          <a href="#" className="text-white text-[14px] font-[300]">
             Ireland
           </a>
           <a href="#" className="text-white text-[14px] font-[300]">
@@ -133,24 +136,36 @@ const Footer = () => {
           <a href="#" className="text-white text-[14px] font-[300]">
             Georgia
           </a>
+          <a href="#" className="text-white text-[14px] font-[300]">
+            Cyprus
+          </a>
         </div>
         <div className="flex flex-col gap-3 items-center sm:items-start">
-          <h1 className="text-[#FFA800] text-[18px]">Study Desitinations</h1>
+          <h1 className="text-[#FFA800] text-[18px]">Our Services</h1>
           <a href="#" className="text-white text-[14px] font-[300]">
-            Counselling
+            Career Counseling
+          </a>
+
+          <a href="#" className="text-white text-[14px] font-[300]">
+            University selection and Documentation
           </a>
           <a href="#" className="text-white text-[14px] font-[300]">
-            Test preparation
-          </a>
-          <a className="text-white text-[14px] font-[300]">United Kingdom</a>
-          <a href="#" className="text-white text-[14px] font-[300]">
-            course, country and university selection
+            Visa Guidance
           </a>
           <a href="#" className="text-white text-[14px] font-[300]">
-            Visa processing
+            Pre-departure Services
+          </a>
+          <a href="#" className="text-white text-[14px] font-[300]">
+            Travel Insurance
+          </a>
+          <a href="#" className="text-white text-[14px] font-[300]">
+            Statement of Purpose
           </a>
           <div className="flex flex-col py-4 gap-3">
             <h1 className="text-[#FFA800]">Quick links</h1>
+            <a href="#" className="text-white text-[14px] font-[300]">
+              Enquiry Now
+            </a>
             <a href="#" className="text-white text-[14px] font-[300]">
               About us
             </a>
@@ -164,7 +179,7 @@ const Footer = () => {
               href="/application"
               className="text-white text-[14px] font-[300]"
             >
-              Aplly now
+              Apply Now
             </a>
             <a href="/assessment" className="text-white text-[14px] font-[300]">
               Assessment
@@ -172,11 +187,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4 items-center sm:items-start">
-          <h1 className="text-[#FFA800] text-[32px] font-[700] leading-8">
+          <h1 className="text-[#FFA800] text-center md:text-start text-[24px] md:text-[32px] font-[700] leading-8">
             Subscribe to our news letter
           </h1>
           <form action="#" className="flex ">
-            <div className="bg-[#0A3461] p-4 flex">
+            <div className="bg-[#0A3461] p-2 flex">
               <input
                 type="text"
                 placeholder="Enter your Email"
@@ -189,7 +204,7 @@ const Footer = () => {
           </form>
           <div className="flex flex-col gap-3 py-4">
             <a href="#" className="text-[#346FAF] text-[16px] font-[300]">
-              SEARCH UNIVERSITIES
+              FIND PROGRAMS
             </a>
             <a href="#" className="text-[#346FAF] text-[16px] font-[300]">
               BOOK ONLINE COUNSELLIG
@@ -205,7 +220,7 @@ const Footer = () => {
         className="max-w-7xl flex flex-col gap-2 w-full justify-center items-center"
       >
         <h1 className="text-[#FFA800] text-[14px] sm:text-[18px] md:text-[24px] font-[500] leading-6 text-center">
-          Global accreditations & recognitions
+          Trusted by Leading Institutions
         </h1>
         <div className="grid grid-cols-3 sm:grid-cols-5  gap-8 sm:gap-14 md:gap-20 ">
           <Image

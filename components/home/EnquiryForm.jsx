@@ -100,7 +100,7 @@ const EnquiryForm = ({ onClose }) => {
         ref={modalRef}
         className="w-[90%] md:w-[70%]  bg-white  rounded-md flex flex-col gapy-4 p-10 "
       >
-        <h1 className="text-[30px] font-[600]">Enquiry Form</h1>
+        <h1 className="text-[30px] font-[600] text-black">Enquiry Form</h1>
         <form action="" onSubmit={handelSubmit}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="flex flex-col gap-2">
@@ -110,7 +110,7 @@ const EnquiryForm = ({ onClose }) => {
                 onChange={(e) => setFullname(e.target.value)}
                 type="text"
                 placeholder="Enter Your Name"
-                className="border border-gray-300 p-3 rounded-lg"
+                className="border border-gray-300 p-3 rounded-lg placeholder:text-black text-black"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -120,7 +120,7 @@ const EnquiryForm = ({ onClose }) => {
                 onChange={(e) => setCity(e.target.value)}
                 type="text"
                 placeholder="Enter your City"
-                className="border border-gray-300 p-3 rounded-lg"
+                className="border border-gray-300 p-3 rounded-lg placeholder:text-black text-black"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -130,7 +130,7 @@ const EnquiryForm = ({ onClose }) => {
                 onChange={(e) => setEmail(e.target.value)}
                 type="text"
                 placeholder="Enter your Email"
-                className="border border-gray-300 p-3 rounded-lg"
+                className="border border-gray-300 p-3 rounded-lg placeholder:text-black text-black"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -140,7 +140,7 @@ const EnquiryForm = ({ onClose }) => {
                 onChange={(e) => setDestination(e.target.value)}
                 type="text"
                 placeholder="Enter Preferred Destination"
-                className="border border-gray-300 p-3 rounded-lg"
+                className="border border-gray-300 p-3 rounded-lg placeholder:text-black text-black"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -150,7 +150,7 @@ const EnquiryForm = ({ onClose }) => {
                 onChange={(e) => setPhonenumber(e.target.value)}
                 type="text"
                 placeholder="Enter Phone Number"
-                className="border border-gray-300 p-3 rounded-lg"
+                className="border border-gray-300 p-3 rounded-lg placeholder:text-black text-black"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -160,7 +160,7 @@ const EnquiryForm = ({ onClose }) => {
                 onChange={(e) => setService(e.target.value)}
                 type="text"
                 placeholder="Enter service"
-                className="border border-gray-300 p-3 rounded-lg"
+                className="border border-gray-300 p-3 rounded-lg placeholder:text-black text-black"
               />
             </div>
           </div>

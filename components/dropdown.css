@@ -50,3 +50,39 @@
     background-color: #4caf50;
     color: white;
   }
+
+
+  .mobile ul{
+    position: relative;
+    z-index: 10;
+}
+.mobile ul ul{
+    display: none;
+    width: 100%;
+    
+   
+    background: rgb(146, 146, 146);
+    position: absolute;
+    padding-right: 70px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-radius: 4px;
+  
+    
+}
+.mobile ul ul li{
+    padding-top: 14px;
+   
+
+}
+.mobile ul li:hover ul{
+    display: block;
+    position: absolute;
+}
+.icon{
+    transition: 0.4s ease-in-out;
+}
+.mobile ul li:hover .icon{
+    transform: rotate(-180deg);
+   
+}

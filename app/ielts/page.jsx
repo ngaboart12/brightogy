@@ -1,12 +1,12 @@
-import React from 'react';
-import Image from 'next/image';
-import LinkComponent2 from '../../components/LinkComponet2';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+import React from "react";
+import Image from "next/image";
+import LinkComponent2 from "../../components/LinkComponet2";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const Ielts = () => {
   return (
-    <div className="flex flex-col items-center justify-center  w-full">
+    <div className="flex flex-col items-center justify-center  w-full bg-gray-100">
       <LinkComponent2 />
       <Navbar />
 
@@ -229,7 +229,7 @@ const Ielts = () => {
         <div className="flex flex-col md:flex-row gap-10 w-full">
           <div className="flex flex-col gap-2 w-full md:w-1/2">
             <div className="p-2 bg-[#F5FAFF] flex items-center justify-between w-[80%]">
-              <span className="text-[14px] text-blak">
+              <span className="text-[14px]  text-[#07294D] ">
                 1. Listening Section
               </span>
               <svg
@@ -246,7 +246,9 @@ const Ielts = () => {
               </svg>
             </div>
             <div className="p-2 bg-[#F5FAFF] flex items-center justify-between w-[80%]">
-              <span className="text-[14px] text-blak">2. Reading Section</span>
+              <span className="text-[14px]  text-[#07294D] ">
+                2. Reading Section
+              </span>
               <svg
                 width="24"
                 height="24"
@@ -261,7 +263,9 @@ const Ielts = () => {
               </svg>
             </div>
             <div className="p-2 bg-[#F5FAFF] flex items-center justify-between w-[80%]">
-              <span className="text-[14px] text-blak">3. Writing section</span>
+              <span className="text-[14px] text-[#07294D] ">
+                3. Writing section
+              </span>
               <svg
                 width="24"
                 height="24"
@@ -276,7 +280,9 @@ const Ielts = () => {
               </svg>
             </div>
             <div className="p-2 bg-[#F5FAFF] flex items-center justify-between w-[80%]">
-              <span className="text-[14px] text-blak">4. Speaking section</span>
+              <span className="text-[14px] text-[#07294D] ">
+                4. Speaking section
+              </span>
               <svg
                 width="24"
                 height="24"

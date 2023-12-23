@@ -58,14 +58,19 @@ const ContactUS = () => {
   }
   return (
     <div
-      data-aos="zoom-out-right"
-      className=" w-full items-center flex flex-col gap-6 max-w-7xl py-20"
+      className=" w-full items-center flex flex-col gap-6 max-w-7xl py-20 bg-gray-100"
       id="contactus"
     >
-      <h1 className="text-[32px] text-[#07294D] font-bold text-center">
+      <h1
+        data-aos="zoom-out-right"
+        className="text-[32px] text-[#07294D] font-bold text-center"
+      >
         React Out To Us
       </h1>
-      <div className="flex w-full flex-col gap-10 md:flex-row">
+      <div
+        data-aos="zoom-out-right"
+        className="flex w-full flex-col gap-10 md:flex-row"
+      >
         <div className="w-full md:w-1/2 md:items-end items-center flex flex-col gap-4">
           <div className=" w- flex flex-col gap-5">
             <h1 className="text-[24px] text-[#07294D] font-bold ">
@@ -180,33 +185,33 @@ const ContactUS = () => {
             className=" w-full md:w-[60%] flex flex-col gap-4 px-10"
           >
             <div className="flex flex-col gap-1">
-              <span>Name</span>
+              <span className="text-black">Name</span>
               <input
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 type="text"
                 placeholder="Enter your name"
-                className="p-[10px] outline-none rounded-xl border border-gray-300 font-light"
+                className="p-[10px] outline-none rounded-xl border border-gray-300 font-light placeholder:text-black text-black"
               />
             </div>
             <div className="flex flex-col gap-1">
-              <span>Email</span>
+              <span className="text-black">Email</span>
               <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 type="text"
                 placeholder="Enter your Email"
-                className="p-[10px] outline-none rounded-xl border border-gray-300 font-light"
+                className="p-[10px] outline-none rounded-xl border border-gray-300 font-light  placeholder:text-black text-black"
               />
             </div>
             <div className="flex flex-col gap-1">
-              <span>Message</span>
+              <span className="text-black">Message</span>
               <textarea
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 type="text"
                 placeholder="Enter your Message"
-                className="p-[10px] outline-none rounded-xl border border-gray-300 font-light"
+                className="p-[10px] outline-none rounded-xl border border-gray-300 font-light  placeholder:text-black text-black"
                 rows={3}
               ></textarea>
             </div>

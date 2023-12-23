@@ -1,9 +1,9 @@
-import React from 'react';
-import Footer from '../../components/Footer';
-import LinkComponent from '../../components/LinkComponet';
-import Navbar from '../../components/Navbar';
+import React from "react";
+import Footer from "../../components/Footer";
+import LinkComponent from "../../components/LinkComponet";
+import Navbar from "../../components/Navbar";
 
-import Image from 'next/image';
+import Image from "next/image";
 
 const StudyInChina = () => {
   return (
@@ -33,35 +33,38 @@ const StudyInChina = () => {
       {/* lists */}
       <div className="w-full px-[20px] items-center md:px-40 max-w-7xl flex flex-col">
         <div className="gap-x-20 gap-y-6 grid grid-cols-1 sm:grid-cols-2">
-          <span className="text-[18px] text-black font-[400]">
+          <a href="#introchina" className="text-[18px] text-black font-[400]">
             A Quick Intro to China
-          </span>
-          <span className="text-[18px] text-black font-[400]">
+          </a>
+          <a href="#whystudy" className="text-[18px] text-black font-[400]">
             Why Study in China?
-          </span>
-          <span className="text-[18px] text-black font-[400]">
+          </a>
+          <a href="#higher" className="text-[18px] text-black font-[400]">
             Higher Education Institutions in China
-          </span>
-          <span className="text-[18px] text-black font-[400]">
+          </a>
+          <a href="#pathway" className="text-[18px] text-black font-[400]">
             Pathway to Studying in China
-          </span>
-          <span className="text-[18px] text-black font-[400]">
+          </a>
+          <a href="#top" className="text-[18px] text-black font-[400]">
             Top Institutions in China
-          </span>
-          <span className="text-[18px] text-black font-[400]">
+          </a>
+          <a href="#after" className="text-[18px] text-black font-[400]">
             After Study Opportunities in China
-          </span>
-          <span className="text-[18px] text-black font-[400]">
+          </a>
+          <a href="#apply" className="text-[18px] text-black font-[400]">
             Applying to Study in China
-          </span>
-          <span className="text-[18px] text-black font-[400]">
+          </a>
+          <a href="#university" className="text-[18px] text-black font-[400]">
             Universities in China Grouped by Subject
-          </span>
+          </a>
         </div>
       </div>
 
       {/* A quick intro to china */}
-      <div className="max-w-7xl w-full px-[20px] md:px-40  flex-col justify-start items-center gap-6 inline-flex py-20">
+      <div
+        id="introchina"
+        className="max-w-7xl w-full px-[20px] md:px-40  flex-col justify-start items-center gap-6 inline-flex py-20"
+      >
         <div className="max-w-[585px] text-center text-sky-950 text-[32px] font-bold">
           A Quick Intro to China
         </div>
@@ -83,9 +86,12 @@ const StudyInChina = () => {
       </div>
 
       {/* why study in china */}
-      <div className="max-w-7xl w-full px-[20px] md:px-40  flex-col justify-start items-center md:items-start gap-6 inline-flex">
+      <div
+        id="whystudy"
+        className="max-w-7xl w-full px-[20px] md:px-40  flex-col justify-start items-center md:items-start gap-6 inline-flex"
+      >
         <div className="px-4 py-2 bg-orange-50 justify-center items-center gap-2.5 inline-flex">
-          <div className="text-center text-amber-500 text-2xl font-normal">
+          <div className="text-center text-amber-500 text-xl font-normal">
             Why Study in China?
           </div>
         </div>
@@ -153,7 +159,10 @@ const StudyInChina = () => {
       </div>
 
       {/* high education in china */}
-      <div className="max-w-7xl py-20 w-full px-[20px] md:px-40  flex-col justify-start items-start gap-12 inline-flex">
+      <div
+        id="higher"
+        className="max-w-7xl py-20 w-full px-[20px] md:px-40  flex-col justify-start items-start gap-12 inline-flex"
+      >
         <div className="justify-start items-start gap-8 flex flex-col md:flex-row">
           <div className="max-w-[420px] text-sky-950 text-[32px] font-bold">
             Higher Education in China
@@ -356,7 +365,10 @@ const StudyInChina = () => {
 
       {/* pathway to studying in china */}
 
-      <div className="max-w-7xl w-full p-6 md:p-20 justify-center items-center flex flex-col    bg-sky-900">
+      <div
+        id="pathway"
+        className="max-w-7xl w-full p-6 md:p-20 justify-center items-center flex flex-col    bg-sky-900"
+      >
         <div className="  flex-col justify-start items-center gap-[42px] inline-flex">
           <div className="flex-col justify-start items-center gap-8 flex">
             <div className="text-amber-500 text-[24px] md:text-[32px] text-center font-bold">
@@ -385,7 +397,7 @@ const StudyInChina = () => {
       </div>
 
       {/* top insitituation */}
-      <div className="max-w-7xl flex w-full flex-col md:flex-row">
+      <div id="top" className="max-w-7xl flex w-full flex-col md:flex-row">
         <div className="w-full md:w-1/2 px-[20px]  md:pl-[155px] md:pr-[102px] pt-[102px] pb-[133px] bg-sky-100 justify-end items-center inline-flex">
           <div className="self-stretch flex-col justify-start items-start gap-6 inline-flex">
             <div className="text-sky-900 text-[32px] font-bold">
@@ -409,7 +421,7 @@ const StudyInChina = () => {
                   width={200}
                   height={0}
                   className="w-[49.84px] h-10"
-                  src="https://via.placeholder.com/50x40"
+                  src="/image/un1.png"
                 />
                 <div className="text-center text-black text-lg font-normal">
                   Tsinghua University
@@ -422,7 +434,7 @@ const StudyInChina = () => {
                   width={200}
                   height={0}
                   className="w-[52.22px] h-10"
-                  src="https://via.placeholder.com/52x40"
+                  src="/image/un2.png"
                 />
                 <div className="text-center text-black text-lg font-normal">
                   Zhejiang Univerity
@@ -435,7 +447,7 @@ const StudyInChina = () => {
                   width={200}
                   height={0}
                   className="w-[52.22px] h-10"
-                  src="https://via.placeholder.com/52x40"
+                  src="/image/un3.png"
                 />
                 <div className="text-center text-black text-lg font-normal">
                   Fudan University
@@ -450,7 +462,7 @@ const StudyInChina = () => {
                   width={200}
                   height={0}
                   className="w-[52.22px] h-10"
-                  src="https://via.placeholder.com/52x40"
+                  src="/image/un4.png"
                 />
                 <div className="text-black text-lg font-normal">
                   Shangai jia tong
@@ -465,7 +477,7 @@ const StudyInChina = () => {
                   width={200}
                   height={0}
                   className="w-[52.22px] h-10"
-                  src="https://via.placeholder.com/52x40"
+                  src="/image/un5.png"
                 />
                 <div className="text-center text-black text-lg font-normal">
                   Fudan University
@@ -477,7 +489,7 @@ const StudyInChina = () => {
       </div>
 
       {/* after studying opurtunity */}
-      <div className="flex flex-col gap-6 py-10">
+      <div id="after" className="flex flex-col gap-6 py-10">
         <div className="text-center text-sky-900 text-[24px] md:text-[32px] font-bold">
           After Study Opportunities <br />
           in China

@@ -5,12 +5,12 @@ import Navbar from "../../components/Navbar";
 
 const StudyInCanada = () => {
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-full bg-gray-100 overflow-hidden">
       <LinkComponent />
       <Navbar />
 
       {/* intro */}
-      <div className="w-full max-w-7xl py-10 flex-col justify-start items-center gap-4 inline-flex">
+      <div className="w-full max-w-7xl py-10 flex-col justify-start items-center gap-4 inline-flex px-[20px]">
         <div className="px-4 py-2 bg-orange-50 justify-center items-center gap-2.5 inline-flex">
           <div className="text-center text-amber-500 text-2xl font-[300] ">
             Study in Canada
@@ -29,7 +29,7 @@ const StudyInCanada = () => {
       </div>
 
       {/* why canada */}
-      <div className="max-w-7xl w-full py-20 px-40  flex-col justify-center items-center gap-4 inline-flex">
+      <div className="max-w-7xl w-full py-20 px-[20px] md:px-40  flex-col justify-center items-center gap-4 inline-flex">
         <div className=" justify-start items-start gap-[18px] grid grid-cols-1 md:grid-cols-2">
           <a
             href="#chances"
@@ -80,7 +80,7 @@ const StudyInCanada = () => {
       {/* changes to become canada student */}
       <div
         id="chances"
-        className="max-w-7xl w-full px-[20px] md:px-40 flex-col justify-start items-start gap-6 inline-flex"
+        className="max-w-7xl w-full px-[20px] md:px-40 flex-col justify-start items-start gap-6 inline-flex text-center md:text-start"
       >
         <div className="max-w-[585px] text-sky-950 md:text-[32px] text-[22px] font-bold  text-center md:text-start">
           What Are My Chances of Becoming an International Student in Canada?

@@ -1,8 +1,8 @@
-'use client';
-import React, { useState } from 'react';
-import Footer from '../../components/Footer';
-import LinkComponent from '../../components/LinkComponet';
-import Navbar from '../../components/Navbar';
+"use client";
+import React, { useState } from "react";
+import Footer from "../../components/Footer";
+import LinkComponent from "../../components/LinkComponet";
+import Navbar from "../../components/Navbar";
 
 const Page = () => {
   const [whichOpen, setWhichOpen] = useState();
@@ -57,15 +57,15 @@ const Page = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-center  w-full">
+    <div className="flex flex-col items-center justify-center  w-full bg-gray-100">
       <LinkComponent />
       <Navbar />
       <div className="flex flex-col gap-10 w-full max-w-7xl px-[20px] md:px-20 lg:px-40 pb-20 ">
-        <div className=" gap-2 mx-auto flex flex-col py-4">
-          <h1 className="text-[32px] text-[#123E6C] font-bold">
+        <div className=" gap-2 mx-auto flex flex-col py-4 text-center md:text-start">
+          <h1 className="text-[28px] leading-8 md:le md:text-[32px] text-[#123E6C] font-bold">
             Frequently asked questions(FAQ)
           </h1>
-          <span className="text-[20px] text-[#777]">
+          <span className="text-[20px] text-[#777] text-center">
             Explore quick answers to your questions here.
           </span>
         </div>
@@ -85,7 +85,7 @@ const Page = () => {
                   fill="black"
                 />
               </svg>
-              <h1 className="text-[18px]">General</h1>
+              <h1 className="text-[18px] text-black">General</h1>
             </div>
             <div className="flex flex-row gap-2">
               <svg
@@ -100,7 +100,7 @@ const Page = () => {
                   fill="black"
                 />
               </svg>
-              <h1 className="text-[18px]">Package</h1>
+              <h1 className="text-[18px] text-black">Package</h1>
             </div>
             <div className="flex flex-row gap-2 items-center">
               <svg
@@ -115,7 +115,7 @@ const Page = () => {
                   fill="black"
                 />
               </svg>
-              <h1 className="text-[18px]">General</h1>
+              <h1 className="text-[18px] text-black">General</h1>
             </div>
           </div>
           <div className="flex flex-col gap-4">
@@ -142,7 +142,7 @@ const Page = () => {
                       </svg>
                     </div>
 
-                    <h1 className="text-[18px]">{item.titel}</h1>
+                    <h1 className="text-[16px] text-black">{item.titel}</h1>
                   </div>
                   <div
                     className={`${

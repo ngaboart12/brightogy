@@ -40,7 +40,7 @@ const Duolingo = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center  w-full">
+    <div className="flex flex-col items-center justify-center  w-full bg-gray-100 overflow-hidden">
       <LinkComponent />
       <Navbar />
 
@@ -56,7 +56,7 @@ const Duolingo = () => {
           />
         </div>
         <div className="w-full md:w-1/2 flex flex-col gap-4">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 text-center md:text-start">
             <h1 className="text-[18px] font-[700] text-[#07294D]">
               Duolingo English Test
             </h1>
@@ -161,11 +161,13 @@ const Duolingo = () => {
       {/* miscellaneous */}
       <div className="flex flex-col gap-10 w-full items-center justify-center px-[20px] md:px-20">
         <div className="text-sky-950 text-[32px] font-bold ">Miscellaneous</div>
-        <div className="grid grid-cols-2 gap-y-10 gap-x-60">
+        <div className="grid grid-cols-2 gap-y-10 gap-x-10">
           {data.map((item, index) => {
             return (
               <div key={index}>
-                <span className="text-[14px] font-[#07294D]">{item.name}</span>
+                <span className="text-[14px] font-[#07294D] text-black">
+                  {item.name}
+                </span>
               </div>
             );
           })}

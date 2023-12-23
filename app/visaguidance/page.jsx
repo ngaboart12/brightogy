@@ -1,5 +1,5 @@
 import React from "react";
-import Image from 'next/image'
+import Image from "next/image";
 import LinkComponent from "../../components/LinkComponet";
 import Navbar from "../../components/Navbar";
 
@@ -9,7 +9,7 @@ import Footer from "../../components/Footer";
 
 const Visa = () => {
   return (
-    <div className="flex flex-col items-center justify-center  w-full">
+    <div className="flex flex-col items-center justify-center  w-full bg-gray-100">
       <LinkComponent />
       <Navbar />
       {/* hero */}
@@ -62,20 +62,20 @@ const Visa = () => {
           </div>
           <div className="flex flex-col items-center md:items-start">
             <h1 className="text-[#07294D] text-[24px] font-[600]">
-            Visa Guidance
+              Visa Guidance
             </h1>
 
             <div className="flex flex-col items-center md:items-start py-2 gap-2">
               <span className="text-[#555555] text-[16px] font-[300] text-center md:text-start leading-5">
-              Setting a successful student visa is not an easy task. At BrightForth, We guide our
-               clients in the entire visa process from filling up applications, preparing financial statements 
-               to training candidates for mock interviews. BrightForth staff remains regularly updated on 
-              the latest visa documentation rules and this helps us in guiding candidates towards filing their
-               documents in the most presentable manner.
+                Setting a successful student visa is not an easy task. At
+                BrightForth, We guide our clients in the entire visa process
+                from filling up applications, preparing financial statements to
+                training candidates for mock interviews. BrightForth staff
+                remains regularly updated on the latest visa documentation rules
+                and this helps us in guiding candidates towards filing their
+                documents in the most presentable manner.
               </span>
             </div>
-
-        
           </div>
         </div>
       </div>
@@ -84,16 +84,20 @@ const Visa = () => {
       <div className="flex flex-col px-[20px] md:px-20 lg:px-[40] md:flex-row max-w-7xl w-full gap-6">
         <div className="w-full md:w-1/2 flex flex-col gap-4 px-[0px] md:px-10 lg:px-20 items-center md:items-start">
           <span className="text-[16px] text-[#353535] text-center md:text-start">
-          The competent staff at BrightForth assists students with the visa applications, offers guidelines for financial statements,
-           and helps students in preparing the file to meet the requirements of the High Commission to ensure 100 percent Visa success.
+            The competent staff at BrightForth assists students with the visa
+            applications, offers guidelines for financial statements, and helps
+            students in preparing the file to meet the requirements of the High
+            Commission to ensure 100 percent Visa success.
           </span>
         </div>
         <div className="w-full md:w-1/2 flex flex-col gap-4 px-[0px] md:px-10 lg:px-20 items-center md:items-start">
           <span className="text-[14px] text-[#353535] text-center md:text-start leading-4">
-          Every country has a different process and procedure for visa filing. We at BrightForth assist students with
-           adequate information based on country to country. At BrightForth, we guide students with clarity and all the
-            checklist information is available at our offices.
-           Based on the checklist for all the countries, the guidelines are given on financial documents and the visa filing process.
+            Every country has a different process and procedure for visa filing.
+            We at BrightForth assist students with adequate information based on
+            country to country. At BrightForth, we guide students with clarity
+            and all the checklist information is available at our offices. Based
+            on the checklist for all the countries, the guidelines are given on
+            financial documents and the visa filing process.
           </span>
         </div>
       </div>

@@ -4,9 +4,8 @@ import Navbar from "../../components/Navbar";
 
 import LinkComponent from "../../components/LinkComponet";
 import Footer from "../../components/Footer";
-import Image from "next/image"
+import Image from "next/image";
 import Parteners from "../../components/Parteners";
-
 
 const Aboutus = () => {
   const members = [
@@ -32,14 +31,14 @@ const Aboutus = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center  w-full">
+    <div className="flex flex-col items-center  w-full overflow-hidden bg-white relative">
       <LinkComponent />
       <Navbar />
 
       {/* hero section */}
       <div className="max-w-7xl flex flex-col h items-center lg:flex-row px-[20px] lg:px-20 gap-10 py-10">
-        <div className="flex flex-col gap-4 w-full md:w-1/2">
-          <h1 className="text-[30px] leading-[40px] font-semibold md:text-[40px] text-[#07294D] max-w-[264px]">
+        <div className="flex flex-col gap-4 w-full md:w-1/2 text-center md:text-start">
+          <h1 className="text-[30px] leading-[40px] font-semibold md:text-[40px] text-[#07294D] max-w-[300px]">
             Welcome to BrightForth
           </h1>
           <div className="flex px-[10px] flex-col gap-10">
@@ -55,7 +54,7 @@ const Aboutus = () => {
               with an endeavor of reviving inner talent is the education
               provider and international student placement company that paves
               the path of the student who aspires to study in foreign countries
-              like the UK, Canada, USA, Australia, Ireland. Established in 2022,
+              like the UK, Canada, USA, Australia, Ireland. Established in 2021,
               Brightforth provides customized solutions to the student according
               to their academic, financial, and personal profiles for the
               befitted foreign universities. Brightforth also guiding for IELTS,
@@ -70,7 +69,7 @@ const Aboutus = () => {
             <div className=" w-[335px] h-[226px] sm:w-[435px] sm:h-[284px]">
               <Image
                 class=" w-full h-full left-0 top-0 absolute rounded-xl"
-                src={'/image/about.png'}
+                src={"/image/about.png"}
                 width={200}
                 height={200}
               />
@@ -79,17 +78,13 @@ const Aboutus = () => {
               <div class="flex-col justify-start items-start gap-4 flex">
                 <div class="justify-start items-start gap-2 inline-flex">
                   <div class="flex-col justify-start items-start gap-2 inline-flex">
-                    <div class="text-yellow-400 text-2xl font-bold ">
-                      4,500
-                    </div>
+                    <div class="text-yellow-400 text-2xl font-bold ">50 +</div>
                     <div class="w-[140px] text-slate-400 text-sm font-normal ">
                       Total Students
                     </div>
                   </div>
                   <div class="flex-col justify-start items-start gap-2 inline-flex">
-                    <div class="text-yellow-400 text-2xl font-bold ">
-                      750
-                    </div>
+                    <div class="text-yellow-400 text-2xl font-bold ">200</div>
                     <div class="w-[140px] text-slate-400 text-sm font-normal ">
                       Universities
                     </div>
@@ -97,17 +92,13 @@ const Aboutus = () => {
                 </div>
                 <div class="justify-start items-start gap-2 inline-flex">
                   <div class="flex-col justify-start items-start gap-2 inline-flex">
-                    <div class="text-yellow-400 text-2xl font-bold ">
-                      15
-                    </div>
+                    <div class="text-yellow-400 text-2xl font-bold ">5</div>
                     <div class="w-[140px] text-slate-400 text-sm font-normal ">
                       Counselors
                     </div>
                   </div>
                   <div class="flex-col justify-start items-start gap-2 inline-flex">
-                    <div class="text-yellow-400 text-2xl font-bold ">
-                      450
-                    </div>
+                    <div class="text-yellow-400 text-2xl font-bold ">450</div>
                     <div class="w-[100px] leading-3 text-slate-400 text-sm font-normal ">
                       Available Programs
                     </div>
@@ -129,10 +120,11 @@ const Aboutus = () => {
           </div>
           <div className="md:mt-0 mt-5">
             <span className="text-[16px] text-[#C2C2C2]">
-              Team subtract variant style list italic. Pixel vertical arrow blur
-              inspect selection invite bold style invite. Rotate flows subtract
-              export arrange shadow outline outline connection. Ellipse select
-              text arrow pencil ipsum.
+              Our educational consultant has led us on a journey of academic
+              achievement, and working with them has been a life-changing
+              experience. Their proficiency, commitment, and customized strategy
+              have genuinely distinguished them. This is a taste of the
+              successful collaboration we have had.
             </span>
           </div>
         </div>
@@ -197,12 +189,18 @@ const Aboutus = () => {
         </div>
       </div>
       {/* why choose us */}
-      <div className="max-w-7x w-full px-[] md:px-40 flex flex-col gap-20 py-20">
+      <div className="max-w-7x w-full px-[20px] md:px-40 flex flex-col gap-20 py-20">
         <div className="flex w-full flex-col-reverse md:flex-row justify-between gap-10 items-center">
           <div className="w-full md:w-1/2 h-[250px]">
-            <Image src={`/image/member1.png`} width={600} height={0} alt="" className="w-[60%] h-full object-cover" />
+            <Image
+              src={`/image/member1.png`}
+              width={600}
+              height={0}
+              alt=""
+              className="md:w-[60%] w-full  h-full object-cover"
+            />
           </div>
-          <div className="w-full md:w-1/2 flex flex-col gap-4">
+          <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-start">
             <h1 className="text-[24px] text-[#07294D] font-[700]">
               Why Choose Us
             </h1>
@@ -217,12 +215,12 @@ const Aboutus = () => {
           </div>
         </div>
         <div className="flex w-full flex-col md:flex-row justify-between gap-10 items-center">
-          <div className="w-full md:w-1/2 flex flex-col gap-4">
-            <h1 className="text-[24px] text-[#07294D] font-[700]">
+          <div className="w-full md:w-1/2 flex flex-col gap-4 ">
+            <h1 className="text-[24px] text-[#07294D] font-[700] text-center md:text-start">
               Our Mission
             </h1>
-            <div className="flex flex-col gap-4">
-              <p className="text-[16px] text-[#2B2A2A]">
+            <div className="flex flex-col gap-4 text-center md:text-start">
+              <p className="text-[16px] text-[#2B2A2A] ">
                 Provide efficient, transparent and authentic services to
                 students
               </p>
@@ -236,9 +234,9 @@ const Aboutus = () => {
               </p>
             </div>
           </div>
-          <div className="w-full md:w-1/2 h-[250px] flex flex-col gap-2 bg-[#07294D] rounded-lg p-10">
+          <div className="w-full md:w-1/2 text-center md:text-start flex flex-col gap-2 bg-[#07294D] rounded-lg p-5 md:p-10">
             <h1 className="text-[#FFA800] text-[24px] font-bold">Our Goal</h1>
-            <p className="text-[14px] text-white leading-4">
+            <p className="text-[16px] font-[300] text-white leading-5">
               BrighForth offers unbiased, comprehensive, genuine, ethical and
               quality professional education services. We help connect students
               with institutions of higher learning worldwide. As a preferred

@@ -252,15 +252,15 @@ export default function Home() {
     },
   ];
   return (
-     <div className="flex flex-col items-center justify-center  w-full overflow-hidden ">
+     <div className="flex flex-col items-center justify-center  w-full overflow-hidden  ">
       <Hero />
 
       {/* services offer */}
-      <div data-aos="fade-down" className="flex flex-col gap-5 pt-[83px] items-center">
-        <h1 className="max-w-[377px] text-[#07294D] font-extrabold text-[32px] text-center leading-[30px]">
+      <div  className="flex flex-col gap-5 pt-[83px] items-center bg-white">
+        <h1 data-aos="fade-down" className="max-w-[377px] text-[#07294D] font-extrabold text-[32px] text-center leading-[30px]">
           Our Services We Offer toThe Students
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-[40px] md:gap-x-[120px] gap-y-6">
+        <div data-aos="fade-down" className="grid grid-cols-2 md:grid-cols-3 gap-x-[40px] md:gap-x-[120px] gap-y-6">
           {services.map((item, index) => {
             return (
               <div key={index} className="flex flex-col gap-2 items-center">
@@ -275,8 +275,8 @@ export default function Home() {
       </div>
 
       {/* apply and make apo */}
-      <div data-aos="fade-down" className=" flex  justify-center items-center py-20 w-full px-2 md:px-20">
-        <div className="flex max-w-7xl w-full flex-col md:flex-row md:justify-between gap-10 bg-[#07294D] rounded-[24px] py-12 px-3 md:p-20">
+      <div className=" flex  justify-center items-center py-20 w-full px-2 md:px-20 bg-white">
+        <div data-aos="fade-down"  className="flex max-w-7xl w-full flex-col md:flex-row md:justify-between gap-10 bg-[#07294D] rounded-[24px] py-12 px-3 md:p-20">
           <div className="flex flex-col gap-2 items-center md:items-start">
             <h1 className="text-[#FFA800] text-[24px] font-normal text-center md:text-start leading-6">
               Apply for january intake 2024
@@ -312,8 +312,8 @@ export default function Home() {
 
       {/* abou us  */}
 
-      <div data-aos="fade-right" className="max-w-7xl flex flex-col gap-10 md:flex-row md:justify-between py-14  w-full">
-        <div className="w-full md:w-1/2">
+      <div className="max-w-7xl flex flex-col gap-10 md:flex-row md:justify-between py-14 bg-gray-100  w-full">
+        <div data-aos="fade-right"  className="w-full md:w-1/2">
           <Image
             src={`/image/aboutus.svg`}
             width={100}
@@ -322,7 +322,7 @@ export default function Home() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="w-full flex flex-col items-center md:items-start gap-4 md:gap-6 md:w-1/2 overflow-hidden">
+        <div data-aos="fade-right"  className="w-full flex flex-col items-center md:items-start gap-4 md:gap-6 md:w-1/2 overflow-hidden">
           <h1 className=" border-l-4 border-[#FFA800] text-[#FFA800] px-4 text-[18px] font-bold">
             About us
           </h1>
@@ -347,28 +347,28 @@ export default function Home() {
 
       {/* why choose us */}
 
-      <div data-aos="fade-left" className="max-w-7xl relative flex flex-col py-6 w-full h-full items-center gap-6 px-[20px] sm:px-20 ">
-        <h1 className='text-[32px] font-bold text-[#FFA800]'>Why choose us</h1>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10'>
+      <div  className="max-w-7xl relative bg-gray-100 flex flex-col py-6 w-full h-full items-center gap-6 px-[20px] sm:px-20 ">
+        <h1 data-aos="fade-left" className='text-[32px] font-bold text-[#FFA800]'>Why choose us</h1>
+        <div data-aos="fade-left" className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-10'>
           <div className='flex flex-row gap-4'>
             <Image src={`/image/contract.svg`} width={200} height={100} alt='' className='w-20 h-20' />
             <div className='flex flex-col gap-2'>
               <span className='text-[24px] text-[#07294D]'>Success rate</span>
-              <span>Our Team works to meet client requirement and make sure success of application process</span>
+              <span className='text-black'>Our Team works to meet client requirement and make sure success of application process</span>
             </div>
           </div>
           <div className='flex flex-row gap-4'>
             <Image src={`/image/answer.svg`} width={200} height={100} alt='' className='w-20 h-20' />
             <div className='flex flex-col gap-2'>
               <span className='text-[24px] text-[#07294D]'>Free Assistance</span>
-              <span>Get full free guidance for your study preference with Our team</span>
+              <span className='text-black'>Get full free guidance for your study preference with Our team</span>
             </div>
           </div>
           <div className='flex flex-row gap-4'>
             <Image src={`/image/book.svg`} width={200} height={100} alt='' className='w-20 h-20' />
             <div className='flex flex-col gap-2'>
               <span className='text-[24px] text-[#07294D]'>Free Assistance</span>
-              <span>Get full free guidance for your study preference with Our team</span>
+              <span className='text-black'>Get full free guidance for your study preference with Our team</span>
             </div>
           </div>
         </div>
@@ -384,8 +384,8 @@ export default function Home() {
        <OurlBlog/>
       {/*top destination  */}
 
-      <div data-aos="zoom-in" className="max-w-7xl flex flex-col md:flex-row gap-4 w-full items-center py-40 px-[10px] md:px-20">
-        <div className="flex flex-col gap-4  ">
+      <div  className=" bg-gray-100 max-w-7xl flex flex-col md:flex-row gap-4 w-full items-center py-40 px-[10px] md:px-20">
+        <div data-aos="zoom-in"  className="flex flex-col gap-4  ">
           <h1 className="text-[32px] text-[#123E6C] font-[700] text-center md:text-start leading-8 ">
             OUR TOP DESTINATIONS
           </h1>
@@ -394,15 +394,15 @@ export default function Home() {
           </p>
           <a
             href="#"
-            className="py-[16px] px-[31px] bg-[#FFA800] rounded-lg w-[200px] flex justify-center items-center"
+            className="py-[16px] mx-auto md:mx-0 px-[31px] bg-[#FFA800] rounded-lg w-[200px] flex justify-center items-center"
           >
             Discover more
           </a>
         </div>
-        <div className="w-full relative">
+        <div data-aos="zoom-in"  className="w-full relative items-center">
           <Swiper ref={swiperRef} {...swiperOptions}>
             {countries.map((country, index) => (
-              <SwiperSlide key={index} className="w-[300px] h-[300px] py-4">
+              <SwiperSlide  key={index} className="w-[300px] h-[300px] py-4">
                 <div className="flex flex-col items-center  w-[300px] h-[350px]">
                   <Image
                     src={country.imageSrc}
@@ -411,7 +411,7 @@ export default function Home() {
                     alt={`Flag of ${country.name}`}
                     className="w-[250px] h-full object-cover rounded-md"
                   />
-                  <p className="mt-2 text-lg font-semibold">{country.name}</p>
+                  <p className="mt-2 text-lg font-semibold text-black">{country.name}</p>
                 </div>
               </SwiperSlide>
             ))}
@@ -424,17 +424,14 @@ export default function Home() {
 
       {/* our special offers */}
 
-      <div className="   bg-blue-100/60 w-full justify-center  flex">
+      <div className="   bg-blue-100 w-full justify-center  flex">
         <div  className="flex flex-col py-[81px] px-[10px]  items-center w-full max-w-7xl">
           <div data-aos="fade-right" className="flex flex-col gap-4">
             <h1 className="text-3xl text-center text-[#FFA800] font-[700]">
               Our special offers
             </h1>
             <p className="text-[16px] leading-4 text-center text-[#3C3B3B] font-[300] max-w-[500px]">
-            Our educational consultant has led us on a journey of academic achievement, and working
-             with them has been a life-changing experience. Their proficiency,
-             commitment, and customized strategy have genuinely distinguished them. This is 
-             a taste of the successful collaboration we have hadt{" "}
+            Take advantage of our specially designed offerings that are exclusively for you to unlock the doors to academic success. It gives us great pleasure to offer special, time-limited options that mix quality and affordability from our educational consultant. With these alluring incentives created to enhance your educational journey, find a route to academic success
             </p>
           </div>
 

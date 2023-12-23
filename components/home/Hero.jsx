@@ -46,7 +46,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="flex bottom-10 right-10 absolute  md:ml-auto md:mx-0">
+      <div className="flex bottom-10 right-10 absolute z-10  md:ml-auto md:mx-0">
         <a
           href="/"
           className="p-[10px] bg-[#FFA800] hover:bg-[#FFA800]/80 hover:scale-110 rounded-xl rounded-br-none"
@@ -72,12 +72,12 @@ const Hero = () => {
         className="w-[70%]  px-[38px] py-[10px] bg-black bg-opacity-25 rounded-xl backdrop-blur-[5px] justify-center items-center inline-flex"
       >
         <div className="self-stretch justify-start items-start gap-[46px] flex flex-col md:flex-row">
-          <div className="justify-start items-center gap-4 flex">
-            <div>
+          <div className="justify-start items-center gap-4 flex flex-col md:flex-row">
+            <div className="w-[60px] h-[60px]">
               <Image
-                className="w-[120px] rounded-[14px]"
+                className="w-full h-full object-cover rounded-[14px]"
                 width={200}
-                height={0}
+                height={200}
                 src={`/image/specialhero1.png`}
               />
             </div>
@@ -107,10 +107,10 @@ const Hero = () => {
               </svg>
             </div>
           </div>
-          <div className="justify-start items-center gap-4 flex">
-            <div>
+          <div className="justify-start items-center gap-4 flex flex-col md:flex-row">
+            <div className="w-[60px] h-[60px]">
               <Image
-                className="w-[120px] rounded-[14px]"
+                className="w-full h-full object-cover rounded-[14px]"
                 width={200}
                 height={200}
                 src={`/image/specialhero1.png`}

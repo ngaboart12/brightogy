@@ -1,5 +1,5 @@
 import React from "react";
-import Image from 'next/image'
+import Image from "next/image";
 import LinkComponent from "../../components/LinkComponet";
 import Navbar from "../../components/Navbar";
 import Testmonials from "../../components/home/Testmonials";
@@ -8,7 +8,7 @@ import Footer from "../../components/Footer";
 
 const PreDeparture = () => {
   return (
-    <div className="flex flex-col items-center justify-center  w-full">
+    <div className="flex flex-col items-center justify-center  w-full bg-gray-100">
       <LinkComponent />
       <Navbar />
 
@@ -16,12 +16,16 @@ const PreDeparture = () => {
       <div className="flex w-full  px-[20px] md:px-20 lg:px-40 max-w-7xl flex-col md:flex-row gap-10 py-20">
         <div className="w-full md:w-1/2 flex flex-col md:flex-row items-center">
           <div className="relative w-[full] md:w-[60%] mr-10">
-            <Image width={200} height={0}
+            <Image
+              width={200}
+              height={0}
               src={`/image/career.png`}
               className=" w-full object-cover  rounded-lg"
               alt="dd"
             />
-            <Image width={200} height={0}
+            <Image
+              width={200}
+              height={0}
               src={`/image/poland2.png`}
               className="w-[70%] absolute right-[-30px] md:right-[-70px] bottom-[50px]"
               alt="dd"

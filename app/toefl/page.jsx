@@ -1,13 +1,13 @@
-import React from 'react';
-import Image from 'next/image';
-import LinkComponent from '../../components/LinkComponet';
-import Navbar from '../../components/Navbar';
-import Parteners from '../../components/Parteners';
-import Footer from '../../components/Footer';
+import React from "react";
+import Image from "next/image";
+import LinkComponent from "../../components/LinkComponet";
+import Navbar from "../../components/Navbar";
+import Parteners from "../../components/Parteners";
+import Footer from "../../components/Footer";
 
 const Toefl = () => {
   return (
-    <div className="flex flex-col items-center justify-center  w-full">
+    <div className="flex flex-col items-center justify-center  w-full bg-gray-100">
       <LinkComponent />
       <Navbar />
 
