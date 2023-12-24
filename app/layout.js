@@ -1,9 +1,10 @@
-import { Inter,Outfit } from 'next/font/google'
+import { Inter,Outfit,Rubik,Poppins } from 'next/font/google'
 import './globals.css'
 import { Toaster } from "react-hot-toast"
 
 const inter = Inter({ subsets: ['latin'] })
 const outfit = Outfit({ subsets: ['latin'] })
+const poppins = Poppins({ subsets: ['latin'] ,weight:['100','200','300','400','500','600','700','800','900']})
 
 export const metadata = {
   title: 'Create Next App',

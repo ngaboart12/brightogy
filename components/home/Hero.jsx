@@ -46,7 +46,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="flex bottom-10 right-10 absolute z-10  md:ml-auto md:mx-0">
+      <div className="flex bottom-10 right-10 fixed z-10  md:ml-auto md:mx-0">
         <a
           href="/"
           className="p-[10px] bg-[#FFA800] hover:bg-[#FFA800]/80 hover:scale-110 rounded-xl rounded-br-none"

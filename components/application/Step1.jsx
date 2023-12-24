@@ -245,8 +245,8 @@ const Step1 = ({ formData, handleInputChange }) => {
             }
           />
           <Input
-            placeholder="Enter Middel Name"
-            label="Middel Name"
+            placeholder="Enter Middle Name"
+            label="Middle Name"
             type="text"
             value={formData.stage1.middelName}
             onChange={(e) =>

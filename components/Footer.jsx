@@ -1,4 +1,5 @@
 import React from "react";
+import { FaRegCopyright } from "react-icons/fa";
 
 import Image from "next/image";
 
@@ -261,8 +262,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="py-2 border-t-2 w-full border-[#07305C]/70 items-center justify-center flex ">
-        <span className="text-white text-[14px] font-[300] text-center">
-          @ 2023 BrightForth. All rights reserved.
+        <span className="text-white text-[14px] font-[300] text-center flex flex-row items-center gap-2">
+          <FaRegCopyright /> 2023 BrightForth. All rights reserved.
         </span>
       </div>
     </div>

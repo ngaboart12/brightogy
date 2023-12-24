@@ -116,7 +116,7 @@ const Ass1 = ({ formData, handleInputChange }) => {
           />
 
           <div className="flex flex-col  gap-1 text-black">
-            <span>Highest Level Of Eduction</span>
+            <span>Highest Level of Education</span>
             <select
               className="border py-3 rounded-md px-4 outline-none text-[#07294D] "
               value={formData.personInfo.levelOfEducation}
@@ -152,7 +152,7 @@ const Ass1 = ({ formData, handleInputChange }) => {
             }
           />
           <Input
-            placeholder="Enter Phone number"
+            placeholder="Enter Phone Number"
             label="Phone Number"
             type="number"
             value={formData.personInfo.phoneNumber}
@@ -221,7 +221,7 @@ const Ass1 = ({ formData, handleInputChange }) => {
                 <input
                   type="radio"
                   name="less"
-                  value="25,000 USD - Above"
+                  value="35,000 USD - Above"
                   onChange={(e) =>
                     handleInputChange(
                       "personInfo",
@@ -230,13 +230,13 @@ const Ass1 = ({ formData, handleInputChange }) => {
                     )
                   }
                 />
-                <span className="text-white">25,000 USD - Above</span>
+                <span className="text-white">35,000 USD - Above</span>
               </div>
             </div>
 
             <div className="flex flex-col  gap-1 text-black ">
               <span className="text-white text-[14px] text-center md:text-start">
-                to cover your living expenses while you study in Canada?
+                To cover your living expenses while you study Abroad?
               </span>
               <div className="flex gap-2 w-full  justify-center md:justify-start ">
                 <div className="flex gap-4  px-6 py-3 rounded-md bg-[#072F5A]">
@@ -335,7 +335,7 @@ const Ass1 = ({ formData, handleInputChange }) => {
                   }
                 />{" "}
                 <label htmlFor="" className="text-white text-[12px]">
-                  i'm not sure
+                  I'm not sure
                 </label>
               </div>
             </div>

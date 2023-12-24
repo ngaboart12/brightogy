@@ -190,7 +190,7 @@ const Assessment = () => {
                 onClick={handleNext}
                 className="py-2 px-10 bg-[#FFCD21] rounded-md"
               >
-                next
+                Next
               </div>
             )}
             {step == 5 && (
