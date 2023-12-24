@@ -73,7 +73,7 @@ const Hero = () => {
       >
         <div className="self-stretch justify-start items-start gap-[46px] flex flex-col md:flex-row">
           <div className="justify-start items-center gap-4 flex flex-col md:flex-row">
-            <div className="w-[60px] h-[60px]">
+            <div className="w-[100px] h-[60px]">
               <Image
                 className="w-full h-full object-cover rounded-[14px]"
                 width={200}
@@ -90,7 +90,10 @@ const Hero = () => {
                 Special Offers!
               </div>
             </div>
-            <div className="w-10 h-10 relative">
+            <a
+              href="/special"
+              className="w-10 h-10 relative animate-pulse cursor-pointer"
+            >
               <svg
                 width="40"
                 height="40"
@@ -105,14 +108,14 @@ const Hero = () => {
                   fill="#FFA800"
                 />
               </svg>
-            </div>
+            </a>
           </div>
           <div className="justify-start items-center gap-4 flex flex-col md:flex-row">
-            <div className="w-[60px] h-[60px]">
+            <div className="w-[100px] h-[60px]">
               <Image
                 className="w-full h-full object-cover rounded-[14px]"
                 width={200}
-                height={200}
+                height={0}
                 src={`/image/specialhero1.png`}
               />
             </div>
@@ -125,7 +128,10 @@ const Hero = () => {
                 Advance Your Academic Career!
               </div>
             </div>
-            <div className="w-10 h-10 relative">
+            <a
+              href="#"
+              className="w-10 h-10 relative cursor-pointer animate-pulse"
+            >
               <svg
                 width="40"
                 height="40"
@@ -140,7 +146,7 @@ const Hero = () => {
                   fill="#FFA800"
                 />
               </svg>
-            </div>
+            </a>
           </div>
         </div>
       </div>
