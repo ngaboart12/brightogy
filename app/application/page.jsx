@@ -325,8 +325,8 @@ const Apllication = () => {
       <LinkComponent />
       <Navbar />
 
-      <div className="px-[20px] md:px-[100px] flex w-full flex-col items-center justify-center">
-        <div className="py-[12px] w-1/2 flex items-center justify-center bg-[#07294D] rounded-md">
+      <div className="px-[20px] md:px-[100px] flex w-full flex-col gap-10 items-center justify-center py-10">
+        <div className="py-[12px] w-1/2 flex items-center justify-center bg-[#07294D] rounded-md ">
           <span className="text-white text-[20px] font-[300]">Application</span>
         </div>
         <form

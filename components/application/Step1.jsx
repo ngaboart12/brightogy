@@ -27,7 +27,7 @@ const Step1 = ({ formData, handleInputChange }) => {
   }, []);
 
   return (
-    <div className="flex w-full items-center flex-col pb-4 gap-6">
+    <div className="flex w-full items-center flex-col pb-4 gap-10">
       <div className=" flex   ">
         <div className="flex flex-col gap-2 items-center">
           <div className="flex justify-center items-center w-10 h-10 rounded-full bg-[#07294D]">
