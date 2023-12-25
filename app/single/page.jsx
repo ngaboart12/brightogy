@@ -6,11 +6,13 @@ import { doc, getDoc } from "firebase/firestore";
 import LinkComponent from "components/LinkComponet";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
+import ReactLoading from "react-loading";
 
 const Single = () => {
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
   const [postData, setPostData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchPostData = async () => {
@@ -21,6 +23,7 @@ const Single = () => {
 
           if (postDocSnapshot.exists()) {
             setPostData(postDocSnapshot.data());
+            setLoading(false);
           } else {
             console.error("Post not found");
           }
@@ -57,7 +60,11 @@ const Single = () => {
         <h1 className="text-[24px] text-[#123E6C] font-[500] text-center">
           SPECIAL OFFER
         </h1>
-        {postData && (
+        {loading ? (
+          <div className="w-full items-center justify-center py-10 flex">
+            <ReactLoading type="spin" color="#123E6C" height={50} width={50} />
+          </div>
+        ) : (
           <div className="flex flex-col gap-4">
             <div className="flex flex-row gap-2">
               <span className="text-[#C8C8C8] text-[18px] font-[300]">

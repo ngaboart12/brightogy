@@ -6,10 +6,12 @@ import { collection, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import Footer from "components/Footer";
+import ReactLoading from "react-loading";
 
 const page = () => {
   const [faculties, setFaculties] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,6 +25,7 @@ const page = () => {
         }));
 
         setFaculties(facultiesData);
+        setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -52,37 +55,45 @@ const page = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
-        <div className="flex flex-col">
-          {filteredFaculties.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className="flex flex-col gap-2 p-4 items-center md:flex-row"
-              >
-                <diV className="flex flex-col md:flex-row items-center  gap-2 w-[300px]">
-                  <div className="p-4  rounded-md w-[60px] items-center justify-center bg-blue-200 text-black flex">
-                    {item.facultyName.slice(0, 1)}
+        {loading ? (
+          <div className="w-full items-center justify-center py-10 flex">
+            <ReactLoading type="spin" color="#123E6C" height={50} width={50} />
+          </div>
+        ) : (
+          <div className="flex flex-col">
+            {filteredFaculties.map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  className="flex flex-col gap-2 p-4 items-center md:flex-row"
+                >
+                  <diV className="flex flex-col md:flex-row items-center  gap-2 w-[300px]">
+                    <div className="p-4  rounded-md w-[60px] items-center justify-center bg-blue-200 text-black flex">
+                      {item.facultyName.slice(0, 1)}
+                    </div>
+                    <div className="flex flex-col items-center md:items-start ">
+                      <h1 className="font-[300]">{item.facultyName}</h1>
+                      <span className="text-[14px] font-[600]">
+                        Univeristy:{" "}
+                        <span className="font-[200]">{item.school}</span>
+                      </span>
+                    </div>
+                  </diV>
+                  <div className="flex flex-col items-center md:items-start">
+                    <h1>
+                      Country:{" "}
+                      <span className="font-[200]">{item.country}</span>
+                    </h1>
+                    <h1>
+                      Fees:{" "}
+                      <span className="font-[200]">${item.schoolFees}</span>
+                    </h1>
                   </div>
-                  <div className="flex flex-col items-center md:items-start ">
-                    <h1 className="font-[300]">{item.facultyName}</h1>
-                    <span className="text-[14px] font-[600]">
-                      Univeristy:{" "}
-                      <span className="font-[200]">{item.school}</span>
-                    </span>
-                  </div>
-                </diV>
-                <div className="flex flex-col items-center md:items-start">
-                  <h1>
-                    Country: <span className="font-[200]">{item.country}</span>
-                  </h1>
-                  <h1>
-                    Fees: <span className="font-[200]">${item.schoolFees}</span>
-                  </h1>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        )}
       </div>
       <Footer />
     </div>

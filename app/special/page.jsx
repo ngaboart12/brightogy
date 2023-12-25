@@ -7,10 +7,12 @@ import Link from "next/link";
 import { db } from "../../firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { useRouter } from "next/navigation";
+import ReactLoading from "react-loading";
 
 const Special = () => {
   const router = useRouter();
   const [offerss, setOffers] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchOffers = async () => {
@@ -24,6 +26,7 @@ const Special = () => {
         }));
 
         setOffers(offersData);
+        setLoading(false);
         console.log(offersData);
       } catch (error) {
         console.error("Error fetching offers:", error);
@@ -45,27 +48,33 @@ const Special = () => {
         <h1 className="text-[32px] text-[#123E6C] font-[600]">
           SPECIAL OFFERS
         </h1>
-        <div className="grid grid-cols-1 items-center justify-center sm:grid-cols-2 md:grid-cols-3 gap-10 py-10">
-          {offerss.map((item) => (
-            <div className="flex flex-col gap-2  sm:items-start">
-              <span className="text-[16px] text-[#123E6C] px-4">
-                {item.offerDate}
-              </span>
-              <h1 className="text-[20px] font-[600] text-[#123E6C]">
-                {item.offerName}
-              </h1>
-              <span className="text-[#707070] text-[14px]  sm:items-start line-clamp-4">
-                {item.offerDescription}
-              </span>
-              <p
-                onClick={() => goToPostPage(item.id)}
-                className="bg-[#123E6C] w-[150px] rounded-2xl flex items-center justify-center py-2 text-white hover:scale-110"
-              >
-                Learn More
-              </p>
-            </div>
-          ))}
-        </div>
+        {loading ? (
+          <div className="py-20">
+            <ReactLoading type="spin" color="#123E6C" height={50} width={50} />
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 items-center justify-center sm:grid-cols-2 md:grid-cols-3 gap-10 py-10">
+            {offerss.map((item) => (
+              <div className="flex flex-col gap-2  sm:items-start">
+                <span className="text-[16px] text-[#123E6C] px-4">
+                  {item.offerDate}
+                </span>
+                <h1 className="text-[20px] font-[600] text-[#123E6C]">
+                  {item.offerName}
+                </h1>
+                <span className="text-[#707070] text-[14px]  sm:items-start line-clamp-4">
+                  {item.offerDescription}
+                </span>
+                <p
+                  onClick={() => goToPostPage(item.id)}
+                  className="bg-[#123E6C] w-[150px] rounded-2xl flex items-center justify-center py-2 text-white hover:scale-110"
+                >
+                  Learn More
+                </p>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* footer */}

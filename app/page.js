@@ -337,7 +337,7 @@ export default function Home() {
             pursuing education in overseas educational institutions.
           </p>
           <a
-            href="#"
+            href="/aboutus"
             className="py-[10px] px-[48px] bg-[#FFA800] rounded-lg text-[white]"
           >
             About us
