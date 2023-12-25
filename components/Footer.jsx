@@ -204,7 +204,10 @@ const Footer = () => {
             </button>
           </form>
           <div className="flex flex-col gap-3 py-4">
-            <a href="#" className="text-[#346FAF] text-[16px] font-[300]">
+            <a
+              href="/programs"
+              className="text-[#346FAF] text-[16px] font-[300]"
+            >
               FIND PROGRAMS
             </a>
             <a href="#" className="text-[#346FAF] text-[16px] font-[300]">
