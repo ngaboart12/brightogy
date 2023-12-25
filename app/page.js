@@ -424,7 +424,7 @@ export default function Home() {
 
       {/* our special offers */}
 
-      <div className="   bg-blue-100 w-full justify-center  flex">
+      <div className="   bg-gray-200 w-full justify-center  flex">
         <div  className="flex flex-col py-[81px] px-[10px]  items-center w-full max-w-7xl">
           <div data-aos="fade-right" className="flex flex-col gap-4">
             <h1 className="text-3xl text-center text-[#FFA800] font-[700]">

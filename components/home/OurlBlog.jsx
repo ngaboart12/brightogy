@@ -23,7 +23,7 @@ const OurlBlog = () => {
     },
   ];
   return (
-    <div className="flex flex-col w-full max-w-7xl p-4 md:px-20 pt-20 gap-10 text-center sm:text-start bg-gray-100">
+    <div className="flex flex-col w-full max-w-7xl p-4 md:px-20 py-10 gap-10 text-center sm:text-start bg-gray-200">
       <h1
         data-aos="fade-down"
         className="text-[#08305A] text-[40px] leading-[45px] font-bold text-center"
@@ -35,7 +35,7 @@ const OurlBlog = () => {
           return (
             <div
               data-aos="fade-down"
-              className="flex flex-col gap-8 items-center sm:items-start"
+              className="flex flex-col gap-8 items-center sm:items-start  bg-white pb-4 rounded-md"
             >
               <div className="w-full">
                 <Image
