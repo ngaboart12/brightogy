@@ -2,7 +2,7 @@
 import Footer from '../components/Footer'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from "react";
-
+import "../components/dropdown.css"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import AOS from "aos";
@@ -307,7 +307,11 @@ export default function Home() {
             </a>
           </div>
         </div>
-        {isModalOpen && <StartAssessment onClose={closeModal} />}
+        {isModalOpen && (
+        <div className="EnquiryForm zoomIn w-full h-full absolute">
+          <EnquiryForm onClose={closeModal} />
+        </div>
+      )}
       </div>
 
       {/* abou us  */}

@@ -1,9 +1,34 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { FaRegCopyright } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 import Image from "next/image";
+import { db } from "../firebase";
+import { addDoc, collection } from "firebase/firestore";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const handleSubscribe = async (e) => {
+    setLoading(true);
+    e.preventDefault();
+    try {
+      // Add the email to the "subscription" collection in Firestore
+      const docRef = await addDoc(collection(db, "subscription"), {
+        email,
+      });
+
+      console.log("Document written with ID: ", docRef.id);
+      toast.success("subscribe successfully");
+      setEmail("");
+      setLoading(false);
+    } catch (error) {
+      toast.error("subscribe failed");
+      setLoading(false);
+      console.error("Error adding document: ", error);
+    }
+  };
   return (
     <div className="flex flex-col gap-12 bg-[#07294D] pt-10 w-full items-center">
       <div
@@ -191,16 +216,20 @@ const Footer = () => {
           <h1 className="text-[#FFA800] text-center md:text-start text-[24px] md:text-[32px] font-[700] leading-8">
             Subscribe to our news letter
           </h1>
-          <form action="#" className="flex ">
+          <form action="#" onSubmit={handleSubscribe} className="flex ">
             <div className="bg-[#0A3461] p-2 flex">
               <input
-                type="text"
+                type="email"
                 placeholder="Enter your Email"
+                autoComplete="off"
+                name="subscribe"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className=" bg-transparent font-[300] outline-none text-white"
               />
             </div>
             <button className="bg-[#FFA800] text-[14px] px-2 font-[300]">
-              Subscribe
+              {loading ? "Loading..." : "Subscribe"}
             </button>
           </form>
           <div className="flex flex-col gap-3 py-4">
