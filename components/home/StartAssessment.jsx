@@ -23,7 +23,7 @@ const StartAssessment = ({ onClose }) => {
     <div className="absolute  w-full h-full flex flex-col justify-center items-center">
       <div
         ref={modalRef}
-        className="w-[90%] md:w-[50%]  bg-yellow-100 shadow-lg  rounded-md flex flex-col gap-y-4 p-10"
+        className="w-[90%] md:w-[50%]  bg-white shadow-lg  rounded-md flex flex-col gap-y-4 p-10"
       >
         <div className="flex flex-row justify-between w-full">
           <h1 className="text-[18px] md:text-[26px] text-[#07294D] font-[600] max-w-[300px] leading-7">

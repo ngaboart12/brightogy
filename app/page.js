@@ -309,7 +309,7 @@ export default function Home() {
         </div>
         {isModalOpen && (
         <div className="EnquiryForm zoomIn w-full h-full absolute">
-          <EnquiryForm onClose={closeModal} />
+          <StartAssessment onClose={closeModal} />
         </div>
       )}
       </div>
