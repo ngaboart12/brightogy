@@ -120,7 +120,7 @@ const Navbar2 = () => {
                 </a>
               </li>
               <li>
-                <a href="/careercounseling" className="hover:text-black/70">
+                <a href="/sop" className="hover:text-black/70">
                   Statement of Purpose
                 </a>
               </li>
