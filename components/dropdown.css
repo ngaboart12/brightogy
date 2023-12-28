@@ -86,3 +86,28 @@
     transform: rotate(-180deg);
    
 }
+
+@keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .EnquiryForm {
+    /* Set initial styles */
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.4s, transform 0.4s;
+  }
+  
+  /* Apply the zoomIn animation only when the EnquiryForm has the zoomIn class */
+  .EnquiryForm.zoomIn {
+    animation: zoomIn 0.4s ease;
+    opacity: 1;
+    transform: scale(1);
+  }

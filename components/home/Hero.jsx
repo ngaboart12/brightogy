@@ -4,6 +4,7 @@ import Image from "next/image";
 import LinkComponent2 from "../LinkComponet2";
 import Navbar2 from "../Navbar2";
 import EnquiryForm from "./EnquiryForm";
+import "../dropdown.css";
 
 const Hero = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -150,7 +151,11 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {isModalOpen && <EnquiryForm onClose={closeModal} />}
+      {isModalOpen && (
+        <div className="EnquiryForm zoomIn w-full h-full absolute">
+          <EnquiryForm onClose={closeModal} />
+        </div>
+      )}
     </div>
   );
 };
