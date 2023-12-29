@@ -4,7 +4,7 @@ const LinkComponent2 = () => {
   return (
     <div
       data-aos="zoom-in-down"
-      className="w-full max-w-7xl px-[10px] md:px-[100px] py-2 hidden md:flex justify-between items-center"
+      className="w-full max-w-7xl  px-[10px] md:px-[50px] lg:px-[100px]   py-2 hidden md:flex justify-between items-center"
     >
       <div className="flex gap-10 blg:gap-20 items-center">
         <a

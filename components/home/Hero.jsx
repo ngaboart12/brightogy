@@ -16,15 +16,16 @@ const Hero = () => {
     <div className="relative flex flex-col w-full items-center pb-10">
       <LinkComponent2 />
       <Navbar2 />
-      <div className="absolute w-screen h-full -z-10">
+      <div className="absolute w-screen h-full -z-20">
         <Image
-          src={`/image/herroBackground.svg`}
+          src={`/image/herroBackground2.jpg`}
           width={500}
           height={500}
           alt=""
           className="w-full object-cover h-full "
         />
       </div>
+      <div className="absolute w-screen h-full -z-10 bg-blue-900/50"></div>
       <div
         data-aos="zoom-in-up"
         className="flex flex-col gap-4 w-full px-[20px]  py-[10vh]  justify-center items-center "

@@ -2,7 +2,7 @@ import React from "react";
 
 const LinkComponent = () => {
   return (
-    <div className="w-full max-w-7xl px-[10px] md:px-[100px] py-2 hidden md:flex flex-col md:flex-row justify-between items-center">
+    <div className="w-full max-w-7xl  md:px-[50px] lg:px-[100px] s py-2 hidden md:flex flex-col md:flex-row justify-between items-center">
       <div className="flex gap-10 blg:gap-20 items-center">
         <a
           href="https://info@brightforth.rw"

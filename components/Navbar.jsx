@@ -8,7 +8,7 @@ import Image from "next/image";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="w-full max-w-7xl flex justify-between items-start md:items-center px-[10px] md:px-[100px] py-2 ">
+    <div className="w-full max-w-7xl flex justify-between items-start md:items-center px-[10px]  md:px-[50px] lg:px-[100px]  py-2 ">
       <div className="flex ">
         <Image
           src={`/image/logo.svg`}

@@ -4,18 +4,21 @@ import Image from "next/image";
 const OurlBlog = () => {
   const blog = [
     {
+      link: "#",
       image: "/image/up1.png",
       date: "22 DEC 22",
       title: "Applying for a student visa: Top 10 tips",
       disc: "Don’t feel prepared to apply for your student visa? Our",
     },
     {
+      link: "#",
       image: "/image/up2.png",
       date: "22 DEC 22",
       title: "Social lifestyle abroad",
       disc: "Don’t feel prepared to apply for your student visa? Our",
     },
     {
+      link: "sop",
       image: "/image/up3.png",
       date: "22 DEC 22",
       title: "Statement of purpose",
@@ -35,7 +38,7 @@ const OurlBlog = () => {
           return (
             <div
               data-aos="fade-down"
-              className="flex flex-col gap-8 items-center sm:items-start  bg-white pb-4 rounded-md"
+              className="flex flex-col gap-8 items-center sm:items-start  bg-white pb-4 rounded-xl"
             >
               <div className="w-full">
                 <Image
@@ -142,9 +145,11 @@ const OurlBlog = () => {
                     {item.disc}
                   </p>
                 </div>
-                <button className="w-full md:w-1/2 hover:scale-110 transition-all bg-[#FFA800] rounded-md py-2 px-4">
-                  Read more
-                </button>
+                <a href={item.link}>
+                  <button className="w-full md:w-1/2 hover:scale-110 transition-all bg-[#FFA800] rounded-md py-2 px-4">
+                    Read more
+                  </button>
+                </a>
               </div>
             </div>
           );

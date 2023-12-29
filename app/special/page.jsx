@@ -67,7 +67,7 @@ const Special = () => {
                 </span>
                 <p
                   onClick={() => goToPostPage(item.id)}
-                  className="bg-[#123E6C] w-[150px] rounded-2xl flex items-center justify-center py-2 text-white hover:scale-110"
+                  className="bg-[#123E6C] cursor-pointer w-[150px] rounded-2xl flex items-center justify-center py-2 text-white hover:scale-110"
                 >
                   Learn More
                 </p>
