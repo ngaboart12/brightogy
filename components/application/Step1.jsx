@@ -14,7 +14,12 @@ const Step1 = ({ formData, handleInputChange }) => {
         const data = await response.json();
 
         if (response.ok) {
-          setAllCountries(data);
+          const sortedCountries = data.sort((a, b) => {
+            const nameA = a.name.common.toUpperCase();
+            const nameB = b.name.common.toUpperCase();
+            return nameA.localeCompare(nameB);
+          });
+          setAllCountries(sortedCountries);
         } else {
           console.error("Error fetching countries:", data.message);
         }
