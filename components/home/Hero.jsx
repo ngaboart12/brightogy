@@ -130,7 +130,7 @@ const Hero = () => {
               </div>
             </div>
             <a
-              href="#"
+              href="/specialoffers"
               className="w-10 h-10 relative cursor-pointer animate-pulse"
             >
               <svg
