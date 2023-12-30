@@ -393,8 +393,8 @@ export default function Home() {
           <h1 className="text-[32px] text-[#123E6C] font-[700] text-center md:text-start leading-8 ">
             OUR TOP DESTINATIONS
           </h1>
-          <p className="text-center md:text-start text-[#707070] text-[18px] font-[300]  leading-4 ">
-            Aave kusama kadena binance stacks telcoin bitcoin.{" "}
+          <p className="text-center md:text-start text-[#707070] text-[16px] font-[300]  leading-5 ">
+          Now, we’re excited to welcome students from around the World ! These Countries will be offering courses across all disciplines, and select courses will be taught in English.    
           </p>
           <a
             href="#"
@@ -430,7 +430,7 @@ export default function Home() {
 
       <div className="   bg-gray-200 w-full justify-center  flex">
         <div  className="flex flex-col py-[81px] px-[10px]  items-center w-full max-w-7xl">
-          <div data-aos="fade-right" className="flex flex-col gap-4">
+          <div data-aos="fade-right" className="flex flex-col gap-10">
             <h1 className="text-3xl text-center text-[#FFA800] font-[700]">
               Our special offers
             </h1>

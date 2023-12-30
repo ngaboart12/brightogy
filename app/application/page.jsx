@@ -14,6 +14,7 @@ import Step3 from "../../components/application/Step3";
 import Step4 from "../../components/application/Step4";
 import Step5 from "../../components/application/Step5";
 import Footer from "../../components/Footer";
+import Success from "components/home/Success";
 
 const override = css`
   display: block;
@@ -25,6 +26,11 @@ const Apllication = () => {
   const [loading, setLoading] = useState(false);
   const [formDataUpdated, setFormDataUpdated] = useState(false);
   const [step, setStep] = useState(1);
+
+  const [isModalOpen, setModalOpen] = useState(false);
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
   const [filesImage, setFilesImage] = useState({
     stage1: {
       passport: "",
@@ -116,10 +122,12 @@ const Apllication = () => {
       try {
         const docRef = await addDoc(collection(db, "Application"), formData);
         setLoading(false);
+        setModalOpen(true);
         console.log("Document written with ID:", docRef.id);
       } catch (error) {
         console.error("Error adding document:", error);
         setLoading(false);
+        window.alert("sorry your application not sent");
       }
     };
 
@@ -326,6 +334,8 @@ const Apllication = () => {
       <Navbar />
 
       <div className="px-[20px] md:px-[100px] flex w-full flex-col gap-10 items-center justify-center py-10">
+        {isModalOpen && <Success onClose={closeModal} />}
+
         <div className="py-[12px] w-1/2 flex items-center justify-center bg-[#07294D] rounded-md ">
           <span className="text-white text-[20px] font-[300]">Application</span>
         </div>
@@ -371,22 +381,19 @@ const Apllication = () => {
             )}
             {step == 5 && (
               <button
-                className="py-2 px-10 bg-[#FFCD21] rounded-md"
+                className="py-2 flex items-center justify-center px-10 bg-[#FFCD21] rounded-md"
                 type="submit"
               >
-                Submit
+                <ClipLoader
+                  color="#36D7B7"
+                  loading={loading}
+                  css={override}
+                  size={20}
+                />
+                {loading ? "" : "Submit"}
               </button>
             )}
           </div>
-
-          <ClipLoader
-            color="#36D7B7"
-            loading={loading}
-            css={override}
-            size={50}
-          />
-
-          {loading && <p>Uploading...</p>}
         </form>
       </div>
       <Footer />

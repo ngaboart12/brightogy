@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Input from "../Input";
 
@@ -215,7 +215,7 @@ const Step3 = ({ formData, handleInputChange }) => {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 w-full">
           <Input
             placeholder="Enter Father name"
-            label="Father name"
+            label="Father's name"
             type="text"
             value={formData.stage3.fatherName}
             onChange={(e) =>
@@ -224,7 +224,7 @@ const Step3 = ({ formData, handleInputChange }) => {
           />
           <Input
             placeholder="Enter Father Contact"
-            label="Father Contact"
+            label="Father's Contact"
             type="number"
             value={formData.stage3.fatherContact}
             onChange={(e) =>
@@ -233,7 +233,7 @@ const Step3 = ({ formData, handleInputChange }) => {
           />
           <Input
             placeholder="Enter Mother Name"
-            label="Mother Name"
+            label="Mother's Name"
             type="text"
             value={formData.stage3.motherName}
             onChange={(e) =>
@@ -242,7 +242,7 @@ const Step3 = ({ formData, handleInputChange }) => {
           />
           <Input
             placeholder="Enter Mother contact"
-            label="Mother Contact"
+            label="Mother's Contact"
             type="number"
             value={formData.stage3.motherContact}
             onChange={(e) =>

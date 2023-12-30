@@ -65,7 +65,7 @@ const ContactUS = () => {
         data-aos="zoom-out-right"
         className="text-[32px] text-[#07294D] font-bold text-center"
       >
-        React Out To Us
+        Reach Out To Us
       </h1>
       <div
         data-aos="zoom-out-right"
