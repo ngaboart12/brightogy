@@ -1,11 +1,31 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import LinkComponent from "../../components/LinkComponet";
 import Navbar from "../../components/Navbar";
 import Parteners from "../../components/Parteners";
 import Footer from "../../components/Footer";
+import { GrFormNext } from "react-icons/gr";
 
 const Toefl = () => {
+  const [whichOpen, setWhichOpen] = useState();
+  const faqs = [
+    {
+      question: "What is the age limit for the TOEFL EXAM?",
+      answer:
+        "There is no age limit for the TOEFL exam as such but generally, you would be recommended to take it only after you reach 16 years of age",
+    },
+    {
+      question: "What is a good score on the TOEFL?",
+      answer:
+        "A good score on the TOEFL exam can vary depending on what you are using the scores for. If you are using it to get admission to a university, you will need to check what the benchmark for that university is. Generally, a score that is above 60 is considered a good score and a score that is above 80 is considered excellent",
+    },
+    {
+      question: "Is there a validity period for TOEFL?",
+      answer:
+        " Yes. The results of the TOEFL exam will expire two years after your test date. For a complete understanding of the rules and regulations of giving the TOEFL exam reach out to us for a free consultation",
+    },
+  ];
   return (
     <div className="flex flex-col items-center justify-center  w-full bg-gray-100">
       <LinkComponent />
@@ -360,30 +380,57 @@ const Toefl = () => {
           <div className="flex-col  gap-[74px] w-full flex md:flex-row">
             <div className="justify-start w-full md:w-1/2 items-start gap-12 inline-flex">
               <div className="w-full  flex-col justify-start items-start gap-4 inline-flex">
-                <div className="p-4 w-full bg-sky-900 rounded-lg flex-col justify-start items-start gap-2.5 flex">
-                  <div className="justify-start items-center gap-4 inline-flex">
-                    <div className="max-w-[408px] h-12 text-white text-lg font-normal ">
-                      What is the age limit for the TOEFL EXAM?
+                {faqs.map((item, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="p-4 w-full cursor-pointer bg-sky-900 rounded-lg flex-col justify-start items-start gap-2.5 flex"
+                    >
+                      {whichOpen === index ? (
+                        <div
+                          onClick={() => setWhichOpen(null)}
+                          className="justify-between items-center gap-4 inline-flex w-full"
+                        >
+                          <div className="max-w-[408px] h-12 text-white text-lg font-normal ">
+                            {item.question}
+                          </div>
+                          <div className=" relative origin-top-left ">
+                            <GrFormNext
+                              size={30}
+                              color="white"
+                              className={`${
+                                whichOpen === index ? "rotate-90" : ""
+                              } transition-all`}
+                            />
+                          </div>
+                        </div>
+                      ) : (
+                        <div
+                          onClick={() => setWhichOpen(index)}
+                          className="justify-between items-center gap-4 inline-flex w-full"
+                        >
+                          <div className="max-w-[408px] h-12 text-white text-lg font-normal ">
+                            {item.question}
+                          </div>
+                          <div className=" relative origin-top-left ">
+                            <GrFormNext
+                              size={30}
+                              color="white"
+                              className={`${
+                                whichOpen === index ? "rotate-90" : ""
+                              } transition-all`}
+                            />
+                          </div>
+                        </div>
+                      )}
+                      {whichOpen === index && (
+                        <div>
+                          <span className="text-gray-400">{item.answer}</span>
+                        </div>
+                      )}
                     </div>
-                    <div className="w-6 h-6 relative origin-top-left -rotate-90" />
-                  </div>
-                </div>
-                <div className="w-full p-4 bg-sky-900 rounded-lg flex-col justify-start items-start gap-2.5 flex">
-                  <div className="justify-start items-end gap-4 inline-flex">
-                    <div className="max-w-[408px] text-white text-lg font-normal ">
-                      What is a good score on the TOEFL?
-                    </div>
-                    <div className="w-6 h-6 relative" />
-                  </div>
-                </div>
-                <div className="w-full p-4 bg-sky-900 rounded-lg flex-col justify-start items-start gap-2.5 flex">
-                  <div className="justify-start items-center gap-4 inline-flex">
-                    <div className="max-w-[408px]  text-white text-lg font-normal ">
-                      Is there a validity period for TOEFL?
-                    </div>
-                    <div className="w-6 h-6 relative" />
-                  </div>
-                </div>
+                  );
+                })}
               </div>
             </div>
             <div className=" w-full md:w-1/2">

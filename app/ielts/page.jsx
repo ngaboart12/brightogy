@@ -1,10 +1,50 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import LinkComponent2 from "../../components/LinkComponet2";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import { GrFormNext } from "react-icons/gr";
 
 const Ielts = () => {
+  const [whichOpen, setWhichOpen] = useState();
+  const [sectionOpened, setSectionOpened] = useState();
+  const faqs = [
+    {
+      question: " How long are IELTS scores valid?",
+      answer:
+        " IELTS scores are valid for 2 years from the date of taking the test",
+    },
+    {
+      question: "When can I reattempt the IELTS test?",
+      answer:
+        "You can reattempt the IELTS at any point in time. However, before reattempting, it is best to do a post-mortem analysis of what made you score less the first time. At BrightForth, our expert coaches can guide you on your specific weak points and suggest strategies for improving your performance.",
+    },
+  ];
+  const sections = [
+    {
+      title: "Listening Section",
+      disc: "Listening consists of 40 questions divided among four sections. The total duration for all the sections together is 30 minutes and an additional 10 minutes are given for the test taker to transfer his answers to the answer sheet.",
+    },
+    {
+      title: " Reading Section",
+      disc: "The reading section comprises 40 questions which are set around three passages. The section has to be completed within 60 minutes and aims at evaluating the reading and comprehension of reading matter in many different areas. The section has passages from many different genres of reading from both nonfiction and fiction.",
+    },
+    {
+      title: "Writing section",
+      disc: "The writing section consists of two tasks",
+      tasks: {
+        first:
+          "Involves interpretation of a diagram for the academic test and the other which involves writing a letter to an imaginary person for the general test. The letter should contain 150 words approximately and should be completed within 20 minutes",
+        seconde:
+          "consists of writing a 250-word essay on a given topic which should be completed within 40 minutes",
+      },
+    },
+    {
+      title: "Speaking section",
+      disc: "This section is held as a personal interview and is of 11 minutes in duration. The test is not held on the actual day of IELTS but either a day before or after. The segment consists of three parts which are classified as personal, long talk, and discussion. The test is interactive in nature and you will be talking to an examiner. The personal section consists of the interviewer introducing himself and asking you a few questions about yourself. The long talk involves speaking at length on a given topic. In the discussion segment, you will have an interactive talk with the interviewer regarding the topic you have spoken about.",
+    },
+  ];
   return (
     <div className="flex flex-col items-center justify-center  w-full bg-gray-100">
       <LinkComponent2 />
@@ -228,74 +268,44 @@ const Ielts = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-10 w-full">
           <div className="flex flex-col gap-2 w-full md:w-1/2">
-            <div className="p-2 bg-[#F5FAFF] flex items-center justify-between w-[80%]">
-              <span className="text-[14px]  text-[#07294D] ">
-                1. Listening Section
-              </span>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.96967 19.5303C7.7034 19.2641 7.6792 18.8474 7.89705 18.5538L7.96967 18.4697L14.439 12L7.96967 5.53033C7.7034 5.26406 7.6792 4.8474 7.89705 4.55379L7.96967 4.46967C8.23594 4.2034 8.6526 4.1792 8.94621 4.39705L9.03033 4.46967L16.0303 11.4697C16.2966 11.7359 16.3208 12.1526 16.1029 12.4462L16.0303 12.5303L9.03033 19.5303C8.73744 19.8232 8.26256 19.8232 7.96967 19.5303Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-            <div className="p-2 bg-[#F5FAFF] flex items-center justify-between w-[80%]">
-              <span className="text-[14px]  text-[#07294D] ">
-                2. Reading Section
-              </span>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.96967 19.5303C7.7034 19.2641 7.6792 18.8474 7.89705 18.5538L7.96967 18.4697L14.439 12L7.96967 5.53033C7.7034 5.26406 7.6792 4.8474 7.89705 4.55379L7.96967 4.46967C8.23594 4.2034 8.6526 4.1792 8.94621 4.39705L9.03033 4.46967L16.0303 11.4697C16.2966 11.7359 16.3208 12.1526 16.1029 12.4462L16.0303 12.5303L9.03033 19.5303C8.73744 19.8232 8.26256 19.8232 7.96967 19.5303Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-            <div className="p-2 bg-[#F5FAFF] flex items-center justify-between w-[80%]">
-              <span className="text-[14px] text-[#07294D] ">
-                3. Writing section
-              </span>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.96967 19.5303C7.7034 19.2641 7.6792 18.8474 7.89705 18.5538L7.96967 18.4697L14.439 12L7.96967 5.53033C7.7034 5.26406 7.6792 4.8474 7.89705 4.55379L7.96967 4.46967C8.23594 4.2034 8.6526 4.1792 8.94621 4.39705L9.03033 4.46967L16.0303 11.4697C16.2966 11.7359 16.3208 12.1526 16.1029 12.4462L16.0303 12.5303L9.03033 19.5303C8.73744 19.8232 8.26256 19.8232 7.96967 19.5303Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-            <div className="p-2 bg-[#F5FAFF] flex items-center justify-between w-[80%]">
-              <span className="text-[14px] text-[#07294D] ">
-                4. Speaking section
-              </span>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.96967 19.5303C7.7034 19.2641 7.6792 18.8474 7.89705 18.5538L7.96967 18.4697L14.439 12L7.96967 5.53033C7.7034 5.26406 7.6792 4.8474 7.89705 4.55379L7.96967 4.46967C8.23594 4.2034 8.6526 4.1792 8.94621 4.39705L9.03033 4.46967L16.0303 11.4697C16.2966 11.7359 16.3208 12.1526 16.1029 12.4462L16.0303 12.5303L9.03033 19.5303C8.73744 19.8232 8.26256 19.8232 7.96967 19.5303Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
+            {sections.map((item, index) => {
+              return (
+                <div className="flex flex-col">
+                  {sectionOpened === index ? (
+                    <div
+                      onClick={() => setSectionOpened(null)}
+                      className="p-2 bg-[#F5FAFF] flex  justify-between w-[80%] cursor-pointer"
+                    >
+                      <span className="text-[14px]  text-[#07294D] ">
+                        {index + 1}. <span>{item.title}</span>
+                      </span>
+                      <GrFormNext
+                        size={20}
+                        color="black"
+                        className={`${
+                          sectionOpened === index ? "rotate-90" : ""
+                        } transition-all`}
+                      />
+                    </div>
+                  ) : (
+                    <div
+                      onClick={() => setSectionOpened(index)}
+                      className="p-2 bg-[#F5FAFF] flex  justify-between w-[80%] cursor-pointer"
+                    >
+                      <span className="text-[14px]  text-[#07294D] ">
+                        {index + 1}. <span>{item.title}</span>
+                      </span>
+                      <GrFormNext size={20} color="black" />
+                    </div>
+                  )}
+                  {sectionOpened === index && (
+                    <span className=" pl-3 text-start text-[14px] text-[#07294D]/60 max-w-[400px]">
+                      {item.disc}
+                    </span>
+                  )}
+                </div>
+              );
+            })}
           </div>
           <div className="flex felx-col gap-2 w-full md:w-1/2">
             <span className="text-[14px] text-[#555555] text-start">
@@ -310,81 +320,63 @@ const Ielts = () => {
 
       {/*  */}
       <div className="py-20 w-full items-center">
-        <div className="flex flex-col gap-6 w-full bg-[#07294D] py-10 px-[20px] md:px-20 lg:px-40 items-center">
+        <div className="flex flex-col gap-6 w-full bg-[#07294D] pt-20 pb-40 px-[20px] md:px-20 lg:px-40 items-center">
           <h1 className="text-[#FFA800] text-[24px] font-[600]">
             Frequently Asked Question
           </h1>
           <div className="flex w-full flex-col md:flex-row gap-10">
-            <div className="w-full md:w-1/2 flex flex-col gap-3">
-              <div className="p-3 w-full bg-[#123E6C] rounded-md flex flex-row justify-between items-center">
-                <span className="max-w-[60%] text-[14px] text-white">
-                  Can international students work part-time in Poland while they
-                  are in their studies?
-                </span>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.96967 19.5303C7.7034 19.2641 7.6792 18.8474 7.89705 18.5538L7.96967 18.4697L14.439 12L7.96967 5.53033C7.7034 5.26406 7.6792 4.8474 7.89705 4.55379L7.96967 4.46967C8.23594 4.2034 8.6526 4.1792 8.94621 4.39705L9.03033 4.46967L16.0303 11.4697C16.2966 11.7359 16.3208 12.1526 16.1029 12.4462L16.0303 12.5303L9.03033 19.5303C8.73744 19.8232 8.26256 19.8232 7.96967 19.5303Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <div className="p-3 w-full bg-[#123E6C] rounded-md flex flex-row justify-between items-center">
-                <span className="max-w-[60%] text-[14px] text-white">
-                  Do I have to speak Polish?
-                </span>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.96967 19.5303C7.7034 19.2641 7.6792 18.8474 7.89705 18.5538L7.96967 18.4697L14.439 12L7.96967 5.53033C7.7034 5.26406 7.6792 4.8474 7.89705 4.55379L7.96967 4.46967C8.23594 4.2034 8.6526 4.1792 8.94621 4.39705L9.03033 4.46967L16.0303 11.4697C16.2966 11.7359 16.3208 12.1526 16.1029 12.4462L16.0303 12.5303L9.03033 19.5303C8.73744 19.8232 8.26256 19.8232 7.96967 19.5303Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <div className="p-3 w-full bg-[#123E6C] rounded-md flex flex-row justify-between items-center">
-                <span className="max-w-[60%] text-[14px] text-white">
-                  How can you explore a Polish city?
-                </span>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.96967 19.5303C7.7034 19.2641 7.6792 18.8474 7.89705 18.5538L7.96967 18.4697L14.439 12L7.96967 5.53033C7.7034 5.26406 7.6792 4.8474 7.89705 4.55379L7.96967 4.46967C8.23594 4.2034 8.6526 4.1792 8.94621 4.39705L9.03033 4.46967L16.0303 11.4697C16.2966 11.7359 16.3208 12.1526 16.1029 12.4462L16.0303 12.5303L9.03033 19.5303C8.73744 19.8232 8.26256 19.8232 7.96967 19.5303Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <div className="p-3 w-full bg-[#123E6C] rounded-md flex flex-row justify-between items-center">
-                <span className="max-w-[60%] text-[14px] text-white">
-                  How can you explore a Polish city?
-                </span>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.96967 19.5303C7.7034 19.2641 7.6792 18.8474 7.89705 18.5538L7.96967 18.4697L14.439 12L7.96967 5.53033C7.7034 5.26406 7.6792 4.8474 7.89705 4.55379L7.96967 4.46967C8.23594 4.2034 8.6526 4.1792 8.94621 4.39705L9.03033 4.46967L16.0303 11.4697C16.2966 11.7359 16.3208 12.1526 16.1029 12.4462L16.0303 12.5303L9.03033 19.5303C8.73744 19.8232 8.26256 19.8232 7.96967 19.5303Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
+            <div className="flex flex-col gap-2 w-full md:w-1/2">
+              {faqs.map((item, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="p-4 w-full cursor-pointer bg-sky-900 rounded-lg flex-col justify-start items-start gap-2.5 flex"
+                  >
+                    {whichOpen === index ? (
+                      <div
+                        onClick={() => setWhichOpen(null)}
+                        className="justify-between items-center gap-4 inline-flex w-full"
+                      >
+                        <div className="max-w-[408px] h-12 text-white text-lg font-normal ">
+                          {item.question}
+                        </div>
+                        <div className=" relative origin-top-left ">
+                          <GrFormNext
+                            size={30}
+                            color="white"
+                            className={`${
+                              whichOpen === index ? "rotate-90" : ""
+                            } transition-all`}
+                          />
+                        </div>
+                      </div>
+                    ) : (
+                      <div
+                        onClick={() => setWhichOpen(index)}
+                        className="justify-between items-center gap-4 inline-flex w-full"
+                      >
+                        <div className="max-w-[408px] h-12 text-white text-lg font-normal ">
+                          {item.question}
+                        </div>
+                        <div className=" relative origin-top-left ">
+                          <GrFormNext
+                            size={30}
+                            color="white"
+                            className={`${
+                              whichOpen === index ? "rotate-90" : ""
+                            } transition-all`}
+                          />
+                        </div>
+                      </div>
+                    )}
+                    {whichOpen === index && (
+                      <div>
+                        <span className="text-gray-400">{item.answer}</span>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
             <div className="w-full md:w-1/2 flex flex-col gap-3">
               <span className="text-white font-[300] text-[14px]">
@@ -396,7 +388,7 @@ const Ielts = () => {
               </span>
             </div>
           </div>
-          <div className="  justify-start items-center gap-[98px] flex flex-col">
+          {/* <div className="  justify-start items-center gap-[98px] flex flex-col">
             <div className="justify-start items-start flex">
               <div className="w-[152px] h-[7px] bg-sky-900" />
               <div className="w-[151px] h-[7px] bg-slate-500" />
@@ -431,7 +423,7 @@ const Ielts = () => {
                 </svg>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* footer */}
