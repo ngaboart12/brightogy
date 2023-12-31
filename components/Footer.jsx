@@ -256,41 +256,38 @@ const Footer = () => {
           Trusted by Leading Institutions
         </h1>
         <div className="grid grid-cols-3 sm:grid-cols-5  gap-8 sm:gap-14 md:gap-20 ">
-          <Image
-            src={`/image/dp1.svg`}
-            width={10}
-            height={0}
-            alt=""
-            className="w-10"
-          />
-          <Image
-            src={`/image/dp2.svg`}
-            width={10}
-            height={0}
-            alt=""
-            className="w-10"
-          />
-          <Image
-            src={`/image/dp3.svg`}
-            width={10}
-            height={0}
-            alt=""
-            className="w-10"
-          />
-          <Image
-            src={`/image/dp4.svg`}
-            width={10}
-            height={0}
-            alt=""
-            className="w-10"
-          />
-          <Image
-            src={`/image/dp5.svg`}
-            width={10}
-            height={0}
-            alt=""
-            className="w-10"
-          />
+          <div className="w-[100px] h-[50px]">
+            <Image
+              className="w-full h-full object-fit"
+              src={`/image/uskudar.png`}
+              width={200}
+              height={200}
+            />
+          </div>
+          <div className="w-[100px] h-[50px] bg-green-500 rounded-md">
+            <Image
+              className="w-full h-full object-fit"
+              src={`/image/aivancity.svg`}
+              width={200}
+              height={200}
+            />
+          </div>
+          <div className="w-[50px] h-[50px] rounded-md flex items-center justify-center">
+            <Image
+              className="w-full h-full object-fit rounded-sm"
+              src={`/image/vistula.jpg`}
+              width={200}
+              height={200}
+            />
+          </div>
+          <div className="w-[90px] h-[60px] rounded-md flex items-center justify-center">
+            <Image
+              className="w-full h-full object-fit"
+              src={`/image/nest-college.png`}
+              width={200}
+              height={200}
+            />
+          </div>
         </div>
       </div>
       <div className="py-2 border-t-2 w-full border-[#07305C]/70 items-center justify-center flex ">
