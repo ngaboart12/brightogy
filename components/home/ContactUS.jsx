@@ -2,6 +2,9 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { ThreeDots } from "react-loader-spinner";
+import { IoLocation, IoCall } from "react-icons/io5";
+import { IoMdMail } from "react-icons/io";
+import { GiWorld } from "react-icons/gi";
 
 const ContactUS = () => {
   const [username, setUsername] = useState("");
@@ -71,30 +74,50 @@ const ContactUS = () => {
         data-aos="zoom-out-right"
         className="flex w-full flex-col gap-10 md:flex-row"
       >
-        <div className="w-full md:w-1/2 md:items-end items-center flex flex-col gap-4">
+        <div className="w-full md:w-1/2 md:items-end items-center flex flex-col gap-2">
           <div className=" w- flex flex-col gap-5">
             <h1 className="text-[24px] text-[#07294D] font-bold ">
               OUR SCHEDULE
             </h1>
-            <div className="flex flex-col">
-              <span className="text-[18px] text-[#07294D]">Sunday</span>
-              <span className="text-[16px] font-[300] text-[#07294D]">
-                closed
-              </span>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="flex flex-col">
+                <span className="text-[18px] text-[#07294D]">Sunday</span>
+                <span className="text-[14px] font-[300] text-[#07294D]">
+                  closed
+                </span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-[18px] text-[#07294D]">Saturday</span>
+                <span className="text-[14px] font-[300] text-[#736B6B]">
+                  09:00 AM - 02:30 pM
+                </span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-[18px] text-[#07294D]">
+                  Monday - Friday
+                </span>
+                <span className="text-[14px] font-[300] text-[#736B6B]">
+                  7:00 AM - 5:00 pM
+                </span>
+              </div>
             </div>
-            <div className="flex flex-col">
-              <span className="text-[18px] text-[#07294D]">Saturday</span>
-              <span className="text-[16px] font-[300] text-[#736B6B]">
-                09:00 AM - 02:30 pM
-              </span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-[18px] text-[#07294D]">
-                Monday - Friday
-              </span>
-              <span className="text-[16px] font-[300] text-[#736B6B]">
-                7:00 AM - 5:00 pM
-              </span>
+            <div className="flex flex-col gap-2">
+              <div className="flex flex-row gap-2 items-center">
+                <IoLocation color="#07294D" />
+                <span className="text-[#07294D]">kigali, Rwanda .</span>
+              </div>
+              <div className="flex flex-row gap-2 items-center">
+                <IoMdMail color="#07294D" />
+                <span className="text-[#07294D]">info@brightforth.rw</span>
+              </div>
+              <div className="flex flex-row gap-2 items-center">
+                <IoCall color="#07294D" />
+                <span className="text-[#07294D]">+250791858282</span>
+              </div>
+              <div className="flex flex-row gap-2 items-center">
+                <GiWorld color="#07294D" />
+                <span className="text-[#07294D]">www.brightforth.rw</span>
+              </div>
             </div>
             <div className="flex flex-col gap-4 mt-6">
               <span className="text-[18px] text-[#07294D]">#brightforth</span>
@@ -182,7 +205,7 @@ const ContactUS = () => {
           <form
             action=""
             onSubmit={handelSubmit}
-            className=" w-full md:w-[60%] flex flex-col gap-4 px-10"
+            className=" w-full md:w-[60%] flex flex-col gap-10 px-10"
           >
             <div className="flex flex-col gap-1">
               <span className="text-black">Name</span>
@@ -191,7 +214,7 @@ const ContactUS = () => {
                 onChange={(e) => setUsername(e.target.value)}
                 type="text"
                 placeholder="Enter your name"
-                className="p-[10px] outline-none rounded-xl border border-gray-300 font-light placeholder:text-black text-black"
+                className="p-[10px]  outline-none rounded-xl border border-gray-300 font-light placeholder:text-black text-black"
               />
             </div>
             <div className="flex flex-col gap-1">
@@ -236,6 +259,17 @@ const ContactUS = () => {
             </button>
           </form>
         </div>
+      </div>
+      <div className="w-full items-center flex justify-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d31899.828587935393!2d30.124833!3d-1.962306!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwNTcnNDQuMyJTIDMwwrAwNycyOS40IkU!5e0!3m2!1sen!2sus!4v1704072082064!5m2!1sen!2sus"
+          width="650"
+          height="350"
+          className="border:0; w-[80%] rounded-xl"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
   );

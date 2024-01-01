@@ -152,6 +152,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
       {isModalOpen && (
         <div className="EnquiryForm zoomIn w-full h-full absolute">
           <EnquiryForm onClose={closeModal} />
