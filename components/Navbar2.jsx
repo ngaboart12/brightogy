@@ -1,26 +1,65 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./dropdown.css";
 import { VscThreeBars } from "react-icons/vsc";
 import { MdOutlineClose } from "react-icons/md";
 import Image from "next/image";
 
 const Navbar2 = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  // Effect to add scroll event listener
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the user has scrolled down more than 50 pixels
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    // Attach the event listener to the scroll event
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="w-full max-w-7xl flex justify-between items-start md:items-center px-[10px] md:px-[50px] lg:px-[100px] py-2 ">
+    <div
+      className={`w-full max-w-7xl flex justify-between items-start md:items-center px-[10px] md:px-[50px] lg:px-[100px] py-2 ${
+        scrolled ? "bg-white shadow-md fixed z-40" : ""
+      }`}
+    >
       <div className="flex ">
-        <Image
-          src={`/image/logo2.svg`}
-          width={400}
-          height={400}
-          alt=""
-          className="w-[20vh]"
-        />
+        {scrolled ? (
+          <Image
+            src={`/image/logo.svg`}
+            width={400}
+            height={400}
+            alt=""
+            className="w-[20vh]"
+          />
+        ) : (
+          <Image
+            src={`/image/logo2.svg`}
+            width={400}
+            height={400}
+            alt=""
+            className="w-[20vh]"
+          />
+        )}
       </div>
 
       <div className="links flex gap-[102px] items-center mt-2">
-        <ul className=" hidden md:flex text-white font-[300] text-[12px]  gap-4  items-center">
+        <ul
+          className={`${
+            scrolled ? "text-black" : "text-white"
+          } hidden md:flex  font-[300] text-[12px]  gap-4  items-center`}
+        >
           <li>
             <a href="/">HOME</a>
           </li>
@@ -40,7 +79,7 @@ const Navbar2 = () => {
                 >
                   <path
                     d="M3.72456 6.64143C3.94645 6.41954 4.29367 6.39937 4.53835 6.58092L4.60845 6.64143L9.99984 12.0325L15.3912 6.64143C15.6131 6.41954 15.9603 6.39937 16.205 6.58092L16.2751 6.64143C16.497 6.86332 16.5172 7.21054 16.3356 7.45522L16.2751 7.52532L10.4418 13.3586C10.2199 13.5805 9.87267 13.6007 9.62799 13.4192L9.5579 13.3586L3.72456 7.52532C3.48048 7.28124 3.48048 6.88551 3.72456 6.64143Z"
-                    fill="white"
+                    fill={`${scrolled ? "black" : "white"}`}
                   />
                 </svg>
               </span>
@@ -76,7 +115,7 @@ const Navbar2 = () => {
                 >
                   <path
                     d="M3.72456 6.64143C3.94645 6.41954 4.29367 6.39937 4.53835 6.58092L4.60845 6.64143L9.99984 12.0325L15.3912 6.64143C15.6131 6.41954 15.9603 6.39937 16.205 6.58092L16.2751 6.64143C16.497 6.86332 16.5172 7.21054 16.3356 7.45522L16.2751 7.52532L10.4418 13.3586C10.2199 13.5805 9.87267 13.6007 9.62799 13.4192L9.5579 13.3586L3.72456 7.52532C3.48048 7.28124 3.48048 6.88551 3.72456 6.64143Z"
-                    fill="white"
+                    fill={`${scrolled ? "black" : "white"}`}
                   />
                 </svg>
               </span>
@@ -108,7 +147,7 @@ const Navbar2 = () => {
                 >
                   <path
                     d="M3.72456 6.64143C3.94645 6.41954 4.29367 6.39937 4.53835 6.58092L4.60845 6.64143L9.99984 12.0325L15.3912 6.64143C15.6131 6.41954 15.9603 6.39937 16.205 6.58092L16.2751 6.64143C16.497 6.86332 16.5172 7.21054 16.3356 7.45522L16.2751 7.52532L10.4418 13.3586C10.2199 13.5805 9.87267 13.6007 9.62799 13.4192L9.5579 13.3586L3.72456 7.52532C3.48048 7.28124 3.48048 6.88551 3.72456 6.64143Z"
-                    fill="white"
+                    fill={`${scrolled ? "black" : "white"}`}
                   />
                 </svg>
               </span>

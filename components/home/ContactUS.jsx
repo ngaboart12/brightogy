@@ -75,11 +75,11 @@ const ContactUS = () => {
         className="flex w-full flex-col gap-10 md:flex-row"
       >
         <div className="w-full md:w-1/2 md:items-end items-center flex flex-col gap-2">
-          <div className=" w- flex flex-col gap-5">
+          <div className=" w- flex flex-col gap-2">
             <h1 className="text-[24px] text-[#07294D] font-bold ">
               OUR SCHEDULE
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex flex-col">
                 <span className="text-[18px] text-[#07294D]">Sunday</span>
                 <span className="text-[14px] font-[300] text-[#07294D]">
@@ -101,7 +101,7 @@ const ContactUS = () => {
                 </span>
               </div>
             </div>
-            <div className="flex flex-col gap-2">
+            {/* <div className="flex flex-col gap-2">
               <div className="flex flex-row gap-2 items-center">
                 <IoLocation color="#07294D" />
                 <span className="text-[#07294D]">kigali, Rwanda .</span>
@@ -118,14 +118,25 @@ const ContactUS = () => {
                 <GiWorld color="#07294D" />
                 <span className="text-[#07294D]">www.brightforth.rw</span>
               </div>
+            </div> */}
+            <div className="w-full items-center flex justify-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d31899.828587935393!2d30.124833!3d-1.962306!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwNTcnNDQuMyJTIDMwwrAwNycyOS40IkU!5e0!3m2!1sen!2sus!4v1704072082064!5m2!1sen!2sus"
+                width="350"
+                height="150"
+                className="border:0; w-[100%] rounded-xl"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
             <div className="flex flex-col gap-4 mt-6">
               <span className="text-[18px] text-[#07294D]">#brightforth</span>
               <div className="flex gap-2">
                 <a href="#">
                   <svg
-                    width="40"
-                    height="40"
+                    width="20"
+                    height="20"
                     viewBox="0 0 40 40"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -140,8 +151,8 @@ const ContactUS = () => {
                 </a>
                 <a href="#">
                   <svg
-                    width="40"
-                    height="40"
+                    width="20"
+                    height="20"
                     viewBox="0 0 40 40"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -166,8 +177,8 @@ const ContactUS = () => {
                 </a>
                 <a href="#">
                   <svg
-                    width="40"
-                    height="40"
+                    width="20"
+                    height="20"
                     viewBox="0 0 40 40"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -182,8 +193,8 @@ const ContactUS = () => {
                 </a>
                 <a href="#">
                   <svg
-                    width="40"
-                    height="40"
+                    width="20"
+                    height="20"
                     viewBox="0 0 40 40"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -205,7 +216,7 @@ const ContactUS = () => {
           <form
             action=""
             onSubmit={handelSubmit}
-            className=" w-full md:w-[60%] flex flex-col gap-10 px-10"
+            className=" w-full md:w-[60%] flex flex-col gap-6 px-10"
           >
             <div className="flex flex-col gap-1">
               <span className="text-black">Name</span>
@@ -259,17 +270,6 @@ const ContactUS = () => {
             </button>
           </form>
         </div>
-      </div>
-      <div className="w-full items-center flex justify-center">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d31899.828587935393!2d30.124833!3d-1.962306!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwNTcnNDQuMyJTIDMwwrAwNycyOS40IkU!5e0!3m2!1sen!2sus!4v1704072082064!5m2!1sen!2sus"
-          width="650"
-          height="350"
-          className="border:0; w-[80%] rounded-xl"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
       </div>
     </div>
   );

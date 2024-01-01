@@ -1,14 +1,39 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./dropdown.css";
 import { VscThreeBars } from "react-icons/vsc";
 import { MdOutlineClose } from "react-icons/md";
 import Image from "next/image";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  // Effect to add scroll event listener
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the user has scrolled down more than 50 pixels
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    // Attach the event listener to the scroll event
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="w-full max-w-7xl flex justify-between items-start md:items-center px-[10px]  md:px-[50px] lg:px-[100px]  py-2 ">
+    <div
+      className={`w-full max-w-7xl flex justify-between items-start md:items-center px-[10px] md:px-[50px] lg:px-[100px] py-2 ${
+        scrolled ? "bg-white shadow-md fixed z-40" : ""
+      }`}
+    >
       <div className="flex ">
         <Image
           src={`/image/logo.svg`}
