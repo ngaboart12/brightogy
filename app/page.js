@@ -263,7 +263,7 @@ export default function Home() {
         <div data-aos="fade-down" className="grid grid-cols-2 md:grid-cols-3 gap-x-[40px] md:gap-x-[120px] gap-y-6">
           {services.map((item, index) => {
             return (
-              <div key={index} className="flex flex-col gap-2 items-center">
+              <div key={index} className="flex flex-col gap-2 items-center bg-[#EFF7FF] p-3 rounded-md">
                 {item.svg}
                 <span className="text-[18px] text-black  max-w-[160px] text-center leading-[20px]">
                   {item.name}
