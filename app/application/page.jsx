@@ -109,6 +109,15 @@ const Apllication = () => {
     }));
   };
   const filesInputHandel = (stage, inputName, value) => {
+    const file = value;
+    console.log(file);
+
+    // Check isf the file size is less than or equal to 1 MB
+    if (file && file.size / (1024 * 1024) > 1) {
+      alert(`File size should be less than or equal to 1 MB`);
+      e.target.value = null; // Clear the input
+      return;
+    }
     setFilesImage((prevData) => ({
       ...prevData,
       [stage]: {

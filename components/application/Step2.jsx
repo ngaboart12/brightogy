@@ -250,7 +250,7 @@ const Step2 = ({ formData, handleInputChange }) => {
           />
           <Input
             placeholder="issued by"
-            label="Passport issued by"
+            label="Passport Issued by"
             type="text"
             value={formData.stage2.passportIssuedBy}
             onChange={(e) =>
@@ -259,7 +259,7 @@ const Step2 = ({ formData, handleInputChange }) => {
           />
           <Input
             placeholder="expiry date"
-            label="Passport expiry date"
+            label="Passport Issued date"
             type="date"
             value={formData.stage2.passportExpiryDate}
             onChange={(e) =>

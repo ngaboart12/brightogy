@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import Input from "../Input";
 import { collection, getDocs } from "firebase/firestore";
@@ -327,6 +327,7 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
                   viewBox="0 0 24 25"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  className=""
                 >
                   <path
                     d="M15.7161 16.7234H8.49609"
@@ -369,6 +370,7 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
                 viewBox="0 0 24 25"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="rotate-180"
               >
                 <path
                   fill-rule="evenodd"
@@ -435,6 +437,7 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
                 viewBox="0 0 24 25"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="rotate-180"
               >
                 <path
                   fill-rule="evenodd"
@@ -501,6 +504,7 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
                 viewBox="0 0 24 25"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="rotate-180"
               >
                 <path
                   fill-rule="evenodd"
@@ -567,6 +571,7 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
                 viewBox="0 0 24 25"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="rotate-180"
               >
                 <path
                   fill-rule="evenodd"
@@ -633,6 +638,7 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
                 viewBox="0 0 24 25"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="rotate-180"
               >
                 <path
                   fill-rule="evenodd"

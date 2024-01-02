@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div
       className={`w-full max-w-7xl flex justify-between items-start md:items-center px-[10px] md:px-[50px] lg:px-[100px] py-2 ${
-        scrolled ? "bg-white shadow-md fixed z-40" : ""
+        scrolled ? "bg-white shadow-md fixed z-40 -mt-10" : ""
       }`}
     >
       <div className="flex ">
