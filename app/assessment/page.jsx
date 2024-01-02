@@ -10,9 +10,23 @@ import { db } from "../../firebase";
 import Navbar from "../../components/Navbar";
 import LinkComponent from "../../components/LinkComponet";
 import Footer from "../../components/Footer";
+import { ClipLoader } from "react-spinners";
+import { css } from "@emotion/react";
+import Success from "components/home/Success";
+
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+`;
 
 const Assessment = () => {
   const [step, setStep] = useState(1);
+  const [loading, setLoading] = useState(false);
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
   const [formData, setFormData] = useState({
     personInfo: {
       firstName: "",
@@ -68,6 +82,7 @@ const Assessment = () => {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     if (
       formData.backgroundInfo.haveYouRefusedVisa !== "" &&
       formData.backgroundInfo.yourSponsor !== "" &&
@@ -76,10 +91,13 @@ const Assessment = () => {
       try {
         // Add data to Firestore
         const docRef = await addDoc(collection(db, "assessments"), formData);
+        setLoading(false);
+        setModalOpen(true);
         console.log("Document written with ID: ", docRef.id);
 
         // You can redirect the user or perform any other action upon successful submission.
       } catch (error) {
+        setLoading(false);
         console.error("Error adding document: ", error);
       }
     } else {
@@ -151,10 +169,13 @@ const Assessment = () => {
   };
 
   return (
-    <div className="w-full max-w-7xl flex flex-col items-center justify-center">
+    <div className="w-full max-w-7xl flex flex-col items-center justify-center ">
       <LinkComponent />
       <Navbar />
-      <div className="px-[20px] md:px-[100px] flex flex-col  lg:px-[30vh] w-full py-2">
+      <div className="px-[20px] md:px-[100px] flex flex-col  lg:px-[25vh] w-full py-2">
+        <div className="w-full h-full absolute left-0">
+          {isModalOpen && <Success onClose={closeModal} />}
+        </div>
         <form
           action=""
           onSubmit={handleFormSubmit}
@@ -198,7 +219,13 @@ const Assessment = () => {
                 className="py-2 px-10 bg-[#FFCD21] rounded-md"
                 type="submit"
               >
-                submit
+                <ClipLoader
+                  color="#36D7B7"
+                  loading={loading}
+                  css={override}
+                  size={20}
+                />
+                {loading ? "" : "Submit"}
               </button>
             )}
           </div>

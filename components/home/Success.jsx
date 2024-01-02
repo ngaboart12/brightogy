@@ -22,10 +22,10 @@ const Success = ({ onClose }) => {
     };
   }, []);
   return (
-    <div className="absolute z-50  w-full h-full flex flex-col justify-center items-center">
+    <div className="absolute z-50  w-full h-full flex flex-col items-center  ">
       <div
         ref={modalRef}
-        className="w-[90%] md:w-[50%]  bg-white shadow-gray-500 shadow-md items-center justify-center  rounded-md flex flex-col gap-y-4 p-10"
+        className=" md:w-[50%] w-[90%]  bg-white shadow-gray-500 shadow-md items-center justify-center  rounded-md flex flex-col gap-y-4 p-10"
       >
         <div className="p-4 rounded-full border-2 border-black/20">
           <FaCheck size={90} color="green" />
