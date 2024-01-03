@@ -66,9 +66,9 @@ const Single = () => {
             <ReactLoading type="spin" color="#123E6C" height={50} width={50} />
           </div>
         ) : (
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-col md:flex-row gap-2">
             <div className="flex w-full md:w-1/2 flex-col gap-4">
-              <div className="flex flex-row gap-2">
+              <div className="flex flex-row gap-2 md:justify-start justify-center">
                 <span className="text-[#C8C8C8] text-[18px] font-[300]">
                   Special Offers
                 </span>
@@ -76,21 +76,31 @@ const Single = () => {
                   / {postData.offerName}
                 </span>
               </div>
-              <h1 className="text-[24px] font-[600] text-[#123E6C] uppercase">
+
+              <h1 className="text-[24px] font-[600] text-[#123E6C] uppercase text-center md:text-start">
                 {postData.offerName}
               </h1>
-              <span className="text-[#6E6E6E] font-[200] max-w-[800px]">
+              <div className="w-full h-full flex md:hidden p-4 md:p-20">
+                <Image
+                  src={"/image/acom1.png"}
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-cover rounded-md"
+                />
+              </div>
+
+              <span className="text-[#6E6E6E] font-[200] max-w-[800px] text-center md:text-start">
                 {postData.offerDescription}
               </span>
               <button
                 onClick={handleDownload}
-                className="p-4 hover:scale-110 transition-all bg-[#123E6C] text-white rounded-[20px] w-[200px]"
+                className="p-4 hover:scale-110 transition-all bg-[#123E6C] text-white rounded-[20px] w-[200px] mx-auto md:mx-0"
               >
                 View Document
               </button>
             </div>
-            <div className="w-full md:w-1/2 flex">
-              <div className="w-full h-full p-20">
+            <div className=" hidden md:flex w-full md:w-1/2 ">
+              <div className="w-full h-full p-4 md:p-20">
                 <Image
                   src={"/image/acom1.png"}
                   width={400}

@@ -20,10 +20,25 @@ import OurlBlog from 'components/home/OurlBlog';
 import Ourspecialoffers from 'components/home/Ourspecialoffers';
 
 export default function Home() {
+  const [activeDot, setActiveDot] = useState(0);
 
   const [isModalOpen, setModalOpen] = useState(false);
   useEffect(() => {
+    const swiperInstance = swiperRef.current.swiper;
+
+    if (swiperInstance) {
+      swiperInstance.on("slideChange", () => {
+        setActiveDot(swiperInstance.realIndex);
+      });
+    }
+
     AOS.init({ duration: 2000 });
+
+    return () => {
+      if (swiperInstance) {
+        swiperInstance.off("slideChange");
+      }
+    };
   }, []);
 
   const openModal = () => setModalOpen(true);
@@ -404,7 +419,7 @@ export default function Home() {
             Discover more
           </a>
         </div>
-        <div data-aos="zoom-in"  className="w-full relative items-center">
+        <div data-aos="zoom-in"  className="w-full relative items-center  px-10 md:px-0">
           <Swiper ref={swiperRef} {...swiperOptions}>
             {countries.map((country, index) => (
               <SwiperSlide  key={index} className="w-[300px] h-[300px] py-4">
@@ -421,6 +436,22 @@ export default function Home() {
               </SwiperSlide>
             ))}
           </Swiper>
+          <div style={{ textAlign: "center", marginTop: "10px" }} className='flex md:hidden items-center justify-center'>
+        {countries.map((country, index) => (
+          <span
+            key={index}
+            style={{
+              display: "inline-block",
+              width: "8px",
+              height: "8px",
+              borderRadius: "50%",
+              background: index === activeDot ? "#007BFF" : "#ccc",
+              margin: "0 5px",
+              cursor: "pointer",
+            }}
+          />
+        ))}
+      </div>
         </div>
       </div>
 

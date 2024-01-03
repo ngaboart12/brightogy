@@ -10,15 +10,8 @@ import { db } from "../../firebase";
 import Navbar from "../../components/Navbar";
 import LinkComponent from "../../components/LinkComponet";
 import Footer from "../../components/Footer";
-import { ClipLoader } from "react-spinners";
-import { css } from "@emotion/react";
-import Success from "components/home/Success";
 
-const override = css`
-  display: block;
-  margin: 0 auto;
-  border-color: red;
-`;
+import Success from "components/home/Success";
 
 const Assessment = () => {
   const [step, setStep] = useState(1);
@@ -173,9 +166,11 @@ const Assessment = () => {
       <LinkComponent />
       <Navbar />
       <div className="px-[20px] md:px-[100px] flex flex-col  lg:px-[25vh] w-full py-2">
-        <div className="w-full h-full absolute left-0">
-          {isModalOpen && <Success onClose={closeModal} />}
-        </div>
+        {isModalOpen && (
+          <div className="w-full h-full absolute left-0">
+            <Success onClose={closeModal} />
+          </div>
+        )}
         <form
           action=""
           onSubmit={handleFormSubmit}
@@ -219,13 +214,7 @@ const Assessment = () => {
                 className="py-2 px-10 bg-[#FFCD21] rounded-md"
                 type="submit"
               >
-                <ClipLoader
-                  color="#36D7B7"
-                  loading={loading}
-                  css={override}
-                  size={20}
-                />
-                {loading ? "" : "Submit"}
+                {loading ? "Loading.." : "Submit"}
               </button>
             )}
           </div>
