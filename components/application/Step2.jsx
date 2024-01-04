@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Input from "../Input";
 
-const Step2 = ({ formData, handleInputChange }) => {
+const Step2 = ({ formData, handleInputChange, isEmail }) => {
   const [countryName, setCountryName] = useState("");
   const [allCountries, setAllCountries] = useState([]);
 
@@ -327,6 +327,7 @@ const Step2 = ({ formData, handleInputChange }) => {
             }
           />
           <Input
+            isEmail={isEmail}
             placeholder="Enter Email"
             label="Email"
             type="email"

@@ -122,24 +122,12 @@ export default function Home() {
     {
       name: "Visa Guidance",
       svg: (
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M20.0002 2.08334C10.1051 2.08334 2.0835 10.1049 2.0835 20C2.0835 29.8952 10.1051 37.9167 20.0002 37.9167C29.8953 37.9167 37.9168 29.8952 37.9168 20C37.9168 10.1049 29.8953 2.08334 20.0002 2.08334ZM4.5835 20C4.5835 16.1928 5.96356 12.7079 8.25073 10.0183L13.5882 15.3558C12.6416 16.6603 12.0835 18.265 12.0835 20C12.0835 21.735 12.6416 23.3397 13.5882 24.6442L8.25071 29.9817C5.96356 27.2922 4.5835 23.8072 4.5835 20ZM15.3559 13.588L10.0185 8.25058C12.7081 5.96341 16.1929 4.58334 20.0002 4.58334C23.8073 4.58334 27.2923 5.96341 29.9818 8.25058L24.6443 13.588C23.3398 12.6415 21.7352 12.0833 20.0002 12.0833C18.2652 12.0833 16.6605 12.6415 15.3559 13.588ZM10.0185 31.7495C12.7081 34.0367 16.1929 35.4167 20.0002 35.4167C23.8073 35.4167 27.2923 34.0367 29.9818 31.7495L24.6443 26.412C23.3398 27.3585 21.7352 27.9167 20.0002 27.9167C18.2652 27.9167 16.6605 27.3585 15.3559 26.412L10.0185 31.7495ZM26.4122 24.6442L31.7497 29.9817C34.0368 27.2922 35.4168 23.8072 35.4168 20C35.4168 16.1928 34.0368 12.7079 31.7497 10.0183L26.4122 15.3558C27.3587 16.6603 27.9168 18.265 27.9168 20C27.9168 21.735 27.3587 23.3397 26.4122 24.6442ZM14.5835 20C14.5835 17.0085 17.0087 14.5833 20.0002 14.5833C22.9917 14.5833 25.4168 17.0085 25.4168 20C25.4168 22.9915 22.9917 25.4167 20.0002 25.4167C17.0087 25.4167 14.5835 22.9915 14.5835 20Z"
-            fill="#94C7FE"
-          />
-          <path
-            d="M28 20C28 24.4183 24.4183 28 20 28C15.5817 28 12 24.4183 12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20ZM14.5268 20C14.5268 23.0227 16.9773 25.4732 20 25.4732C23.0227 25.4732 25.4732 23.0227 25.4732 20C25.4732 16.9773 23.0227 14.5268 20 14.5268C16.9773 14.5268 14.5268 16.9773 14.5268 20Z"
-            fill="#FFA800"
-          />
-        </svg>
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6V19C4 20.6569 5.34315 22 7 22H17C18.6569 22 20 20.6569 20 19V9C20 7.34315 18.6569 6 17 6H4ZM4 6V5" stroke="#94C7FE" stroke-width="1.5" stroke-linecap="round"/>
+<path opacity="0.5" d="M12 17C13.6569 17 15 15.6569 15 14C15 12.3431 13.6569 11 12 11C10.3431 11 9 12.3431 9 14C9 15.6569 10.3431 17 12 17Z" stroke="#FFA800" stroke-width="2"/>
+<path d="M18 6.00016V6.75016H18.75V6.00016H18ZM5.07107 6.75016H18V5.25016H5.07107V6.75016ZM18.75 6.00016V4.30618H17.25V6.00016H18.75ZM15.6111 1.58382L4.81353 3.12633L5.02566 4.61125L15.8232 3.06874L15.6111 1.58382ZM4.81353 3.12633C3.91638 3.25449 3.25 4.02284 3.25 4.92909H4.75C4.75 4.76931 4.86749 4.63385 5.02566 4.61125L4.81353 3.12633ZM18.75 4.30618C18.75 2.63267 17.2678 1.34715 15.6111 1.58382L15.8232 3.06874C16.5763 2.96117 17.25 3.54549 17.25 4.30618H18.75ZM5.07107 5.25016C4.89375 5.25016 4.75 5.10641 4.75 4.92909H3.25C3.25 5.93484 4.06532 6.75016 5.07107 6.75016V5.25016Z" fill="#94C7FE"/>
+</svg>
+
       ),
     },
     {
@@ -272,9 +260,9 @@ export default function Home() {
       <Hero />
 
       {/* services offer */}
-      <div  className="flex flex-col gap-5 pt-[83px] items-center bg-white">
-        <h1 data-aos="fade-down" className="max-w-[377px] text-[#07294D] font-extrabold text-[32px] text-center leading-[30px]">
-          Our Services We Offer toThe Students
+      <div  className="flex flex-col gap-14 pt-[83px] items-center bg-white">
+        <h1 data-aos="fade-down" className="max-w-[377px] text-[#07294D] font-extrabold text-[32px] text-center leading-[px]">
+          Our Services We Offer to the Students
         </h1>
         <div data-aos="fade-down" className="grid grid-cols-2 md:grid-cols-3 gap-x-[40px] md:gap-x-[120px] gap-y-6">
           {services.map((item, index) => {
@@ -292,7 +280,7 @@ export default function Home() {
 
       {/* apply and make apo */}
       <div className=" flex  justify-center items-center py-20 w-full px-2 md:px-20 bg-white">
-        <div data-aos="fade-down"  className="flex max-w-7xl w-full flex-col md:flex-row md:justify-between gap-10 bg-[#07294D] rounded-[24px] py-12 px-3 md:p-20">
+        <div data-aos="fade-down"  className="flex max-w-7xl w-full flex-col md:flex-row md:justify-between gap-16 bg-[#07294D] rounded-[24px] py-12 px-3 md:p-20">
           <div className="flex flex-col gap-2 items-center md:items-start">
             <h1 className="text-[#FFA800] text-[24px] font-normal text-center md:text-start leading-6">
               Apply for january intake 2024
@@ -317,7 +305,7 @@ export default function Home() {
             </p>
             <a
               href="#contactus"
-              className="py-[12px] px-[24px] bg-[#FFA800] hover:scale-110 flex justify-center text-black font-[500] rounded-full"
+              className="py-[12px] px-[32px] bg-[#FFA800] hover:scale-110 flex justify-center text-black font-[500] rounded-full"
             >
               Book Now
             </a>
@@ -343,13 +331,13 @@ export default function Home() {
           />
         </div>
         <div data-aos="fade-right"  className="w-full flex flex-col items-center md:items-start gap-4 md:gap-6 md:w-1/2 overflow-hidden">
-          <h1 className=" border-l-4 border-[#FFA800] text-[#FFA800] px-4 text-[18px] font-bold">
+          <h1 className="  border-[#FFA800] text-[#FFA800]  rounded-[8px]  px-[24px] py-[8px] text-[18px] font-medium bg-[#FFECC7]">
             About us
           </h1>
-          <span className="text-[#123E6C] text-[24px] md:text-[32px] font-bold text-center md:text-start leading-[30px]">
+          <span className="text-[#123E6C] text-[24px] md:text-[40px] font-bold text-center md:text-start leading-[30px]">
             Welcome to BrightForth
           </span>
-          <p className="text-[#2F2E2E] text-center md:text-start font-light leading-4 max-w-[495px]">
+          <p className="text-[#2F2E2E] text-[18px] text-center md:text-start font-light  max-w-[495px]">
             We are a rapidly growing foreign education consultancy in Rwanda
             that assists students in searching and applying to overseas
             universities through our extensive network since 2021. Our core
@@ -369,32 +357,49 @@ export default function Home() {
 
       <div  className="max-w-7xl relative bg-gray-100 flex flex-col py-6 w-full h-full items-center gap-6 px-[20px] sm:px-20 ">
         <h1 data-aos="fade-left" className='text-[32px] font-bold text-[#FFA800]'>Why choose us</h1>
-        <div data-aos="fade-left" className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-10'>
-          <div className='flex flex-row gap-4'>
-            <Image src={`/image/contract.svg`} width={200} height={100} alt='' className='w-20 h-20' />
-            <div className='flex flex-col gap-2'>
+        <div className='w-full flex flex-row justify-between items-center py-10'>
+        <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-x-10 gap-y-4 '>
+          <div className='flex flex-row gap-4 items-center'>
+          <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M64.2904 38.4166V26.7499C64.2904 12.1666 58.457 6.33325 43.8737 6.33325H26.3737C11.7904 6.33325 5.95703 12.1666 5.95703 26.7499V44.2499C5.95703 58.8332 11.7904 64.6666 26.3737 64.6666H38.0404" stroke="#FFA800" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M64.2904 38.4166V26.7499C64.2904 12.1666 58.457 6.33325 43.8737 6.33325H26.3737C11.7904 6.33325 5.95703 12.1666 5.95703 26.7499V44.2499C5.95703 58.8332 11.7904 64.6666 26.3737 64.6666H38.0404" stroke="#FFA800" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M64.2904 38.4166V26.7499C64.2904 12.1666 58.457 6.33325 43.8737 6.33325H26.3737C11.7904 6.33325 5.95703 12.1666 5.95703 26.7499V44.2499C5.95703 58.8332 11.7904 64.6666 26.3737 64.6666H38.0404" stroke="#FFA800" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46.7905 57.1708L51.3989 61.7499L61.3739 50.0833" stroke="#FFA800" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.5405 31.125V39.875" stroke="#FFA800" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35.124 31.125V39.875" stroke="#FFA800" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49.7075 31.125V39.875" stroke="#FFA800" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            <div className='flex flex-col '>
               <span className='text-[24px] text-[#07294D]'>Success rate</span>
-              <span className='text-black'>Our Team works to meet client requirement and make sure success of application process</span>
+              <span className='text-black max-w-[300px]'>Our Team works to meet client requirement and make sure success of application process</span>
             </div>
           </div>
           <div className='flex flex-row gap-4'>
-            <Image src={`/image/answer.svg`} width={200} height={100} alt='' className='w-20 h-20' />
-            <div className='flex flex-col gap-2'>
+          <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.749 61.75C33.926 63.6944 35.8427 64.6667 37.499 64.6667C43.249 64.6667 46.124 61.75 46.124 55.9167C46.124 52.0278 48.0407 48.1389 51.874 44.25C55.5159 40.5553 57.624 35.3046 57.624 29.6667C57.624 18.3909 48.6138 9.25 37.499 9.25C26.3843 9.25 17.374 18.3909 17.374 29.6667M48.999 29.6667C48.999 23.2233 43.8503 18 37.499 18C31.1477 18 25.999 23.2233 25.999 29.6667M8.74902 58.8333L23.124 41.3333L25.999 53L40.374 35.5" stroke="#FFA800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            <div className='flex flex-col'>
               <span className='text-[24px] text-[#07294D]'>Free Assistance</span>
-              <span className='text-black'>Get full free guidance for your study preference with Our team</span>
+              <span className='text-black max-w-[300px]'>Get full free guidance for your study preference with Our team</span>
             </div>
           </div>
           <div className='flex flex-row gap-4'>
-            <Image src={`/image/book.svg`} width={200} height={100} alt='' className='w-20 h-20' />
-            <div className='flex flex-col gap-2'>
-              <span className='text-[24px] text-[#07294D]'>Free Assistance</span>
-              <span className='text-black'>Get full free guidance for your study preference with Our team</span>
+          <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.749 61.75C33.926 63.6944 35.8427 64.6667 37.499 64.6667C43.249 64.6667 46.124 61.75 46.124 55.9167C46.124 52.0278 48.0407 48.1389 51.874 44.25C55.5159 40.5553 57.624 35.3046 57.624 29.6667C57.624 18.3909 48.6138 9.25 37.499 9.25C26.3843 9.25 17.374 18.3909 17.374 29.6667M48.999 29.6667C48.999 23.2233 43.8503 18 37.499 18C31.1477 18 25.999 23.2233 25.999 29.6667M8.74902 58.8333L23.124 41.3333L25.999 53L40.374 35.5" stroke="#FFA800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            <div className='flex flex-col '>
+              <span className='text-[24px] text-[#07294D]'>Experience</span>
+              <span className='text-black max-w-[300px]'>Our experience will help you step stones to success in overseas Education.</span>
             </div>
           </div>
         </div>
-          <div className='flex justify-center pt-20'>
+          <div className='flex justify-center '>
           <iframe className='rounded-[20px] w-[300px] sm:w-[400px] md:w-[500px]'  width="560" height="315" src="https://www.youtube.com/embed/FfSllGGvqC4?si=z5c_EZv8kc66rcFP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+          </div>
           </div>
        
       </div>

@@ -13,8 +13,7 @@ const Hero = () => {
   const closeModal = () => setModalOpen(false);
 
   return (
-    <div className="relative flex flex-col w-full items-center pb-10">
-      <LinkComponent2 />
+    <div className="relative h-[100vh] flex flex-col w-full items-center pb-10">
       <Navbar2 />
       <div className="absolute w-screen h-full -z-20">
         <Image
@@ -28,14 +27,14 @@ const Hero = () => {
       <div className="absolute w-screen h-full -z-10 bg-blue-900/50"></div>
       <div
         data-aos="zoom-in-up"
-        className="flex flex-col gap-4 w-full px-[20px]  py-[10vh]  justify-center items-center "
+        className="flex flex-col gap-4 w-full px-[20px]  py-[12vh]  justify-center items-center "
       >
-        <h1 className="text-white text-[40px]  leading-[40px] text-center max-w-[551px] md:leading-[40px] ">
+        <h1 className="text-white text-[40px]  leading-[40px] text-center max-w-[551px] font-[600] md:leading-[40px] ">
           Welcome To BrightForth Your Career Partner
         </h1>
-        <p className="text-center text-[16px] text-[#fff] max-w-[433px] font-[300]">
+        <p className="text-center text-[18px] text-[#fff] max-w-[600px] font-[300]">
           Welcome To BrightForthYour Career Partner Contact us for a free
-          consultation Because we are leading educational consultant popularly
+          Consultation Because we are leading educational Consultant Popularly
           recognized
         </p>
         <div className="flex gap-4">
@@ -71,84 +70,46 @@ const Hero = () => {
       </div>
       <div
         data-aos="zoom-in-up"
-        className="w-[70%]  px-[38px] py-[10px] bg-black bg-opacity-25 rounded-xl backdrop-blur-[5px] justify-center items-center inline-flex"
+        className="w-[70%]  px-[24px] py-[24px] bg-black bg-opacity-25 rounded-xl backdrop-blur-[5px] justify-center items-center inline-flex"
       >
-        <div className="self-stretch justify-start items-start gap-[46px] flex flex-col md:flex-row">
+        <div className="self-stretch justify-start items-start gap-[24px] flex flex-col md:flex-row">
           <div className="justify-start items-center gap-4 flex flex-col md:flex-row">
             <div className="w-[100px] h-[60px]">
               <Image
-                className="w-full h-full object-cover rounded-[14px]"
+                className="w-full h-full object-cover rounded-[8px]"
                 width={200}
                 height={200}
                 src={`/image/specialhero1.png`}
               />
             </div>
             <div className="flex-col justify-start items-start inline-flex">
-              <div className="text-center text-amber-500 text-2xl font-normal '">
+              <div className="text-center text-amber-500 text-[16px] font-normal '">
                 Special Offers
               </div>
-              <div className="  text-white text-[16px] font-[200]  line-clamp-2 leading-5">
+              <div className="  text-white text-[14px] font-[200]  line-clamp-2 leading-5">
                 Student Exclusive Deals Unlock Your Academic Journey with
                 Special Offers!
               </div>
             </div>
-            <a
-              href="/special"
-              className="w-10 h-10 relative animate-pulse cursor-pointer"
-            >
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M20.0002 3.33334C29.1902 3.33334 36.6668 10.81 36.6668 20C36.6668 29.19 29.1902 36.6667 20.0002 36.6667C10.8102 36.6667 3.3335 29.19 3.3335 20C3.3335 10.81 10.8102 3.33334 20.0002 3.33334ZM20.0002 5.83334C12.1885 5.83334 5.8335 12.1883 5.8335 20C5.8335 27.8117 12.1885 34.1667 20.0002 34.1667C27.8118 34.1667 34.1668 27.8117 34.1668 20C34.1668 12.1883 27.8118 5.83334 20.0002 5.83334ZM18.4795 13.3295L24.2895 19.1145C24.5245 19.3495 24.6562 19.6678 24.6562 19.9995C24.6562 20.3328 24.5245 20.6512 24.2895 20.8862L18.4795 26.6695C18.2362 26.9128 17.9162 27.0345 17.5978 27.0345C17.2778 27.0345 16.9562 26.9128 16.7128 26.6662C16.2262 26.1762 16.2278 25.3862 16.7162 24.8995L21.6362 19.9995L16.7162 15.1012C16.2278 14.6145 16.2262 13.8228 16.7128 13.3328C17.1995 12.8412 17.9895 12.8445 18.4795 13.3295Z"
-                  fill="#FFA800"
-                />
-              </svg>
-            </a>
           </div>
           <div className="justify-start items-center gap-4 flex flex-col md:flex-row">
             <div className="w-[100px] h-[60px]">
               <Image
-                className="w-full h-full object-cover rounded-[14px]"
+                className="w-full h-full object-cover rounded-[8px]"
                 width={200}
                 height={0}
                 src={`/image/specialhero1.png`}
               />
             </div>
             <div className="flex-col justify-start items-start  inline-flex">
-              <div className="text-center text-amber-500 text-2xl font-normal ">
+              <div className="text-center text-amber-500 text-[16px] font-normal ">
                 Special Offers
               </div>
-              <div className="font-[200] text-white text-[16px] line-clamp-2  leading-5">
+              <div className="font-[200] text-white text-[14px] line-clamp-2  leading-5">
                 Student-only discounts Take Advantage of Special Offers to
                 Advance Your Academic Career!
               </div>
             </div>
-            <a
-              href="/specialoffers"
-              className="w-10 h-10 relative cursor-pointer animate-pulse"
-            >
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M20.0002 3.33334C29.1902 3.33334 36.6668 10.81 36.6668 20C36.6668 29.19 29.1902 36.6667 20.0002 36.6667C10.8102 36.6667 3.3335 29.19 3.3335 20C3.3335 10.81 10.8102 3.33334 20.0002 3.33334ZM20.0002 5.83334C12.1885 5.83334 5.8335 12.1883 5.8335 20C5.8335 27.8117 12.1885 34.1667 20.0002 34.1667C27.8118 34.1667 34.1668 27.8117 34.1668 20C34.1668 12.1883 27.8118 5.83334 20.0002 5.83334ZM18.4795 13.3295L24.2895 19.1145C24.5245 19.3495 24.6562 19.6678 24.6562 19.9995C24.6562 20.3328 24.5245 20.6512 24.2895 20.8862L18.4795 26.6695C18.2362 26.9128 17.9162 27.0345 17.5978 27.0345C17.2778 27.0345 16.9562 26.9128 16.7128 26.6662C16.2262 26.1762 16.2278 25.3862 16.7162 24.8995L21.6362 19.9995L16.7162 15.1012C16.2278 14.6145 16.2262 13.8228 16.7128 13.3328C17.1995 12.8412 17.9895 12.8445 18.4795 13.3295Z"
-                  fill="#FFA800"
-                />
-              </svg>
-            </a>
           </div>
         </div>
       </div>

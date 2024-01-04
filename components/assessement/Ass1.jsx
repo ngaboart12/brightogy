@@ -6,13 +6,19 @@ const Ass1 = ({ formData, handleInputChange }) => {
   const [allCountries, setAllCountries] = useState([]);
 
   useEffect(() => {
+    // Fetch the list of all countries when the component mounts
     const fetchAllCountries = async () => {
       try {
         const response = await fetch("https://restcountries.com/v3.1/all");
         const data = await response.json();
 
         if (response.ok) {
-          setAllCountries(data);
+          const sortedCountries = data.sort((a, b) => {
+            const nameA = a.name.common.toUpperCase();
+            const nameB = b.name.common.toUpperCase();
+            return nameA.localeCompare(nameB);
+          });
+          setAllCountries(sortedCountries);
         } else {
           console.error("Error fetching countries:", data.message);
         }

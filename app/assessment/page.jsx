@@ -12,11 +12,12 @@ import LinkComponent from "../../components/LinkComponet";
 import Footer from "../../components/Footer";
 
 import Success from "components/home/Success";
+import { useRouter } from "next/navigation";
 
 const Assessment = () => {
+  const router = useRouter();
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
-  const [isModalOpen, setModalOpen] = useState(false);
 
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
@@ -85,7 +86,7 @@ const Assessment = () => {
         // Add data to Firestore
         const docRef = await addDoc(collection(db, "assessments"), formData);
         setLoading(false);
-        setModalOpen(true);
+        router.push("/success");
         console.log("Document written with ID: ", docRef.id);
 
         // You can redirect the user or perform any other action upon successful submission.
@@ -166,11 +167,6 @@ const Assessment = () => {
       <LinkComponent />
       <Navbar />
       <div className="px-[20px] md:px-[100px] flex flex-col  lg:px-[25vh] w-full py-2">
-        {isModalOpen && (
-          <div className="w-full h-full absolute left-0">
-            <Success onClose={closeModal} />
-          </div>
-        )}
         <form
           action=""
           onSubmit={handleFormSubmit}

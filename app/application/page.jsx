@@ -15,6 +15,7 @@ import Step4 from "../../components/application/Step4";
 import Step5 from "../../components/application/Step5";
 import Footer from "../../components/Footer";
 import Success from "components/home/Success";
+import { useRouter } from "next/navigation";
 
 const override = css`
   display: block;
@@ -23,6 +24,7 @@ const override = css`
 `;
 
 const Apllication = () => {
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [formDataUpdated, setFormDataUpdated] = useState(false);
   const [step, setStep] = useState(1);
@@ -30,6 +32,7 @@ const Apllication = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
+  const [isEmail, setIsEmail] = useState(false);
 
   const [filesImage, setFilesImage] = useState({
     stage1: {
@@ -131,7 +134,7 @@ const Apllication = () => {
       try {
         const docRef = await addDoc(collection(db, "Application"), formData);
         setLoading(false);
-        setModalOpen(true);
+        router.push("/success");
         console.log("Document written with ID:", docRef.id);
       } catch (error) {
         console.error("Error adding document:", error);
@@ -265,6 +268,14 @@ const Apllication = () => {
     link.click();
     document.body.removeChild(link);
   };
+
+  const isEmailNotValid = (email) => {
+    // Regular expression for a basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Test the provided email against the regular expression
+    return !emailRegex.test(email);
+  };
   const handleNext = () => {
     if (step == 1) {
       if (
@@ -281,7 +292,9 @@ const Apllication = () => {
         alert("all filed are required");
       }
     } else if (step == 2) {
-      if (
+      if (isEmailNotValid(formData.stage2.email)) {
+        setIsEmail(true);
+      } else if (
         formData.stage2.passportNumber !== "" &&
         formData.stage2.passportIssuedBy !== "" &&
         formData.stage2.passportExpiryDate !== "" &&
@@ -356,7 +369,11 @@ const Apllication = () => {
             <Step1 formData={formData} handleInputChange={handleInputChange} />
           )}
           {step === 2 && (
-            <Step2 formData={formData} handleInputChange={handleInputChange} />
+            <Step2
+              formData={formData}
+              isEmail={isEmail}
+              handleInputChange={handleInputChange}
+            />
           )}
           {step === 3 && (
             <Step3 formData={formData} handleInputChange={handleInputChange} />
