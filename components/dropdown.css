@@ -111,3 +111,15 @@
     opacity: 1;
     transform: scale(1);
   }
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #fff; /* Customize the background color */
+    opacity: 0.6; /* Customize the opacity */
+    margin: 0 4px; /* Customize the spacing between bullets */
+    cursor: pointer;
+  }
+  
+  .swiper-pagination-bullet-active {
+    opacity: 1; /* Customize the active bullet's opacity */
+  }

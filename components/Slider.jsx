@@ -2,6 +2,7 @@
 import React from "react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "./dropdown.css";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -229,6 +230,7 @@ function Slider() {
               </div>
             </SwiperSlide>
           </Swiper>
+          <div className="swiper-pagination absolute bottom-4"></div>
         </div>
       </div>
     </div>
