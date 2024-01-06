@@ -39,13 +39,21 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
     );
   });
   const handleResultClick = (faculty) => {
-    setSelectedFaculty(faculty);
+    const { id, facultyName, school, country, schoolFees } = faculty;
+    setSelectedFaculty({
+      id,
+      facultyName,
+      school,
+      country,
+      fees: schoolFees,
+      // Add other properties as needed
+    });
     handleInputChange("stage4", "applicationSchool", {
-      id: faculty.id,
-      facultyName: selectedFaculty.facultyName,
-      school: selectedFaculty.school,
-      country: selectedFaculty.country,
-      fees: selectedFaculty.schoolFees,
+      id,
+      facultyName,
+      school,
+      country,
+      fees: schoolFees,
       // Add other properties as needed
     });
 

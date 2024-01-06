@@ -9,7 +9,7 @@ import Footer from "../../components/Footer";
 
 const Career = () => {
   return (
-    <div className="flex flex-col items-center justify-center  w-full bg-gray-100">
+    <div className="flex flex-col items-center  w-full overflow-hidden relative bg-gray-100">
       <LinkComponent />
       <Navbar />
       {/* hero */}

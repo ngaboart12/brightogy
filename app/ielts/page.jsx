@@ -8,6 +8,12 @@ import { GrFormNext } from "react-icons/gr";
 
 const Ielts = () => {
   const [whichOpen, setWhichOpen] = useState();
+  const [answer, setAnswer] = useState(
+    "IELTS scores are valid for 2 years from the date of taking the test"
+  );
+  const [answer2, setAnswer2] = useState(
+    "IELTS scores are valid for 2 years from the date of taking the test"
+  );
   const [sectionOpened, setSectionOpened] = useState();
   const faqs = [
     {
@@ -45,9 +51,15 @@ const Ielts = () => {
       disc: "This section is held as a personal interview and is of 11 minutes in duration. The test is not held on the actual day of IELTS but either a day before or after. The segment consists of three parts which are classified as personal, long talk, and discussion. The test is interactive in nature and you will be talking to an examiner. The personal section consists of the interviewer introducing himself and asking you a few questions about yourself. The long talk involves speaking at length on a given topic. In the discussion segment, you will have an interactive talk with the interviewer regarding the topic you have spoken about.",
     },
   ];
+  const openAnswer = (answer) => {
+    setAnswer(answer);
+  };
+  const openAnswer2 = (answer) => {
+    setAnswer2(answer);
+  };
   return (
-    <div className="flex flex-col items-center justify-center  w-full bg-gray-100">
-      <LinkComponent2 />
+    <div className="flex flex-col items-center  w-full overflow-hidden bg-white relative">
+      {/* <LinkComponent2 /> */}
       <Navbar />
 
       {/* headder */}
@@ -268,40 +280,45 @@ const Ielts = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-10 w-full">
           <div className="flex flex-col gap-2 w-full md:w-1/2">
-            {sections.map((item, index) => {
+            {faqs.map((item, index) => {
               return (
-                <div className="flex flex-col">
-                  {sectionOpened === index ? (
-                    <div
-                      onClick={() => setSectionOpened(null)}
-                      className="p-2 bg-[#F5FAFF] flex  justify-between w-[80%] cursor-pointer"
-                    >
-                      <span className="text-[14px]  text-[#07294D] ">
-                        {index + 1}. <span>{item.title}</span>
-                      </span>
-                      <GrFormNext
-                        size={20}
-                        color="black"
-                        className={`${
-                          sectionOpened === index ? "rotate-90" : ""
-                        } transition-all`}
-                      />
+                <div
+                  key={index}
+                  className="p-4 w-full cursor-pointer bg-sky-900 rounded-lg flex-col justify-start items-start gap-2.5 flex"
+                >
+                  {answer === item.answer ? (
+                    <div className="justify-between items-center gap-4 inline-flex w-full">
+                      <div className="max-w-[408px] h-12 text-white text-lg font-normal ">
+                        {item.question}
+                      </div>
+                      <div className=" relative origin-top-left ">
+                        <GrFormNext
+                          size={30}
+                          color="white"
+                          className={`${
+                            answer === item.answer ? "rotate-90" : ""
+                          } transition-all`}
+                        />
+                      </div>
                     </div>
                   ) : (
                     <div
-                      onClick={() => setSectionOpened(index)}
-                      className="p-2 bg-[#F5FAFF] flex  justify-between w-[80%] cursor-pointer"
+                      onClick={() => openAnswer(item.answer)}
+                      className="justify-between items-center gap-4 inline-flex w-full"
                     >
-                      <span className="text-[14px]  text-[#07294D] ">
-                        {index + 1}. <span>{item.title}</span>
-                      </span>
-                      <GrFormNext size={20} color="black" />
+                      <div className="max-w-[408px] h-12 text-white text-lg font-normal ">
+                        {item.question}
+                      </div>
+                      <div className=" relative origin-top-left ">
+                        <GrFormNext
+                          size={30}
+                          color="white"
+                          className={`${
+                            answer === item.answer ? "rotate-90" : ""
+                          } transition-all`}
+                        />
+                      </div>
                     </div>
-                  )}
-                  {sectionOpened === index && (
-                    <span className=" pl-3 text-start text-[14px] text-[#07294D]/60 max-w-[400px]">
-                      {item.disc}
-                    </span>
                   )}
                 </div>
               );
@@ -309,10 +326,7 @@ const Ielts = () => {
           </div>
           <div className="flex felx-col gap-2 w-full md:w-1/2">
             <span className="text-[14px] text-[#555555] text-start">
-              Listening consists of 40 questions divided among four sections.
-              The total duration for all the sections together is 30 minutes and
-              an additional 10 minutes are given for the test taker to transfer
-              his answers to the answer sheet.
+              {answer}
             </span>
           </div>
         </div>
@@ -332,11 +346,8 @@ const Ielts = () => {
                     key={index}
                     className="p-4 w-full cursor-pointer bg-sky-900 rounded-lg flex-col justify-start items-start gap-2.5 flex"
                   >
-                    {whichOpen === index ? (
-                      <div
-                        onClick={() => setWhichOpen(null)}
-                        className="justify-between items-center gap-4 inline-flex w-full"
-                      >
+                    {answer2 === item.answer ? (
+                      <div className="justify-between items-center gap-4 inline-flex w-full">
                         <div className="max-w-[408px] h-12 text-white text-lg font-normal ">
                           {item.question}
                         </div>
@@ -345,14 +356,14 @@ const Ielts = () => {
                             size={30}
                             color="white"
                             className={`${
-                              whichOpen === index ? "rotate-90" : ""
+                              answer2 === item.answer ? "rotate-90" : ""
                             } transition-all`}
                           />
                         </div>
                       </div>
                     ) : (
                       <div
-                        onClick={() => setWhichOpen(index)}
+                        onClick={() => openAnswer2(item.answer)}
                         className="justify-between items-center gap-4 inline-flex w-full"
                       >
                         <div className="max-w-[408px] h-12 text-white text-lg font-normal ">
@@ -363,15 +374,10 @@ const Ielts = () => {
                             size={30}
                             color="white"
                             className={`${
-                              whichOpen === index ? "rotate-90" : ""
+                              answer2 === item.answer ? "rotate-90" : ""
                             } transition-all`}
                           />
                         </div>
-                      </div>
-                    )}
-                    {whichOpen === index && (
-                      <div>
-                        <span className="text-gray-400">{item.answer}</span>
                       </div>
                     )}
                   </div>
@@ -380,11 +386,7 @@ const Ielts = () => {
             </div>
             <div className="w-full md:w-1/2 flex flex-col gap-3">
               <span className="text-white font-[300] text-[14px]">
-                Yes, international students can work in Poland while attending
-                their college studies. Non-EU students can work 20 hours maximum
-                in a week. Once your study program is completed at a Polish
-                university, the conditions change, and you will be required to
-                obtain stay-back permits.
+                {answer2}
               </span>
             </div>
           </div>

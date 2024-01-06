@@ -32,7 +32,7 @@ const Events = () => {
     fetchEvents();
   }, []);
   return (
-    <div>
+    <div className="flex flex-col  w-full overflow-hidden bg-white relative">
       <LinkComponent />
       <Navbar />
 

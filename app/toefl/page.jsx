@@ -8,7 +8,9 @@ import Footer from "../../components/Footer";
 import { GrFormNext } from "react-icons/gr";
 
 const Toefl = () => {
-  const [whichOpen, setWhichOpen] = useState();
+  const [answer, setAnswer] = useState(
+    "There is no age limit for the TOEFL exam as such but generally, you would be recommended to take it only after you reach 16 years of age"
+  );
   const faqs = [
     {
       question: "What is the age limit for the TOEFL EXAM?",
@@ -26,9 +28,13 @@ const Toefl = () => {
         " Yes. The results of the TOEFL exam will expire two years after your test date. For a complete understanding of the rules and regulations of giving the TOEFL exam reach out to us for a free consultation",
     },
   ];
+
+  const openAnswer = (answer) => {
+    setAnswer(answer);
+  };
   return (
-    <div className="flex flex-col items-center justify-center  w-full bg-gray-100">
-      <LinkComponent />
+    <div className="flex flex-col items-center  w-full overflow-hidden bg-white relative">
+      {/* <LinkComponent /> */}
       <Navbar />
 
       {/* hero */}
@@ -386,11 +392,8 @@ const Toefl = () => {
                       key={index}
                       className="p-4 w-full cursor-pointer bg-sky-900 rounded-lg flex-col justify-start items-start gap-2.5 flex"
                     >
-                      {whichOpen === index ? (
-                        <div
-                          onClick={() => setWhichOpen(null)}
-                          className="justify-between items-center gap-4 inline-flex w-full"
-                        >
+                      {answer === item.answer ? (
+                        <div className="justify-between items-center gap-4 inline-flex w-full">
                           <div className="max-w-[408px] h-12 text-white text-lg font-normal ">
                             {item.question}
                           </div>
@@ -399,14 +402,14 @@ const Toefl = () => {
                               size={30}
                               color="white"
                               className={`${
-                                whichOpen === index ? "rotate-90" : ""
+                                answer === item.answer ? "rotate-90" : ""
                               } transition-all`}
                             />
                           </div>
                         </div>
                       ) : (
                         <div
-                          onClick={() => setWhichOpen(index)}
+                          onClick={() => openAnswer(item.answer)}
                           className="justify-between items-center gap-4 inline-flex w-full"
                         >
                           <div className="max-w-[408px] h-12 text-white text-lg font-normal ">
@@ -417,15 +420,10 @@ const Toefl = () => {
                               size={30}
                               color="white"
                               className={`${
-                                whichOpen === index ? "rotate-90" : ""
+                                answer === item.answer ? "rotate-90" : ""
                               } transition-all`}
                             />
                           </div>
-                        </div>
-                      )}
-                      {whichOpen === index && (
-                        <div>
-                          <span className="text-gray-400">{item.answer}</span>
                         </div>
                       )}
                     </div>
@@ -435,9 +433,7 @@ const Toefl = () => {
             </div>
             <div className=" w-full md:w-1/2">
               <div className="w-full  text-white text-md font-normal ">
-                There is no age limit for the TOEFL exam as such but generally,
-                you would be recommended to take it only after you reach 16
-                years of age
+                {answer}
               </div>
             </div>
           </div>

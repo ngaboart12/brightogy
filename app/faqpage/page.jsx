@@ -89,7 +89,7 @@ const Page = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-center  w-full bg-gray-100 overflow-y-auto">
+    <div className="flex flex-col items-center   overflow-hidden  relative  w-full bg-gray-100 overflow-y-auto">
       <LinkComponent />
       <Navbar />
       <div className="flex flex-col gap-10 w-full max-w-7xl px-[20px] md:px-20 lg:px-40 pb-20 ">

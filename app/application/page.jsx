@@ -97,6 +97,7 @@ const Apllication = () => {
       EnglishProficiency: "",
     },
   });
+  console.log(formData.stage4.applicationSchool);
 
   const metadata = {
     contentDisposition: "attachment", // This instructs the browser to prompt for download

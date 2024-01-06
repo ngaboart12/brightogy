@@ -33,7 +33,7 @@ const Aboutus = () => {
   ];
   return (
     <div className="flex flex-col items-center  w-full overflow-hidden bg-white relative">
-      <LinkComponent />
+      {/* <LinkComponent /> */}
       <Navbar />
 
       {/* hero section */}

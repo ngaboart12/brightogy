@@ -1,12 +1,12 @@
-import React from 'react';
-import Image from 'next/image';
-import LinkComponent from '../../components/LinkComponet';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+import React from "react";
+import Image from "next/image";
+import LinkComponent from "../../components/LinkComponet";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const Sop = () => {
   return (
-    <div className="flex flex-col items-center justify-center  w-full">
+    <div className="flex flex-col items-center  w-full overflow-hidden bg-white relative">
       <LinkComponent />
       <Navbar />
       {/* hero */}
