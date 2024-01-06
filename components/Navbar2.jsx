@@ -35,7 +35,7 @@ const Navbar2 = () => {
       }`}
     >
       <div className="max-w-7xl w-full flex flex-row   ">
-        <div className="p-2 border border-t-0 border-l-0 pl-[10px] md:pl-[50px] lg:pl-[100px] w-1/5 ">
+        <div className="p-2 border border-t-0 border-l-0 pl-[10px] md:pl-[50px] lg:pl-[100px] w-1/5 pr-4 ">
           <div className="flex ">
             {scrolled ? (
               <Image
@@ -57,7 +57,7 @@ const Navbar2 = () => {
           </div>
         </div>
 
-        <div className="border border-t-0 p-2 w-1/5 flex items-center border-l-0">
+        {/* <div className="border border-t-0 p-2 w-1/5 flex items-center border-l-0">
           <div className="flex flex-row items-center gap-1">
             <div>
               <svg
@@ -85,7 +85,7 @@ const Navbar2 = () => {
             </div>
             <span className="text-white font-[200]">Search</span>
           </div>
-        </div>
+        </div> */}
 
         <div className="links hidden md:flex  gap-[102px] items-center w-full justify-end  border border-t-0 border-l-0   pr-[10px] md:pr-[50px] lg:pr-[100px] px-[10px] ">
           <ul
