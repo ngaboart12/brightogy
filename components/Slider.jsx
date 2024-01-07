@@ -107,10 +107,13 @@ function Slider() {
                   </svg>
 
                   <p className="text-[18px] font-light text-white line-clamp-5  ">
-                    Whatever donuts marketing got status paradigm my alarming
-                    plane horse. Right lift rehydrate pretend launch devil site
-                    seems container driver's. Customer deck invested out panel
-                    want running developing points deck. N
+                    For me, working with your educational consultant changed
+                    everything. Their advice and assistance were quite helpful
+                    to me during my academic career. I liked that they were
+                    always problem-solving and that I never felt guilty for
+                    whatever difficulties I encountered. I successfully and
+                    confidently made my way through my academics because of
+                    their knowledge.
                   </p>
                   <div className="flex flex-col ">
                     <span className="text-white text-[18px] font-medium">
@@ -151,7 +154,7 @@ function Slider() {
                 </p>
                 <div className="flex flex-col ">
                   <span className="text-white text-[18px] font-medium">
-                    Bigizi japhet
+                    Sharom
                   </span>
                   <span className="text-[#87ACD2] text-[16px]">Student</span>
                 </div>

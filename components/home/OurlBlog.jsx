@@ -38,7 +38,7 @@ const OurlBlog = () => {
           return (
             <div
               data-aos="fade-down"
-              className="flex flex-col gap-8 items-center sm:items-start  bg-white pb-4 rounded-3xl"
+              className="flex flex-col gap-8 items-center sm:items-start  bg-white pb-4 rounded-t-3xl rounded-[10px]"
             >
               <div className="w-full">
                 <Image

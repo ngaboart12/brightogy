@@ -30,31 +30,29 @@ const Navbar2 = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className={`w-full  flex items-center justify-center    ${
+      className={`w-full  flex items-center justify-center  px-[10px] md:px-[50px] lg:px-[100px] py-2  ${
         scrolled ? "bg-white border-b-2 border-black/10 fixed z-40" : ""
       }`}
     >
       <div className="max-w-7xl w-full flex flex-row   ">
-        <div className="p-2 border border-t-0 border-l-0 pl-[10px] md:pl-[50px] lg:pl-[100px] w-1/5 pr-4 ">
-          <div className="flex ">
-            {scrolled ? (
-              <Image
-                src={`/image/logo.svg`}
-                width={400}
-                height={400}
-                alt=""
-                className="w-[20vh]"
-              />
-            ) : (
-              <Image
-                src={`/image/logo2.svg`}
-                width={400}
-                height={400}
-                alt=""
-                className="w-[20vh]"
-              />
-            )}
-          </div>
+        <div className="flex ">
+          {scrolled ? (
+            <Image
+              src={`/image/logo.svg`}
+              width={400}
+              height={400}
+              alt=""
+              className="w-[20vh]"
+            />
+          ) : (
+            <Image
+              src={`/image/logo2.svg`}
+              width={400}
+              height={400}
+              alt=""
+              className="w-[20vh]"
+            />
+          )}
         </div>
 
         {/* <div className="border border-t-0 p-2 w-1/5 flex items-center border-l-0">
@@ -87,7 +85,7 @@ const Navbar2 = () => {
           </div>
         </div> */}
 
-        <div className="links hidden md:flex  gap-[102px] items-center w-full justify-end  border border-t-0 border-l-0   pr-[10px] md:pr-[50px] lg:pr-[100px] px-[10px] ">
+        <div className="links hidden md:flex  gap-[102px] items-center w-full justify-end   pr-[10px] md:pr-[50px] lg:pr-[100px] px-[10px] ">
           <ul
             className={`${
               scrolled ? "text-black" : "text-white"

@@ -357,7 +357,7 @@ export default function Home() {
 
       <div  className="max-w-7xl relative bg-gray-100 flex flex-col py-6 w-full h-full items-center gap-6 px-[20px] sm:px-20 ">
         <h1 data-aos="fade-left" className='text-[32px] font-bold text-[#FFA800]'>Why choose us</h1>
-        <div className='w-full flex flex-row justify-between items-center py-10'>
+        <div className='w-full flex flex-col gap-10 lg:flex-row justify-between items-center py-10'>
         <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-x-10 gap-y-4 '>
           <div className='flex flex-row gap-4 items-center'>
           <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -396,8 +396,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-          <div className='flex justify-center '>
-          <iframe className='rounded-[20px] w-[300px] sm:w-[400px] md:w-[500px]'  width="560" height="315" src="https://www.youtube.com/embed/FfSllGGvqC4?si=z5c_EZv8kc66rcFP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div className='flex justify-cente '>
+        
+          <iframe className='rounded-[20px] w-[300px] sm:w-[500px] md:w-[500px]' width="860" height="315" src="https://www.youtube.com/embed/ytuyu4KZjKU?si=1tlSF6Wxd71tVi45" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
           </div>
           </div>

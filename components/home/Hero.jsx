@@ -13,7 +13,7 @@ const Hero = () => {
   const closeModal = () => setModalOpen(false);
 
   return (
-    <div className="relative h-[100vh] flex flex-col w-full items-center pb-10">
+    <div className="relative min-h-[100vh] flex flex-col w-full items-center pb-10">
       <Navbar2 />
       <div className="absolute w-screen h-full -z-20">
         <Image
@@ -73,7 +73,10 @@ const Hero = () => {
         className="w-[70%]  px-[24px] py-[24px] bg-black bg-opacity-25 rounded-xl backdrop-blur-[5px] justify-center items-center inline-flex"
       >
         <div className="self-stretch justify-start items-start gap-[24px] flex flex-col md:flex-row">
-          <div className="justify-start items-center gap-4 flex flex-col md:flex-row">
+          <a
+            href="/specialoffers"
+            className="justify-start items-center gap-4 flex flex-col md:flex-row"
+          >
             <div className="w-[100px] h-[60px]">
               <Image
                 className="w-full h-full object-cover rounded-[8px]"
@@ -82,17 +85,20 @@ const Hero = () => {
                 src={`/image/specialhero1.png`}
               />
             </div>
-            <div className="flex-col justify-start items-start inline-flex">
-              <div className="text-center text-amber-500 text-[16px] font-normal '">
+            <div className="flex-col justify-start items-center md:items-start  inline-flex">
+              <div className="text-center text-amber-500 text-[16px] font-normal md:text-start">
                 Special Offers
               </div>
-              <div className="  text-white text-[14px] font-[200]  line-clamp-2 leading-5">
+              <div className="  text-white text-[14px] font-[200] text-center md:text-start  line-clamp-2 leading-5">
                 Student Exclusive Deals Unlock Your Academic Journey with
                 Special Offers!
               </div>
             </div>
-          </div>
-          <div className="justify-start items-center gap-4 flex flex-col md:flex-row">
+          </a>
+          <a
+            href="/special"
+            className="justify-start items-center gap-4 flex flex-col md:flex-row"
+          >
             <div className="w-[100px] h-[60px]">
               <Image
                 className="w-full h-full object-cover rounded-[8px]"
@@ -101,16 +107,16 @@ const Hero = () => {
                 src={`/image/specialhero1.png`}
               />
             </div>
-            <div className="flex-col justify-start items-start  inline-flex">
-              <div className="text-center text-amber-500 text-[16px] font-normal ">
+            <div className="flex-col justify-start items-center md:items-start  inline-flex">
+              <div className="text-center  text-amber-500 text-[16px] font-normal ">
                 Special Offers
               </div>
-              <div className="font-[200] text-white text-[14px] line-clamp-2  leading-5">
+              <div className="font-[200] text-white text-[14px] line-clamp-2 text-center md:text-start  leading-5">
                 Student-only discounts Take Advantage of Special Offers to
                 Advance Your Academic Career!
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       {isModalOpen && (

@@ -6,8 +6,13 @@ import toast from "react-hot-toast";
 import Image from "next/image";
 import { db } from "../firebase";
 import { addDoc, collection } from "firebase/firestore";
+import EnquiryForm from "./home/EnquiryForm";
 
 const Footer = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const handleSubscribe = async (e) => {
@@ -35,6 +40,11 @@ const Footer = () => {
         data-aos="zoom-in-right"
         className=" max-w-7xl p-2 gap-6 sm:gap-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full  justify-center sm:p-6"
       >
+        {isModalOpen && (
+          <div className="EnquiryForm zoomIn w-full h-full absolute">
+            <EnquiryForm onClose={closeModal} />
+          </div>
+        )}
         <div className="flex flex-col gap-2 ">
           <div className="flex flex-col gap-2 items-center justify-center sm:items-start sm:ustify-start">
             <Image
@@ -134,68 +144,89 @@ const Footer = () => {
 
         <div className="flex flex-col gap-3 items-center sm:items-start">
           <h1 className="text-[#FFA800] text-[18px]">Study Desitinations</h1>
-          <a href="#" className="text-white text-[14px] font-[300]">
-            United state
-          </a>
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a href="/canada" className="text-white text-[14px] font-[300]">
             Canada
           </a>
-          <a className="text-white text-[14px] font-[300]">United Kingdom</a>
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a href="/poland" className="text-white text-[14px] font-[300]">
             Poland
           </a>
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a href="/china" className="text-white text-[14px] font-[300]">
+            China
+          </a>
+          <a href="/usa" className="text-white text-[14px] font-[300]">
+            United state
+          </a>
+          <a
+            href="united-kingdom"
+            className="text-white text-[14px] font-[300]"
+          >
+            United Kingdom
+          </a>
+
+          <a href="/france" className="text-white text-[14px] font-[300]">
             France
           </a>
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a href="/ireland" className="text-white text-[14px] font-[300]">
             Ireland
           </a>
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a href="/turkey" className="text-white text-[14px] font-[300]">
             Turkey
           </a>
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a href="/austrial" className="text-white text-[14px] font-[300]">
             Australia
           </a>
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a href="/germany" className="text-white text-[14px] font-[300]">
             Germany
           </a>
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a href="/georgia" className="text-white text-[14px] font-[300]">
             Georgia
           </a>
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a href="/cyprus" className="text-white text-[14px] font-[300]">
             Cyprus
           </a>
         </div>
         <div className="flex flex-col gap-3 items-center sm:items-start">
           <h1 className="text-[#FFA800] text-[18px]">Our Services</h1>
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a
+            href="/careercounseling"
+            className="text-white text-[14px] font-[300]"
+          >
             Career Counseling
           </a>
 
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a
+            href="/univeristydocument"
+            className="text-white text-[14px] font-[300]"
+          >
             University selection and Documentation
           </a>
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a href="/visaguidance" className="text-white text-[14px] font-[300]">
             Visa Guidance
           </a>
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a href="/predeparture" className="text-white text-[14px] font-[300]">
             Pre-departure Services
           </a>
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a
+            href="/travelinsurance"
+            className="text-white text-[14px] font-[300]"
+          >
             Travel Insurance
           </a>
-          <a href="#" className="text-white text-[14px] font-[300]">
+          <a href="/sop" className="text-white text-[14px] font-[300]">
             Statement of Purpose
           </a>
           <div className="flex flex-col py-4 gap-3">
             <h1 className="text-[#FFA800]">Quick links</h1>
-            <a href="#" className="text-white text-[14px] font-[300]">
+            <p
+              onClick={openModal}
+              className="text-white text-[14px] font-[300]  cursor-pointer"
+            >
               Enquiry Now
-            </a>
-            <a href="#" className="text-white text-[14px] font-[300]">
+            </p>
+            <a href="/aboutus" className="text-white text-[14px] font-[300]">
               About us
             </a>
-            <a href="#" className="text-white text-[14px] font-[300]">
+            <a href="#contactus" className="text-white text-[14px] font-[300]">
               Contact us
             </a>
             <a href="/events" className="text-white text-[14px] font-[300]">
