@@ -741,8 +741,8 @@ export default function Home() {
       {/* apply and make apo */}
       <div className=" flex  justify-center items-center py-20 w-full px-2 md:px-20 bg-white">
         <div data-aos="fade-down"  className="flex max-w-7xl w-full flex-col md:flex-row md:justify-between gap-16 bg-[#07294D] rounded-[24px] py-12 px-3 md:p-20">
-          <div className="flex flex-col md:flex-row gap-2 items-center ">
-            <div className='p-4 bg-[#0D355F] rounded'>
+          <div className="flex flex-col md:flex-row gap-2 items-center px-10">
+            <div className='p-2 bg-[#0D355F] rounded-[20px] '>
             <svg width="127" height="126" viewBox="0 0 127 126" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M19.8731 61.7728C-4.22134 75.5748 -4.2188 97.9499 19.8731 111.752C43.965 125.554 83.0302 125.551 107.125 111.752C131.219 97.9524 131.217 75.5748 107.125 61.7728C83.0327 47.9707 43.9675 47.9732 19.8731 61.7728Z" fill="#0D355F"/>
 <path d="M84.5743 24.3217V25.3801C84.5743 25.3801 84.1628 25.0072 84.14 24.74C84.1171 24.4729 84.5743 24.3217 84.5743 24.3217Z" fill="black"/>
