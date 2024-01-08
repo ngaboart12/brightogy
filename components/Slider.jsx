@@ -132,7 +132,7 @@ function Slider() {
                           </clipPath>
                         </defs>
                       </svg> */}
-                      <div className="w-20 h-20">
+                      <div className="w-16 h-16">
                         <Image
                           src={item.profile}
                           width={500}
@@ -140,7 +140,7 @@ function Slider() {
                           className="w-full h-full rounded-full object-cover"
                         />
                       </div>
-
+                      []
                       <p className="text-[14px] font-light text-white">
                         {item.comment}
                       </p>

@@ -36,13 +36,15 @@ const Navbar = () => {
     >
       <div className="flex flex-row items-start justify-between w-full max-w-6xl mx-auto md:items-center  px-[10px] md:px-[50px] lg:px-[100px]">
         <div className="flex ">
-          <Image
-            src={`/image/logo.svg`}
-            width={300}
-            height={300}
-            alt=""
-            className="w-[20vh]"
-          />
+          <a href="/">
+            <Image
+              src={`/image/logo.svg`}
+              width={300}
+              height={300}
+              alt=""
+              className="w-[20vh]"
+            />
+          </a>
         </div>
 
         <div className="links flex gap-[102px] items-center mt-2">

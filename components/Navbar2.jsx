@@ -30,28 +30,32 @@ const Navbar2 = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className={`w-full  flex items-center justify-center  px-[10px] md:px-[50px] lg:px-[100px] py-2  ${
+      className={`w-full  flex items-center justify-center  px-[10px] md:px-[50px] lg:px-[100px] py-2 relative  ${
         scrolled ? "bg-white border-b-2 border-black/10 fixed z-40" : ""
       }`}
     >
       <div className="max-w-7xl w-full flex flex-row   ">
         <div className="flex ">
           {scrolled ? (
-            <Image
-              src={`/image/logo.svg`}
-              width={400}
-              height={400}
-              alt=""
-              className="w-[20vh]"
-            />
+            <a href="/">
+              <Image
+                src={`/image/logo.svg`}
+                width={400}
+                height={400}
+                alt=""
+                className="w-[20vh]"
+              />
+            </a>
           ) : (
-            <Image
-              src={`/image/logo2.svg`}
-              width={400}
-              height={400}
-              alt=""
-              className="w-[20vh]"
-            />
+            <a href="/">
+              <Image
+                src={`/image/logo2.svg`}
+                width={400}
+                height={400}
+                alt=""
+                className="w-[20vh]"
+              />
+            </a>
           )}
         </div>
 
@@ -286,7 +290,7 @@ const Navbar2 = () => {
         {isOpen ? <MdOutlineClose size={30} /> : <VscThreeBars size={30} />}
       </div>
       {isOpen ? (
-        <div className="mobile flex  md:hidden flex-col gap-[102px]  mt-12 w-full h-[90vh] absolute z-20 bg-gray-800 rounded-lg px-6 py-6 ">
+        <div className="mobile flex  md:hidden flex-col gap-[102px] top-16   w-full h-[90vh] absolute z-20 bg-gray-800 rounded-lg px-6 py-6 ">
           <ul className="  flex flex-col text-white font-[300] text-[16px]  gap-4  items-start">
             <li>
               <a href="/">HOME</a>
