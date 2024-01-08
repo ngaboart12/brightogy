@@ -63,9 +63,10 @@ const page = () => {
           <div className="flex flex-col py-6">
             <table>
               <tr className="text-[12px] h-10">
-                <td>Combination Name</td>
-                <td>School Name</td>
-                <td>School fees</td>
+                <td>Faculty Name</td>
+                <td>Duration</td>
+                <td>Tuition fees</td>
+                <td>Grade</td>
                 <td>Country</td>
               </tr>
 
@@ -76,8 +77,9 @@ const page = () => {
                     className="p-4 bg-gray-200 h-14 md:h-10 border-b-4 border-white text-[12px]"
                   >
                     <td className="px-2">{item.facultyName}</td>
-                    <td>{item.school}</td>
+                    <td>3 Years</td>
                     <td>${item.schoolFees}</td>
+                    <td>Masters</td>
                     <td>{item.country}</td>
                   </tr>
                 );
