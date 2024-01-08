@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Navbar from "../../components/Navbar";
 
@@ -9,6 +9,15 @@ import Image from "next/image";
 import Parteners from "../../components/Parteners";
 
 const Aboutus = () => {
+  useEffect(() => {
+    // Set the title when the component mounts
+    document.title = "BrightFoth - About us";
+
+    // Optionally, you can reset the title when the component unmounts
+    return () => {
+      document.title = "Default Title";
+    };
+  }, []);
   const members = [
     {
       name: "Jonny Brewer",
