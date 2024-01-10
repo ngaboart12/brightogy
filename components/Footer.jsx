@@ -289,26 +289,26 @@ const Footer = () => {
         <div className="grid grid-cols-3 sm:grid-cols-5  gap-8 sm:gap-14 md:gap-20 ">
           <div className="w-[100px] h-[50px]">
             <Image
+              className="w-full h-full  object-scale-down "
+              src={`/image/s1.png`}
+              width={100}
+              height={200}
+            />
+          </div>
+          <div className="w-[100px] h-[50px]  rounded-md">
+            <Image
               className="w-full h-full object-fit"
-              src={`/image/uskudar.png`}
+              src={`/image/s3.jpg`}
               width={200}
               height={200}
             />
           </div>
-          <div className="w-[100px] h-[50px] bg-green-500 rounded-md">
+          <div className="w-[100px] h-[60px] bg-white rounded-md flex items-center justify-center">
             <Image
-              className="w-full h-full object-fit"
-              src={`/image/aivancity.svg`}
-              width={200}
-              height={200}
-            />
-          </div>
-          <div className="w-[50px] h-[50px] rounded-md flex items-center justify-center">
-            <Image
-              className="w-full h-full object-fit rounded-sm"
-              src={`/image/vistula.jpg`}
-              width={200}
-              height={200}
+              className="w-full h-full object-cover rounded-sm"
+              src={`/image/s4.png`}
+              width={100}
+              height={100}
             />
           </div>
           <div className="w-[90px] h-[60px] rounded-md flex items-center justify-center">

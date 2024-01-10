@@ -140,7 +140,7 @@ function Slider() {
                           className="w-full h-full rounded-full object-cover"
                         />
                       </div>
-                      []
+
                       <p className="text-[14px] font-light text-white">
                         {item.comment}
                       </p>

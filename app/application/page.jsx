@@ -352,7 +352,7 @@ const Apllication = () => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col items-center  w-full overflow-hidden bg-white relative">
       <LinkComponent />
       <Navbar />
 

@@ -163,7 +163,7 @@ const Assessment = () => {
   };
 
   return (
-    <div className="w-full max-w-7xl flex flex-col items-center justify-center ">
+    <div className="flex flex-col items-center  w-full overflow-hidden bg-white relative">
       <LinkComponent />
       <Navbar />
       <div className="px-[20px] md:px-[100px] flex flex-col  lg:px-[25vh] w-full py-2">
