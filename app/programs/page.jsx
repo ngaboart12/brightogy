@@ -37,7 +37,6 @@ const page = () => {
     const lowerCaseSearchTerm = searchTerm.toLowerCase();
     return (
       faculty.facultyName.toLowerCase().includes(lowerCaseSearchTerm) ||
-      faculty.school.toLowerCase().includes(lowerCaseSearchTerm) ||
       faculty.country.toLowerCase().includes(lowerCaseSearchTerm)
     );
   });
@@ -51,7 +50,7 @@ const page = () => {
           <input
             type="text"
             className="outline-none"
-            placeholder="Search  Program/University "
+            placeholder="Search  Program/Country "
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
@@ -77,9 +76,9 @@ const page = () => {
                     className="p-4 bg-gray-200 h-14 md:h-10 border-b-4 border-white text-[12px]"
                   >
                     <td className="px-2">{item.facultyName}</td>
-                    <td>3 Years</td>
-                    <td>${item.schoolFees}</td>
-                    <td>Masters</td>
+                    <td>{item.duration} years</td>
+                    <td>${item.tuitionFees}</td>
+                    <td>{item.grade}</td>
                     <td>{item.country}</td>
                   </tr>
                 );
