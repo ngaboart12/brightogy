@@ -33,6 +33,11 @@ const page = () => {
 
     fetchData();
   }, []);
+  const handleSearch = (e) => {
+    const searchTerm = e.target.value.toLowerCase();
+    setSearchTerm(searchTerm);
+  };
+
   const filteredFaculties = faculties.filter((faculty) => {
     const lowerCaseSearchTerm = searchTerm.toLowerCase();
     return (
@@ -51,7 +56,7 @@ const page = () => {
             type="text"
             className="outline-none"
             placeholder="Search  Program/Country "
-            onChange={(e) => setSearchTerm(e.target.value)}
+            onChange={handleSearch}
           />
         </div>
         {loading ? (
@@ -60,30 +65,36 @@ const page = () => {
           </div>
         ) : (
           <div className="flex flex-col py-6">
-            <table>
-              <tr className="text-[12px] h-10">
-                <td>Faculty Name</td>
-                <td>Duration</td>
-                <td>Tuition fees</td>
-                <td>Grade</td>
-                <td>Country</td>
-              </tr>
+            {searchTerm === "" ? (
+              <p className="text-[24px]">
+                Search Program, Result are Displayed Here
+              </p>
+            ) : (
+              <table>
+                <tr className="text-[12px] h-10">
+                  <td>Faculty Name</td>
+                  <td>Duration</td>
+                  <td>Tuition fees</td>
+                  <td>Grade</td>
+                  <td>Country</td>
+                </tr>
 
-              {filteredFaculties.map((item, index) => {
-                return (
-                  <tr
-                    key={index}
-                    className="p-4 bg-gray-200 h-14 md:h-10 border-b-4 border-white text-[12px]"
-                  >
-                    <td className="px-2">{item.facultyName}</td>
-                    <td>{item.duration} years</td>
-                    <td>${item.tuitionFees}</td>
-                    <td>{item.grade}</td>
-                    <td>{item.country}</td>
-                  </tr>
-                );
-              })}
-            </table>
+                {filteredFaculties.map((item, index) => {
+                  return (
+                    <tr
+                      key={index}
+                      className="p-4 bg-gray-200 h-14 md:h-10 border-b-4 border-white text-[12px]"
+                    >
+                      <td className="px-2">{item.facultyName}</td>
+                      <td>{item.duration} years</td>
+                      <td>${item.tuitionFees}</td>
+                      <td>{item.grade}</td>
+                      <td>{item.country}</td>
+                    </tr>
+                  );
+                })}
+              </table>
+            )}
           </div>
         )}
       </div>
