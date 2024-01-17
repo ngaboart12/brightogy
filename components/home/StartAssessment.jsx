@@ -63,7 +63,7 @@ const StartAssessment = ({ onClose }) => {
         </div>
         <a
           href="/assessment"
-          className="flex justify-center px-2 py-3 w-[200px] mx-auto bg-[#FFA800] rounded-md"
+          className="flex justify-center px-2 py-3 w-[200px] mx-auto bg-[#0B5CFF] rounded-md"
         >
           Start Assessment
         </a>

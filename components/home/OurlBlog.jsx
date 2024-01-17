@@ -146,7 +146,7 @@ const OurlBlog = () => {
                   </p>
                 </div>
                 <a href={item.link}>
-                  <button className="w-full md:w-1/2 hover:scale-110 transition-all bg-[#FFA800] rounded-md py-2 px-4">
+                  <button className="w-full md:w-1/2 hover:scale-110 transition-all bg-[#0B5CFF] text-white rounded-md py-2 px-4">
                     Read more
                   </button>
                 </a>

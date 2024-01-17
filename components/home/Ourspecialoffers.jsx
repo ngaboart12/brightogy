@@ -79,7 +79,7 @@ const Ourspecialoffers = () => {
         <div>
           <a
             href="/special"
-            className=" hover:scale-110 transition-all py-[10px] w-[150px] text-white font-[300] md:py-[10px] md:px-[31px] text-[14px] bg-[#FFA800] rounded-lg md:w-[160px] flex justify-center items-center"
+            className=" hover:scale-110 transition-all py-[10px] w-[150px] text-white font-[300] md:py-[10px] md:px-[31px] text-[14px] bg-[#0B5CFF] rounded-lg md:w-[160px] flex justify-center items-center"
           >
             Discover more
           </a>

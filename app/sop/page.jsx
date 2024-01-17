@@ -35,7 +35,7 @@ const Sop = () => {
         <div className="w-full flex flex-col  md:flex-row gap-10 justify-between">
           <div className="flex w-full md:w-1/2 flex-col gap-4 items-center md:items-start py-4">
             <Image
-              src={`/image/soppic.png`}
+              src={`/image/sop.jpg`}
               width={200}
               height={0}
               alt=""

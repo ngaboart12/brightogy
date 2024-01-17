@@ -1,4 +1,4 @@
-import { Inter,Outfit,Rubik,Poppins,Open_Sans } from 'next/font/google'
+import { Inter,Outfit,Rubik,Poppins, } from 'next/font/google'
 import './globals.css'
 import { Toaster } from "react-hot-toast"
 

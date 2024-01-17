@@ -251,7 +251,7 @@ const ContactUS = () => {
             </div>
             <button
               type="submit"
-              className="bg-[#FFCD21] text-black rounded-xl p-4"
+              className="bg-[#0B5CFF] text-white rounded-xl p-4"
             >
               {loading ? (
                 <ThreeDots

@@ -165,7 +165,7 @@ const EnquiryForm = ({ onClose }) => {
             </div>
           </div>
           <div className="mx-auto mt-4 w-1/2">
-            <button className="p-4 flex w-full justify-center items-center text-center text-white bg-[#FFA800] rounded-md">
+            <button className="p-4 flex w-full justify-center items-center text-center text-white bg-[#0B5CFF] rounded-md">
               {loading ? (
                 <ThreeDots
                   height="20"

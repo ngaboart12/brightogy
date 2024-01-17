@@ -44,10 +44,10 @@ export default function Home() {
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
   const countries = [
-    { name: "USA", imageSrc: '/image/usa.png' },
-    { name: "CANADA", imageSrc: '/image/canada.png' },
-    { name: "UK", imageSrc:  '/image/uk.png'},
-    { name: "POLAND", imageSrc: '/image/up1.png' },
+    { name: "USA", imageSrc: '/image/usa.jpg' },
+    { name: "CANADA", imageSrc: '/image/canada.jpg' },
+    { name: "CHINA", imageSrc:  '/image/china.avif'},
+    { name: "POLAND", imageSrc: '/image/poland.jpg' },
     { name: "POLAND", imageSrc: '/image/up1.png' },
     // Add more countries as needed
   
@@ -756,7 +756,7 @@ export default function Home() {
             <p
           
           onClick={openModal}
-              className="py-[12px] px-[24px] bg-[#FFA800] hover:scale-110  flex justify-center text-black font-[500] rounded-full transition-all cursor-pointer"
+              className="py-[12px] px-[24px] bg-[#0B5CFF] hover:scale-110  flex justify-center text-black font-[500] rounded-full transition-all cursor-pointer"
             >
               Start Assesssment
             </p>
@@ -775,7 +775,7 @@ export default function Home() {
             </p>
             <a
               href="#contactus"
-              className="py-[12px] px-[32px] bg-[#FFA800] hover:scale-110 flex justify-center text-black font-[500] rounded-full transition-all"
+              className="py-[12px] px-[32px] bg-[#0B5CFF] hover:scale-110 flex justify-center text-black font-[500] rounded-full transition-all"
             >
               Book Now
             </a>
@@ -802,7 +802,7 @@ export default function Home() {
           />
         </div>
         <div data-aos="fade-right"  className="w-full flex flex-col items-center md:items-start gap-4 md:gap-6 md:w-1/2 overflow-hidden">
-          <h1 className="  border-[#FFA800] text-[#FFA800]  rounded-[8px]  px-[24px] py-[8px] text-[18px] font-medium bg-[#FFECC7]">
+          <h1 className="  border-[#0B5CFF] text-[#0B5CFF]  rounded-[8px]  px-[24px] py-[8px] text-[18px] font-medium bg-[#FFECC7]">
             About us
           </h1>
           <span className="text-[#123E6C] text-[24px] md:text-[40px] font-bold text-center md:text-start leading-[30px]">
@@ -817,7 +817,7 @@ export default function Home() {
           </p>
           <a
             href="/aboutus"
-            className="py-[10px] px-[48px] bg-[#FFA800] rounded-lg text-[white]"
+            className="py-[10px] px-[48px] bg-[#0B5CFF] rounded-lg text-[white]"
           >
             About us
           </a>
@@ -898,7 +898,7 @@ export default function Home() {
           </p>
           <a
             href="#"
-            className="py-[16px] mx-auto md:mx-0 px-[31px] bg-[#FFA800] rounded-lg w-[200px] flex justify-center items-center"
+            className="py-[16px] mx-auto md:mx-0 px-[31px] bg-[#0B5CFF] text-white rounded-lg w-[200px] flex justify-center items-center"
           >
             Discover more
           </a>
@@ -906,17 +906,17 @@ export default function Home() {
         <div data-aos="zoom-in"  className="w-full relative items-center  px-10 md:px-0">
           <Swiper ref={swiperRef} {...swiperOptions}>
             {countries.map((country, index) => (
-              <SwiperSlide  key={index} className="w-[300px] h-[300px] py-4">
-                <div className="flex flex-col items-center  w-[300px] h-[350px]">
+              <SwiperSlide  key={index} className="w-[300px] h-[400px] py-4 flex flex-col gap-2">
+                <div className="flex flex-col items-center  w-[300px] h-[300px] overflow-hidden">
                   <Image
                     src={country.imageSrc}
                     width={400}
-                    height={0}
+                    height={110}
                     alt={`Flag of ${country.name}`}
-                    className="w-[250px] h-full object-cover rounded-md"
+                    className="w-[250px] h-[350px] object-cover  rounded-md"
                   />
-                  <p className="mt-2 text-lg font-semibold text-black">{country.name}</p>
                 </div>
+                  <p className="mt-2 text-lg font-semibold text-black text-center">{country.name}</p>
               </SwiperSlide>
             ))}
           </Swiper>
