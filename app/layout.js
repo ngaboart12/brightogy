@@ -1,4 +1,5 @@
 import { Inter,Outfit,Rubik,Poppins, } from 'next/font/google'
+import localfont from "next/font/local"
 import './globals.css'
 import { Toaster } from "react-hot-toast"
 
@@ -11,11 +12,18 @@ export const metadata = {
   title: 'Brightforth',
   description: 'BrightForth ',
 }
+const heltavica = localfont({
+  src: [{
+    path: "../public/fonts/Helvetica.ttf",
+   
+  }],
+  variable: "--heltavica"
+})
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={open.className}>
+      <body className={`${heltavica.className}`}>
       <Toaster position='top-right'/>
 
         {children}

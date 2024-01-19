@@ -29,10 +29,10 @@ const Hero = () => {
         data-aos="zoom-in-up"
         className="flex flex-col gap-4 w-full px-[20px]  py-[12vh]  justify-center items-center "
       >
-        <h1 className="text-white text-[40px]  leading-[40px] text-center max-w-[551px] font-[600] md:leading-[40px] ">
+        <h1 className="text-white text-[40px]  leading-[40px] text-center max-w-[551px] font-[600] md:leading-[40px]  ">
           Welcome To BrightForth Your Career Partner
         </h1>
-        <p className="text-center text-[18px] text-[#fff] max-w-[600px] font-[300]">
+        <p className="text-center text-[18px] text-[#fff] max-w-[600px] font-[100] ">
           Welcome To BrightForthYour Career Partner Contact us for a free
           Consultation Because we are leading educational Consultant Popularly
           recognized
