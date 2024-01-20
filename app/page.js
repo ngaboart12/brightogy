@@ -48,7 +48,7 @@ export default function Home() {
     { name: "CANADA", imageSrc: '/image/canada.jpg' },
     { name: "CHINA", imageSrc:  '/image/china.avif'},
     { name: "POLAND", imageSrc: '/image/poland.jpg' },
-    { name: "POLAND", imageSrc: '/image/up1.png' },
+    { name: "UK", imageSrc: '/image/up1.png' },
     // Add more countries as needed
   
   ];
