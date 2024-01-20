@@ -5,21 +5,21 @@ const OurlBlog = () => {
   const blog = [
     {
       link: "#",
-      image: "/image/up1.png",
+      image: "/image/visatips.jpg",
       date: "22 DEC 22",
       title: "Applying for a student visa: Top 10 tips",
       disc: "Don’t feel prepared to apply for your student visa? Our",
     },
     {
       link: "#",
-      image: "/image/up2.png",
+      image: "/image/sociallifeabroad.jpg",
       date: "22 DEC 22",
       title: "Social lifestyle abroad",
       disc: "Don’t feel prepared to apply for your student visa? Our",
     },
     {
       link: "sop",
-      image: "/image/up3.png",
+      image: "/image/sop.jpg",
       date: "22 DEC 22",
       title: "Statement of purpose",
       disc: "Don’t feel prepared to apply for your student visa? Our",
