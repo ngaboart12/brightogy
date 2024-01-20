@@ -747,7 +747,7 @@ export default function Home() {
             </div>
             <div className='flex flex-col gap-2'>
 
-            <h1 className="text-[#FFA800] text-[20px] font-normal text-center md:text-start leading-6">
+            <h1 className="text-[#0B5CFF] text-[20px] font-normal text-center md:text-start leading-6">
               Apply for january <br/> intake 2024
             </h1>
             <p className="text-white max-w-[350px] text-center md:text-start font-extralight">
@@ -756,7 +756,7 @@ export default function Home() {
             <p
           
           onClick={openModal}
-              className="py-[12px] px-[24px] bg-[#0B5CFF] hover:scale-110  flex justify-center text-black font-[500] rounded-full transition-all cursor-pointer"
+              className="py-[12px] px-[24px] bg-[#0B5CFF] hover:scale-110  flex justify-center text-white font-[500] rounded-full transition-all cursor-pointer"
             >
               Start Assesssment
             </p>
@@ -767,7 +767,7 @@ export default function Home() {
               <Image src={`/image/appointment.svg`} width={150} height={150} className='' />
             </div>
             <div className='flex flex-col gap-2'>
-            <h1 className="text-[#FFA800] text-[20px] font-normal text-center md:text-start">
+            <h1 className="text-[#0B5CFF] text-[20px] font-normal text-center md:text-start">
               Make Appoitment
             </h1>
             <p className="text-white max-w-[350px] text-center md:text-start font-extralight">
@@ -775,7 +775,7 @@ export default function Home() {
             </p>
             <a
               href="#contactus"
-              className="py-[12px] px-[32px] bg-[#0B5CFF] hover:scale-110 flex justify-center text-black font-[500] rounded-full transition-all"
+              className="py-[12px] px-[32px] bg-[#0B5CFF] hover:scale-110 flex justify-center text-white font-[500] rounded-full transition-all"
             >
               Book Now
             </a>

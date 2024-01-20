@@ -1,11 +1,11 @@
-import { Inter,Outfit,Rubik,Poppins, } from 'next/font/google'
+import { Inter,Outfit,Rubik,Poppins,Roboto_Condensed } from 'next/font/google'
 import localfont from "next/font/local"
 import './globals.css'
 import { Toaster } from "react-hot-toast"
 
 const inter = Inter({ subsets: ['latin'] })
 const outfit = Outfit({ subsets: ['latin'] })
-const open = Outfit({ subsets: ['latin'] })
+const robbot = Roboto_Condensed({ subsets: ['latin'] })
 const poppins = Poppins({ subsets: ['latin'] ,weight:['100','200','300','400','500','600','700','800','900']})
 
 export const metadata = {
@@ -23,7 +23,7 @@ const heltavica = localfont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${heltavica.className}`}>
+      <body className={`${robbot.className}`}>
       <Toaster position='top-right'/>
 
         {children}

@@ -32,7 +32,7 @@ const Hero = () => {
         <h1 className="text-white text-[40px]  leading-[40px] text-center max-w-[551px] font-[600] md:leading-[40px]  ">
           Welcome To BrightForth Your Career Partner
         </h1>
-        <p className="text-center text-[18px] text-[#fff] max-w-[600px] font-[100] ">
+        <p className="text-center text-[18px] text-[#fff] max-w-[600px] font-[300] ">
           Welcome To BrightForthYour Career Partner Contact us for a free
           Consultation Because we are leading educational Consultant Popularly
           recognized
@@ -41,7 +41,7 @@ const Hero = () => {
           <a
             href="#"
             onClick={openModal}
-            className="text-white items-center bg-[#0B5CFF] hover:bg-[#0B5CFF]/80 py-[16px] px-[20px] md:px-[40px] rounded-2xl"
+            className="text-white items-center bg-[#0B5CFF]  hover:bg-[#0B5CFF]/80 py-[16px] px-[20px] md:px-[40px] rounded-2xl"
           >
             Enquiry now
           </a>
