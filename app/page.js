@@ -716,7 +716,7 @@ export default function Home() {
 
       {/* services offer */}
       <div data-aos="fade-up" className="flex flex-col md:flex-row gap-14 pt-[83px] px-3 sm:px-20 items-center bg-white">
-        <div className='flex flex-col gap-3 items-center md:items-start w-1/2'>
+        <div className='flex flex-col gap-3 items-center md:items-start w-full md:w-1/2'>
 
         <h1  className="max-w-[280px] text-[#07294D] font-extrabold text-[24px] text-center md:text-start leading-[30px]">
           Our Services We Offer to the Students
@@ -724,7 +724,7 @@ export default function Home() {
          <span className='text-[16px] font-[300] text-black text-center md:text-start'>Scelerisque justo dolor tristique lectus aliquam sagittis sed. Pretium duis ultrices lobortis molestie eu lorem massa convallis nunc. Turpis diam sed adipiscing netus molestie ullamcorper. Accumsan tortor sed eleifend scelerisque in pellentesque mauris. Volutpat pellentesque mauris tortor malesuada augue tempor. </span>
         </div>
         
-        <div  className="grid grid-cols-2 md:grid-cols-3 gap-x-[20px]  gap-y-6 w-1/2">
+        <div  className="grid grid-cols-2 md:grid-cols-3 gap-x-[20px]  gap-y-6 w-full md:w-1/2">
           {services.map((item, index) => {
             return (
               <div key={index} className="flex flex-col gap-2 items-center bg-[#EFF7FF] p-4  rounded-md">
@@ -756,7 +756,7 @@ export default function Home() {
             <p
           
           onClick={openModal}
-              className="py-[12px] px-[24px] bg-[#0B5CFF] hover:scale-110  flex justify-center text-white font-[300] w-[200px] rounded-full transition-all cursor-pointer"
+              className="py-[12px] mx-auto md:mx-0 px-[24px] bg-[#0B5CFF] hover:scale-110  flex justify-center text-white font-[300] w-[200px] rounded-full transition-all cursor-pointer"
             >
               Start Assesssment
             </p>
@@ -775,7 +775,8 @@ export default function Home() {
             </p>
             <a
               href="#contactus"
-              className="py-[12px] px-[32px] bg-[#0B5CFF] w-[200px] font-[300] hover:scale-110 flex justify-center text-white rounded-full transition-all"
+              
+              className="py-[12px] px-[32px] mx-auto md:mx-0 bg-[#0B5CFF] w-[200px] font-[300] hover:scale-110 flex justify-center text-white rounded-full transition-all"
             >
               Book Now
             </a>
@@ -829,9 +830,9 @@ export default function Home() {
       <div  className="max-w-7xl relative bg-gray-100 flex flex-col py-6 w-full h-full items-center gap-6 px-[20px] sm:px-20 ">
         <div className='w-full flex flex-col gap-10 lg:flex-row justify-between items-center py-10'>
         <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-x-10 gap-y-4 '>
-          <div className='flex flex-col items-start'>
+          <div className='flex flex-col items-center md:items-start'>
         <h1  className='text-[32px] font-bold text-[#FFA800]'>Why choose us</h1>
-        <span className='max-w-[300px]'>Viverra morbi in nunc vulputate maecenas neque diam ridiculus ante. </span>
+        <span className='max-w-[300px] text-center md:text-start'>Viverra morbi in nunc vulputate maecenas neque diam ridiculus ante. </span>
 
           </div>
           <div className='flex flex-row gap-4 items-center'>

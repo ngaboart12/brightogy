@@ -50,7 +50,7 @@ const OurlBlog = () => {
                 />
               </div>
               <div className="flex flex-col px-8 gap-2">
-                <div className=" flex flex-col gap-2">
+                <div className=" flex flex-col gap-2 items-center md:items-start">
                   <p className="flex items-center gap-2">
                     <svg
                       width="20"
@@ -133,7 +133,7 @@ const OurlBlog = () => {
                       />
                     </svg>
 
-                    <span className="text-[#A5A5A5] text-[16px] font-light">
+                    <span className="text-[#A5A5A5] text-[16px] font-light ">
                       {item.date}
                     </span>
                   </p>
