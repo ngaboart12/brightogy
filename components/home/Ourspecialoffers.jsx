@@ -34,13 +34,13 @@ const Ourspecialoffers = () => {
     router.push(`/single?id=${postId}`);
   };
   return (
-    <div className="   bg-gray-200 w-full justify-center  flex">
-      <div className="flex flex-col py-[81px] px-[10px]  items-center w-full max-w-7xl">
-        <div data-aos="fade-right" className="flex flex-col gap-10">
+    <div className=" px-3 md:px-20  bg-[#EBF5FF] w-full justify-center  flex">
+      <div className="flex flex-col md:flex-row py-[81px] px-[10px] gap-10  items-center w-full max-w-7xl">
+        <div data-aos="fade-right" className="flex flex-col items-start gap-10">
           <h1 className="text-3xl text-center text-[#FFA800] font-[700]">
             Our special offers
           </h1>
-          <p className="text-[16px] leading-4 text-center text-[#3C3B3B] font-[300] max-w-[500px]">
+          <p className="text-[16px] leading-4 text-center md:text-start text-[#3C3B3B] font-[300] max-w-[500px]">
             Take advantage of our specially designed offerings that are
             exclusively for you to unlock the doors to academic success. It
             gives us great pleasure to offer special, time-limited options that
@@ -48,15 +48,20 @@ const Ourspecialoffers = () => {
             these alluring incentives created to enhance your educational
             journey, find a route to academic success
           </p>
+          <div>
+            <a
+              href="/special"
+              className=" hover:scale-110 transition-all py-[10px] w-[150px] text-white font-[300] md:py-[10px] md:px-[31px] text-[14px] bg-[#0B5CFF] rounded-lg md:w-[160px] flex justify-center items-center"
+            >
+              Discover more
+            </a>
+          </div>
         </div>
 
-        <div
-          data-aos="fade-left"
-          className="flex flex-col md:flex-row gap-4 py-10"
-        >
+        <div className="flex flex-col md:flex-col gap-4 py-10">
           {offerss.map((item, index) => {
             return (
-              <div className="flex flex-col bg-white rounded-md gap-2  items-center md:items-start py-6 px-2 md:px-6 ">
+              <div className="flex flex-col bg-white rounded-md gap-2  items-center md:items-start py-2 px-2 md:px-6 ">
                 <span className="text-[#123E6C] text-[14px] font-[300]">
                   {item.offerDate}
                 </span>
@@ -75,14 +80,6 @@ const Ourspecialoffers = () => {
               </div>
             );
           })}
-        </div>
-        <div>
-          <a
-            href="/special"
-            className=" hover:scale-110 transition-all py-[10px] w-[150px] text-white font-[300] md:py-[10px] md:px-[31px] text-[14px] bg-[#0B5CFF] rounded-lg md:w-[160px] flex justify-center items-center"
-          >
-            Discover more
-          </a>
         </div>
       </div>
     </div>

@@ -38,7 +38,7 @@ const OurlBlog = () => {
           return (
             <div
               data-aos="fade-down"
-              className="flex flex-col gap-8 items-center sm:items-start  bg-white pb-4 rounded-t-3xl rounded-[10px]"
+              className="flex flex-col gap-2 items-center sm:items-start  bg-white pb-4 rounded-t-3xl rounded-[10px]"
             >
               <div className="w-full">
                 <Image
@@ -49,8 +49,8 @@ const OurlBlog = () => {
                   className="object-cover w-full min-w-[200px] h-[200px] rounded-t-[20px]"
                 />
               </div>
-              <div className="flex flex-col gap-2 px-8">
-                <div className="h-[25vh] flex flex-col gap-2">
+              <div className="flex flex-col px-8 gap-2">
+                <div className=" flex flex-col gap-2">
                   <p className="flex items-center gap-2">
                     <svg
                       width="20"
@@ -133,20 +133,20 @@ const OurlBlog = () => {
                       />
                     </svg>
 
-                    <span className="text-[#A5A5A5] text-[18px] font-light">
+                    <span className="text-[#A5A5A5] text-[16px] font-light">
                       {item.date}
                     </span>
                   </p>
-                  <h1 className="text-[20px] text-[#123E6C] font-medium sm:font-[500] leading-6">
+                  <h1 className="text-[18px] text-[#123E6C] font-medium sm:font-[500] leading-6">
                     {item.title}
                   </h1>
 
-                  <p className="text-[16px] text-black leading-[20px] font-light">
+                  <p className="text-[16px] text-black leading-[18px] font-light">
                     {item.disc}
                   </p>
                 </div>
                 <a href={item.link}>
-                  <button className="w-full md:w-1/2 hover:scale-110 transition-all bg-[#0B5CFF] text-white rounded-md py-2 px-4">
+                  <button className="w-full md:w-1/2 hover:scale-110 transition-all font-[300] bg-[#0B5CFF] text-white rounded-md py-2 px-4">
                     Read more
                   </button>
                 </a>

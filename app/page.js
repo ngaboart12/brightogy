@@ -715,21 +715,21 @@ export default function Home() {
       <Hero />
 
       {/* services offer */}
-      <div  className="flex flex-col md:flex-row gap-14 pt-[83px] items-center bg-white">
-        <div className='flex flex-col gap-3 items-center md:items-start'>
+      <div data-aos="fade-up" className="flex flex-col md:flex-row gap-14 pt-[83px] px-3 sm:px-20 items-center bg-white">
+        <div className='flex flex-col gap-3 items-center md:items-start w-1/2'>
 
         <h1  className="max-w-[280px] text-[#07294D] font-extrabold text-[24px] text-center md:text-start leading-[30px]">
           Our Services We Offer to the Students
         </h1>
-         <span className='text-[16px] font-[300] text-black max-w-[300px] text-center md:text-start'>Your journey to success - services tailored to your  needs</span>
+         <span className='text-[16px] font-[300] text-black text-center md:text-start'>Scelerisque justo dolor tristique lectus aliquam sagittis sed. Pretium duis ultrices lobortis molestie eu lorem massa convallis nunc. Turpis diam sed adipiscing netus molestie ullamcorper. Accumsan tortor sed eleifend scelerisque in pellentesque mauris. Volutpat pellentesque mauris tortor malesuada augue tempor. </span>
         </div>
         
-        <div  className="grid grid-cols-2 md:grid-cols-3 gap-x-[40px] md:gap-x-[80px] gap-y-6">
+        <div  className="grid grid-cols-2 md:grid-cols-3 gap-x-[20px]  gap-y-6 w-1/2">
           {services.map((item, index) => {
             return (
-              <div key={index} className="flex flex-col gap-2 items-center bg-[#EFF7FF] p-3 rounded-md">
+              <div key={index} className="flex flex-col gap-2 items-center bg-[#EFF7FF] p-4  rounded-md">
                 {item.svg}
-                <span className="text-[16px] text-black font-[300]  max-w-[160px] text-center leading-[20px]">
+                <span className="text-[16px] text-black font-[400]  max-w-[160px] text-center leading-[20px]">
                   {item.name}
                 </span>
               </div>
@@ -740,14 +740,14 @@ export default function Home() {
 
       {/* apply and make apo */}
       <div className=" flex  justify-center items-center py-20 w-full px-2 md:px-20 bg-white">
-        <div data-aos="fade-down"  className="flex max-w-7xl w-full flex-col md:flex-row md:justify-between gap-16 bg-[#07294D] rounded-[24px] py-12 px-3 md:p-20">
+        <div data-aos="fade-up"  className="flex max-w-7xl w-full flex-col md:flex-row md:justify-between gap-16 bg-[#07294D] rounded-[24px] py-12 px-3 md:p-20">
           <div className="flex flex-col md:flex-row gap-4 items-center">
             <div className='p-2 bg-[#0B325B] rounded-[20px] '>
               <Image src={`/image/statement.svg`} width={150} height={150} className='' />
             </div>
             <div className='flex flex-col gap-2'>
 
-            <h1 className="text-[#0B5CFF] text-[20px] font-normal text-center md:text-start leading-6">
+            <h1 className="text-[#FFA800] text-[20px] font-normal text-center md:text-start leading-6">
               Apply for january <br/> intake 2024
             </h1>
             <p className="text-white max-w-[350px] text-center md:text-start font-extralight">
@@ -756,7 +756,7 @@ export default function Home() {
             <p
           
           onClick={openModal}
-              className="py-[12px] px-[24px] bg-[#0B5CFF] hover:scale-110  flex justify-center text-white font-[500] rounded-full transition-all cursor-pointer"
+              className="py-[12px] px-[24px] bg-[#0B5CFF] hover:scale-110  flex justify-center text-white font-[300] w-[200px] rounded-full transition-all cursor-pointer"
             >
               Start Assesssment
             </p>
@@ -767,7 +767,7 @@ export default function Home() {
               <Image src={`/image/appointment.svg`} width={150} height={150} className='' />
             </div>
             <div className='flex flex-col gap-2'>
-            <h1 className="text-[#0B5CFF] text-[20px] font-normal text-center md:text-start">
+            <h1 className="text-[#FFA800] text-[20px] font-normal text-center md:text-start">
               Make Appoitment
             </h1>
             <p className="text-white max-w-[350px] text-center md:text-start font-extralight">
@@ -775,7 +775,7 @@ export default function Home() {
             </p>
             <a
               href="#contactus"
-              className="py-[12px] px-[32px] bg-[#0B5CFF] hover:scale-110 flex justify-center text-white font-[500] rounded-full transition-all"
+              className="py-[12px] px-[32px] bg-[#0B5CFF] w-[200px] font-[300] hover:scale-110 flex justify-center text-white rounded-full transition-all"
             >
               Book Now
             </a>
@@ -791,7 +791,7 @@ export default function Home() {
 
       {/* abou us  */}
 
-      <div className="max-w-7xl flex flex-col gap-10 md:flex-row md:justify-between py-14 bg-gray-100  w-full">
+      <div className="max-w-7xl px-3 md:px-10 flex flex-col gap-10 md:flex-row md:justify-between py-14 bg-gray-100  w-full">
         <div data-aos="fade-right"  className="w-full md:w-1/2">
           <Image
             src={`/image/aboutus.svg`}
@@ -827,9 +827,13 @@ export default function Home() {
       {/* why choose us */}
 
       <div  className="max-w-7xl relative bg-gray-100 flex flex-col py-6 w-full h-full items-center gap-6 px-[20px] sm:px-20 ">
-        <h1 data-aos="fade-left" className='text-[32px] font-bold text-[#FFA800]'>Why choose us</h1>
         <div className='w-full flex flex-col gap-10 lg:flex-row justify-between items-center py-10'>
         <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-x-10 gap-y-4 '>
+          <div className='flex flex-col items-start'>
+        <h1  className='text-[32px] font-bold text-[#FFA800]'>Why choose us</h1>
+        <span className='max-w-[300px]'>Viverra morbi in nunc vulputate maecenas neque diam ridiculus ante. </span>
+
+          </div>
           <div className='flex flex-row gap-4 items-center'>
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
   <path d="M26.1127 36.2062C25.1676 36.2027 24.2482 35.8984 23.4877 35.3374L20.7877 33.3624C20.4526 33.1157 20.0475 32.9827 19.6314 32.9827C19.2153 32.9827 18.8102 33.1157 18.4752 33.3624L15.7752 35.3374C15.0769 35.8474 14.2456 36.1435 13.3823 36.1898C12.519 36.2361 11.6607 36.0306 10.912 35.5983C10.1633 35.166 9.55621 34.5255 9.16465 33.7546C8.7731 32.9838 8.6139 32.1158 8.70641 31.2562L9.06891 27.9312C9.11545 27.518 9.02826 27.1008 8.82015 26.7408C8.61203 26.3808 8.29396 26.097 7.91266 25.9312L4.85641 24.5812C4.06345 24.2335 3.38894 23.6624 2.91531 22.9376C2.44168 22.2128 2.18945 21.3658 2.18945 20.4999C2.18945 19.6341 2.44168 18.787 2.91531 18.0623C3.38894 17.3375 4.06345 16.7663 4.85641 16.4187L7.91266 15.0687C8.29396 14.9028 8.61203 14.6191 8.82015 14.2591C9.02826 13.8991 9.11545 13.4819 9.06891 13.0687L8.70641 9.74369C8.6139 8.88407 8.7731 8.01608 9.16465 7.24524C9.55621 6.4744 10.1633 5.8339 10.912 5.4016C11.6607 4.9693 12.519 4.76381 13.3823 4.81012C14.2456 4.85642 15.0769 5.15253 15.7752 5.66244L18.4752 7.63744C18.8102 7.88414 19.2153 8.01722 19.6314 8.01722C20.0475 8.01722 20.4526 7.88414 20.7877 7.63744L23.4877 5.66244C23.9685 5.30657 24.5172 5.05307 25.0998 4.91762C25.6824 4.78218 26.2867 4.76765 26.8752 4.87494C27.4763 4.98402 28.0492 5.21355 28.5594 5.54974C29.0696 5.88592 29.5065 6.32181 29.8439 6.83119C29.9375 6.9682 30.0028 7.12246 30.0361 7.28498C30.0694 7.44749 30.07 7.61502 30.038 7.77778C30.0059 7.94055 29.9417 8.09529 29.8492 8.23301C29.7567 8.37072 29.6377 8.48864 29.4992 8.57989C29.3606 8.67115 29.2053 8.73392 29.0422 8.76453C28.8792 8.79515 28.7117 8.793 28.5495 8.75822C28.3873 8.72343 28.2336 8.65671 28.0974 8.56193C27.9613 8.46716 27.8454 8.34623 27.7564 8.20619C27.6056 7.97951 27.4104 7.78569 27.1827 7.63639C26.955 7.4871 26.6994 7.3854 26.4314 7.33744C26.1733 7.28985 25.9081 7.29697 25.653 7.35834C25.3978 7.41971 25.1584 7.53395 24.9502 7.69369L22.2502 9.66869C21.486 10.2288 20.5632 10.5307 19.6158 10.5307C18.6683 10.5307 17.7456 10.2288 16.9814 9.66869L14.2877 7.69369C13.9815 7.46124 13.6137 7.32413 13.2301 7.29948C12.8465 7.27483 12.4642 7.36373 12.1308 7.55509C11.7974 7.74644 11.5278 8.03176 11.3556 8.37543C11.1835 8.71909 11.1163 9.10586 11.1627 9.48744L11.5252 12.8062C11.6341 13.7453 11.4408 14.6946 10.9732 15.5162C10.5056 16.3379 9.78816 16.989 8.92516 17.3749L5.86266 18.7249C5.51554 18.879 5.22057 19.1305 5.01354 19.4489C4.80652 19.7673 4.69632 20.1389 4.69632 20.5187C4.69632 20.8985 4.80652 21.2701 5.01354 21.5885C5.22057 21.9069 5.51554 22.1584 5.86266 22.3124L8.92516 23.6249C9.79287 24.0056 10.5162 24.6536 10.9896 25.4744C11.4629 26.2952 11.6615 27.2458 11.5564 28.1874L11.1939 31.5062C11.1476 31.8878 11.2147 32.2745 11.3869 32.6182C11.5591 32.9619 11.8287 33.2472 12.162 33.4385C12.4954 33.6299 12.8778 33.7188 13.2614 33.6941C13.6449 33.6695 14.0128 33.5324 14.3189 33.2999L17.0127 31.3249C17.7768 30.7648 18.6996 30.4629 19.647 30.4629C20.5945 30.4629 21.5173 30.7648 22.2814 31.3249L24.9814 33.2999C25.2875 33.5324 25.6554 33.6695 26.039 33.6941C26.4226 33.7188 26.8049 33.6299 27.1383 33.4385C27.4716 33.2472 27.7413 32.9619 27.9134 32.6182C28.0856 32.2745 28.1527 31.8878 28.1064 31.5062L27.7439 28.1874C27.6349 27.25 27.8276 26.3021 28.294 25.4816C28.7604 24.6612 29.4763 24.0108 30.3377 23.6249L33.4002 22.2749C33.7473 22.1209 34.0423 21.8694 34.2493 21.551C34.4563 21.2326 34.5665 20.861 34.5665 20.4812C34.5665 20.1014 34.4563 19.7298 34.2493 19.4114C34.0423 19.093 33.7473 18.8415 33.4002 18.6874L31.7377 17.9999C31.5829 17.9369 31.4424 17.8435 31.3244 17.7253C31.2063 17.6071 31.1132 17.4664 31.0505 17.3115C30.9878 17.1567 30.9567 16.9908 30.9592 16.8238C30.9617 16.6567 30.9976 16.4918 31.0649 16.3389C31.1321 16.186 31.2294 16.0481 31.3509 15.9334C31.4723 15.8187 31.6156 15.7295 31.7721 15.6711C31.9286 15.6127 32.0953 15.5863 32.2622 15.5934C32.4291 15.6005 32.5929 15.641 32.7439 15.7124L34.4064 16.4437C35.1994 16.7913 35.8739 17.3625 36.3475 18.0873C36.8211 18.812 37.0734 19.6591 37.0734 20.5249C37.0734 21.3908 36.8211 22.2378 36.3475 22.9626C35.8739 23.6874 35.1994 24.2585 34.4064 24.6062L31.3502 25.9562C30.9689 26.1226 30.6507 26.4063 30.4416 26.7659C30.2326 27.1256 30.1436 27.5425 30.1877 27.9562L30.5502 31.2812C30.6551 32.1417 30.502 33.014 30.1103 33.7874C29.7186 34.5608 29.106 35.2003 28.3502 35.6249C27.668 36.011 26.8965 36.2115 26.1127 36.2062Z" fill="#123E6C"/>

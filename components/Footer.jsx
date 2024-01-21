@@ -126,7 +126,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-3 items-center sm:items-start mt-5">
-            <h1 className="text-[#FFA800] text-[18px]">Contact Us</h1>
+            <h1 className="text-white text-[18px]">Contact Us</h1>
             <span className="text-white text-[14px] font-[300]">
               Kigali, Rwanda
             </span>
@@ -143,7 +143,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-3 items-center sm:items-start">
-          <h1 className="text-[#FFA800] text-[18px]">Study Desitinations</h1>
+          <h1 className="text-white text-[18px]">Study Desitinations</h1>
           <a href="/canada" className="text-white text-[14px] font-[300]">
             Canada
           </a>
@@ -186,7 +186,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex flex-col gap-3 items-center sm:items-start">
-          <h1 className="text-[#FFA800] text-[18px]">Our Services</h1>
+          <h1 className="text-white text-[18px]">Our Services</h1>
           <a
             href="/careercounseling"
             className="text-white text-[14px] font-[300]"
@@ -216,7 +216,7 @@ const Footer = () => {
             Statement of Purpose
           </a>
           <div className="flex flex-col py-4 gap-3">
-            <h1 className="text-[#FFA800]">Quick links</h1>
+            <h1 className="text-white">Quick links</h1>
             <p
               onClick={openModal}
               className="text-white text-[14px] font-[300]  cursor-pointer"
@@ -244,7 +244,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4 items-center sm:items-start">
-          <h1 className="text-[#FFA800] text-center md:text-start text-[24px] md:text-[32px] font-[700] leading-8">
+          <h1 className="text-white  text-center md:text-start text-[24px] md:text-[32px] font-[700] leading-8">
             Subscribe to our news letter
           </h1>
           <form action="#" onSubmit={handleSubscribe} className="flex ">
