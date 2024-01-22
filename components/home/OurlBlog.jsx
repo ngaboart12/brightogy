@@ -29,7 +29,7 @@ const OurlBlog = () => {
     <div className="flex flex-col w-full max-w-7xl p-4 md:px-20 py-10 gap-10 text-center sm:text-start bg-gray-200">
       <h1
         data-aos="fade-down"
-        className="text-[#08305A] text-[40px] leading-[45px] font-bold text-center"
+        className="text-[#35365d] text-[40px] leading-[45px] font-bold text-center"
       >
         Our blog
       </h1>
@@ -137,7 +137,7 @@ const OurlBlog = () => {
                       {item.date}
                     </span>
                   </p>
-                  <h1 className="text-[18px] text-[#123E6C] font-medium sm:font-[500] leading-6">
+                  <h1 className="text-[18px] text-[#35365d] font-medium sm:font-[500] leading-6">
                     {item.title}
                   </h1>
 
@@ -146,7 +146,7 @@ const OurlBlog = () => {
                   </p>
                 </div>
                 <a href={item.link}>
-                  <button className="w-full md:w-1/2 hover:scale-110 transition-all font-[300] bg-[#0B5CFF] text-white rounded-md py-2 px-4">
+                  <button className="w-full md:w-1/2 hover:scale-110 transition-all font-[300] bg-[#7db834] text-white rounded-md py-2 px-4">
                     Read more
                   </button>
                 </a>

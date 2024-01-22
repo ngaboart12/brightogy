@@ -41,16 +41,16 @@ const Hero = () => {
           <a
             href="#"
             onClick={openModal}
-            className="text-white items-center bg-[#0B5CFF]  hover:bg-[#0B5CFF]/80 py-[16px] px-[20px] md:px-[40px] rounded-2xl"
+            className="text-white items-center bg-[#7DB834]  hover:bg-[#7DB834]/80 py-[16px] px-[20px] md:px-[40px] rounded-2xl"
           >
             Enquiry now
           </a>
         </div>
       </div>
-      <div className="flex bottom-10 right-10 fixed z-10  md:ml-auto md:mx-0">
+      <div className="flex bottom-10 right-10 fixed z-40  md:ml-auto md:mx-0">
         <a
           href="/"
-          className="p-[10px] bg-[#0B5CFF] hover:bg-[#0B5CFF]/80 hover:scale-110 rounded-xl rounded-br-none"
+          className="p-[10px] bg-[#7DB834] hover:bg-[#7DB834]/80  hover:scale-110 rounded-xl rounded-br-none"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ const Hero = () => {
               />
             </div>
             <div className="flex-col justify-start items-center md:items-start  inline-flex">
-              <div className="text-center text-amber-500 text-[16px] font-normal md:text-start">
+              <div className="text-center text-[#0dd354] text-[16px] font-normal md:text-start">
                 Special Offers
               </div>
               <div className="  text-white text-[14px] font-[200] text-center md:text-start  line-clamp-2 leading-5">
@@ -108,7 +108,7 @@ const Hero = () => {
               />
             </div>
             <div className="flex-col justify-start items-center md:items-start  inline-flex">
-              <div className="text-center  text-amber-500 text-[16px] font-normal ">
+              <div className="text-center  text-[#0dd354] text-[16px] font-normal ">
                 Special Offers
               </div>
               <div className="font-[200] text-white text-[14px] line-clamp-2 text-center md:text-start  leading-5">

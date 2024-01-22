@@ -401,14 +401,14 @@ const Apllication = () => {
             {step < 5 && (
               <div
                 onClick={handleNext}
-                className="py-2 px-10 bg-[#FFCD21] rounded-md"
+                className="py-2 px-10 bg-[#7db834] rounded-md text-white"
               >
                 Next
               </div>
             )}
             {step == 5 && (
               <button
-                className="py-2 flex items-center justify-center px-10 bg-[#FFCD21] rounded-md"
+                className="py-2 flex items-center justify-center px-10 bg-[#7db834] rounded-md text-white"
                 type="submit"
               >
                 <ClipLoader

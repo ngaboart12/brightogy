@@ -200,14 +200,14 @@ const Assessment = () => {
             {step < 5 && (
               <div
                 onClick={handleNext}
-                className="py-2 px-10 bg-[#FFCD21] rounded-md"
+                className="py-2 px-10 bg-[#7db834] rounded-md"
               >
                 Next
               </div>
             )}
             {step == 5 && (
               <button
-                className="py-2 px-10 bg-[#FFCD21] rounded-md"
+                className="py-2 px-10 bg-[#7db834] rounded-md"
                 type="submit"
               >
                 {loading ? "Loading.." : "Submit"}

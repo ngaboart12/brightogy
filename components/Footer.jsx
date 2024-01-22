@@ -283,39 +283,47 @@ const Footer = () => {
         data-aos="zoom-out-right"
         className="max-w-7xl flex flex-col gap-2 w-full justify-center items-center"
       >
-        <h1 className="text-[#FFA800] text-[14px] sm:text-[18px] md:text-[24px] font-[500] leading-6 text-center">
+        <h1 className="text-white text-[14px] sm:text-[18px] md:text-[24px] font-[500] leading-6 text-center">
           Trusted by Leading Institutions
         </h1>
         <div className="grid grid-cols-3 sm:grid-cols-5  gap-8 sm:gap-14 md:gap-20 ">
           <div className="w-[100px] h-[50px]">
             <Image
               className="w-full h-full  object-scale-down "
-              src={`/image/s1.png`}
+              src={`/image/vistula.png`}
               width={100}
               height={200}
             />
           </div>
-          <div className="w-[100px] h-[50px]  rounded-md">
+          <div className="w-[100px] h-[50px]">
             <Image
-              className="w-full h-full object-fit"
-              src={`/image/s3.jpg`}
-              width={200}
+              className="w-full h-full  object-scale-down "
+              src={`/image/britis.png`}
+              width={100}
               height={200}
             />
           </div>
-          <div className="w-[100px] h-[60px] bg-white rounded-md flex items-center justify-center">
+          <div className="w-[100px] h-[50px]">
             <Image
-              className="w-full h-full object-cover rounded-sm"
-              src={`/image/s4.png`}
+              className="w-full h-full  object-scale-down "
+              src={`/image/online.png`}
               width={100}
-              height={100}
+              height={200}
             />
           </div>
-          <div className="w-[90px] h-[60px] rounded-md flex items-center justify-center">
+          <div className="w-[100px] h-[50px]">
             <Image
-              className="w-full h-full object-fit"
-              src={`/image/nest-college.png`}
-              width={200}
+              className="w-full h-full  object-scale-down "
+              src={`/image/auniveristy.png`}
+              width={100}
+              height={200}
+            />
+          </div>
+          <div className="w-[100px] h-[50px]">
+            <Image
+              className="w-full h-full  object-scale-down "
+              src={`/image/alte.png`}
+              width={100}
               height={200}
             />
           </div>

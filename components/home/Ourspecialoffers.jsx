@@ -37,7 +37,7 @@ const Ourspecialoffers = () => {
     <div className=" px-3 md:px-20  bg-[#EBF5FF] w-full justify-center  flex">
       <div className="flex flex-col md:flex-row py-[81px] px-[10px] gap-10  items-center w-full max-w-7xl">
         <div data-aos="fade-right" className="flex flex-col items-start gap-10">
-          <h1 className="text-3xl text-center text-[#FFA800] font-[700]">
+          <h1 className="text-3xl text-center text-[#35365d] font-[700]">
             Our special offers
           </h1>
           <p className="text-[16px] leading-4 text-center md:text-start text-[#3C3B3B] font-[300] max-w-[500px]">
@@ -51,7 +51,7 @@ const Ourspecialoffers = () => {
           <div>
             <a
               href="/special"
-              className=" hover:scale-110 transition-all py-[10px] w-[150px] text-white font-[300] md:py-[10px] md:px-[31px] text-[14px] bg-[#0B5CFF] rounded-lg md:w-[160px] flex justify-center items-center"
+              className=" hover:scale-110 transition-all py-[10px] w-[150px] text-white font-[300] md:py-[10px] md:px-[31px] text-[14px] bg-[#7db834] rounded-lg md:w-[160px] flex justify-center items-center"
             >
               Discover more
             </a>
@@ -73,7 +73,7 @@ const Ourspecialoffers = () => {
                 </p>
                 <p
                   onClick={() => goToPostPage(item.id)}
-                  className="bg-[#123E6C] cursor-pointer w-[150px] rounded-2xl flex items-center justify-center py-2 text-white hover:scale-110"
+                  className="bg-[#7db834] cursor-pointer w-[150px] rounded-2xl flex items-center justify-center py-2 text-white hover:scale-110"
                 >
                   Learn More
                 </p>
