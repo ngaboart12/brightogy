@@ -30,11 +30,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className={`w-full  flex justify-between  py-2 ${
+      className={`w-full   flex justify-between  py-2 ${
         scrolled ? "bg-white  shadow-md fixed z-40 " : ""
       }`}
     >
-      <div className="flex flex-row items-start justify-between w-full max-w-6xl mx-auto md:items-center  px-[10px] md:px-[50px] lg:px-[100px]">
+      <div className="flex flex-row items-start justify-between w-full max-w-6xl mx-auto md:items-center  px-[10px] md:px-[50px] lg:px-[50px]">
         <div className="flex ">
           <a href="/">
             <Image
@@ -48,7 +48,7 @@ const Navbar = () => {
         </div>
 
         <div className="links flex gap-[102px] items-center mt-2">
-          <ul className=" hidden md:flex text-black font-[300] text-[12px]  gap-4  items-center">
+          <ul className=" hidden md:flex text-black font-[400] text-[12px]  gap-4  items-center">
             <li>
               <a href="/">HOME</a>
             </li>
@@ -70,7 +70,7 @@ const Navbar = () => {
                   </svg>
                 </span>
               </p>
-              <ul className="text-[black] font-[300] gap-4 text-[14px] bg-black">
+              <ul className="text-[black] font-[400] gap-4 text-[14px] bg-black">
                 <li>
                   <a href="/aboutus" className="hover:text-black/70">
                     ABOUT US
@@ -106,7 +106,7 @@ const Navbar = () => {
                   </svg>
                 </span>
               </p>
-              <ul className="text-[black] font-[300] gap-4 text-[14px] bg-black">
+              <ul className="text-[black] font-[400] gap-4 text-[14px] bg-black">
                 <li>
                   <a href="/toefl" className="hover:text-black/70">
                     TOEFL
@@ -142,7 +142,7 @@ const Navbar = () => {
                   </svg>
                 </span>
               </p>
-              <ul className="text-[black] font-[300] gap-4 text-[16px] bg-black">
+              <ul className="text-[black] font-[400] gap-4 text-[16px] bg-black">
                 <li>
                   <a href="/canada" className="hover:text-black/70">
                     Canada
@@ -174,7 +174,7 @@ const Navbar = () => {
                   </svg>
                 </span>
               </p>
-              <ul className="text-[black] font-[300] gap-4 text-[14px] bg-black">
+              <ul className="text-[black] font-[400] gap-4 text-[14px] bg-black">
                 <li>
                   <a href="/careercounseling" className="hover:text-black/70">
                     Career Counseling
