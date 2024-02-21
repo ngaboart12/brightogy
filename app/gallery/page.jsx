@@ -5,7 +5,7 @@ import { collection, doc, getDoc } from "firebase/firestore";
 import { db } from "../../firebase";
 import LinkComponent from "components/LinkComponet";
 import Navbar from "components/Navbar";
-import Footer from "components/Footer";
+import Footer from "../../components/Landing/Footer";
 import { useRouter, useSearchParams } from "next/navigation";
 import ReactLoading from "react-loading";
 

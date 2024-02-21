@@ -9,7 +9,7 @@ import { addDoc, collection } from "firebase/firestore";
 import { db } from "../../firebase";
 import Navbar from "../../components/Navbar";
 import LinkComponent from "../../components/LinkComponet";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Landing/Footer";
 
 import Success from "components/home/Success";
 import { useRouter } from "next/navigation";

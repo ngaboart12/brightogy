@@ -4,9 +4,10 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar";
 
 import LinkComponent from "../../components/LinkComponet";
-import Footer from "../../components/Footer";
+
 import Image from "next/image";
 import Parteners from "../../components/Parteners";
+import Footer from "components/Landing/Footer";
 
 const Aboutus = () => {
   useEffect(() => {
@@ -48,7 +49,7 @@ const Aboutus = () => {
       {/* hero section */}
       <div className="max-w-7xl flex flex-col h items-center lg:flex-row px-[20px] lg:px-20 gap-10 py-10">
         <div className="flex flex-col gap-4 w-full md:w-1/2 text-center md:text-start">
-          <h1 className="text-[30px] leading-[40px] font-semibold md:text-[40px] text-[#07294D] max-w-[300px]">
+          <h1 className="text-[30px] leading-[40px]  md:text-[40px] font-[700] text-header  max-w-[300px]">
             Welcome to BrightForth
           </h1>
           <div className="flex px-[10px] flex-col gap-10">
@@ -84,18 +85,18 @@ const Aboutus = () => {
                 height={200}
               />
             </div>
-            <div class="max-w-[308px] h-44 px-10 py-6 left-[25px] sm:left-[178px] bottom-[-60px] absolute bg-sky-950 rounded-xl flex-col justify-start items-start gap-2.5 inline-flex">
+            <div class="max-w-[308px] h-44 px-10 py-6 left-[25px] sm:left-[178px] bottom-[-60px] absolute bg-blueBack rounded-xl flex-col justify-start items-start gap-2.5 inline-flex">
               <div class="flex-col justify-start items-start gap-4 flex">
                 <div class="justify-start items-start gap-2 inline-flex">
                   <div class="flex-col justify-start items-start gap-2 inline-flex">
                     <div class="text-yellow-400 text-2xl font-bold ">50 +</div>
-                    <div class="w-[140px] text-slate-400 text-sm font-normal ">
+                    <div class="w-[140px] text-white text-sm font-normal ">
                       Total Students
                     </div>
                   </div>
                   <div class="flex-col justify-start items-start gap-2 inline-flex">
                     <div class="text-yellow-400 text-2xl font-bold ">200</div>
-                    <div class="w-[140px] text-slate-400 text-sm font-normal ">
+                    <div class="w-[140px] text-white text-sm font-normal ">
                       Universities
                     </div>
                   </div>
@@ -103,13 +104,13 @@ const Aboutus = () => {
                 <div class="justify-start items-start gap-2 inline-flex">
                   <div class="flex-col justify-start items-start gap-2 inline-flex">
                     <div class="text-yellow-400 text-2xl font-bold ">5</div>
-                    <div class="w-[140px] text-slate-400 text-sm font-normal ">
+                    <div class="w-[140px] text-white text-sm font-normal ">
                       Counselors
                     </div>
                   </div>
                   <div class="flex-col justify-start items-start gap-2 inline-flex">
                     <div class="text-yellow-400 text-2xl font-bold ">450</div>
-                    <div class="w-[100px] leading-3 text-slate-400 text-sm font-normal ">
+                    <div class="w-[100px] leading-3 text-white text-sm font-normal ">
                       Available Programs
                     </div>
                   </div>
@@ -121,7 +122,7 @@ const Aboutus = () => {
       </div>
 
       {/* our team */}
-      <div className="w-full max-w-7-xl bg-[#07294D] mt-10 p-[20px] md:p-20  flex flex-col gap-10">
+      <div className="w-full max-w-7-xl bg-blueBack mt-10 p-[20px] md:p-20  flex flex-col gap-10">
         <div className="flex flex-col md:flex-row justify-between w-full">
           <div className="flex flex-col gap-4 w-full md:sw-1/2  ">
             <div className="w-20 h-[4px] bg-[#FFCD21]"></div>
@@ -129,7 +130,7 @@ const Aboutus = () => {
             <span className="text-white text-[24px]">Let’s Meet The Team</span>
           </div>
           <div className="md:mt-0 mt-5">
-            <span className="text-[16px] text-[#C2C2C2]">
+            <span className="text-[16px] text-white/70">
               Our educational consultant has led us on a journey of academic
               achievement, and working with them has been a life-changing
               experience. Their proficiency, commitment, and customized strategy
@@ -211,7 +212,7 @@ const Aboutus = () => {
             />
           </div>
           <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-start">
-            <h1 className="text-[24px] text-[#07294D] font-[700]">
+            <h1 className="text-[24px] text-blueBack font-[700]">
               Why Choose Us
             </h1>
             <p className="text-[16px] text-[#2B2A2A]">
@@ -244,7 +245,7 @@ const Aboutus = () => {
               </p>
             </div>
           </div>
-          <div className="w-full md:w-1/2 text-center md:text-start flex flex-col gap-2 bg-[#07294D] rounded-lg p-5 md:p-10">
+          <div className="w-full md:w-1/2 text-center md:text-start flex flex-col gap-2 bg-blueBack rounded-lg p-5 md:p-10">
             <h1 className="text-[#FFA800] text-[24px] font-bold">Our Goal</h1>
             <p className="text-[16px] font-[300] text-white leading-5">
               BrighForth offers unbiased, comprehensive, genuine, ethical and
@@ -262,8 +263,9 @@ const Aboutus = () => {
 
       {/* parteners */}
       <Parteners />
+      <Footer/>
 
-      <Footer />
+      
     </div>
   );
 };

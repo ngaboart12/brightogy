@@ -4,7 +4,7 @@ import Image from "next/image";
 import LinkComponent from "../../components/LinkComponet";
 import Navbar from "../../components/Navbar";
 import Parteners from "../../components/Parteners";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Landing/Footer";
 import { GrFormNext } from "react-icons/gr";
 
 const Toefl = () => {

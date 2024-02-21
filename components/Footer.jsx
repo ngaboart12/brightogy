@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 import Image from "next/image";
 import { db } from "../firebase";
 import { addDoc, collection } from "firebase/firestore";
-import EnquiryForm from "./home/EnquiryForm";
+import EnquiryForm from "./Landing/EnquiryForm";
 
 const Footer = () => {
   const [isModalOpen, setModalOpen] = useState(false);

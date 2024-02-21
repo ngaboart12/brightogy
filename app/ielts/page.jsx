@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 import LinkComponent2 from "../../components/LinkComponet2";
 import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+
 import { GrFormNext } from "react-icons/gr";
+import Footer from "components/Landing/Footer";
 
 const Ielts = () => {
   const [whichOpen, setWhichOpen] = useState();
@@ -100,7 +101,7 @@ const Ielts = () => {
             <h1 className="text-[24px] font-[600] text-[#173F69]">
               IELTS Types
             </h1>
-            <span className="text-[18px] font-[600] text-[#07294D] text-center md:text-start">
+            <span className="text-[18px] font-[600] text-blueBack text-center md:text-start">
               The IELTS is generally divided into types the Academic and general
               tests
             </span>
@@ -152,7 +153,7 @@ const Ielts = () => {
       </div>
 
       {/* Feature od  IELTS */}
-      <div className="flex flex-col px-[20px] md:px-20 lg:px-40 gap-6 w-full bg-[#07294D] py-10 items-center max-w-7xl ">
+      <div className="flex flex-col px-[20px] md:px-20 lg:px-40 gap-6 w-full bg-blueBack py-10 items-center max-w-7xl ">
         <h1 className="text-[24px] font-normal text-[#FFA800]">
           Features of IELTS
         </h1>
@@ -271,7 +272,7 @@ const Ielts = () => {
 
       <div className="flex w-full px-[20px] md:px-20 lg:px-40 flex-col gap-10 text-center max-w-7xl py-10">
         <div className="flex flex-col gap-5">
-          <h1 className="text-[24px] text-[#07294D] font-[600]">
+          <h1 className="text-[24px] text-blueBack font-[600]">
             What are the sections in IELTS?
           </h1>
           <span className="text-[14px] text-[#4D4D4D]">
@@ -334,7 +335,7 @@ const Ielts = () => {
 
       {/*  */}
       <div className="py-20 w-full items-center">
-        <div className="flex flex-col gap-6 w-full bg-[#07294D] pt-20 pb-40 px-[20px] md:px-20 lg:px-40 items-center">
+        <div className="flex flex-col gap-6 w-full bg-blueBack pt-20 pb-40 px-[20px] md:px-20 lg:px-40 items-center">
           <h1 className="text-[#FFA800] text-[24px] font-[600]">
             Frequently Asked Question
           </h1>
@@ -430,7 +431,7 @@ const Ielts = () => {
       </div>
       {/* footer */}
 
-      <Footer />
+      <Footer/>
     </div>
   );
 };

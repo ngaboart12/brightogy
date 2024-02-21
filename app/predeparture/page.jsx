@@ -3,8 +3,8 @@ import Image from "next/image";
 import LinkComponent from "../../components/LinkComponet";
 import Navbar from "../../components/Navbar";
 import Testmonials from "../../components/home/Testmonials";
-import ContactUS from "../../components/home/ContactUS";
-import Footer from "../../components/Footer";
+import ContactUS from "../../components/Landing/ContactUS";
+import Footer from "../../components/Landing/Footer";
 
 const PreDeparture = () => {
   return (

@@ -12,8 +12,19 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors:{
+        green: "#7DB834",
+        greenText: "#7DB834",
+        blueBack: "#1D73AF",
+        blueFore: "#2182C6",
+        header: "#005164"
+        
+
+      },
       fontFamily:{
-        heltavica: ['var(--heltavica)']
+        poppins: ["Poppins","sans-serif"],
+        Kumbh: ["Kumbh Sans","sans-serif"],
+        baloo: ["Baloo Bhaijaan 2","sans-serif"],
       }
     },
   },

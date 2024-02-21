@@ -3,7 +3,8 @@ import LinkComponent from "../../components/LinkComponet";
 import Navbar from "../../components/Navbar";
 
 import Image from "next/image";
-import Footer from "components/Footer";
+import Footer from "components/Landing/Footer";
+
 
 const Duolingo = () => {
   const data = [
@@ -57,7 +58,7 @@ const Duolingo = () => {
         </div>
         <div className="w-full md:w-1/2 flex flex-col gap-4">
           <div className="flex flex-col gap-4 text-center md:text-start">
-            <h1 className="text-[18px] font-[700] text-[#07294D]">
+            <h1 className="text-[18px] font-[700] text-blueBack">
               Duolingo English Test
             </h1>
             <p className="text-[16px] text-[#4D4D4D] font-[300] leading-5 ">
@@ -85,11 +86,11 @@ const Duolingo = () => {
       </div>
 
       {/* sections */}
-      <div className="w:full px-[20px] md:px-[179px] max-w-7xl  pt-[45px] pb-[67px] bg-[#07294D] flex-col justify-start items-center gap-[35px] inline-flex mt-10">
+      <div className="w:full px-[20px] md:px-[179px] max-w-7xl  pt-[45px] pb-[67px] bg-blueBack flex-col justify-start items-center gap-[35px] inline-flex mt-10">
         <div className="text-amber-500 text-[32px] font-bold ">Sections</div>
         <div className="self-stretch flex-col justify-start items-center gap-6 inline-flex">
           <div className="justify-start items-start gap-[27px] flex flex-col lg:flex-row">
-            <div className="  pl-[38px] pr-[27px] pt-8 pb-[39px] bg-[#0A335E] justify-end items-center flex">
+            <div className="  pl-[38px] pr-[27px] pt-8 pb-[39px] bg-[#2182C6] justify-end items-center flex">
               <div className="self-stretch flex-col justify-start items-start gap-6 inline-flex">
                 <div className="text-white text-xl font-bold ">
                   Quick Setup :
@@ -105,7 +106,7 @@ const Duolingo = () => {
                 </div>
               </div>
             </div>
-            <div className="px-[46px] pt-8 pb-[39px] bg-[#0A335E] justify-center items-center flex">
+            <div className="px-[46px] pt-8 pb-[39px] bg-[#2182C6] justify-center items-center flex">
               <div className="self-stretch flex-col justify-start items-start gap-6 inline-flex">
                 <div className="text-white text-xl font-bold ">
                   Adaptive Test :
@@ -121,7 +122,7 @@ const Duolingo = () => {
               </div>
             </div>
           </div>
-          <div className="pl-[43px] pr-[22px] pt-[47px] pb-12 bg-[#0A335E] justify-end items-center inline-flex">
+          <div className="pl-[43px] pr-[22px] pt-[47px] pb-12 bg-[#2182C6] justify-end items-center inline-flex">
             <div className="self-stretch flex-col justify-start items-start gap-6 inline-flex">
               <div className="w-[157px] h-6 text-white text-xl font-bold ">
                 Video Interview :
@@ -165,7 +166,7 @@ const Duolingo = () => {
           {data.map((item, index) => {
             return (
               <div key={index}>
-                <span className="text-[14px] font-[#07294D] text-black">
+                <span className="text-[14px] font-blueBack text-black">
                   {item.name}
                 </span>
               </div>
@@ -174,13 +175,13 @@ const Duolingo = () => {
         </div>
       </div>
       <div className="py-40 w-full items-center">
-        <div className="flex flex-col gap-6 w-full bg-[#07294D] py-10 px-[20px] md:px-20 lg:px-40 items-center">
+        <div className="flex flex-col gap-6 w-full bg-blueBack py-10 px-[20px] md:px-20 lg:px-40 items-center">
           <h1 className="text-[#FFA800] text-[24px] font-[600]">
             Frequently Asked Question
           </h1>
           <div className="flex w-full flex-col md:flex-row gap-10">
             <div className="w-full md:w-1/2 flex flex-col gap-3">
-              <div className="p-3 w-full bg-[#123E6C] rounded-md flex flex-row justify-between items-center">
+              <div className="p-3 w-full bg-blueFore rounded-md flex flex-row justify-between items-center">
                 <span className="max-w-[60%] text-[14px] text-white">
                   Can international students work part-time in Poland while they
                   are in their studies?
@@ -198,7 +199,7 @@ const Duolingo = () => {
                   />
                 </svg>
               </div>
-              <div className="p-3 w-full bg-[#123E6C] rounded-md flex flex-row justify-between items-center">
+              <div className="p-3 w-full bg-blueFore rounded-md flex flex-row justify-between items-center">
                 <span className="max-w-[60%] text-[14px] text-white">
                   Do I have to speak Polish?
                 </span>
@@ -215,7 +216,7 @@ const Duolingo = () => {
                   />
                 </svg>
               </div>
-              <div className="p-3 w-full bg-[#123E6C] rounded-md flex flex-row justify-between items-center">
+              <div className="p-3 w-full bg-blueFore rounded-md flex flex-row justify-between items-center">
                 <span className="max-w-[60%] text-[14px] text-white">
                   How can you explore a Polish city?
                 </span>
@@ -232,7 +233,7 @@ const Duolingo = () => {
                   />
                 </svg>
               </div>
-              <div className="p-3 w-full bg-[#123E6C] rounded-md flex flex-row justify-between items-center">
+              <div className="p-3 w-full bg-blueFore rounded-md flex flex-row justify-between items-center">
                 <span className="max-w-[60%] text-[14px] text-white">
                   How can you explore a Polish city?
                 </span>
@@ -262,11 +263,11 @@ const Duolingo = () => {
           </div>
           <div className="  justify-start items-center gap-[98px] flex flex-col">
             <div className="justify-start items-start flex">
-              <div className="w-[152px] h-[7px] bg-sky-900" />
-              <div className="w-[151px] h-[7px] bg-slate-500" />
+              <div className="w-[152px] h-[7px] bg-[#2182C6]" />
+              <div className="w-[151px] h-[7px] bg-[#256494]" />
             </div>
             <div className="justify-start items-start gap-6 flex">
-              <div className="w-10 h-10 p-2 bg-sky-900 rounded-lg justify-center items-center flex">
+              <div className="w-10 h-10 p-2 bg-[#2182C6] rounded-lg justify-center items-center flex">
                 <svg
                   width="24"
                   height="24"
@@ -280,7 +281,7 @@ const Duolingo = () => {
                   />
                 </svg>
               </div>
-              <div className="w-10 h-10 p-2 bg-sky-900 rounded-lg justify-center items-center flex">
+              <div className="w-10 h-10 p-2 bg-[#2182C6] rounded-lg justify-center items-center flex">
                 <svg
                   width="24"
                   height="24"
@@ -300,7 +301,7 @@ const Duolingo = () => {
       </div>
 
       {/* footer */}
-      <Footer />
+      <Footer/>
     </div>
   );
 };

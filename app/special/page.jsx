@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import LinkComponent from "../../components/LinkComponet";
 import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Landing/Footer";
 import Link from "next/link";
 import { db } from "../../firebase";
 import { collection, getDocs } from "firebase/firestore";

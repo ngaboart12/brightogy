@@ -5,7 +5,7 @@ import { db } from "../../firebase";
 import { doc, getDoc } from "firebase/firestore";
 import LinkComponent from "components/LinkComponet";
 import Navbar from "components/Navbar";
-import Footer from "components/Footer";
+import Footer from "../../components/Landing/Footer";
 import ReactLoading from "react-loading";
 import Image from "next/image";
 

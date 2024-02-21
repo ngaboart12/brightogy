@@ -1,0 +1,10 @@
+.custom-pagination > div {
+    width: 8px; /* Adjust the width of the line */
+    height: 2px; /* Adjust the height of the line */
+    background-color: #ccc; /* Default color */
+    cursor: pointer;
+  }
+  
+  .custom-pagination > div.swiper-pagination-bullet-active {
+    background-color: #007BFF; /* Active color */
+  }

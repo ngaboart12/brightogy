@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Landing/Footer";
 import LinkComponent from "../../components/LinkComponet";
 import Navbar from "../../components/Navbar";
 import { FaHandPointRight } from "react-icons/fa";

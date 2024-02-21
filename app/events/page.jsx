@@ -5,7 +5,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase";
 import LinkComponent from "components/LinkComponet";
 import Navbar from "components/Navbar";
-import Footer from "components/Footer";
+import Footer from "../../components/Landing/Footer";
 import ReactLoading from "react-loading";
 
 const Events = () => {
