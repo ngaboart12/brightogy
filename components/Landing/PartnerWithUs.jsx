@@ -206,14 +206,11 @@ const PartnerWithUs = ({ onClose }) => {
             <div className="flex flex-col gap-2 mt-2">
               <h1 className="text-[14px]">Additional comments</h1>
               <textarea
-                value={additionalComment}
-                onChange={(e) => setAdditionalComment(e.target.value)}
-                type="text"
-                placeholder="Enter service"
-                className="border text-[14px] border-gray-300 p-3 rounded-lg placeholder:text-black text-black"
-              >
-                Add cooment here
-              </textarea>
+  value={additionalComment}
+  onChange={(e) => setAdditionalComment(e.target.value)}
+  placeholder="Enter service"
+  className="border text-[14px] border-gray-300 p-3 rounded-lg placeholder:text-black text-black"
+/>
             </div>
             <div className="mt-2 flex flex-col">
               <span className="text-[14px] text-[#6B6666] font-[300]">
