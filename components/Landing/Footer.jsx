@@ -253,16 +253,16 @@ const Footer = () => {
               Services <br className="hidden md:flex" /> For Students
             </h1>
             <div className="flex flex-col gap-[10px] items-center md:items-start text-[18px] text-[#797979]">
-              <a href="#" className="hover:text-black transition-all">
+              <a href="/careercounseling" className="hover:text-black transition-all">
                 Counseling
               </a>
-              <a href="#" className="hover:text-black transition-all">
+              <a href="/prepartion" className="hover:text-black transition-all">
                 Test Preparation
               </a>
-              <a href="#" className="hover:text-black transition-all">
+              <a href="/univeristydocument" className="hover:text-black transition-all">
                 course, country and university selection
               </a>
-              <a href="#" className="hover:text-black transition-all">
+              <a href="/visa-tips" className="hover:text-black transition-all">
                 Visa processing
               </a>
             </div>
@@ -274,31 +274,31 @@ const Footer = () => {
             </h1>
 
             <div className="grid grid-cols-3 gap-4 px-[10px] md:px-0 text-[16px] text-[#797979] font-poppins">
-              <a href="#" className="hover:text-black transition-all">
+              <a href="/usa" className="hover:text-black transition-all">
                 United states
               </a>
-              <a href="#" className="hover:text-black transition-all">
+              <a href="/poland" className="hover:text-black transition-all">
                 Poland
               </a>
-              <a href="#" className="hover:text-black transition-all">
+              <a href="/australia" className="hover:text-black transition-all">
                 Australia
               </a>
-              <a href="#" className="hover:text-black transition-all">
+              <a href="/canada" className="hover:text-black transition-all">
                 Canada
               </a>
-              <a href="#" className="hover:text-black transition-all">
+              <a href="/china" className="hover:text-black transition-all">
                 China
               </a>
-              <a href="#" className="hover:text-black transition-all">
+              <a href="/germany" className="hover:text-black transition-all">
                 Germany
               </a>
-              <a href="#" className="hover:text-black transition-all">
+              <a href="united" className="hover:text-black transition-all">
                 United kingdom
               </a>
-              <a href="#" className="hover:text-black transition-all">
+              <a href="/turkey" className="hover:text-black transition-all">
                 Turkey
               </a>
-              <a href="#" className="hover:text-black transition-all">
+              <a href="/georgia" className="hover:text-black transition-all">
                 Georgia
               </a>
             </div>
