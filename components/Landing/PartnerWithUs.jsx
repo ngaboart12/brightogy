@@ -39,14 +39,13 @@ const PartnerWithUs = ({ onClose }) => {
     } else if (contactEmail == "") {
       setEmpty("message");
       setLoading(false);
-    } else if ( contactPhoneNumber == "") {
+    } else if (contactPhoneNumber == "") {
       setEmpty("message");
       setLoading(false);
     } else if (contactTitle == "") {
       setEmpty("message");
       setLoading(false);
-    }  
-     else if (additionalComment == "") {
+    } else if (additionalComment == "") {
       setEmpty("message");
       setLoading(false);
     } else {
@@ -66,7 +65,6 @@ const PartnerWithUs = ({ onClose }) => {
         setAdditionalComment("");
         setSchoolName("");
         toast.success("Partner sent successfully");
-       
       }
       if (!response.ok) {
         setLoading(false);
@@ -98,7 +96,7 @@ const PartnerWithUs = ({ onClose }) => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
   }, []);
-  
+
   return (
     <div className="absolute   w-full h-full  flex flex-col justify-center items-center">
       <div
@@ -206,11 +204,11 @@ const PartnerWithUs = ({ onClose }) => {
             <div className="flex flex-col gap-2 mt-2">
               <h1 className="text-[14px]">Additional comments</h1>
               <textarea
-  value={additionalComment}
-  onChange={(e) => setAdditionalComment(e.target.value)}
-  placeholder="Enter service"
-  className="border text-[14px] border-gray-300 p-3 rounded-lg placeholder:text-black text-black"
-/>
+                value={additionalComment}
+                onChange={(e) => setAdditionalComment(e.target.value)}
+                placeholder="Enter service"
+                className="border text-[14px] border-gray-300 p-3 rounded-lg placeholder:text-black text-black"
+              />
             </div>
             <div className="mt-2 flex flex-col">
               <span className="text-[14px] text-[#6B6666] font-[300]">

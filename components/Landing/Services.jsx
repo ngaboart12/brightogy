@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import PartnerWithUs from "./PartnerWithUs";
 
@@ -10,7 +10,7 @@ const Services = () => {
   const services = [
     {
       name: "Sop and Essay Guidance",
-      disc: "Quam dolor in lacus odio ipsum suspendisse quam proin duis.",
+      disc: " Receive personalized assistance in crafting impactful essays and Statements of Purpose that reflect your academic journey and future aspirations.",
       svg: (
         <svg
           width="52"
@@ -108,7 +108,7 @@ const Services = () => {
     },
     {
       name: "Visa Guidance",
-      disc: "Quam dolor in lacus odio ipsum suspendisse quam proin duis.",
+      disc: "Gain comprehensive knowledge and step-by-step guidance on the visa application process, ensuring a smooth transition for your international studies.",
       svg: (
         <svg
           width="52"
@@ -230,7 +230,7 @@ const Services = () => {
     },
     {
       name: "Courses Selection",
-      disc: "Quam dolor in lacus odio ipsum suspendisse quam proin duis.",
+      disc: "Leverage our expertise to choose courses that align with your interests, goals, and academic requirements, setting you on a path for success.",
       svg: (
         <svg
           width="52"
@@ -352,7 +352,7 @@ const Services = () => {
     },
     {
       name: "Career Guidance",
-      disc: "Quam dolor in lacus odio ipsum suspendisse quam proin duis.",
+      disc: "Uncover your career path with our tailored advice, resume writing support, and interview preparation tips, all designed to help you land your dream job.",
       svg: (
         <svg
           width="52"
@@ -474,7 +474,7 @@ const Services = () => {
     },
     {
       name: "Admissions",
-      disc: "Quam dolor in lacus odio ipsum suspendisse quam proin duis.",
+      disc: "Simplify the admission process with our guidance on application requirements, deadlines, and submission strategies, increasing your chances of getting into your preferred institution",
       svg: (
         <svg
           width="52"
@@ -596,6 +596,7 @@ const Services = () => {
     },
     {
       name: "Appointment booking",
+      disc: "Save time and effort by letting us handle your appointment bookings, ensuring you meet with the right professionals at convenient times.",
       svg: (
         <svg
           width="52"
@@ -717,24 +718,31 @@ const Services = () => {
     },
   ];
   return (
-    <div className="flex flex-col md:flex-row gap-14 pt-[83px] px-3 sm:px-20 items-center bg-white relative ">
-      <div className={`w-full min-h-[100vh] fixed z-40 bg-black/20 left-0 transition-all ${isModalOpen ? "bottom-0" : "bottom-[350vh]"} `}>
-        <PartnerWithUs onClose={closeModal}/>
-
+    <div className="flex flex-col md:flex-row gap-5 pt-[83px] px-3 sm:px-20 items-center bg-white relative ">
+      <div
+        className={`w-full min-h-[100vh] fixed z-40 bg-black/20 left-0 transition-all ${
+          isModalOpen ? "bottom-0" : "bottom-[350vh]"
+        } `}
+      >
+        <PartnerWithUs onClose={closeModal} />
       </div>
       <div className="flex flex-col gap-6 items-center md:items-start w-full md:w-[40%]">
         <h1 className="max-w-[280px] text-header font-[700] text-[24px] text-center md:text-start leading-[30px]">
           Our Services We Offer to The Students
         </h1>
         <span className="text-[16px]-[300] text-[#777777] font-[400] text-center md:text-start">
-          Scelerisque justo dolor tristique lectus aliquam sagittis sed. Pretium
-          duis ultrices lobortis molestie eu lorem massa convallis nunc. Turpis
-          diam sed adipiscing netus molestie ullamcorper. Accumsan tortor sed
-          eleifend scelerisque in pellentesque mauris. Volutpat pellentesque
-          mauris tortor malesuada augue tempor.{" "}
+          Our team of experts is dedicated to providing you with the support and
+          guidance you need to achieve your academic and career goals. From
+          essay writing to visa applications, course selection to career
+          planning, we're here to help you every step of the way.
         </span>
-        <button onClick={openModal} className="p-4 rounded-[14px] bg-[#7DB834] flex flex-row items-center gap-[10px]">
-          <span className="text-[16px] font-[400] font-poppins  text-white">Partner with us</span>
+        <button
+          onClick={openModal}
+          className="p-4 rounded-[14px] bg-[#7DB834] flex flex-row items-center gap-[10px]"
+        >
+          <span className="text-[16px] font-[400] font-poppins  text-white">
+            Partner with us
+          </span>
           <div>
             <svg
               width="24"
@@ -774,7 +782,9 @@ const Services = () => {
               <span className="text-[16px] text-center md:text-start text-[#005164] font-[500]  max-w-[160px]  leading-[20px]">
                 {item.name}
               </span>
-              <span className="text-[#A6A6A6] text-center md:text-start font-[300]">{item.disc}</span>
+              <span className="text-[#A6A6A6] text-[14px] text-center md:text-start font-[400]">
+                {item.disc}
+              </span>
             </div>
           );
         })}
