@@ -253,13 +253,19 @@ const Footer = () => {
               Services <br className="hidden md:flex" /> For Students
             </h1>
             <div className="flex flex-col gap-[10px] items-center md:items-start text-[18px] text-[#797979]">
-              <a href="/careercounseling" className="hover:text-black transition-all">
+              <a
+                href="/careercounseling"
+                className="hover:text-black transition-all"
+              >
                 Counseling
               </a>
               <a href="/prepartion" className="hover:text-black transition-all">
                 Test Preparation
               </a>
-              <a href="/univeristydocument" className="hover:text-black transition-all">
+              <a
+                href="/univeristydocument"
+                className="hover:text-black transition-all"
+              >
                 course, country and university selection
               </a>
               <a href="/visa-tips" className="hover:text-black transition-all">
@@ -270,7 +276,7 @@ const Footer = () => {
 
           <div className="flex flex-col gap-4  items-center md:items-start">
             <h1 className="text-[20px] font-[700] text-center md:text-start text-black font-poppins">
-              Study <br className="hidden md:flex"/> Desitinations
+              Study <br className="hidden md:flex" /> Desitinations
             </h1>
 
             <div className="grid grid-cols-3 gap-4 px-[10px] md:px-0 text-[16px] text-[#797979] font-poppins">
@@ -328,7 +334,7 @@ const Footer = () => {
       </div>
       <div className="w-full px-[10px] sm:px-[50px] md:px-[100px] flex flex-col-reverse md:flex-row gap-[20px] items-center justify-between">
         <span className="text-[14px] font-[500] font-poppins text-[#7A7A7A]">
-          @ 2023 BrightForth. All rights reserved.
+          ©2024 BrightForth. All rights reserved.
         </span>
         <div className="flex flex-row gap-4 items-center">
           <a
@@ -345,7 +351,11 @@ const Footer = () => {
           </a>
         </div>
         <div className="grid grid-cols-6 gap-2 md:pr-5">
-          <a href="$" className="">
+          <a
+            target="_brank"
+            href="https://www.instagram.com/brightforth_rw?igsh=bjAzNGp6ajY3cWhr"
+            className=""
+          >
             <svg
               width="32"
               height="32"
@@ -371,7 +381,10 @@ const Footer = () => {
               />
             </svg>
           </a>
-          <a href="#">
+          <a
+            target="_brank"
+            href="https://www.facebook.com/profile.php?id=100086002819549"
+          >
             <svg
               width="32"
               height="32"
@@ -388,7 +401,11 @@ const Footer = () => {
             </svg>
           </a>
 
-          <a href="#">
+          <a
+            target="_brank"
+            href="https://www.linkedin.com/in/brightforthconsultantsltd?utm_source=share&utm_campaign=share
+ _via&utm_content=profile&utm_medium=android_app"
+          >
             <svg
               width="32"
               height="32"
@@ -404,7 +421,7 @@ const Footer = () => {
               />
             </svg>
           </a>
-          <a href="#">
+          <a target="_brank" href="https://youtube.com/@brightforth1784?si=LBm3eGB0SfLbfgGS">
             <svg
               width="32"
               height="32"
@@ -421,7 +438,7 @@ const Footer = () => {
               />
             </svg>
           </a>
-          <a href="#">
+          <a target="_brank" href="https://whatsapp.com/channel/0029VaEfzl3C1Fu69TjJRS0l">
             <svg
               width="32"
               height="32"
@@ -443,7 +460,7 @@ const Footer = () => {
               />
             </svg>
           </a>
-          <a href="#">
+          <a target="_brank" href="https://x.com/Brightforth_rw?t=w2d5qnAK8nJtyA891Ct98w&s=09">
             <svg
               width="32"
               height="32"

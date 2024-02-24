@@ -731,10 +731,11 @@ const Services = () => {
           Our Services We Offer to The Students
         </h1>
         <span className="text-[16px]-[300] text-[#777777] font-[400] text-center md:text-start">
-          Our team of experts is dedicated to providing you with the support and
-          guidance you need to achieve your academic and career goals. From
-          essay writing to visa applications, course selection to career
-          planning, we're here to help you every step of the way.
+          Our team of experienced educational consultants is dedicated to
+          guiding you through the often-complex landscape of higher education.
+          Whether you're exploring your options, making crucial decisions about
+          your major or career path, or seeking strategies to enhance your
+          academic performance, we're here to support you
         </span>
         <button
           onClick={openModal}
