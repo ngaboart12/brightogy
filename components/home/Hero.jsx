@@ -68,7 +68,7 @@ const Hero = () => {
 
             <div className="flex flex-row gap-[20px] items-center">
               <button onClick={openModal} className="flex flex-row py-[16px] px-[20px] md:px-[40px] rounded-[14px] text-[16px] bg-green text-white gap-[10px] items-center">
-                Enquire now
+                Enquire Now
                 <div>
                   <svg
                     width="24"
@@ -98,7 +98,7 @@ const Hero = () => {
               <a href="/application">
 
               <button className="flex flex-row py-[16px] px-[20px] md:px-[40px] rounded-[14px] text-[16px] bg-white text-greenText gap-[10px] items-center">
-                Aplly now
+                Aplly Now
                 <div>
                   <svg
                     width="24"

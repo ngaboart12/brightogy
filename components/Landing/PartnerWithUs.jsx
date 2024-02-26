@@ -97,13 +97,41 @@ const PartnerWithUs = ({ onClose }) => {
     };
   }, []);
 
+  const [allCountries,setAllCountries] = useState([])
+
+  
+  useEffect(() => {
+    // Fetch the list of all countries when the component mounts
+    const fetchAllCountries = async () => {
+      try {
+        const response = await fetch("https://restcountries.com/v3.1/all");
+        const data = await response.json();
+
+        if (response.ok) {
+          const sortedCountries = data.sort((a, b) => {
+            const nameA = a.name.common.toUpperCase();
+            const nameB = b.name.common.toUpperCase();
+            return nameA.localeCompare(nameB);
+          });
+          setAllCountries(sortedCountries);
+        } else {
+          console.error("Error fetching countries:", data.message);
+        }
+      } catch (error) {
+        console.error("Error fetching countries:", error);
+      }
+    };
+
+    fetchAllCountries();
+  }, []);
+
   return (
     <div className="absolute   w-full h-full  flex flex-col justify-center items-center">
       <div
         ref={modalRef}
-        className="w-[90%] md:w-[80%] flex flex-row  bg-white  rounded-[12px] gap-6  gapy-4 p-6 "
+        className="w-[90%] md:w-[80%] flex flex-col lg:flex-row  bg-white  rounded-[12px] gap-6  gapy-4 p-6 "
       >
-        <div className="flex flex-col w-[40%] bg-[#1D73AF] gap-[10vh] rounded-[12px] p-10 items-start relative">
+        <div className="lg:flex hidden flex-col w-full lg:w-[40%] bg-[#1D73AF] gap-[10px] lg:gap-[10vh] rounded-[12px] p-[10px] lg:p-10 items-start relative">
           <div className="w-full h-full top-0 left-0 absolute">
             <Image
               src={"/image/Banner.svg"}
@@ -130,12 +158,12 @@ const PartnerWithUs = ({ onClose }) => {
             </span>
           </div>
         </div>
-        <div className="flex flex-col w-1/2 font-poppins">
+        <div className="flex flex-col w-full lg:w-1/2 font-poppins">
           <h1 className="text-[24px] font-[800] font-poppins text-[#1D73AF]">
             Partner With Us
           </h1>
           <form action="" onSubmit={handelSubmit}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 items-center">
+            <div className="grid grid-cols-2 gap-2 items-center">
               <div className="flex flex-col gap-2">
                 <h1 className="text-[14px]">Destination Country </h1>
                 <select
@@ -146,8 +174,11 @@ const PartnerWithUs = ({ onClose }) => {
                   className="border border-gray-300 text-[14px] p-3 rounded-lg placeholder:text-black text-black"
                 >
                   <option>Select Country</option>
-                  <option value="Rwanda">Rwanda</option>
-                  <option value="Zambia">Zambia</option>
+                  {allCountries.map((country) => (
+                <option key={country.name.common} value={country.name.common}>
+                  {country.name.common}
+                </option>
+              ))}
                 </select>
               </div>
               <div className="flex flex-col gap-1">

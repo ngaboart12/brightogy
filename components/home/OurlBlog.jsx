@@ -4,7 +4,7 @@ import Image from "next/image";
 const OurlBlog = () => {
   const blog = [
     {
-      link: "#",
+      link: "visa-tips",
       image: "/image/visatips.jpg",
       date: "22 DEC 22",
       title: "Applying for a student visa: Top 10 tips",
