@@ -98,7 +98,7 @@ const Hero = () => {
               <a href="/application">
 
               <button className="flex flex-row py-[16px] px-[20px] md:px-[40px] rounded-[14px] text-[16px] bg-white text-greenText gap-[10px] items-center">
-                Aplly Now
+                Apply Now
                 <div>
                   <svg
                     width="24"

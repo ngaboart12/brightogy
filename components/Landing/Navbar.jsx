@@ -189,7 +189,7 @@ const Navbar = () => {
       <div className="hidden lg:flex">
       <a href="#contactus">
         <button className="py-[16px] px-[24px] bg-green rounded-[14px]  text-white flex flex-row items-center gap-[10px]">
-          React To Us
+          Reach To Us
           <div>
             <svg
               width="17"
@@ -285,7 +285,7 @@ const Navbar = () => {
           })}
           <a href="#contactus">
             <button className="py-[16px] px-[24px] bg-green rounded-[14px]  text-white flex flex-row items-center gap-[10px]">
-              React To Us
+              Reach To Us
               <div>
                 <svg
                   width="17"
