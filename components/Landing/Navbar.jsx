@@ -315,6 +315,7 @@ const Navbar = () => {
           </a>
         </div>
       </ul>
+  
     </div>
   );
 };

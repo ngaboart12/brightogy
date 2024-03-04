@@ -101,6 +101,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-[40px] items-center justify-center  w-full overflow-hidden  ">
       <Hero />
+      
 
       {/* services offer */}
       <Universties />

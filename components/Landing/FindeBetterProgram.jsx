@@ -54,7 +54,7 @@ const FindeBetterProgram = () => {
         </div>
         <div className="flex flex-col gap-[20px] items-center z-20">
           <h1 className="text-[32px] md:text-[36px] text-white font-[800] text-center leading-[40px] font-Kumbh">
-            Find a Better Program <br /> For You or Your Family With us
+            Find a Better Program
           </h1>
           <div className="flex transition-all duration-800 flex-col gap-[10px] items-center p-5 rounded-[14px] bg-[#2182C6] sm:w-[300px] md:w-[600px] ">
             <div className="flex flex-row gap-[10px] w-full items-center">

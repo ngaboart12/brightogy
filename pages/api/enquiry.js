@@ -22,7 +22,7 @@ export default async function (req,res){
     try {
         const mail = await transporter.sendMail({
             from: user,
-            to: "ngaboart123@gmail.com",
+            to: "brightforth.apply@gmail.com",
             replyTo: email,
             subject: `Inquiry Regarding Study Abroad Services`,
             html:`
