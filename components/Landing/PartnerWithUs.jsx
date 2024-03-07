@@ -227,7 +227,7 @@ const PartnerWithUs = ({ onClose }) => {
                   value={contactTitle}
                   onChange={(e) => setContactTitle(e.target.value)}
                   type="text"
-                  placeholder="Enter service"
+                  placeholder="Enter Contact Title"
                   className="border text-[14px] border-gray-300 p-3 rounded-lg placeholder:text-black text-black"
                 />
               </div>
@@ -237,7 +237,7 @@ const PartnerWithUs = ({ onClose }) => {
               <textarea
                 value={additionalComment}
                 onChange={(e) => setAdditionalComment(e.target.value)}
-                placeholder="Enter service"
+                placeholder="Add Comment Here"
                 className="border text-[14px] border-gray-300 p-3 rounded-lg placeholder:text-black text-black"
               />
             </div>

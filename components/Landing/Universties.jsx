@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from "react";
 import Image from "next/image"
 
 const Universties = () => {
@@ -22,23 +23,32 @@ const Universties = () => {
       image: "/image/alte.png"
     },
   ]
-  return (
-    <div className='w-full flex flex-col py-10 gap-[20px] items-center'>
-      <h1 className=' uppercase font-[700] text-[18px] text-[#005164]'>Features universities</h1>
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    <div className='grid grid-cols-3 md:grid-cols-6 gp-[10px] '>
-      {university.map((item,index)=>{
-        return(
-          <div className='w-full h-[100px]'>
-            <Image src={item.image} width={200} height={200} className='w-full h-full object-cover' />
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % university.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [university.length]);
+
+  return (
+    <div className='w-full py-10 overflow-hidden relative'>
+      <h1 className='uppercase font-bold text-xl text-[#005164] text-center mb-4'>Featured Universities</h1>
+
+      <marquee behavior="scroll" direction="left" scrollamount="20">
+        <div className="flex flex-row gap-[10px] md:gap-[70px] lg:gap-[140px]">
+
+        {university.map((university, index) => (
+          <div className="md:w-20 md:h-20 w-10 h-10">
+
+          <img key={index} src={university.image} alt={`University ${index + 1}`} className="w-full h-full object-cover" />
           </div>
-        )
-      })}
-      
-      
-    </div>
-      </div>
-  )
+          ))}
+          </div>
+      </marquee>
+    </div>  )
 }
 
 export default Universties
