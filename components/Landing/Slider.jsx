@@ -30,7 +30,7 @@ function Slider() {
     },
     {
       profile: "/image/member3.png",
-      name: "IRASUBIZA Germain",
+      name: "Isimbi Bella",
       type: "student",
       comment:
         "I have the utmost gratitude for BrightForth advice and assistance. Their expertise and dedication were crucial in assisting me in getting accepted into the faculty I wanted to attend. Their persistent dedication to assisting students in achieving their educational goals is much appreciated. I'm grateful that you have had such a big impact on my academic career.",

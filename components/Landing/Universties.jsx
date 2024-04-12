@@ -1,6 +1,16 @@
 "use client"
 import React, { useEffect, useState } from "react";
 import Image from "next/image"
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { comment } from "postcss";
+import "./pagination.css"
 
 const Universties = () => {
   const university = [
@@ -37,18 +47,61 @@ const Universties = () => {
     <div className='w-full py-10 overflow-hidden relative'>
       <h1 className='uppercase font-bold text-xl text-[#005164] text-center mb-4'>Featured Universities</h1>
 
-      <marquee behavior="scroll" direction="left" scrollamount="20">
-        <div className="flex flex-row gap-[10px] md:gap-[70px] lg:gap-[140px]">
+    
+        <div className="flex flex-row items-center px-[50px]  gap-[10px] md:gap-[10px] lg:gap-[140px]">
+        <Swiper
+            spaceBetween={50}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+              el: '.custom-pagination',
+            }}
+            navigation={false}
+            modules={[Autoplay, Pagination, Navigation]}
+            breakpoints={{
+              640: {
+                slidesPerView: 6,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 6,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
+            }}
+            className="mySwiper"
+          >
+            
+           {university.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className="flex flex-col gap-4 md:flex-row">
+              <div className="">
+                <div className="w-[100px] md:h-[47px] ">
+                  <Image
+                    src={item.image}
+                    width={500}
+                    height={500}
+                    className="w-full h-full rounded-md object-cover"
+                  />
+                </div>
+             
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-        {university.map((university, index) => (
-          <div className="md:w-20 md:h-20 w-10 h-10">
-
-          <img key={index} src={university.image} alt={`University ${index + 1}`} className="w-full h-full object-cover" />
+     
           </div>
-          ))}
-          </div>
-      </marquee>
-    </div>  )
+   
+    </div> 
+     )
 }
 
 export default Universties

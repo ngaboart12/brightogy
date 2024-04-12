@@ -73,25 +73,25 @@ const Program = () => {
           <div className="py-10">
             {faculties.map((item, index) => {
               return (
-                <div className="w-1/2 font-poppins  rounded-[12px] flex flex-col gap-[30px] p-4 ">
+                <div className="w-full md:w-1/2 font-poppins  rounded-[12px] flex flex-col gap-[30px] p-4 ">
                   <div className="flex flex-row items-center gap-2">
-                    <span className="font-[500]">Faculty:</span>
-                    <h1 className="text-[18px] font-[400] ">
+                    <span className="font-[500]">Faculty:  <span className="text-[18px] font-[400] ">
                       {item.facultyName}
-                    </h1>
+                    </span></span>
+                   
                   </div>
                   <div className="flex flex-row items-center gap-2">
-                    <span className="font-[500]">Duration:</span>
-                    <span className="text-[18px] font-[400]">
+                    <span className="font-[500]">Duration:  <span className="text-[18px] font-[400]">
                       {item.duration} years
-                    </span>
+                    </span></span>
+                   
                   </div>
                   <div className="flex flex-row items-center gap-2">
-                  <span className="font-[500]">Tuition Fees:</span><span>${item.tuitionFees}</span>
+                  <span className="font-[500]">Tuition Fees: <span>${item.tuitionFees}</span></span>
 
                   </div>
                   <div className="flex flex-row items-center gap-2">
-                  <span className="font-[500]">Degree:</span><span>{item.grade}</span>
+                  <span className="font-[500]">Degree: <span>{item.grade}</span></span>
                   </div>
                   <div className="flex flex-row items-center gap-2">
                   <span className="font-[500]">Country:</span><span>{item.country}</span>

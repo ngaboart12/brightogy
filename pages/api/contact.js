@@ -17,7 +17,7 @@ export default async function (req,res){
             pass:'zpfx qisa azei pnki'
         },
         tls: {
-            // Add the following line to trust self-signed certificates
+            
             rejectUnauthorized: false
         }
     });

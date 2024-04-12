@@ -38,7 +38,8 @@ const FindeBetterProgram = () => {
     const lowerCaseSearchTerm = searchTerm.toLowerCase();
     return (
       faculty.facultyName.toLowerCase().includes(lowerCaseSearchTerm) ||
-      faculty.country.toLowerCase().includes(lowerCaseSearchTerm)
+      faculty.country.toLowerCase().includes(lowerCaseSearchTerm) ||
+      faculty.grade.toLowerCase().includes(lowerCaseSearchTerm) 
     );
   });
   return (
