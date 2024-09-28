@@ -597,7 +597,7 @@ const Apllication = () => {
           onSubmit={handelSubmit}
           className="pt-4 w-full items-center justify-center"
         >
-          {step === 5 && (
+          {step === 1 && (
             <Step1 formData={formData} handleInputChange={handleInputChange} />
           )}
           {step === 2 && (
@@ -613,7 +613,7 @@ const Apllication = () => {
           {step === 4 && (
             <Step4 formData={formData} handleInputChange={handleInputChange} />
           )}
-          {step === 1 && (
+          {step === 5 && (
             <Step5
               filesImage={filesImage}
               filesInputHandel={filesInputHandel}

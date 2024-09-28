@@ -19,12 +19,13 @@ const Success = () => {
         </div>
         <h1 className="text-[24px] font-[200] text-green-500">Success Apply</h1>
         <p className="text-center max-w-[300px] text-black/40">
-          thank you ipsum dolor sit amet consectetur adipisicing elit. quo ex
+          Thank you for applying. We will review your application and get back
+          to you shortly.
         </p>
         {/* <a href="/"> */}
         <button
           onClick={goHome}
-          className="p-3 flex flex-row gap-2 items-center bg-green-500 text-white font-[200] rounded-md"
+          className="p-3 flex flex-row gap-2 items-center bg-green text-white font-[200] rounded-md"
         >
           <IoMdArrowRoundBack size={20} />
           Back to Home
