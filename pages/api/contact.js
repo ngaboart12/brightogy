@@ -12,7 +12,7 @@ export default async function (req,res){
         host: "smtp.gmail.com",
         port: 465,
         secure: true,
-        auth:{
+        auth:{   
             user:user,
             pass:'zpfx qisa azei pnki'
         },

@@ -1,10 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Input from "../Input";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../../firebase";
+import { db } from "../../../../firebase";
 
-const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
+const Applica = ({
+  filesImage,
+  filesInputHandel,
+  handleInputChange,
+  SchoolInformationFormik,
+}) => {
   const [faculties, setFaculties] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedFaculty, setSelectedFaculty] = useState(null);
@@ -30,39 +34,37 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
     setSearchTerm(e.target.value);
   };
 
-
-
   const filteredFaculties = faculties.filter((faculty) => {
     const lowerCaseSearchTerm = searchTerm.toLowerCase();
     return (
-      faculty.facultyName.toLowerCase().includes(lowerCaseSearchTerm) || 
+      faculty.facultyName.toLowerCase().includes(lowerCaseSearchTerm) ||
       faculty.country.toLowerCase().includes(lowerCaseSearchTerm)
     );
   });
   const handleResultClick = (faculty) => {
-    const { id, facultyName, school, country, schoolFees } = faculty;
+    const { id, facultyName, country, tuitionFees } = faculty;
     setSelectedFaculty({
       id,
       facultyName,
-      school,
       country,
-      fees: schoolFees,
-      // Add other properties as needed
+      fees: tuitionFees,
     });
-    handleInputChange("stage4", "applicationSchool", {
+    const currentApplications =
+      SchoolInformationFormik.values.applicationSchool || [];
+    const newApplication = {
       id,
       facultyName,
-      school,
       country,
-      fees: schoolFees,
-      // Add other properties as needed
-    });
-
+      fees: tuitionFees,
+    };
+    SchoolInformationFormik.setFieldValue("applicationSchool", [
+      ...currentApplications,
+      newApplication,
+    ]);
     setSearchTerm("");
   };
   return (
     <div className="flex w-full items-center flex-col pb-4 gap-6">
-   
       <div className="flex flex-col w-full">
         <div className="mb-4">
           <input
@@ -73,31 +75,25 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
             className="border p-3 border-gray-500 rounded-md"
           />
           {searchTerm && (
-            <div className="gap-10 max-w-[600px] mt-5">
+            <div className="py-4">
               {filteredFaculties.map((faculty) => (
                 <div
                   key={faculty.id}
-                  className="mb-2 flex gap-2 p-2 bg-gray-200"
+                  className="mb-2 grid grid-cols-3 gap-2 p-2 bg-gray-100/40 cursor-pointer hover:bg-gray-100 rounded-[6px]"
                   onClick={() => handleResultClick(faculty)}
                 >
-                  <div className="flex flex-col min-w-[200px]  ">
-                    <p>
-                      <b>Name: </b>
-                      {faculty.facultyName}
-                    </p>
-                    <p>
-                      <b>country: </b>
-                      {faculty.country}
-                    </p>
-                  </div>
+                  <p>
+                    <b>Name: </b>
+                    {faculty.facultyName}
+                  </p>
+                  <p>
+                    <b>country: </b>
+                    {faculty.country}
+                  </p>
                   <div className="flex flex-col  ">
                     <p>
-                      <b>school </b>
-                      {faculty.school}
-                    </p>
-                    <p>
-                      <b>fees: </b>
-                      {faculty.schoolFees}$
+                      <b>Tuition Fees : </b>
+                      {faculty.tuitionFees}$
                     </p>
                   </div>
 
@@ -124,7 +120,9 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
             <label
               htmlFor=""
               for="inputfile"
-              className="  cursor-pointer flex border-2 py-4 border-dashed rounded-lg items-center justify-between px-4 w-[250px]"
+              className={`${
+                filesImage.stage1.diploma === "" ? "" : "border-green"
+              } cursor-pointer flex border-2 py-4 border-dashed rounded-lg items-center justify-between px-4 w-[250px]`}
             >
               <div className="flex gap-2 ">
                 <svg
@@ -192,7 +190,9 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
             <label
               htmlFor=""
               for="inputfile2"
-              className=" cursor-pointer flex border-2 py-4 border-dashed rounded-lg items-center justify-between px-4  w-[250px]"
+              className={`${
+                filesImage.stage1.passport === "" ? "" : "border-green"
+              } cursor-pointer flex border-2 py-4 border-dashed rounded-lg items-center justify-between px-4  w-[250px]`}
             >
               <div className="flex gap-2 ">
                 <svg
@@ -259,7 +259,9 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
             <label
               htmlFor=""
               for="inputfile3"
-              className=" cursor-pointer flex border-2 py-4 border-dashed rounded-lg items-center justify-between px-4  w-[250px]"
+              className={`${
+                filesImage.stage1.transcript === "" ? "" : "border-green"
+              } cursor-pointer flex border-2 py-4 border-dashed rounded-lg items-center justify-between px-4  w-[250px]`}
             >
               <div className="flex gap-2 ">
                 <svg
@@ -326,7 +328,11 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
             <label
               htmlFor=""
               for="inputfile4"
-              className=" cursor-pointer flex border-2 py-4 border-dashed rounded-lg items-center justify-between px-4  w-[250px]"
+              className={`${
+                filesImage.stage1.EligibilityLetterports === ""
+                  ? ""
+                  : "border-green"
+              } cursor-pointer flex border-2 py-4 border-dashed rounded-lg items-center justify-between px-4  w-[250px]`}
             >
               <div className="flex gap-2 ">
                 <svg
@@ -393,7 +399,11 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
             <label
               htmlFor=""
               for="inputfile6"
-              className=" cursor-pointer flex border-2 py-4 border-dashed rounded-lg items-center justify-between px-4  w-[250px]"
+              className={`${
+                filesImage.stage1.EnglishProficiency === ""
+                  ? ""
+                  : "border-green"
+              } cursor-pointer flex border-2 py-4 border-dashed rounded-lg items-center justify-between px-4  w-[250px]`}
             >
               <div className="flex gap-2 ">
                 <svg
@@ -460,9 +470,11 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
             <label
               htmlFor=""
               for="inputfile5"
-              className=" cursor-pointer flex border-2 py-4 border-dashed rounded-lg items-center justify-between px-4  w-[250px]"
+              className={`${
+                filesImage.stage1.NonCriminalRecord === "" ? "" : "border-green"
+              } cursor-pointer flex border-2 py-4 border-dashed rounded-lg items-center justify-between px-4  w-[250px]`}
             >
-              <div className="flex gap-2 ">
+              <div className="flex gap-2  ">
                 <svg
                   width="24"
                   height="25"
@@ -506,6 +518,7 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
                 </div>
               </div>
               <svg
+                className=" rotate-180"
                 width="24"
                 height="25"
                 viewBox="0 0 24 25"
@@ -589,4 +602,4 @@ const Step5 = ({ filesImage, filesInputHandel, handleInputChange }) => {
   );
 };
 
-export default Step5;
+export default Applica;

@@ -8,14 +8,21 @@ import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { db, storage } from "../../firebase";
 import Navbar from "../../components/Navbar";
 import LinkComponent from "../../components/LinkComponet";
-import Step1 from "../../components/application/Step1";
-import Step2 from "../../components/application/Step2";
-import Step3 from "../../components/application/Step3";
-import Step4 from "../../components/application/Step4";
-import Step5 from "../../components/application/Step5";
 import Footer from "../../components/Landing/Footer";
 import Success from "components/home/Success";
 import { useRouter } from "next/navigation";
+import {
+  BasickInfomationYup,
+  FamilyInformationYup,
+  PassportAddressYup,
+  SchoolInformationYup,
+} from "./components/validation/validation";
+import { useFormik } from "formik";
+import BasicInfomation from "./components/steps/BasicInfomation";
+import PassportAddress from "./components/steps/PassportAddress";
+import FamilyInformation from "./components/steps/FamilyInformation";
+import SchoolInformation from "./components/steps/SchoolInfomation";
+import Applica from "./components/steps/Applica";
 
 const override = css`
   display: block;
@@ -23,9 +30,10 @@ const override = css`
   border-color: red;
 `;
 
-const Apllication = () => {
+const Apply = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
+  const [errorMesasage, setErrorMessage] = useState();
   const [formDataUpdated, setFormDataUpdated] = useState(false);
   const [step, setStep] = useState(1);
 
@@ -44,6 +52,7 @@ const Apllication = () => {
       EnglishProficiency: "",
     },
   });
+
   const [formData, setFormData] = useState({
     stage1: {
       firstName: "",
@@ -97,10 +106,125 @@ const Apllication = () => {
       EnglishProficiency: "",
     },
   });
+
+  const BasicInfomationFormik = useFormik({
+    initialValues: {
+      firstName: "",
+      middelName: "",
+      lastName: "",
+      dateOfBirth: "",
+      placeOfBirth: "",
+      nationality: "",
+      sex: "",
+      contactNumber: "",
+      firstLanguage: "",
+    },
+    validationSchema: BasickInfomationYup,
+    onSubmit: () => {
+      setStep(2);
+    },
+  });
+
+  const PassportAddressFormik = useFormik({
+    initialValues: {
+      passportNumber: "",
+      passportIssuedBy: "",
+      passportExpiryDate: "",
+      ValidTo: "",
+      country: "",
+      district: "",
+      streetNumber: "",
+      contactNumber: "",
+      email: "",
+    },
+    validationSchema: PassportAddressYup,
+    onSubmit: () => {
+      setStep(3);
+    },
+  });
+
+  const FamilyInformationFormik = useFormik({
+    initialValues: {
+      fatherName: "",
+      fatherContact: "",
+      motherName: "",
+      motherContact: "",
+      emrgencyName: "",
+      relationship: "",
+      emergencyContact: "",
+      emergencyEmail: "",
+    },
+    validationSchema: FamilyInformationYup,
+    onSubmit: () => {
+      setStep(4);
+    },
+  });
+
+  const SchoolInformationFormik = useFormik({
+    initialValues: {
+      countryOfPrevSchool: "",
+      namePfPrevSchool: "",
+      levelOfEducation: "",
+      graduationDate: "",
+      primaryLaguage: "",
+      schoolFrom: "",
+      schoolTo: "",
+      degreeName: "",
+      IHaveFromThiSschool: "",
+      applicationSchool: [],
+    },
+    validationSchema: SchoolInformationYup,
+    onSubmit: () => {
+      setStep(5);
+    },
+  });
+
+  // UseEffect for syncing formik values to formData
+
+  useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      stage1: {
+        ...prev.stage1,
+        ...BasicInfomationFormik.values,
+      },
+    }));
+  }, [BasicInfomationFormik.values]);
+
+  useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      stage2: {
+        ...prev.stage2,
+        ...PassportAddressFormik.values,
+      },
+    }));
+  }, [PassportAddressFormik.values]);
+
+  useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      stage3: {
+        ...prev.stage3,
+        ...FamilyInformationFormik.values,
+      },
+    }));
+  }, [FamilyInformationFormik.values]);
+
+  useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      stage4: {
+        ...prev.stage4,
+        ...SchoolInformationFormik.values,
+      },
+    }));
+  }, [SchoolInformationFormik.values]);
+
   console.log(formData.stage4.applicationSchool);
 
   const metadata = {
-    contentDisposition: "attachment", // This instructs the browser to prompt for download
+    contentDisposition: "attachment",
   };
 
   const handleInputChange = (stage, inputName, value) => {
@@ -146,21 +270,18 @@ const Apllication = () => {
 
     if (formDataUpdated) {
       createFirestoreDocument();
-      // Reset the flag after creating the document
       setFormDataUpdated(false);
     }
   }, [formData, formDataUpdated]);
 
   const handelSubmit = async (e) => {
+    setLoading(true);
     e.preventDefault();
     if (
-      formData.stage4.applicationSchool !== "" &&
+      formData.stage4.applicationSchool != [] &&
       filesImage.stage1.diploma !== "" &&
       filesImage.stage1.passport != "" &&
-      filesImage.stage1.transcript !== "" &&
-      filesImage.stage1.EligibilityLetterports !== "" &&
-      filesImage.stage1.NonCriminalRecord !== "" &&
-      filesImage.stage1.EnglishProficiency !== ""
+      filesImage.stage1.transcript !== ""
     ) {
       try {
         setLoading(true);
@@ -245,14 +366,17 @@ const Apllication = () => {
         }));
 
         if (diplomaUrl && passportUrl && transcriptUrl) {
-          // Set the flag to true to trigger the useEffect
           setFormDataUpdated(true);
         }
       } catch (error) {
+        setLoading(false);
         console.error("Error adding document:", error);
       }
     } else {
-      alert("all files are required");
+      setLoading(false);
+      setErrorMessage("Please fill All required files");
+
+      alert("Please fill all required field");
     }
   };
 
@@ -270,84 +394,21 @@ const Apllication = () => {
     document.body.removeChild(link);
   };
 
-  const isEmailNotValid = (email) => {
-    // Regular expression for a basic email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    // Test the provided email against the regular expression
-    return !emailRegex.test(email);
-  };
-  const handleNext = () => {
-    if (step == 1) {
-      if (
-        formData.stage1.firstName !== "" &&
-        formData.stage1.lastName !== "" &&
-        formData.stage1.dateOfBirth !== "" &&
-        formData.stage1.placeOfBirth !== "" &&
-        formData.stage1.nationality !== "" &&
-        formData.stage1.sex !== "" &&
-        formData.stage1.firstLaguage !== ""
-      ) {
-        setStep((prevStep) => prevStep + 1);
-      } else {
-        alert("all filed are required");
-      }
-    } else if (step == 2) {
-      if (isEmailNotValid(formData.stage2.email)) {
-        setIsEmail(true);
-      } else if (
-        formData.stage2.passportNumber !== "" &&
-        formData.stage2.passportIssuedBy !== "" &&
-        formData.stage2.passportExpiryDate !== "" &&
-        formData.stage2.ValidTo !== "" &&
-        formData.stage2.country !== "" &&
-        formData.stage2.district !== "" &&
-        formData.stage2.streetNumber !== "" &&
-        formData.stage2.contactNumber !== "" &&
-        formData.stage2.email !== ""
-      ) {
-        setStep((prevStep) => prevStep + 1);
-      } else {
-        alert("all filed are required");
-      }
-    } else if (step == 3) {
-      if (
-        formData.stage3.fatherName !== "" &&
-        formData.stage3.fatherContact !== "" &&
-        formData.stage3.motherName !== "" &&
-        formData.stage3.motherContact !== "" &&
-        formData.stage3.emrgencyName !== "" &&
-        formData.stage3.relationship !== "" &&
-        formData.stage3.emargencyContact !== "" &&
-        formData.stage3.contactNumber !== "" &&
-        formData.stage3.emrgencyEmail !== ""
-      ) {
-        setStep((prevStep) => prevStep + 1);
-      } else {
-        alert("all filed are required");
-      }
-    } else if (step == 4) {
-      if (
-        formData.stage4.countryOfPrevSchool !== "" &&
-        formData.stage4.namePfPrevSchool !== "" &&
-        formData.stage4.levelOfEducation !== "" &&
-        formData.stage4.graduationDate !== "" &&
-        formData.stage4.primaryLaguage !== "" &&
-        formData.stage4.schoolFrom !== "" &&
-        formData.stage4.schoolTo !== "" &&
-        formData.stage4.degreeName !== "" &&
-        formData.stage4.IHaveFromThiSschool !== ""
-      ) {
-        setStep((prevStep) => prevStep + 1);
-      } else {
-        alert("all filed are required");
-      }
-    }
-  };
-
   const handlePrev = () => {
     if (step > 1) {
       setStep((prevStep) => prevStep - 1);
+    }
+  };
+
+  const handleNext = () => {
+    if (step === 1) {
+      BasicInfomationFormik.handleSubmit();
+    } else if (step === 2) {
+      PassportAddressFormik.handleSubmit();
+    } else if (step === 3) {
+      FamilyInformationFormik.handleSubmit();
+    } else if (step === 4) {
+      SchoolInformationFormik.handleSubmit();
     }
   };
 
@@ -572,7 +633,12 @@ const Apllication = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <circle cx="28" cy="28" r="28"   fill={step >= 4 ? "#07294D" : "#E0EFFF"} />
+                <circle
+                  cx="28"
+                  cy="28"
+                  r="28"
+                  fill={step >= 4 ? "#07294D" : "#E0EFFF"}
+                />
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -586,77 +652,56 @@ const Apllication = () => {
                   Setp 5
                 </span>
                 <span className="text-[12px] text-center font-[400] text-[#07294D]">
-                Documents
+                  Documents
                 </span>
               </div>
             </div>
           </div>
         </div>
 
-        <form
-          onSubmit={handelSubmit}
-          className="pt-4 w-full items-center justify-center"
-        >
-          {step === 5 && (
-            <Step1 formData={formData} handleInputChange={handleInputChange} />
+        <div className="w-full">
+          {step == 1 && (
+            <BasicInfomation BasicInfomationFormik={BasicInfomationFormik} />
           )}
-          {step === 2 && (
-            <Step2
-              formData={formData}
-              isEmail={isEmail}
-              handleInputChange={handleInputChange}
+          {step == 2 && (
+            <PassportAddress PassportAddressFormik={PassportAddressFormik} />
+          )}
+          {step == 3 && (
+            <FamilyInformation
+              FamilyInformationFormik={FamilyInformationFormik}
             />
           )}
-          {step === 3 && (
-            <Step3 formData={formData} handleInputChange={handleInputChange} />
+          {step == 4 && (
+            <SchoolInformation
+              SchoolInformationFormik={SchoolInformationFormik}
+            />
           )}
-          {step === 4 && (
-            <Step4 formData={formData} handleInputChange={handleInputChange} />
-          )}
-          {step === 1 && (
-            <Step5
+          {step == 5 && (
+            <Applica
+              SchoolInformationFormik={SchoolInformationFormik}
               filesImage={filesImage}
               filesInputHandel={filesInputHandel}
               handleInputChange={handleInputChange}
             />
           )}
-          <div className="flex  gap-2  py-2 justify-end px-10">
-            {step > 1 && (
-              <div
-                onClick={handlePrev}
-                className="py-2 px-10 bg-gray-400 rounded-md"
-              >
-                Back
-              </div>
-            )}
-            {step < 5 && (
-              <div
-                onClick={handleNext}
-                className="py-2 px-10 bg-[#7db834] rounded-md text-white"
-              >
-                Next
-              </div>
-            )}
-            {step == 5 && (
-              <button
-                className="py-2 flex items-center justify-center px-10 bg-[#7db834] rounded-md text-white"
-                type="submit"
-              >
-                <ClipLoader
-                  color="#36D7B7"
-                  loading={loading}
-                  css={override}
-                  size={20}
-                />
-                {loading ? "" : "Submit"}
-              </button>
-            )}
+        </div>
+        <div className="flex flex-row w-full justify-end">
+          <div className="flex flex-row gap-[20px]">
+            <button className="p-3 px-10 bg-[#D9D9D9] rounded-[6px]  text-black">
+              Cancel
+            </button>
+            <button
+              onClick={step === 5 ? handelSubmit : handleNext}
+              className="p-3 px-10 bg-[#FFCD21] rounded-[6px]  text-black"
+            >
+              {loading ? "Loading.." : <>{step === 5 ? "Submit" : "Next"}</>}
+            </button>
           </div>
-        </form>
+        </div>
       </div>
       <Footer />
     </div>
   );
 };
 
-export default Apllication;
+export default Apply;
