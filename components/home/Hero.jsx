@@ -7,7 +7,6 @@ import EnquiryForm from "../Landing/EnquiryForm";
 import "../dropdown.css";
 import Navbar from "components/Landing/Navbar";
 
-
 const Hero = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -16,11 +15,13 @@ const Hero = () => {
 
   return (
     <div className="relative overflow-hidden px-[10px] sm:px-[50px] md:px-[100px] py-[10px] min-h-[100vh]  flex flex-col  w-full items-center bg-blueBack">
-
-      <div className={`w-full min-h-[100vh] bg-black/40 fixed z-40 transition-all  ${isModalOpen ? "bottom-0   " : "bottom-[350vh] "} `}>
-        <EnquiryForm onClose={closeModal}/>
+      <div
+        className={`w-full min-h-[100vh] bg-black/40 fixed z-40 transition-all  ${
+          isModalOpen ? "bottom-0   " : "bottom-[350vh] "
+        } `}
+      >
+        <EnquiryForm onClose={closeModal} />
       </div>
-
 
       <div className="absolute w-full h-full top-0 z-10">
         <Image
@@ -67,7 +68,10 @@ const Hero = () => {
             </span>
 
             <div className="flex flex-row gap-[20px] items-center">
-              <button onClick={openModal} className="flex flex-row py-[16px] px-[20px] md:px-[40px] rounded-[14px] text-[16px] bg-green text-white gap-[10px] items-center">
+              <button
+                onClick={openModal}
+                className="flex flex-row py-[16px] px-[20px] md:px-[40px] rounded-[14px] text-[16px] bg-green text-white gap-[10px] items-center"
+              >
                 Enquire Now
                 <div>
                   <svg
@@ -95,48 +99,50 @@ const Hero = () => {
                   </svg>
                 </div>
               </button>
-              <a href="/application">
-
-              <button className="flex flex-row py-[16px] px-[20px] md:px-[40px] rounded-[14px] text-[16px] bg-white text-greenText gap-[10px] items-center">
-                Apply Now
-                <div>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+              <a href="/apply">
+                <button className="flex flex-row py-[16px] px-[20px] md:px-[40px] rounded-[14px] text-[16px] bg-white text-greenText gap-[10px] items-center">
+                  Apply Now
+                  <div>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                    <path
-                      opacity="0.4"
-                      d="M19.75 11.7256L4.75 11.7256"
-                      stroke="#7DB834"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      <path
+                        opacity="0.4"
+                        d="M19.75 11.7256L4.75 11.7256"
+                        stroke="#7DB834"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                       />
-                    <path
-                      d="M13.7002 5.701L19.7502 11.725L13.7002 17.75"
-                      stroke="#7DB834"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      <path
+                        d="M13.7002 5.701L19.7502 11.725L13.7002 17.75"
+                        stroke="#7DB834"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                       />
-                  </svg>
-                </div>
-              </button>
-                      </a>
+                    </svg>
+                  </div>
+                </button>
+              </a>
             </div>
           </div>
 
           <div className="w-full lg:w-1/2 md:p-[50px] ld:p-[100px] px-[50px]">
             <div className="w-full h-full">
-
-            <Image src={`/image/banner-circle.svg`} width={600} height={600} className="w-full" />
+              <Image
+                src={`/image/banner-circle.svg`}
+                width={600}
+                height={600}
+                className="w-full"
+              />
             </div>
           </div>
         </div>
-       
       </div>
     </div>
   );

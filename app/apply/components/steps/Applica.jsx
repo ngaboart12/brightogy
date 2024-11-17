@@ -93,7 +93,7 @@ const Applica = ({
                   <div className="flex flex-col  ">
                     <p>
                       <b>Tuition Fees : </b>
-                      {faculty.tuitionFees}$
+                      {faculty.tuitionFees}
                     </p>
                   </div>
 
@@ -105,9 +105,13 @@ const Applica = ({
         </div>
         <div className="py-4">
           {selectedFaculty != null ? (
+            <div className="flex flex-col gap-[4px]">
+
             <p className="font-bold text-[20px]">
               Faculity:{selectedFaculty.facultyName}
             </p>
+            <span>Tuition fee: {selectedFaculty.fees}</span>
+            </div>
           ) : (
             <p className="text-orange-500">
               Please search and select your faculity
@@ -324,7 +328,7 @@ const Applica = ({
             </label>
           </div>
           <div className="flex flex-col gap-2">
-            <h1 className="text-black font-[600]">Eligibility letterports</h1>
+            <h1 className="text-black font-[600]">Eligibility letter <span className="text-[14px]">(optional)</span></h1>
             <label
               htmlFor=""
               for="inputfile4"
@@ -395,7 +399,7 @@ const Applica = ({
             </label>
           </div>
           <div className="flex flex-col gap-2">
-            <h1 className="text-black font-[600]">English proficiency</h1>
+            <h1 className="text-black font-[600]">English proficiency <span className="text-[14px]">(optional)</span></h1>
             <label
               htmlFor=""
               for="inputfile6"
@@ -466,7 +470,7 @@ const Applica = ({
             </label>
           </div>
           <div className="flex flex-col gap-2">
-            <h1 className="text-black font-[600]">Non criminal record</h1>
+            <h1 className="text-black font-[600]">Non criminal record <span className="text-[14px]">(optional)</span></h1>
             <label
               htmlFor=""
               for="inputfile5"

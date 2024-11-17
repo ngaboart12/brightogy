@@ -27,7 +27,7 @@ const SchoolInformation = ({ SchoolInformationFormik }) => {
               value={SchoolInformationFormik.values.countryOfPrevSchool}
               onChange={SchoolInformationFormik.handleChange}
               onBlur={SchoolInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {SchoolInformationFormik.touched.countryOfPrevSchool && SchoolInformationFormik.errors.countryOfPrevSchool ? (
               <p className="flex px-[3px] text-[10px] text-center text-red-600 self-stretch">
@@ -46,7 +46,7 @@ const SchoolInformation = ({ SchoolInformationFormik }) => {
               value={SchoolInformationFormik.values.namePfPrevSchool}
               onChange={SchoolInformationFormik.handleChange}
               onBlur={SchoolInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {SchoolInformationFormik.touched.namePfPrevSchool && SchoolInformationFormik.errors.namePfPrevSchool ? (
               <p className="flex px-[3px] text-[10px] text-center text-red-600 self-stretch">
@@ -60,7 +60,7 @@ const SchoolInformation = ({ SchoolInformationFormik }) => {
             <label htmlFor="">Level of Education</label>
             <select
               name="levelOfEducation"
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D] "
+              className="border py-3 rounded-md px-4  text-[#07294D] "
               onChange={SchoolInformationFormik.handleChange}
               onBlur={SchoolInformationFormik.handleBlur}
             >
@@ -93,7 +93,7 @@ const SchoolInformation = ({ SchoolInformationFormik }) => {
               value={SchoolInformationFormik.values.graduationDate}
               onChange={SchoolInformationFormik.handleChange}
               onBlur={SchoolInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {SchoolInformationFormik.touched.graduationDate && SchoolInformationFormik.errors.graduationDate ? (
               <p className="flex px-[3px] text-[10px] text-center text-red-600 self-stretch">
@@ -112,7 +112,7 @@ const SchoolInformation = ({ SchoolInformationFormik }) => {
               value={SchoolInformationFormik.values.primaryLaguage}
               onChange={SchoolInformationFormik.handleChange}
               onBlur={SchoolInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {SchoolInformationFormik.touched.primaryLaguage && SchoolInformationFormik.errors.primaryLaguage ? (
               <p className="flex px-[3px] text-[10px] text-center text-red-600 self-stretch">
@@ -130,7 +130,7 @@ const SchoolInformation = ({ SchoolInformationFormik }) => {
               value={SchoolInformationFormik.values.schoolFrom}
               onChange={SchoolInformationFormik.handleChange}
               onBlur={SchoolInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {SchoolInformationFormik.touched.schoolFrom && SchoolInformationFormik.errors.schoolFrom ? (
               <p className="flex px-[3px] text-[10px] text-center text-red-600 self-stretch">
@@ -148,7 +148,7 @@ const SchoolInformation = ({ SchoolInformationFormik }) => {
               value={SchoolInformationFormik.values.schoolTo}
               onChange={SchoolInformationFormik.handleChange}
               onBlur={SchoolInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {SchoolInformationFormik.touched.schoolTo && SchoolInformationFormik.errors.schoolTo ? (
               <p className="flex px-[3px] text-[10px] text-center text-red-600 self-stretch">
@@ -167,7 +167,7 @@ const SchoolInformation = ({ SchoolInformationFormik }) => {
               value={SchoolInformationFormik.values.degreeName}
               onChange={SchoolInformationFormik.handleChange}
               onBlur={SchoolInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {SchoolInformationFormik.touched.degreeName && SchoolInformationFormik.errors.degreeName ? (
               <p className="flex px-[3px] text-[10px] text-center text-red-600 self-stretch">
@@ -186,7 +186,7 @@ const SchoolInformation = ({ SchoolInformationFormik }) => {
               value={SchoolInformationFormik.values.IHaveFromThiSschool}
               onChange={SchoolInformationFormik.handleChange}
               onBlur={SchoolInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {SchoolInformationFormik.touched.IHaveFromThiSschool && SchoolInformationFormik.errors.IHaveFromThiSschool ? (
               <p className="flex px-[3px] text-[10px] text-center text-red-600 self-stretch">

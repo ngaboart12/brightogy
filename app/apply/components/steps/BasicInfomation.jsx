@@ -46,7 +46,7 @@ const BasicInformation = ({ BasicInfomationFormik }) => {
               value={BasicInfomationFormik.values.firstName}
               onChange={BasicInfomationFormik.handleChange}
               onBlur={BasicInfomationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
                 // Add any specific styling props you have
             />
             {BasicInfomationFormik.touched.firstName && BasicInfomationFormik.errors.firstName ? (
@@ -67,7 +67,7 @@ const BasicInformation = ({ BasicInfomationFormik }) => {
               value={BasicInfomationFormik.values.middelName}
               onChange={BasicInfomationFormik.handleChange}
               onBlur={BasicInfomationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
               
             />
             {BasicInfomationFormik.touched.middelName && BasicInfomationFormik.errors.middelName ? (
@@ -88,7 +88,7 @@ const BasicInformation = ({ BasicInfomationFormik }) => {
               value={BasicInfomationFormik.values.lastName}
               onChange={BasicInfomationFormik.handleChange}
               onBlur={BasicInfomationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
               
             />
             {BasicInfomationFormik.touched.lastName && BasicInfomationFormik.errors.lastName ? (
@@ -109,7 +109,7 @@ const BasicInformation = ({ BasicInfomationFormik }) => {
               value={BasicInfomationFormik.values.dateOfBirth}
               onChange={BasicInfomationFormik.handleChange}
               onBlur={BasicInfomationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
               
             />
             {BasicInfomationFormik.touched.dateOfBirth && BasicInfomationFormik.errors.dateOfBirth ? (
@@ -130,7 +130,7 @@ const BasicInformation = ({ BasicInfomationFormik }) => {
               value={BasicInfomationFormik.values.placeOfBirth}
               onChange={BasicInfomationFormik.handleChange}
               onBlur={BasicInfomationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
               
             />
             {BasicInfomationFormik.touched.placeOfBirth && BasicInfomationFormik.errors.placeOfBirth ? (
@@ -144,7 +144,7 @@ const BasicInformation = ({ BasicInfomationFormik }) => {
           <div className="flex flex-col gap-1 text-black">
             <span>Nationality</span>
             <select
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
               name="nationality"
               value={BasicInfomationFormik.values.nationality}
               onChange={BasicInfomationFormik.handleChange}
@@ -209,7 +209,7 @@ const BasicInformation = ({ BasicInfomationFormik }) => {
               value={BasicInfomationFormik.values.firstLanguage}
               onChange={BasicInfomationFormik.handleChange}
               onBlur={BasicInfomationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
               
             />
             {BasicInfomationFormik.touched.firstLanguage && BasicInfomationFormik.errors.firstLanguage ? (

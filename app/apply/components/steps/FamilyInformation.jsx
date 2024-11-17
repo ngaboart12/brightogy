@@ -16,7 +16,7 @@ const FamilyInformation = ({ FamilyInformationFormik }) => {
               value={FamilyInformationFormik.values.fatherName}
               onChange={FamilyInformationFormik.handleChange}
               onBlur={FamilyInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {FamilyInformationFormik.touched.fatherName && FamilyInformationFormik.errors.fatherName ? (
               <p className="text-red-600 text-[10px]">{FamilyInformationFormik.errors.fatherName}</p>
@@ -33,7 +33,7 @@ const FamilyInformation = ({ FamilyInformationFormik }) => {
               value={FamilyInformationFormik.values.fatherContact}
               onChange={FamilyInformationFormik.handleChange}
               onBlur={FamilyInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {FamilyInformationFormik.touched.fatherContact && FamilyInformationFormik.errors.fatherContact ? (
               <p className="text-red-600 text-[10px]">{FamilyInformationFormik.errors.fatherContact}</p>
@@ -50,7 +50,7 @@ const FamilyInformation = ({ FamilyInformationFormik }) => {
               value={FamilyInformationFormik.values.motherName}
               onChange={FamilyInformationFormik.handleChange}
               onBlur={FamilyInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {FamilyInformationFormik.touched.motherName && FamilyInformationFormik.errors.motherName ? (
               <p className="text-red-600 text-[10px]">{FamilyInformationFormik.errors.motherName}</p>
@@ -67,7 +67,7 @@ const FamilyInformation = ({ FamilyInformationFormik }) => {
               value={FamilyInformationFormik.values.motherContact}
               onChange={FamilyInformationFormik.handleChange}
               onBlur={FamilyInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {FamilyInformationFormik.touched.motherContact && FamilyInformationFormik.errors.motherContact ? (
               <p className="text-red-600 text-[10px]">{FamilyInformationFormik.errors.motherContact}</p>
@@ -84,7 +84,7 @@ const FamilyInformation = ({ FamilyInformationFormik }) => {
               value={FamilyInformationFormik.values.emrgencyName}
               onChange={FamilyInformationFormik.handleChange}
               onBlur={FamilyInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {FamilyInformationFormik.touched.emrgencyName && FamilyInformationFormik.errors.emrgencyName ? (
               <p className="text-red-600 text-[10px]">{FamilyInformationFormik.errors.emrgencyName}</p>
@@ -101,7 +101,7 @@ const FamilyInformation = ({ FamilyInformationFormik }) => {
               value={FamilyInformationFormik.values.relationship}
               onChange={FamilyInformationFormik.handleChange}
               onBlur={FamilyInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {FamilyInformationFormik.touched.relationship && FamilyInformationFormik.errors.relationship ? (
               <p className="text-red-600 text-[10px]">{FamilyInformationFormik.errors.relationship}</p>
@@ -118,7 +118,7 @@ const FamilyInformation = ({ FamilyInformationFormik }) => {
               value={FamilyInformationFormik.values.emergencyContact}
               onChange={FamilyInformationFormik.handleChange}
               onBlur={FamilyInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {FamilyInformationFormik.touched.emergencyContact && FamilyInformationFormik.errors.emergencyContact ? (
               <p className="text-red-600 text-[10px]">{FamilyInformationFormik.errors.emergencyContact}</p>
@@ -135,7 +135,7 @@ const FamilyInformation = ({ FamilyInformationFormik }) => {
               value={FamilyInformationFormik.values.emergencyEmail}
               onChange={FamilyInformationFormik.handleChange}
               onBlur={FamilyInformationFormik.handleBlur}
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+              className="border py-3 rounded-md px-4  text-[#07294D]"
             />
             {FamilyInformationFormik.touched.emergencyEmail && FamilyInformationFormik.errors.emergencyEmail ? (
               <p className="text-red-600 text-[10px]">{FamilyInformationFormik.errors.emergencyEmail}</p>
