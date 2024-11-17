@@ -18,7 +18,7 @@ const PassportAddress = ({ PassportAddressFormik }) => {
                 value={PassportAddressFormik.values.passportNumber}
                 onChange={PassportAddressFormik.handleChange}
                 onBlur={PassportAddressFormik.handleBlur}
-                className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+                className="border py-3 rounded-md px-4  text-[#07294D]"
               />
               {PassportAddressFormik.touched.passportNumber &&
               PassportAddressFormik.errors.passportNumber ? (
@@ -38,7 +38,7 @@ const PassportAddress = ({ PassportAddressFormik }) => {
                 value={PassportAddressFormik.values.passportIssuedBy}
                 onChange={PassportAddressFormik.handleChange}
                 onBlur={PassportAddressFormik.handleBlur}
-                className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+                className="border py-3 rounded-md px-4  text-[#07294D]"
               />
               {PassportAddressFormik.touched.passportIssuedBy &&
               PassportAddressFormik.errors.passportIssuedBy ? (
@@ -57,7 +57,7 @@ const PassportAddress = ({ PassportAddressFormik }) => {
                 value={PassportAddressFormik.values.passportExpiryDate}
                 onChange={PassportAddressFormik.handleChange}
                 onBlur={PassportAddressFormik.handleBlur}
-                className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+                className="border py-3 rounded-md px-4  text-[#07294D]"
               />
               {PassportAddressFormik.touched.passportExpiryDate &&
               PassportAddressFormik.errors.passportExpiryDate ? (
@@ -76,7 +76,7 @@ const PassportAddress = ({ PassportAddressFormik }) => {
                 value={PassportAddressFormik.values.ValidTo}
                 onChange={PassportAddressFormik.handleChange}
                 onBlur={PassportAddressFormik.handleBlur}
-                className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+                className="border py-3 rounded-md px-4  text-[#07294D]"
               />
               {PassportAddressFormik.touched.ValidTo &&
               PassportAddressFormik.errors.ValidTo ? (
@@ -98,7 +98,7 @@ const PassportAddress = ({ PassportAddressFormik }) => {
                 value={PassportAddressFormik.values.country}
                 onChange={PassportAddressFormik.handleChange}
                 onBlur={PassportAddressFormik.handleBlur}
-                className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+                className="border py-3 rounded-md px-4  text-[#07294D]"
               />
               {PassportAddressFormik.touched.country &&
               PassportAddressFormik.errors.country ? (
@@ -118,7 +118,7 @@ const PassportAddress = ({ PassportAddressFormik }) => {
                 value={PassportAddressFormik.values.district}
                 onChange={PassportAddressFormik.handleChange}
                 onBlur={PassportAddressFormik.handleBlur}
-                className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+                className="border py-3 rounded-md px-4  text-[#07294D]"
               />
               {PassportAddressFormik.touched.district &&
               PassportAddressFormik.errors.district ? (
@@ -138,7 +138,7 @@ const PassportAddress = ({ PassportAddressFormik }) => {
                 value={PassportAddressFormik.values.streetNumber}
                 onChange={PassportAddressFormik.handleChange}
                 onBlur={PassportAddressFormik.handleBlur}
-                className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+                className="border py-3 rounded-md px-4  text-[#07294D]"
               />
               {PassportAddressFormik.touched.streetNumber &&
               PassportAddressFormik.errors.streetNumber ? (
@@ -158,7 +158,7 @@ const PassportAddress = ({ PassportAddressFormik }) => {
                 value={PassportAddressFormik.values.contactNumber}
                 onChange={PassportAddressFormik.handleChange}
                 onBlur={PassportAddressFormik.handleBlur}
-                className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+                className="border py-3 rounded-md px-4  text-[#07294D]"
               />
               {PassportAddressFormik.touched.contactNumber &&
               PassportAddressFormik.errors.contactNumber ? (
@@ -178,7 +178,7 @@ const PassportAddress = ({ PassportAddressFormik }) => {
                 value={PassportAddressFormik.values.email}
                 onChange={PassportAddressFormik.handleChange}
                 onBlur={PassportAddressFormik.handleBlur}
-                className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
+                className="border py-3 rounded-md px-4  text-[#07294D]"
               />
               {PassportAddressFormik.touched.email &&
               PassportAddressFormik.errors.email ? (
