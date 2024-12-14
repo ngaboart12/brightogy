@@ -101,7 +101,7 @@ const Program = () => {
                           <div className="flex  flex-col gap-[2px]">
                             <h1 className="text-[16px] font-[600] text-black">
                               {" "}
-                              {item.tuitionFees} $ / year{" "}
+                              {item.tuitionFees} / year{" "}
                             </h1>
                             <span className="text-[13px] text-gray-400">
                               Tuition fees
@@ -122,13 +122,21 @@ const Program = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="w-full bg-white rounded-[12px] p-4 flex flex-col gap-[2]">
+                    <div className="w-full bg-white rounded-[12px] p-4 flex flex-col gap-[10px]">
                       <h1 className="text-[18px] font-[500]">
                         Program Requirements
                       </h1>
-                      <span className="text-[13px] font-[400]">
-                        {item?.requirements}
-                      </span>
+                      {item.requirements
+                        .split(/(?=\d+\.)/) // Split only at numbers followed by a dot but keep them
+                        .map((requirement, index) => (
+                          <div
+                            key={index}
+                            className="flex text-[13px] font-[400]"
+                          >
+                            {requirement.trim()}{" "}
+                            {/* Display trimmed requirement */}
+                          </div>
+                        ))}
                     </div>
                   </div>
                 );
