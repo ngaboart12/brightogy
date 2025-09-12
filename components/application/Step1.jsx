@@ -1,36 +1,8 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Input from "../Input";
 
 const Step1 = ({ formData, handleInputChange }) => {
-  const [countryName, setCountryName] = useState("");
-  const [allCountries, setAllCountries] = useState([]);
-
-  useEffect(() => {
-    // Fetch the list of all countries when the component mounts
-    const fetchAllCountries = async () => {
-      try {
-        const response = await fetch("https://restcountries.com/v3.1/all");
-        const data = await response.json();
-
-        if (response.ok) {
-          const sortedCountries = data.sort((a, b) => {
-            const nameA = a.name.common.toUpperCase();
-            const nameB = b.name.common.toUpperCase();
-            return nameA.localeCompare(nameB);
-          });
-          setAllCountries(sortedCountries);
-        } else {
-          console.error("Error fetching countries:", data.message);
-        }
-      } catch (error) {
-        console.error("Error fetching countries:", error);
-      }
-    };
-
-    fetchAllCountries();
-  }, []);
-
   return (
     <div className="flex w-full items-center flex-col pb-4 gap-10">
     
@@ -81,25 +53,15 @@ const Step1 = ({ formData, handleInputChange }) => {
               handleInputChange("stage1", "placeOfBirth", e.target.value)
             }
           />
-          <div className="flex flex-col  gap-1 text-black">
-            <span>Nationality</span>
-            <select
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
-              value={formData.stage1.nationality}
-              onChange={(e) =>
-                handleInputChange("stage1", "nationality", e.target.value)
-              }
-            >
-              <option value="" disabled>
-                Select a country
-              </option>
-              {allCountries.map((country) => (
-                <option key={country.name.common} value={country.name.common}>
-                  {country.name.common}
-                </option>
-              ))}
-            </select>
-          </div>
+          <Input
+            placeholder="Enter Nationality"
+            label="Nationality"
+            type="text"
+            value={formData.stage1.nationality}
+            onChange={(e) =>
+              handleInputChange("stage1", "nationality", e.target.value)
+            }
+          />
 
           <div className="flex flex-col  gap-1 text-black">
             <span>Gender</span>

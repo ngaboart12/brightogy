@@ -1,34 +1,8 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Input from "../Input";
 
 const Step2 = ({ formData, handleInputChange, isEmail }) => {
-  const [countryName, setCountryName] = useState("");
-  const [allCountries, setAllCountries] = useState([]);
-
-  useEffect(() => {
-    const fetchAllCountries = async () => {
-      try {
-        const response = await fetch("https://restcountries.com/v3.1/all");
-        const data = await response.json();
-
-        if (response.ok) {
-          const sortedCountries = data.sort((a, b) => {
-            const nameA = a.name.common.toUpperCase();
-            const nameB = b.name.common.toUpperCase();
-            return nameA.localeCompare(nameB);
-          });
-          setAllCountries(sortedCountries);
-        } else {
-          console.error("Error fetching countries:", data.message);
-        }
-      } catch (error) {
-        console.error("Error fetching countries:", error);
-      }
-    };
-
-    fetchAllCountries();
-  }, []);
   return (
     <div className="flex w-full items-center flex-col pb-4 gap-6">
     
@@ -77,25 +51,15 @@ const Step2 = ({ formData, handleInputChange, isEmail }) => {
       <div className="flex flex-col w-full">
         <h1 className="text-black font-[600] text-[18px]">Address</h1>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 w-full">
-          <div className="flex flex-col  gap-1 text-black">
-            <span>Country</span>
-            <select
-              className="border py-3 rounded-md px-4 outline-none text-[#07294D]"
-              value={formData.stage2.country}
-              onChange={(e) =>
-                handleInputChange("stage2", "country", e.target.value)
-              }
-            >
-              <option value="" disabled>
-                Select a country
-              </option>
-              {allCountries.map((country) => (
-                <option key={country.name.common} value={country.name.common}>
-                  {country.name.common}
-                </option>
-              ))}
-            </select>
-          </div>
+          <Input
+            placeholder="Enter Country"
+            label="Country"
+            type="text"
+            value={formData.stage2.country}
+            onChange={(e) =>
+              handleInputChange("stage2", "country", e.target.value)
+            }
+          />
           <Input
             placeholder="Enter district"
             label="District/City"
