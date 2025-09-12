@@ -1,34 +1,8 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 
 const BasicInformation = ({ BasicInfomationFormik }) => {
-  const [allCountries, setAllCountries] = useState([]);
-
-  useEffect(() => {
-    // Fetch the list of all countries when the component mounts
-    const fetchAllCountries = async () => {
-      try {
-        const response = await fetch("https://restcountries.com/v3.1/all");
-        const data = await response.json();
-
-        if (response.ok) {
-          const sortedCountries = data.sort((a, b) => {
-            const nameA = a.name.common.toUpperCase();
-            const nameB = b.name.common.toUpperCase();
-            return nameA.localeCompare(nameB);
-          });
-          setAllCountries(sortedCountries);
-        } else {
-          console.error("Error fetching countries:", data.message);
-        }
-      } catch (error) {
-        console.error("Error fetching countries:", error);
-      }
-    };
-
-    fetchAllCountries();
-  }, []);
 
   return (
     <div className="flex w-full items-center flex-col pb-4 gap-10">
@@ -142,23 +116,16 @@ const BasicInformation = ({ BasicInfomationFormik }) => {
 
           {/* Nationality Select */}
           <div className="flex flex-col gap-1 text-black">
-            <span>Nationality</span>
-            <select
+            <label htmlFor="">Nationality</label>
+            <input
               className="border py-3 rounded-md px-4  text-[#07294D]"
               name="nationality"
+              type="text"
+              placeholder="Enter Nationality"
               value={BasicInfomationFormik.values.nationality}
               onChange={BasicInfomationFormik.handleChange}
               onBlur={BasicInfomationFormik.handleBlur}
-            >
-              <option value="" disabled>
-                Select a country
-              </option>
-              {allCountries.map((country) => (
-                <option key={country.name.common} value={country.name.common}>
-                  {country.name.common}
-                </option>
-              ))}
-            </select>
+            />
             {BasicInfomationFormik.touched.nationality && BasicInfomationFormik.errors.nationality ? (
               <p className="flex px-[3px] text-[10px] text-center text-red-600 self-stretch">
                 {BasicInfomationFormik.errors.nationality}
